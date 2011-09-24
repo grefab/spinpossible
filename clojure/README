@@ -1,0 +1,25 @@
+spinpossible.jar enthält die komplette clojure runtime:
+
+java -jar spinpossible.jar
+
+Man muss das Programm mit "CTRL+C" abbrechen, nachdem es die beiden timings für erste/alle Lösungen ausgegeben hat, 
+da es dann anscheinend in einer Art clojure main loop festhängt.
+
+Beste Ergebnisse bei mir mit 4 GB ram:
+
+java -server -Xms4096m -Xmx4096m -jar spinpossible.jar 
+"Elapsed time: 8129.482 msecs"
+"Elapsed time: 24956.509 msecs"
+ 
+ 
+Es läuft gerade noch durch mit 128 MB:
+
+java -server -Xms128m -Xmx128m -jar spinpossible.jar 
+"Elapsed time: 9136.29 msecs"
+"Elapsed time: 33308.286 msecs"
+
+Mit 64 MB gibt's nur noch die 1. Lösung:
+
+java -server -Xms64m -Xmx64m -jar spinpossible.jar 
+"Elapsed time: 9612.406 msecs"
+Exception in thread "main" ... java.lang.OutOfMemoryError: GC overhead limit exceeded
