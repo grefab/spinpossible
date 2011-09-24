@@ -8,5 +8,5 @@
 
 (defn -main [& terms]
   (do
-    (time (apply first-solution advanced-swap-2))
-    (time (doall (apply all-solutions advanced-swap-2)))))
+    (println (time (apply first-solution advanced-swap-2)))
+    (println (time (doall (apply all-solutions advanced-swap-2))))))
