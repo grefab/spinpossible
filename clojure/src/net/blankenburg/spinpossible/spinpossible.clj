@@ -14,6 +14,7 @@
   (take-from y height (map #(take-from x width %) rows)))
  
 (defn- move-rows [rows]
+  "Executes a move, i.e. rotates the given sub-field and flips its elements."  
   (partition (count (first rows)) (map #(* -1 %) (reverse (flatten rows)))))
  
 (defn- replace-in 
@@ -32,100 +33,96 @@
   "Gets the result for the move given by the rectangle [x y width height] on rows."
   (replace-in rows x y (move-rows (subfield rows x y width height))))
 
-(defn solved? [rows]
+(defn correct? [rows width x y]
+  "Returns true iff the element at x,y is at the right place and orientation"
+  (= (+ (inc x) (* y width)) ; tried using a memoized fn or array, but both are slower
+      (nth (nth rows y) x)))
+
+(defn correctness-seq [rows width [x y w h]]
+  "Returns a lazy sequence of booleans indicating whether the elements in the given subfield are correct.
+   Order is left-to-right top-down."
+  (for [yi (range y (+ y h)) xi (range x (+ x w))]
+    (correct? rows width xi yi)))
+
+(defn solved? [rows width height]
   "Returns true iff all numbers are in the right position and orientation."
-  (let [flattened-rows (flatten rows)]
-    (and
-      (every? pos? flattened-rows)
-      (= flattened-rows (sort flattened-rows)))))
+  (every? true? (correctness-seq rows width [0 0 width height])))
 
 
 ; Define the actual solving algorithm and helpers
 
-(defn- subfield-param-sequence [width height]
+(defn all-possible-moves [width height]
   "Generates the sequence of all possible moves."
   (apply concat
     (for [x (range width) y (range height)]
       (for [w (range 1 (inc (- width x))) h (range 1 (inc (- height y)))]
           [x y w h]))))
  
-(defn width [rows]
-  "Returns the width of the playing field."
-  (count (first rows)))
- 
-(defn height [rows]
-  "Returns the height of the playing field."
-  (count rows))
 
-(defn- correct? [rows x y]
-  "Returns true iff the element at x,y is at the right place and orientation"
-  (= 
-    (+ (inc x) (* y (width rows)))
-      (nth (nth rows y) x)))
-
-(defn- correctness-seq [rows [x y w h]]
-  "Returns a lazy sequence of booleans indicating whether the elements in the given subfield are correct.
-   Order is left-to-right top-down."
-  (for [yi (range y (+ y h)) xi (range x (+ x w))]
-    (correct? rows xi yi)))
-
-(defn- second-last-move [rows all-moves]
+(defn- second-last-move [rows width all-moves]
   "In the second-last move, all elements which at the right place and orientation
    must be excluded"
-   (filter #(every? not (correctness-seq rows %)) all-moves))  
+   (filter #(every? not (correctness-seq rows width %)) all-moves))  
 
-(defn- last-move [rows]
+(defn- last-move [rows width height]
   "In the last move, all elements that are not at the right place and orientation 
    must be included. All others must be excluded. Here, we just take the bounding
    box of not yet correct elements."
   (let 
-    [w (width rows) 
-     h (height rows)
-     correctnesses (correctness-seq rows [0 0 w h]) 
-     wrong-xs (map second (filter #(false? (first %)) (partition 2 (interleave correctnesses (flatten (repeat h (range 0 w)))))))
-     wrong-ys (map second (filter #(some false? (first %)) (partition 2 (interleave (partition w correctnesses) (range h)))))
+    [correctnesses (correctness-seq rows width [0 0 width height]) 
+     wrong-xs (map second (filter #(false? (first %)) (partition 2 (interleave correctnesses (flatten (repeat height (range 0 width)))))))
+     wrong-ys (map second (filter #(some false? (first %)) (partition 2 (interleave (partition width correctnesses) (range height)))))
      min-x (apply min wrong-xs)
      max-x (apply max wrong-xs)
      min-y (apply min wrong-ys)
      max-y (apply max wrong-ys)]
     [[min-x min-y (inc (- max-x min-x)) (inc (- max-y min-y))]]))
      
+(defn make-candidate-filter [rows width last-move]
+  "Returns a predicate for candidate moves to indicate whether candidate makes sense in any move."
+  (fn [candidate]
+    (and 
+      (not= candidate last-move)
+      ; we assume it never makes sense to move only all-correct elements
+      (some false? (correctness-seq rows width candidate)))))    
 
-(defn- make-next-move-params-fn [rows]
+(defn- make-next-move-params-fn [rows width height]
   "Gets the rectangles for the next moves depending on depth."
-  (let [all-moves (subfield-param-sequence (width rows) (height rows))]
+  (let [all-moves (all-possible-moves width height)]
   (fn [rows depth max-depth solution-path]
     (let 
       [remaining-moves (- max-depth depth)
        candidates
          (if (= 2 remaining-moves)
-           (second-last-move rows all-moves)
+           (second-last-move rows width all-moves)
            (if (= 1 remaining-moves)
-             (last-move rows)
+             (last-move rows width height)
              all-moves))] ; otherwise, try all possible moves
-      (remove #(= (last solution-path) %) candidates))))) ; never undo the last step
-  
+      (filter (make-candidate-filter rows width (last solution-path)) candidates)))))  
 
-(defn- make-children-fn [rows]
+(defn- make-children-fn [rows width height]
   "Returns a function to be used as the children function in tree-seq; each node is a vector of a 
    playing field, its depth, the max. depth and the solution path (resulting from its parent nodes)."
-  (let [next-move-params-fn (make-next-move-params-fn rows)]
-    (fn [[rows depth max-depth solution-path]]
+  (let [next-move-params-fn (make-next-move-params-fn rows width height)]
+    (fn [[rows width height depth max-depth solution-path]]
           (pmap 
-            #(vector (move rows %1) (inc depth) max-depth (conj solution-path %1)) 
+            #(vector (move rows %1) width height (inc depth) max-depth (conj solution-path %1)) 
             (next-move-params-fn rows depth max-depth solution-path))))) 
 
-(defn- leaf? [[rows depth max-depth solution-path]]
+(defn- leaf? [[rows width height depth max-depth solution-path]]
   "A node is a leaf if it has max. depth or is a solution."
-  (or (= depth max-depth) (solved? rows))) 
+  (or (= depth max-depth) (solved? rows width height))) 
 
-(defn brute-force [rows max-depth]
+(defn brute-force [rows width height max-depth]
   "Generates a lazy sequence off possible move sequences with max. depth using tree-seq."
-  (tree-seq #(not (leaf? %)) (make-children-fn rows) [rows 0 max-depth []]))
+    (tree-seq #(not (leaf? %)) (make-children-fn rows width height) [rows width height 0 max-depth []]))
 
 (defn all-solutions [rows max-depth]
   "Returns a lazy sequence of all solution move sequences."
-  (map last (filter #(solved? (first %)) (brute-force rows max-depth))))
+  (let 
+    [width (count (first rows))
+    height (count rows)]
+    (map last (filter #(solved? (first %) width height) (brute-force rows width height max-depth)))))
   
 (defn first-solution [rows max-depth]
   "Returns the first found solution move sequence."
