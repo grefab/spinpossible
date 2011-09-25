@@ -5,12 +5,23 @@ java -jar spinpossible.jar
 Man muss das Programm mit "CTRL+C" abbrechen, nachdem es die beiden timings für erste/alle Lösungen ausgegeben hat, 
 da es dann anscheinend in einer Art clojure main loop festhängt.
 
+Unsinnige Züge werden nun im vorletzten und letzten Schritt nicht gemacht, damit sieht das ganze so aus
+(für die 1. bzw. alle Lösungen):
+
+java -server -Xms128m -Xmx128m -jar spinpossible.jar 
+"Elapsed time: 1842.236 msecs"
+[[0 1 2 1] [0 0 1 2] [1 1 2 1] [0 1 2 1]]
+"Elapsed time: 3464.913 msecs"
+([[0 1 2 1] [0 0 1 2] [1 1 2 1] [0 1 2 1]] [[0 1 2 1] [1 1 2 1] [0 0 1 2] [0 1 2 1]])
+
+
+Ergebnisse der 1. Version:
+
 Beste Ergebnisse bei mir mit 4 GB ram:
 
 java -server -Xms4096m -Xmx4096m -jar spinpossible.jar 
 "Elapsed time: 8129.482 msecs"
-"Elapsed time: 24956.509 msecs"
- 
+"Elapsed time: 24956.509 msecs" 
  
 Es läuft gerade noch durch mit 128 MB:
 

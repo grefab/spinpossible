@@ -56,15 +56,64 @@
 (defn height [rows]
   "Returns the height of the playing field."
   (count rows))
- 
+
+(defn- correct? [rows x y]
+  "Returns true iff the element at x,y is at the right place and orientation"
+  (= 
+    (+ (inc x) (* y (width rows)))
+      (nth (nth rows y) x)))
+
+(defn- correctness-seq [rows [x y w h]]
+  "Returns a lazy sequence of booleans indicating whether the elements in the given subfield are correct.
+   Order is left-to-right top-down."
+  (for [yi (range y (+ y h)) xi (range x (+ x w))]
+    (correct? rows xi yi)))
+
+(defn- second-last-move [rows all-moves]
+  "In the second-last move, all elements which at the right place and orientation
+   must be excluded"
+   (filter #(every? not (correctness-seq rows %)) all-moves))  
+
+(defn- last-move [rows]
+  "In the last move, all elements that are not at the right place and orientation 
+   must be included. All others must be excluded. Here, we just take the bounding
+   box of not yet correct elements."
+  (let 
+    [w (width rows) 
+     h (height rows)
+     correctnesses (correctness-seq rows [0 0 w h]) 
+     wrong-xs (map second (filter #(false? (first %)) (partition 2 (interleave correctnesses (flatten (repeat h (range 0 w)))))))
+     wrong-ys (map second (filter #(some false? (first %)) (partition 2 (interleave (partition w correctnesses) (range h)))))
+     min-x (apply min wrong-xs)
+     max-x (apply max wrong-xs)
+     min-y (apply min wrong-ys)
+     max-y (apply max wrong-ys)]
+    [[min-x min-y (inc (- max-x min-x)) (inc (- max-y min-y))]]))
+     
+
+(defn- make-next-move-params-fn [rows]
+  "Gets the rectangles for the next moves depending on depth."
+  (let [all-moves (subfield-param-sequence (width rows) (height rows))]
+  (fn [rows depth max-depth solution-path]
+    (let 
+      [remaining-moves (- max-depth depth)
+       candidates
+         (if (= 2 remaining-moves)
+           (second-last-move rows all-moves)
+           (if (= 1 remaining-moves)
+             (last-move rows)
+             all-moves))] ; otherwise, try all possible moves
+      (remove #(= (last solution-path) %) candidates))))) ; never undo the last step
+  
+
 (defn- make-children-fn [rows]
   "Returns a function to be used as the children function in tree-seq; each node is a vector of a 
    playing field, its depth, the max. depth and the solution path (resulting from its parent nodes)."
-  (let [subfield-params (subfield-param-sequence (width rows) (height rows))]
+  (let [next-move-params-fn (make-next-move-params-fn rows)]
     (fn [[rows depth max-depth solution-path]]
-      (pmap 
-        #(vector (move rows %1) (inc depth) max-depth (conj solution-path %1)) 
-        (remove #(= (last solution-path) %) subfield-params))))) ; don't undo the last step
+          (pmap 
+            #(vector (move rows %1) (inc depth) max-depth (conj solution-path %1)) 
+            (next-move-params-fn rows depth max-depth solution-path))))) 
 
 (defn- leaf? [[rows depth max-depth solution-path]]
   "A node is a leaf if it has max. depth or is a solution."
