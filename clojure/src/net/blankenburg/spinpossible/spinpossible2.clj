@@ -105,10 +105,10 @@
                 [new-depth (inc depth)
                  new-seen-fields (conj seen-fields field)]
                 (apply concat
-                  (map-fn
+                  (pmap
                     #(walk (move field width height %) new-depth (conj path %) new-seen-fields map)
                     (filter disallowed-moves-filter-fn (moves-fn field depth (last path))))))))))]
-      (map second (filter #(solved? (first %) width height) (walk field 0 [] [] pmap)))))))
+      (map second (filter #(solved? (first %) width height) (walk field 0 [] [] map)))))))
 
     
 

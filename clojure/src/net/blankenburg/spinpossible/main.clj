@@ -21,7 +21,7 @@
         advanced-swap-2)]
     (do
       (println "Evaluating" (first problem) "times the field" (second problem) "with max. depth" (nth problem 2) 
-               (if (= (count problem) 5) " and filter function (last terms)." "."))
+               (if (= (count problem) 5) (str " and filter function " (last terms))))
       (println "First solution:")
 ;      (println (time (apply first-solution problem)))
       (dotimes [_ (first problem)] (println (time (first (apply solve (rest problem))))))
