@@ -85,7 +85,14 @@
         (if (= remaining-moves 2)
           (second-last-moves field width all-possible-moves)
           (last-moves field width height)))))))
-        
+
+(defn- make-map-fn []
+  (let [n (.. Runtime getRuntime availableProcessors)]
+    (fn [depth max-depth f s]
+      (if (= 4 (- max-depth depth))
+        (reduce concat (pmap #(doall (map f %)) (partition n n '() s)))
+        (map f s)))))
+
 (defn solve
   "Depth-first search for the solution; parallized only on the first level. A filter function for 
    disallowed elements can optionally be given."
@@ -95,20 +102,24 @@
   (let 
     [width (int width)
      height (int (/ (count field) width))
-     moves-fn (get-moves-fn width height max-depth)]
+     moves-fn (get-moves-fn width height max-depth)
+     map-fn (make-map-fn)]
     (letfn 
-      [(walk [field depth path seen-fields map-fn]
+      [(walk [field depth path seen-fields]
         (lazy-seq
           (cons [field path]
             (if (not (or (solved? field width height) (some #(= field %) seen-fields) (= depth max-depth)))
               (let 
                 [new-depth (inc depth)
                  new-seen-fields (conj seen-fields field)]
-                (apply concat
-                  (pmap
-                    #(walk (move field width height %) new-depth (conj path %) new-seen-fields map)
-                    (filter disallowed-moves-filter-fn (moves-fn field depth (last path))))))))))]
-      (map second (filter #(solved? (first %) width height) (walk field 0 [] [] map)))))))
+                (filter 
+                  #(solved? (first %) width height) 
+                  (apply 
+                    concat
+                    (map-fn depth max-depth
+                      #(walk (move field width height %) new-depth (conj path %) new-seen-fields)
+                      (filter disallowed-moves-filter-fn (moves-fn field depth (last path)))))))))))]
+      (rest (map second (walk field 0 [] [])))))))
 
     
 

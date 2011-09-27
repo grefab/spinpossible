@@ -27,7 +27,7 @@
       (dotimes [_ (first problem)] (println (time (first (apply solve (rest problem))))))
       (println "All solutions:")
 ;      (println (time (doall (apply all-solutions problem)))))))
-      (dotimes [_ (first problem)] (time (doseq [solution (apply solve (rest problem))] (println solution)))))))
+      (dotimes [_ (first problem)] (doseq [solution (time (doall (apply solve (rest problem))))] (println solution))))))
 
   
                
