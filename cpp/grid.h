@@ -11,12 +11,14 @@ class Grid
 
 public:
         Grid(int n, int m);
-
-        Grid(int n, int m, QList<Tile> data);
+	Grid(int n, int m, QList<Tile> data);
+	Grid(const Grid& rhs);
+	~Grid();
 
         void setIdeal();
         Grid permutated(const Spin& spin) const;
         bool operator ==(const Grid& rhs) const;
+	bool operator =(const Grid& rhs);
 
         void debugPrint();
 
@@ -28,7 +30,7 @@ private:
 
         int n_;
         int m_;
-        QList<Tile> data_;
+	Tile* data_;
 };
 
 #endif // GRID_H
