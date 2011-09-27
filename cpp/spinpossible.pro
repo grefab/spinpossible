@@ -17,4 +17,38 @@ CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O3
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    grid.cpp \
+    spin.cpp \
+    tile.cpp \
+    solver.cpp \
+    solver_dfs.cpp \
+    solver_bfs_mt.cpp \
+    solver_bfs.cpp \
+    solver_dfs_random.cpp
+
+HEADERS += \
+    grid.h \
+    spin.h \
+    tile.h \
+    solver.h \
+    solver_dfs.h \
+    solver_bfs_mt.h \
+    solver_bfs.h \
+    solver_dfs_random.h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
