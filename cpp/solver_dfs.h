@@ -3,6 +3,7 @@
 
 #include "solver.h"
 
+
 class Solver_DFS : public Solver
 {
 public:
@@ -10,6 +11,7 @@ public:
 
 private:
 	bool traverse(const Grid& g, int depth, int maxDepth);
+	QList<Spin> getAvailableSpins(const Grid& g, int depth, int maxDepth) const;
 
 	QList<Spin> result;
 

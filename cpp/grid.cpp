@@ -1,5 +1,14 @@
 #include "grid.h"
 
+static const Grid idealGrid(3,3);
+
+Grid::Grid() :
+	n_(0),
+	m_(0)
+{
+	data_ = NULL;
+}
+
 Grid::Grid(int n, int m) :
 	n_(n),
 	m_(m)
@@ -69,6 +78,42 @@ Grid Grid::permutated(const Spin& spin) const {
 	return g;
 }
 
+Spin Grid::boundingBoxOfMisplacedElements() const
+{
+	QRect r;
+
+	for(int y = 0; y < n_; ++y) {
+		for(int x = 0; x < m_; ++x) {
+			if( !isTileCorrect(x,y) ) {
+				r = r.united(Spin(x, y, 1, 1));
+			}
+		}
+	}
+
+	return r;
+
+}
+
+bool Grid::containsCorrectElements(const Spin& spin) const
+{
+	for(int y = spin.y(); y < spin.y() + spin.height(); ++y) {
+		for(int x = spin.x(); x < spin.x() + spin.width(); ++x) {
+			if ( isTileCorrect(x, y) ) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+bool Grid::isTileCorrect(int x, int y) const
+{
+	int i = indexFromPoint(QPoint(x, y));
+	return data_[i] == idealGrid.data_[i];
+}
+
+
 bool Grid::operator ==(const Grid& rhs) const {
 	for(int i = 0; i < n_*m_; ++i) {
 		if( data_[i] != rhs.data_[i] ) {
@@ -79,13 +124,15 @@ bool Grid::operator ==(const Grid& rhs) const {
 	return true;
 }
 
-bool Grid::operator =(const Grid& rhs) {
+Grid& Grid::operator =(const Grid& rhs) {
 	n_ = rhs.n_;
 	m_ = rhs.m_;
 
 	for(int i = 0; i < n_*m_; ++i) {
 		data_[i] = rhs.data_[i];
 	}
+
+	return *this;
 }
 
 void Grid::debugPrint() {
@@ -121,4 +168,3 @@ void Grid::swap(int i1, int i2) {
 void Grid::flip(int i) {
 	data_[i].number_ = -data_[i].number_;
 }
-

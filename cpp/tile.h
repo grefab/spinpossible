@@ -6,10 +6,10 @@ struct Tile {
 		number_(0)
 	{}
 
-        Tile(int number, bool up)
-        {
-            number_ = up ? number : -number;
-        }
+	Tile(int number, bool up)
+	{
+		number_ = up ? number : -number;
+	}
 
 	bool operator ==(const Tile& rhs) const {
 		return number_ == rhs.number_;
