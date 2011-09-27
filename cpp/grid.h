@@ -20,6 +20,7 @@ public:
 	bool containsCorrectElements(const Spin& spin) const;
 
 	bool operator ==(const Grid& rhs) const;
+	bool operator <(const Grid& rhs) const;
 	Grid& operator =(const Grid& rhs);
 
         void debugPrint();

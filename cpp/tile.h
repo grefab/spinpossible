@@ -19,6 +19,10 @@ struct Tile {
 		return number_ != rhs.number_;
 	}
 
+	bool operator <(const Tile& rhs) const {
+		return number_ < rhs.number_;
+	}
+
 	int number_;
 };
 
