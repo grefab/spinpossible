@@ -253,8 +253,8 @@ int main(int argc, char *argv[])
 	Grid grid_mareike(3, 3, tiles);
 
 
-//	Grid gp = grid_gregor;
-	Grid gp = grid_mareike;
+//        Grid gp = grid_gregor;
+        Grid gp = grid_mareike;
 
 	qDebug() << "started...";
 	QTime time;
@@ -285,21 +285,21 @@ int main(int argc, char *argv[])
 //	}
 
 	/* DFS */
-//	int maxDepth = 1;
-//	bool found = false;
-//	while(!found) {
-//		qDebug() << "max depth" << maxDepth;
-//		found = traverse(gp, 0, maxDepth);
-//		++maxDepth;
-//	}
+        int maxDepth = 1;
+        bool found = false;
+        while(!found) {
+                qDebug() << "max depth" << maxDepth;
+                found = traverse(gp, 0, maxDepth);
+                ++maxDepth;
+        }
 
 	/* random search */
-	while(true) {
-		bool found = randomTraverse(gp, 0, 5);
-		if ( found ) {
-			break;
-		}
-	}
+//	while(true) {
+//		bool found = randomTraverse(gp, 0, 5);
+//		if ( found ) {
+//			break;
+//		}
+//	}
 
 	int elapsedMs = time.elapsed();
 	qDebug() << "done. took" << (double)elapsedMs / 1000.0 << "s";
