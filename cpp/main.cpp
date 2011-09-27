@@ -8,7 +8,7 @@
 
 #include <QDebug>
 
-int main(int argc, char *argv[])
+Grid getGrid()
 {
 	QList<Tile> tiles;
 	/* gregors problem */
@@ -37,17 +37,40 @@ int main(int argc, char *argv[])
 	tiles.append(Tile(9, true));
 	Grid grid_mareike(3, 3, tiles);
 
+	return grid_mareike;
+}
+
+double run(const Grid& grid);
+
+int main(int argc, char *argv[])
+{
+	srand ( time(NULL) );
+
+	Grid grid = getGrid();
+
+	QList<double> times;
+	for(int i = 0; i < 10; ++i) {
+		times << run(grid);
+	}
+
+	qDebug() << "final times:" << times;
+
+	return 0;
+}
+
+double run(const Grid& grid)
+{
 	qDebug() << "started...";
 	QTime time;
 	time.start();
 
-	Solver* solver = new Solver_DFS();
-	QList<Spin> result = solver->findSolution(grid_mareike);
+	Solver_DFS solver;
+	QList<Spin> result = solver.findSolution(grid);
 	qDebug() << result;
-	delete solver;
 
 	int elapsedMs = time.elapsed();
-	qDebug() << "done. took" << (double)elapsedMs / 1000.0 << "s";
+	double duration = (double)elapsedMs / 1000.0;
+	qDebug() << "done. took" << duration << "s";
 
-	return 0;
+	return duration;
 }
