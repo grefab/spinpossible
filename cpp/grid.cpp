@@ -127,11 +127,14 @@ bool Grid::operator ==(const Grid& rhs) const {
 bool Grid::operator <(const Grid& rhs) const {
 	for(int i = 0; i < n_*m_; ++i) {
 		if( data_[i] < rhs.data_[i] ) {
+			return true;
+		}
+		if( data_[i] > rhs.data_[i] ) {
 			return false;
 		}
 	}
 
-	return true;
+	return false;
 }
 
 Grid& Grid::operator =(const Grid& rhs) {

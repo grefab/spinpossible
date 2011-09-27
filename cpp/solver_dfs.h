@@ -14,7 +14,7 @@ private:
 	QList<Spin> getAvailableSpins(const Grid& g, int depth, int maxDepth) const;
 
 	QList<Spin> result;
-
+	QMap<Grid, int> beenThere;
 };
 
 #endif // SOLVER_DFS_H

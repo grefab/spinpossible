@@ -8,6 +8,16 @@ bool Solver_DFS::traverse(const Grid& g, int depth, int maxDepth)
 		return true;
 	}
 
+	if ( beenThere.contains(g) ) {
+		int foundAtLevel = beenThere[g];
+
+		if ( foundAtLevel <= depth ) {
+			return false;
+		}
+	}
+
+	beenThere.insert(g, depth);
+
 	if( depth < maxDepth ) {
 		QList<Spin> availableSpins = getAvailableSpins(g, depth, maxDepth);
 
@@ -56,6 +66,9 @@ QList<Spin> Solver_DFS::findSolution(const Grid &problemGrid)
 	int maxDepth = 1;
 	bool found = false;
 	while(!found) {
+		qDebug() << "already visited" << beenThere.size();
+		beenThere.clear();
+
 		qDebug() << "max depth" << maxDepth;
 		found = traverse(problemGrid, 0, maxDepth);
 		++maxDepth;
