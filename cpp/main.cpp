@@ -2,10 +2,7 @@
 #include "grid.h"
 #include "tile.h"
 
-#include "solver_bfs.h"
-#include "solver_bfs_mt.h"
 #include "solver_dfs.h"
-#include "solver_dfs_random.h"
 
 #include <QTime>
 

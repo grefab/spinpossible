@@ -12,7 +12,7 @@ TARGET = spinpossible
 CONFIG   += console
 CONFIG   -= app_bundle
 
-CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O3
+CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O9
 
 TEMPLATE = app
 
@@ -23,9 +23,9 @@ SOURCES += main.cpp \
     tile.cpp \
     solver.cpp \
     solver_dfs.cpp \
-    solver_bfs_mt.cpp \
-    solver_bfs.cpp \
-    solver_dfs_random.cpp
+#    solver_bfs_mt.cpp \
+#    solver_bfs.cpp \
+#    solver_dfs_random.cpp
 
 HEADERS += \
     grid.h \
@@ -33,9 +33,9 @@ HEADERS += \
     tile.h \
     solver.h \
     solver_dfs.h \
-    solver_bfs_mt.h \
-    solver_bfs.h \
-    solver_dfs_random.h
+ #   solver_bfs_mt.h \
+ #   solver_bfs.h \
+ #   solver_dfs_random.h
 
 
 
