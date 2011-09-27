@@ -86,7 +86,7 @@
       ; we assume it never makes sense to move only all-correct elements
       (some false? (correctness-seq rows width candidate)))))    
 
-(defn- make-next-move-params-fn [rows width height]
+(defn- make-next-move-params-fn [rows width height disallowed-moves-filter]
   "Gets the rectangles for the next moves depending on depth."
   (let [all-moves (all-possible-moves width height)]
   (fn [rows depth max-depth solution-path]
@@ -98,33 +98,45 @@
            (if (= 1 remaining-moves)
              (last-move rows width height)
              all-moves))] ; otherwise, try all possible moves
-      (filter (make-candidate-filter rows width (last solution-path)) candidates)))))  
+      (filter disallowed-moves-filter 
+        (filter (make-candidate-filter rows width (second (last solution-path))) candidates))))))  
 
-(defn- make-children-fn [rows width height]
+(defn- make-children-fn [rows width height disallowed-moves-filter]
   "Returns a function to be used as the children function in tree-seq; each node is a vector of a 
    playing field, its depth, the max. depth and the solution path (resulting from its parent nodes)."
-  (let [next-move-params-fn (make-next-move-params-fn rows width height)]
-    (fn [[rows width height depth max-depth solution-path]]
+  (let [next-move-params-fn (make-next-move-params-fn rows width height disallowed-moves-filter)]
+    (fn [[rows depth max-depth solution-path]]
           (pmap 
-            #(vector (move rows %1) width height (inc depth) max-depth (conj solution-path %1)) 
+            #(vector (move rows %1) (inc depth) max-depth (conj solution-path [rows %1])) 
             (next-move-params-fn rows depth max-depth solution-path))))) 
 
-(defn- leaf? [[rows width height depth max-depth solution-path]]
-  "A node is a leaf if it has max. depth or is a solution."
-  (or (= depth max-depth) (solved? rows width height))) 
+(defn- make-leaf-fn [width height]
+  (fn [[rows depth max-depth solution-path]]
+    "A node is a leaf if it has max. depth, the field has been seen before or is a solution."
+    (or 
+      (= depth max-depth)
+      (some #(= rows %) (map first (butlast solution-path)))
+      (solved? rows width height)))) 
 
-(defn brute-force [rows width height max-depth]
+(defn brute-force [rows width height max-depth disallowed-moves-filter]
   "Generates a lazy sequence off possible move sequences with max. depth using tree-seq."
-    (tree-seq #(not (leaf? %)) (make-children-fn rows width height) [rows width height 0 max-depth []]))
+    (tree-seq #(not ((make-leaf-fn width height) %)) (make-children-fn rows width height disallowed-moves-filter) [rows 0 max-depth []]))
 
-(defn all-solutions [rows max-depth]
+(defn all-solutions 
   "Returns a lazy sequence of all solution move sequences."
-  (let 
-    [width (count (first rows))
-    height (count rows)]
-    (map last (filter #(solved? (first %) width height) (brute-force rows width height max-depth)))))
-  
-(defn first-solution [rows max-depth]
+  ([rows max-depth]
+    (all-solutions rows max-depth (constantly true)))
+  ([rows max-depth disallowed-moves-filter]
+    (let 
+      [width (count (first rows))
+      height (count rows)]
+      (map #(map second %) (map last (filter #(solved? (first %) width height) (brute-force rows width height max-depth disallowed-moves-filter)))))))
+    
+(defn first-solution 
   "Returns the first found solution move sequence."
-  (first (all-solutions rows max-depth)))
+  ([rows max-depth]
+    (first (all-solutions rows max-depth)))
+  ([rows max-depth disallowed-moves-filter]
+    (first (all-solutions rows max-depth disallowed-moves-filter))))
+
 
