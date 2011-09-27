@@ -11,11 +11,6 @@
 
 #include <QDebug>
 
-
-
-
-
-
 int main(int argc, char *argv[])
 {
 	QList<Tile> tiles;
@@ -44,8 +39,6 @@ int main(int argc, char *argv[])
 	tiles.append(Tile(6, true));
 	tiles.append(Tile(9, true));
 	Grid grid_mareike(3, 3, tiles);
-
-
 
 	qDebug() << "started...";
 	QTime time;
