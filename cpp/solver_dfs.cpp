@@ -35,6 +35,17 @@ bool Solver_DFS::traverse(const Grid& g, int depth, int maxDepth)
 	return false;
 }
 
+QList<Spin> randomized(const QList<Spin>& list) {
+	QList<Spin> result = list;
+
+	for( int i = 0; i < list.length(); ++i ) {
+		int j = rand() % list.length();
+		result.swap(i, j);
+	}
+
+	return result;
+}
+
 QList<Spin> Solver_DFS::getAvailableSpins(const Grid& g, int depth, int maxDepth) const
 {
 	if ( depth == maxDepth -1 ) {
@@ -57,7 +68,7 @@ QList<Spin> Solver_DFS::getAvailableSpins(const Grid& g, int depth, int maxDepth
 	}
 
 	/* no optimization possibility fond; try everything. */
-	return allSpins;
+	return randomized(allSpins);
 }
 
 QList<Spin> Solver_DFS::findSolution(const Grid &problemGrid)
