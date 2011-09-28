@@ -48,9 +48,8 @@ Grid getGrid()
 	tiles.append(Tile(3, true));
 	tiles.append(Tile(6, false));
 	tiles.append(Tile(9, true));
-	Grid grid_l6(3, 3, tiles);
+	Grid grid_l6_1(3, 3, tiles);
 
-	/* level X problem */
 	tiles.clear();
 	tiles.append(Tile(1, true));
 	tiles.append(Tile(2, false));
@@ -61,9 +60,9 @@ Grid getGrid()
 	tiles.append(Tile(3, true));
 	tiles.append(Tile(6, false));
 	tiles.append(Tile(9, true));
-	Grid grid_lx(3, 3, tiles);
+	Grid grid_l6_2(3, 3, tiles);
 
-	return grid_lx;
+	return grid_l6_2;
 }
 
 double run(const Grid& grid);
@@ -75,11 +74,15 @@ int main(int argc, char *argv[])
 	Grid grid = getGrid();
 
 	QList<double> times;
-	for(int i = 0; i < 10; ++i) {
-		times << run(grid);
+	double timeSum = 0.0f;
+	int i;
+	for(i = 0; i < 10; ++i) {
+		double lastTime = run(grid);
+		timeSum += lastTime;
+		times << lastTime;
 	}
 
-	qDebug() << "final times:" << times;
+	qDebug() << "avg. time:" << timeSum / i << "s;" << "final times:" << times;
 
 	return 0;
 }

@@ -84,8 +84,11 @@ QList<Spin> Solver_DFS::findSolution(const Grid &problemGrid)
 
 //		qDebug() << "max depth" << maxDepth;
 		found = traverse(problemGrid, 0, maxDepth);
+
 		++maxDepth;
 	}
+
+	qDebug() << "visited" << beenThere.size() << "nodes";
 
 	return result;
 }
