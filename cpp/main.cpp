@@ -22,7 +22,67 @@ Grid getGrid()
 	tiles.append(Tile(7, true));
 	tiles.append(Tile(8, true));
 	tiles.append(Tile(9, true));
-	Grid grid_gregor(3, 3, tiles);
+	Grid grid_advanced_swaps_2(3, 3, tiles);
+
+	tiles.clear();
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(5, true));
+	tiles.append(Tile(6, true));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(9, true));
+	Grid grid_advanced_swaps_3(3, 3, tiles);
+
+	tiles.clear();
+	tiles.append(Tile(5, true));
+	tiles.append(Tile(6, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(9, true));
+	Grid grid_advanced_swaps_4(3, 3, tiles);
+
+	tiles.clear();
+	tiles.append(Tile(9, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(5, true));
+	tiles.append(Tile(8, false));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(6, false));
+	tiles.append(Tile(1, true));
+	Grid grid_advanced_swaps_5(3, 3, tiles);
+
+	tiles.clear();
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(6, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(9, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(5, true));
+	Grid grid_advanced_swaps_6(3, 3, tiles);
+
+	tiles.clear();
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(5, true));
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(6, true));
+	tiles.append(Tile(9, true));
+	Grid grid_advanced_swaps_7(3, 3, tiles);
 
 	/* mareikes problem */
 	tiles.clear();
