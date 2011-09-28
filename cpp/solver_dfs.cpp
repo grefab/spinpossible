@@ -52,6 +52,8 @@ QList<Spin> Solver_DFS::getAvailableSpins(const Grid& g, int depth, int maxDepth
 		/* only return bounding box of broken spins */
 		QList<Spin> result;
 		result.append(g.boundingBoxOfMisplacedElements());
+
+		return result;
 	}
 
 	if ( depth == maxDepth -2 ) {
