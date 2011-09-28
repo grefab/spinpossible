@@ -37,7 +37,33 @@ Grid getGrid()
 	tiles.append(Tile(9, true));
 	Grid grid_mareike(3, 3, tiles);
 
-	return grid_mareike;
+	/* level 6 problem */
+	tiles.clear();
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(2, true));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(5, true));
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(6, false));
+	tiles.append(Tile(9, true));
+	Grid grid_l6(3, 3, tiles);
+
+	/* level X problem */
+	tiles.clear();
+	tiles.append(Tile(1, true));
+	tiles.append(Tile(2, false));
+	tiles.append(Tile(7, true));
+	tiles.append(Tile(4, true));
+	tiles.append(Tile(5, false));
+	tiles.append(Tile(8, true));
+	tiles.append(Tile(3, true));
+	tiles.append(Tile(6, false));
+	tiles.append(Tile(9, true));
+	Grid grid_lx(3, 3, tiles);
+
+	return grid_lx;
 }
 
 double run(const Grid& grid);
