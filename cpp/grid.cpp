@@ -1,5 +1,10 @@
 #include "grid.h"
 
+#include <QString>
+
+#include <QDebug>
+
+
 static const Grid idealGrid(3,3);
 
 Grid::Grid() :
@@ -151,16 +156,13 @@ Grid& Grid::operator =(const Grid& rhs) {
 void Grid::debugPrint() {
 	int i = 0;
 	for(int y = 0; y < n_; ++y) {
+		QString s;
 		for(int x = 0; x < m_; ++x, ++i) {
-			printf("%d", data_[i].number_);
-			if(data_[i].number_ < 0) {
-				printf("! ");
-			} else {
-				printf("  ");
-			}
+//			if(x > 0 )
+//				s += data_[i].number_ < 0 ? QString(" ") : QString("  ");
+			s += QString::number(data_[i].number_) + " ";
 		}
-
-		printf("\n");
+		qDebug() << s;
 	}
 }
 
@@ -180,4 +182,22 @@ void Grid::swap(int i1, int i2) {
 
 void Grid::flip(int i) {
 	data_[i].number_ = -data_[i].number_;
+}
+
+Grid Grid::random() const
+{
+	Grid g(n_, m_);
+
+	for(int i = 0; i < n_ * m_; ++i) {
+		int rnd = rand() % (n_ * m_);
+		g.swap(i, rnd);
+	}
+
+	for(int i = 0; i < n_ * m_; ++i) {
+		bool rnd = rand() % 2;
+		if ( rnd )
+			g.data_[i].number_ = -g.data_[i].number_;
+	}
+
+	return g;
 }

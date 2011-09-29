@@ -16,6 +16,8 @@ public:
 	~Grid();
 
         Grid permutated(const Spin& spin) const;
+	Grid random() const;
+
 	Spin boundingBoxOfMisplacedElements() const;
 	bool containsCorrectElements(const Spin& spin) const;
 

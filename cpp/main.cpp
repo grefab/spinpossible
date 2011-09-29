@@ -122,7 +122,8 @@ Grid getGrid()
 	tiles.append(Tile(9, true));
 	Grid grid_l6_2(3, 3, tiles);
 
-	return grid_l6_2;
+
+	return Grid(3,3).random();
 }
 
 double run(const Grid& grid);
@@ -131,12 +132,14 @@ int main(int argc, char *argv[])
 {
 	srand ( time(NULL) );
 
-	Grid grid = getGrid();
-
 	QList<double> times;
 	double timeSum = 0.0f;
 	int i;
-	for(i = 0; i < 10; ++i) {
+	for(i = 0; i < 1000; ++i) {
+		Grid grid = getGrid();
+		qDebug() << "solving this grid:";
+		grid.debugPrint();
+
 		double lastTime = run(grid);
 		timeSum += lastTime;
 		times << lastTime;
