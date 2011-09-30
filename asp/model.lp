@@ -1,10 +1,11 @@
 #const n=3. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..9). 
-#hide.
+k(1..6). 
+#hide. 
+#show move/5. 
 
-1 { move(K,X,Y,R,D) : c(X;Y) : R=0..3-X : D=0..3-Y } 1 :- k(K). 
+{ move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
 move(K) :- move(K,_,_,_,_).
 
@@ -37,21 +38,25 @@ table(K+1,X,Y,V) :-
     table(K,X,Y,V), 
     not switch(K+1,X,Y). 
 
-table(1,X,Y,V) :- init(X,Y,V). 
+table(0,X,Y,V) :- init(X,Y,V). 
 
 ok(K,X,Y) :-  V = (n*(Y-1)+X), table(K,X,Y,V).
 
 :- K>1, move(K), not move(K-1). 
 final(M) :- k(M), M = #max[move(K)=K:k(K)].
-:- final(K), c(X;Y), not ok(K,X,Y).  
+:- final(K), not ok(K,X,Y),  c(X;Y). 
+:- not 1 { final(K) : k(K) } 1. 
 
-init(1,1,-1). 
-init(1,2,-2). 
-init(2,3,3). 
-init(2,1,4). 
-init(2,2,-5). 
-init(3,3,6). 
-init(3,1,-7). 
-init(3,2,8). 
-init(3,3,9). 
+#minimize[move(_)].
+
+%grep level 6
+init(1,1,1).
+init(2,1,2).
+init(3,1,7).
+init(1,2,4).
+init(2,2,5).
+init(3,2,8).
+init(1,3,3).
+init(2,3,-6).
+init(3,3,9).
 
