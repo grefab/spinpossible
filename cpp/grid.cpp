@@ -52,7 +52,7 @@ Grid::~Grid()
 
 void Grid::setIdeal() {
 	for(int i = 0; i < n_ * m_; ++i) {
-		data_[i] = Tile(i+1, true);
+		data_[i] = make_tile(i+1, true);
 	}
 }
 
@@ -160,7 +160,7 @@ void Grid::debugPrint() {
 		for(int x = 0; x < m_; ++x, ++i) {
 //			if(x > 0 )
 //				s += data_[i].number_ < 0 ? QString(" ") : QString("  ");
-			s += QString::number(data_[i].number_) + " ";
+			s += QString::number(data_[i]) + " ";
 		}
 		qDebug() << s;
 	}
@@ -181,7 +181,7 @@ void Grid::swap(int i1, int i2) {
 }
 
 void Grid::flip(int i) {
-	data_[i].number_ = -data_[i].number_;
+	data_[i] = -data_[i];
 }
 
 Grid Grid::random() const
@@ -196,7 +196,7 @@ Grid Grid::random() const
 	for(int i = 0; i < n_ * m_; ++i) {
 		bool rnd = rand() % 2;
 		if ( rnd )
-			g.data_[i].number_ = -g.data_[i].number_;
+			g.data_[i] = -g.data_[i];
 	}
 
 	return g;

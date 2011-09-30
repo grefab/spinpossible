@@ -1,33 +1,37 @@
 #ifndef TILE_H
 #define TILE_H
 
-struct Tile {
-	Tile() :
-		number_(0)
-	{}
+typedef int Tile;
 
-	Tile(int number, bool up)
-	{
-		number_ = up ? number : -number;
-	}
+Tile make_tile(int number, bool up);
 
-	bool operator ==(const Tile& rhs) const {
-		return number_ == rhs.number_;
-	}
+//struct Tile {
+//	Tile() :
+//		number_(0)
+//	{}
 
-	bool operator !=(const Tile& rhs) const {
-		return number_ != rhs.number_;
-	}
+//	Tile(int number, bool up)
+//	{
+//		number_ = up ? number : -number;
+//	}
 
-	bool operator <(const Tile& rhs) const {
-		return number_ < rhs.number_;
-	}
+//	bool operator ==(const Tile& rhs) const {
+//		return number_ == rhs.number_;
+//	}
 
-	bool operator >(const Tile& rhs) const {
-		return number_ > rhs.number_;
-	}
+//	bool operator !=(const Tile& rhs) const {
+//		return number_ != rhs.number_;
+//	}
 
-	int number_;
-};
+//	bool operator <(const Tile& rhs) const {
+//		return number_ < rhs.number_;
+//	}
+
+//	bool operator >(const Tile& rhs) const {
+//		return number_ > rhs.number_;
+//	}
+
+//	int number_;
+//};
 
 #endif // TILE_H
