@@ -21,13 +21,17 @@ public:
 	Spin boundingBoxOfMisplacedElements() const;
 	bool containsCorrectElements(const Spin& spin) const;
 
+	uint getHash() const;
+
 	bool operator ==(const Grid& rhs) const;
 	bool operator <(const Grid& rhs) const;
-	Grid& operator =(const Grid& rhs);
+//	Grid& operator =(const Grid& rhs);
 
         void debugPrint();
 
 private:
+	Grid& operator=(const Grid& rhs);
+
 	void setIdeal();
 
 	int indexFromPoint(const QPoint& point) const;
@@ -37,9 +41,12 @@ private:
 
 	bool isTileCorrect(int x, int y) const;
 
+	void updateHash();
+
         int n_;
         int m_;
 	Tile* data_;
+	uint hash_;
 };
 
 #endif // GRID_H

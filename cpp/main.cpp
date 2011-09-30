@@ -123,8 +123,8 @@ Grid getGrid()
 	Grid grid_l6_2(3, 3, tiles);
 
 
-//	return Grid(3,3).random();
-	return grid_l6_2;
+	return Grid(3,3).random();
+//	return grid_l6_2;
 }
 
 double run(const Grid& grid);

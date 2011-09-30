@@ -8,15 +8,15 @@ bool Solver_DFS::traverse(const Grid& g, int depth, int maxDepth)
 		return true;
 	}
 
-	if ( beenThere.contains(g) ) {
-		int foundAtLevel = beenThere[g];
+	if ( beenThere.contains(g.getHash()) ) {
+		int foundAtLevel = beenThere[g.getHash()];
 
 		if ( foundAtLevel <= depth ) {
 			return false;
 		}
 	}
 
-	beenThere.insert(g, depth);
+	beenThere[g.getHash()] = depth;
 
 	if( depth < maxDepth ) {
 		QList<Spin> availableSpins = getAvailableSpins(g, depth, maxDepth);

@@ -20,6 +20,7 @@ Grid::Grid(int n, int m) :
 {
 	data_ = new Tile[n*m];
 	setIdeal();
+	updateHash();
 }
 
 Grid::Grid(int n, int m, QList<Tile> data) :
@@ -31,12 +32,15 @@ Grid::Grid(int n, int m, QList<Tile> data) :
 	for(int i = 0; i < data.length(); ++i) {
 		data_[i] = data[i];
 	}
+
+	updateHash();
 }
 
 Grid::Grid(const Grid& rhs)
 {
 	n_ = rhs.n_;
 	m_ = rhs.m_;
+	hash_ = rhs.hash_;
 
 	data_ = new Tile[n_*m_];
 
@@ -80,6 +84,7 @@ Grid Grid::permutated(const Spin& spin) const {
 		--j;
 	}
 
+	g.updateHash();
 	return g;
 }
 
@@ -145,6 +150,7 @@ bool Grid::operator <(const Grid& rhs) const {
 Grid& Grid::operator =(const Grid& rhs) {
 	n_ = rhs.n_;
 	m_ = rhs.m_;
+	hash_ = rhs.hash_;
 
 	for(int i = 0; i < n_*m_; ++i) {
 		data_[i] = rhs.data_[i];
@@ -158,12 +164,11 @@ void Grid::debugPrint() {
 	for(int y = 0; y < n_; ++y) {
 		QString s;
 		for(int x = 0; x < m_; ++x, ++i) {
-//			if(x > 0 )
-//				s += data_[i].number_ < 0 ? QString(" ") : QString("  ");
 			s += QString::number(data_[i]) + " ";
 		}
 		qDebug() << s;
 	}
+	qDebug() << "hash:" << hash_;
 }
 
 int Grid::indexFromPoint(const QPoint& point) const {
@@ -196,8 +201,44 @@ Grid Grid::random() const
 	for(int i = 0; i < n_ * m_; ++i) {
 		bool rnd = rand() % 2;
 		if ( rnd )
-			g.data_[i] = -g.data_[i];
+			g.flip(i);
 	}
 
+	g.updateHash();
 	return g;
+}
+
+uint Grid::getHash() const
+{
+	return hash_;
+}
+
+void Grid::updateHash()
+{
+	/* create a list of all tiles we need to consider */
+	QList<Tile> tiles;
+	for( int i = -n_*m_; i < n_*m_; ++i ) {
+		if ( i != 0 ) {
+			tiles.append(i+1);
+		}
+	}
+
+	uint remainingPositions = n_ * m_;
+	uint hash = 0;
+
+	for( int i = 0; i < n_*m_; ++i ) {
+		Tile current = data_[i];
+
+		/* update our hash */
+		hash += tiles.indexOf(current);
+
+		/* shl according to remaining positions */
+		hash *= remainingPositions * 2;
+		--remainingPositions;
+
+		tiles.removeOne(current);
+		tiles.removeOne(-current);
+	}
+
+	hash_ = hash;
 }
