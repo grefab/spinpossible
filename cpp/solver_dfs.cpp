@@ -1,32 +1,37 @@
 #include "solver_dfs.h"
 
 
-bool Solver_DFS::traverse(const Grid& g, int depth, int maxDepth)
+bool Solver_DFS::traverse(const Grid& originalGrid, const Spin& spinToPerform, int depth, int maxDepth)
 {
-	if ( g == idealGrid ) {
+	Grid permutatedGrid = originalGrid.permutated(spinToPerform);
+
+	if ( permutatedGrid == idealGrid ) {
 		qDebug() << "Found at level" << depth;
 		return true;
 	}
 
-	if ( beenThere.contains(g.getHash()) ) {
-		int foundAtLevel = beenThere[g.getHash()];
+	if ( beenThere.contains(permutatedGrid.getHash()) ) {
+		int foundAtLevel = beenThere[permutatedGrid.getHash()];
 
 		if ( foundAtLevel <= depth ) {
 			return false;
 		}
 	}
 
-	beenThere[g.getHash()] = depth;
+	beenThere[permutatedGrid.getHash()] = depth;
 
 	if( depth < maxDepth ) {
-		QList<Spin> availableSpins = getAvailableSpins(g, depth, maxDepth);
+		QList<Spin> availableSpins = getAvailableSpins(permutatedGrid, depth, maxDepth);
 
-		foreach(const Spin& spin, availableSpins) {
-			Grid permutatedGrid = g.permutated(spin);
+		foreach(const Spin& nextSpin, availableSpins) {
+			if ( nextSpin.contains(spinToPerform) ) {
+				/* omit spins that contain ourselves. we will get to this point somewhere else in the tree. */
+				continue;
+			}
 
-			bool found = traverse(permutatedGrid, depth +1, maxDepth);
+			bool found = traverse(permutatedGrid, nextSpin, depth +1, maxDepth);
 			if ( found ) {
-				result << spin;
+				result << nextSpin;
 				return true;
 			}
 		}
@@ -71,6 +76,7 @@ QList<Spin> Solver_DFS::getAvailableSpins(const Grid& g, int depth, int maxDepth
 
 	/* no optimization possibility fond; try everything. */
 	return randomized(allSpins);
+//	return allSpins;
 }
 
 QList<Spin> Solver_DFS::findSolution(const Grid &problemGrid)
@@ -83,7 +89,7 @@ QList<Spin> Solver_DFS::findSolution(const Grid &problemGrid)
 		beenThere.clear();
 
 //		qDebug() << "max depth" << maxDepth;
-		found = traverse(problemGrid, 0, maxDepth);
+		found = traverse(problemGrid, Spin(), 0, maxDepth);
 
 		++maxDepth;
 	}
