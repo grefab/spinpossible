@@ -121,10 +121,9 @@
                  new-seen-fields (conj seen-fields field)]
                 (filter 
                   #(solved? (first %) width height) 
-                  (apply concat 
-                    (map-fn depth max-depth
+                  (mapcat 
                       #(walk (move field width height %) new-depth (conj path %) new-seen-fields)
-                      (filter disallowed-moves-filter-fn (moves-fn field depth (last path)))))))))))]
+                      (filter disallowed-moves-filter-fn (moves-fn field depth (last path))))))))))]
       (rest (map second (walk field 0 [] [])))))))
 
     
