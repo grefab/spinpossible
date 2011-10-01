@@ -50,13 +50,20 @@
     (let [position (position-from-xy [xi yi] width)] 
       (correct? (nth field position) position))))
 
+(defn in? [[[x11 y11] [x12 y12]] [[x21 y21] [x22 y22]]]
+  "Returns true if the first rectangle lies completely inside the second."
+  (and (>= x11 x21) (<= x12 x22) (>= y11 y21) (<= y12 y22)))
+
 (defn make-candidate-filter [field width last-move]
   "Returns a predicate for candidate moves to indicate whether candidate makes sense in any move."
   (fn [candidate]
-    (and 
-      (not= candidate last-move)
-      ; we assume it never makes sense to move only all-correct elements
-      (some false? (correctness-seq field width candidate))))) 
+    (or 
+      (nil? last-move) 
+      (and 
+        ; if a move is followed by all-contained moves, it is cumultative with doing the first move last 
+        (not (in? candidate last-move))
+        ; we assume it never makes sense to move only all-correct elements
+        (some false? (correctness-seq field width candidate))))))
 
 (defn- second-last-moves [field width all-moves]
   "In the second-last move, all elements which at the right place and orientation
@@ -90,7 +97,7 @@
   (let [n (.. Runtime getRuntime availableProcessors)]
     (fn [depth max-depth f s]
       (if (= 4 (- max-depth depth))
-        (reduce concat (pmap #(doall (map f %)) (partition n n '() s)))
+        (doall (reduce concat (pmap #(doall (map f %)) (partition n n '() s))))
         (map f s)))))
 
 (defn solve
@@ -114,8 +121,7 @@
                  new-seen-fields (conj seen-fields field)]
                 (filter 
                   #(solved? (first %) width height) 
-                  (apply 
-                    concat
+                  (apply concat 
                     (map-fn depth max-depth
                       #(walk (move field width height %) new-depth (conj path %) new-seen-fields)
                       (filter disallowed-moves-filter-fn (moves-fn field depth (last path)))))))))))]
