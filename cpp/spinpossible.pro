@@ -12,7 +12,7 @@ TARGET = spinpossible
 CONFIG   += console
 CONFIG   -= app_bundle
 
-CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O9
+CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O3 -funroll-loops
 
 TEMPLATE = app
 

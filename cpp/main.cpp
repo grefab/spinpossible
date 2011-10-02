@@ -8,7 +8,10 @@
 
 #include <QDebug>
 
-Grid getGrid()
+#define _N 3
+#define _M 3
+
+Grid<_N,_M> getGrid()
 {
 	QList<Tile> tiles;
 	/* gregors problem */
@@ -22,7 +25,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(8, true));
 	tiles.append(make_tile(9, true));
-	Grid grid_advanced_swaps_2(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_2(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(8, true));
@@ -34,7 +37,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(1, true));
 	tiles.append(make_tile(9, true));
-	Grid grid_advanced_swaps_3(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_3(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(5, true));
@@ -46,7 +49,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(8, true));
 	tiles.append(make_tile(9, true));
-	Grid grid_advanced_swaps_4(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_4(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(9, true));
@@ -58,7 +61,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(6, false));
 	tiles.append(make_tile(1, true));
-	Grid grid_advanced_swaps_5(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_5(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(1, true));
@@ -70,7 +73,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(8, true));
 	tiles.append(make_tile(5, true));
-	Grid grid_advanced_swaps_6(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_6(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(1, true));
@@ -82,7 +85,7 @@ Grid getGrid()
 	tiles.append(make_tile(7, true));
 	tiles.append(make_tile(6, true));
 	tiles.append(make_tile(9, true));
-	Grid grid_advanced_swaps_7(3, 3, tiles);
+	Grid<_N,_M> grid_advanced_swaps_7(tiles);
 
 	/* mareikes problem */
 	tiles.clear();
@@ -95,7 +98,7 @@ Grid getGrid()
 	tiles.append(make_tile(3, true));
 	tiles.append(make_tile(6, true));
 	tiles.append(make_tile(9, true));
-	Grid grid_mareike(3, 3, tiles);
+	Grid<_N,_M> grid_mareike(tiles);
 
 	/* level 6 problem */
 	tiles.clear();
@@ -108,7 +111,7 @@ Grid getGrid()
 	tiles.append(make_tile(3, true));
 	tiles.append(make_tile(6, false));
 	tiles.append(make_tile(9, true));
-	Grid grid_l6_1(3, 3, tiles);
+	Grid<_N,_M> grid_l6_1(tiles);
 
 	tiles.clear();
 	tiles.append(make_tile(1, true));
@@ -120,14 +123,27 @@ Grid getGrid()
 	tiles.append(make_tile(3, true));
 	tiles.append(make_tile(6, false));
 	tiles.append(make_tile(9, true));
-	Grid grid_l6_2(3, 3, tiles);
+	Grid<_N,_M> grid_l6_2(tiles);
 
 
-	return Grid(3,3).random();
-//	return grid_l6_2;
+	tiles.clear();
+	tiles.append(make_tile(5, true));
+	tiles.append(make_tile(8, true));
+	tiles.append(make_tile(3, false));
+	tiles.append(make_tile(7, true));
+	tiles.append(make_tile(2, true));
+	tiles.append(make_tile(4, true));
+	tiles.append(make_tile(6, false));
+	tiles.append(make_tile(9, false));
+	tiles.append(make_tile(1, false));
+	Grid<_N,_M> grid_vale(tiles);
+
+
+//	return Grid(3,3).random();
+	return grid_vale;
 }
 
-double run(const Grid& grid);
+double run(const Grid<_N,_M>& grid);
 
 int main(int argc, char *argv[])
 {
@@ -136,8 +152,8 @@ int main(int argc, char *argv[])
 	QList<double> times;
 	double timeSum = 0.0f;
 	int i;
-	for(i = 0; i < 100; ++i) {
-		Grid grid = getGrid();
+	for(i = 0; i < 1; ++i) {
+		Grid<_N,_M> grid = getGrid();
 		qDebug() << "solving this grid:";
 		grid.debugPrint();
 
@@ -151,13 +167,13 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
-double run(const Grid& grid)
+double run(const Grid<_N,_M>& grid)
 {
 	qDebug() << "started...";
 	QTime time;
 	time.start();
 
-	Solver_DFS solver;
+	Solver_DFS<_N,_M> solver;
 	QList<Spin> result = solver.findSolution(grid);
 	qDebug() << result;
 
