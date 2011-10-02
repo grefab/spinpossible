@@ -11,12 +11,13 @@ Output=$UniqueFolder/output.tmp
 FormatOutput=$UniqueFolder/foutput.tmp
 PrettyOutput=$UniqueFolder/prettyOutput.csv
 Error=$UniqueFolder/error.tmp
-#Option=$Option' --threads 4 '
+Option=$Option' --threads 4 --stat '
 
 Strategy=x
 case $Strategy in
-    x) Option=$Option'--heuristic=Berkmin --berk-max=188 --threads=4';;
-    0) Option=$Option'--heuristic=Berkmin --sat-prepro=-1,-1,-1,-1,2';;
+    x) Option=$Option'--heuristic=Berkmin --berk-max=100';;
+    y) Option=$Option'--heuristic=Berkmin --berk-max=512';;
+    0) Option=$Option'--heuristic=Vmtf';;
     1) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
     2) Option=$Option'--restart-on-model --save-progress -r 2 --heu=Vsids --opt-heu ';;
     3) Option=$Option'--restart-on-model --save-progress -r 64 --heu=Vsids --opt-heu ';;

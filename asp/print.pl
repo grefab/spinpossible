@@ -6,7 +6,7 @@ writeS(A) :- number(A), A < 0, !, write(A).
 writeS(A) :- write(' '), write(A). 
 
 printSwitch(K,X,Y):-
-    (switch(K,X,Y) ->
+    (move(K,X,Y) ->
     writeS('*');
     writeS('-')).
 
@@ -33,7 +33,7 @@ start :-
     printMoves(1). 
 
 printMoves(K) :- 
-    move(K,_X,_Y,_R,_D), 
+    move(K,_X,_Y), 
     !,
     %XX is X + R,
     %YY is Y + D,
