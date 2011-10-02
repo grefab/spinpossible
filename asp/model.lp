@@ -1,7 +1,7 @@
 #const n=3. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..8). 
+k(1..9). 
 #hide. 
 #show move/5. 
 #show switch/3. 

@@ -15,7 +15,7 @@ Error=$UniqueFolder/error.tmp
 
 Strategy=x
 case $Strategy in
-    x) Option=$Option'--heuristic=Berkmin --berk-max=200';;
+    x) Option=$Option'--heuristic=Berkmin --berk-max=188 --threads=4';;
     0) Option=$Option'--heuristic=Berkmin --sat-prepro=-1,-1,-1,-1,2';;
     1) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
     2) Option=$Option'--restart-on-model --save-progress -r 2 --heu=Vsids --opt-heu ';;
