@@ -12,7 +12,7 @@ TARGET = spinpossible
 CONFIG   += console
 CONFIG   -= app_bundle
 
-CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O9
+CONFIG(release, debug|release):QMAKE_CXXFLAGS_RELEASE += -O3 -funroll-loops
 
 TEMPLATE = app
 
@@ -26,6 +26,10 @@ SOURCES += main.cpp \
 #    solver_bfs_mt.cpp \
 #    solver_bfs.cpp \
 #    solver_dfs_random.cpp
+    external/qjson/src/serializer.cpp \
+    external/qjson/src/parser.cpp \
+    external/qjson/src/json_scanner.cpp \
+    external/qjson/src/json_parser.cc
 
 HEADERS += \
     grid.h \
@@ -36,6 +40,12 @@ HEADERS += \
  #   solver_bfs_mt.h \
  #   solver_bfs.h \
  #   solver_dfs_random.h
+    external/qjson/src/serializer.h \
+    external/qjson/src/parser.h \
+    external/qjson/src/json_scanner.h \
+    external/qjson/src/json_parser.hh
+
+
 
 
 
