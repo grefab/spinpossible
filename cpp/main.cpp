@@ -138,9 +138,20 @@ Grid<_N,_M> getGrid()
 	tiles.append(make_tile(1, false));
 	Grid<_N,_M> grid_vale(tiles);
 
+	tiles.clear();
+	tiles.append(make_tile(4, true));
+	tiles.append(make_tile(7, true));
+	tiles.append(make_tile(1, false));
+	tiles.append(make_tile(5, false));
+	tiles.append(make_tile(8, false));
+	tiles.append(make_tile(3, true));
+	tiles.append(make_tile(6, true));
+	tiles.append(make_tile(9, true));
+	tiles.append(make_tile(2, true));
+	Grid<_N,_M> grid_l9(tiles);
 
 //	return Grid(3,3).random();
-	return grid_vale;
+	return grid_l9;
 }
 
 double run(const Grid<_N,_M>& grid);
