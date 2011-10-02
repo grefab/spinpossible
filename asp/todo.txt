@@ -1,0 +1,9 @@
+* single ones in the end
+* nonintersecting:
+intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
+upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
+isSingle(K) :- move(K,X,Y,0,0). 
+
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+
+:- k(K;K+1), isSingle(K), not isSingle(K+1). 
