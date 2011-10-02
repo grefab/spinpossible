@@ -36,6 +36,11 @@ HEADERS += \
  #   solver_bfs_mt.h \
  #   solver_bfs.h \
  #   solver_dfs_random.h
+    external/qjson/src/serializer.h \
+    external/qjson/src/parser.h \
+    external/qjson/src/json_scanner.h \
+    external/qjson/src/json_parser.hh
+
 
 
 
