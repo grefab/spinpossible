@@ -162,8 +162,6 @@ public:
 		qDebug() << "hash:" << hash_;
 	}
 
-
-private:
 	Grid& operator=(const Grid& rhs)
 	{
 		hash_ = rhs.hash_;
@@ -176,6 +174,7 @@ private:
 	}
 
 
+private:
 	void setIdeal()
 	{
 		for(int i = 0; i < N*M; ++i) {

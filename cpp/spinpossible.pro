@@ -26,6 +26,10 @@ SOURCES += main.cpp \
 #    solver_bfs_mt.cpp \
 #    solver_bfs.cpp \
 #    solver_dfs_random.cpp
+    external/qjson/src/serializer.cpp \
+    external/qjson/src/parser.cpp \
+    external/qjson/src/json_scanner.cpp \
+    external/qjson/src/json_parser.cc
 
 HEADERS += \
     grid.h \
@@ -40,6 +44,7 @@ HEADERS += \
     external/qjson/src/parser.h \
     external/qjson/src/json_scanner.h \
     external/qjson/src/json_parser.hh
+
 
 
 
