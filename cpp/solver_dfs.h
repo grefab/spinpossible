@@ -45,8 +45,7 @@ private:
 	{
 		Grid<N,M> permutatedGrid = originalGrid.permutated(spinToPerform);
 
-		static const Grid<N,M> idealGrid;
-		if ( permutatedGrid == idealGrid ) {
+		if ( permutatedGrid == Grid<N,M>::idealGrid ) {
 			qDebug() << "Found at level" << depth;
 			return true;
 		}
@@ -105,8 +104,8 @@ private:
 		}
 
 		/* no optimization possibility fond; try everything. */
-		return randomized(allSpins);
-	//	return allSpins;
+	//	return randomized(allSpins);
+		return allSpins;
 	}
 
 	QList<Spin> result;

@@ -8,21 +8,21 @@
 
 #include <QDebug>
 
+
 template < int N, int M >
 class Grid
 {
 public:
+	static const Grid<N,M> idealGrid;
+
 	Grid()
 	{
-		data_ = new Tile[N*M];
 		setIdeal();
 		updateHash();
 	}
 
 	Grid(QList<Tile> data)
 	{
-		data_ = new Tile[N*M];
-
 		for(int i = 0; i < N*M; ++i) {
 			data_[i] = data[i];
 		}
@@ -34,18 +34,10 @@ public:
 	{
 		hash_ = rhs.hash_;
 
-		data_ = new Tile[N*M];
-
 		for(int i = 0; i < N*M; ++i) {
 			data_[i] = rhs.data_[i];
 		}
 	}
-
-	~Grid()
-	{
-		delete data_;
-	}
-
 
 	Grid permutated(const Spin& spin) const
 	{
@@ -217,8 +209,6 @@ private:
 
 	bool isTileCorrect(int x, int y) const
 	{
-		static const Grid<N,M> idealGrid;
-
 		int i = indexFromPoint(QPoint(x, y));
 		return data_[i] == idealGrid.data_[i];
 	}
@@ -255,8 +245,10 @@ private:
 	}
 
 
-	Tile* data_;
+	Tile data_[N*M];
 	uint hash_;
 };
+
+template <int N, int M> const Grid<N,M> Grid<N,M>::idealGrid = Grid<N,M>();
 
 #endif // GRID_H
