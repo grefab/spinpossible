@@ -1,0 +1,25 @@
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 12,856 bytes
+ERROR: Prolog initialisation failed:
+ERROR: ignore/1: Undefined procedure: start/0
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 17,968 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.01 sec, 17,968 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.01 sec, 17,968 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 17,968 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+
+*** INTERRUPTED! ***
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 10,040 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+ERROR: Prolog initialisation failed:
+ERROR: printRow/3: Undefined procedure: table/4
+
+*** INTERRUPTED! ***
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 10,040 bytes
+% tmp/foutput.tmp compiled 0.00 sec, 520 bytes
+ERROR: Prolog initialisation failed:
+ERROR: printRow/3: Undefined procedure: table/4
+% /home/vale/code/spinpossible/asp/tmp/foutput.tmp compiled 0.00 sec, 26,424 bytes
+% tmp/foutput.tmp compiled 0.01 sec, 520 bytes
