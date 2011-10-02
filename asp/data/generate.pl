@@ -1,3 +1,5 @@
+start :- makeList(9,L), shuffle(L,LL), printList(LL).
+
 writeL([]).
 writeL([X|Y]):- write(X), writeL(Y). 
 
@@ -12,9 +14,6 @@ printList([H|R]) :-
     printEntry(X,Y,H), 
     printList(R). 
 
-start :- makeList(9,L), shuffle(L,LL), printList(LL).
-
-
 makeList(K,L) :- 
     makeList(K,[],L). 
 makeList(0,L,L) :- !. 
@@ -23,33 +22,19 @@ makeList(N,L,LL) :-
     K is (1-2*random(2))*N,
     makeList(NN,[K|L],LL).
 
-shuffle(L, Out) :-
-        length(L, Len),
-        ( Len > 1
-        -> shuffle(L, [], Len, Out)
-        ; Out = L).
+shuffle(L,LL) :- 
+    length(L,N),
+    shuffleList(N,L,LL). 
+    
+shuffleList(1,L,L) :- !. 
+shuffleList(K,L,[X|RL]) :- 
+    R is random(K), 
+    KK is K - 1, 
+    removeList(R,L,LL,X), 
+    shuffleList(KK,LL,RL). 
 
-shuffle(L, Tail, Len, Out) :-
-        /* format('shuffling ~w~n', [L]), */
-        ( Len > 1
-        -> Len1 is Len // 2,
-            Len2 is Len - Len1,
-            divide_list(L, Len1, Len2, L1, L2),
-            shuffle(L2, Tail, Len2, SL2),
-            shuffle(L1, SL2, Len1, Out)
-            /* format('shuffled ~w ==> ~w~n', [L, Out]) */
-        ; L = [H|_],
-            Out = [H|Tail]).
 
-divide_list([H|T], Len1, Len2, L1, L2) :-
-        ( Len1 > random(Len1 + Len2)
-        -> L1 = [H|T1],
-            ( Len1 = 1
-            -> L2 = T
-            ; succ(Len11, Len1),
-                divide_list(T, Len11, Len2, T1, L2))
-        ; L2 = [H|T2],
-            ( Len2 = 1
-            -> L1 = T
-            ; succ(Len21, Len2),
-                divide_list(T, Len1, Len21, L1, T2))).
+removeList(0,[X|Y],Y,X) :- !. 
+removeList(N,[X|Y],[X|Z],R) :- 
+    NN is N - 1, 
+    removeList(NN,Y,Z,R). 
