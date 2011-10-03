@@ -110,6 +110,10 @@ private:
 
 	QList<Spin> result;
 	QHash<Tile, int> beenThere;
+
+	static const QList<Spin> allSpins;
 };
+
+template < int N, int M > const QList<Spin> Solver_DFS<N,M>::allSpins = getAllSpins<N, M>();
 
 #endif // SOLVER_DFS_H
