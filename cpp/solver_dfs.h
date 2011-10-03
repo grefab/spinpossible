@@ -10,7 +10,8 @@ class Solver_DFS : public Solver<N,M>
 public:
 	virtual QList<Spin> findSolution(const Grid<N,M> &problemGrid)
 	{
-		beenThere.reserve(100 * 1000 * 1000);
+		/* this does not help for level9 */
+		// beenThere.reserve(100 * 1000 * 1000);
 
 		/* DFS (iterative deeping) */
 		int maxDepth = 1;
