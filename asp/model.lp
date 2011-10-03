@@ -3,8 +3,9 @@ v(-n*n..-1;1..n*n).
 c(1..n). 
 k(1..9). 
 #hide. 
-#show move/3. 
-#show table/4. 
+#show move/5. 
+%#show move/3. 
+%#show table/4. 
 
 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
@@ -46,8 +47,8 @@ final(M) :- k(M), M = #max[move(K)=K:k(K)].
 
 % symmetry breaker
 % single ones in the end
-isSingle(K) :- move(K,X,Y,0,0). 
-:- move(K;K+1), isSingle(K), not isSingle(K+1). 
+%isSingle(K) :- move(K,X,Y,0,0). 
+%:- move(K;K+1), isSingle(K), not isSingle(K+1). 
 
 % nonintersecting:
 %intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 

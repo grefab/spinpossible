@@ -1,25 +1,24 @@
---restarts=100,1.5,1000 --local-restart --save-progress
---heuristic=VSIDS
-
---deletion=1,1,1 --reduce-on-restart
---sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
- --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
---restarts=100,1.5,1000 --save-progress
---restarts=100,1.5,1000 --local-restart
---otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
---restarts=16000
---sat-pre=20,25,120
---sat-pre=20,25,120 --trans-ext=dynamic --backprop
---heuristic=Berkmin --berk-max=512
---dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
---sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
---restarts=256 --local-restart
---eq=20 --backprop
---heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
---heuristic=Berkmin --berk-max=512 --berk-huang
---restarts=256
---restarts=256 --save-progress
---heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
---restarts=256 --local-restart --save-progress
---heuristic=Bekmin --berk-ma
---restarts=100,1.5,1000
+1) Option=$Option'--restarts=100,1.5,1000 --local-restart --save-progress';;
+2) Option=$Option'--heuristic=VSIDS';;
+3) Option=$Option'--deletion=1,1,1 --reduce-on-restart';;
+4) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
+5) Option=$Option' --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0';;
+6) Option=$Option'--restarts=100,1.5,1000 --save-progress';;
+7) Option=$Option'--restarts=100,1.5,1000 --local-restart';;
+8) Option=$Option'--otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2';;
+9) Option=$Option'--restarts=16000';;
+10) Option=$Option'--sat-pre=20,25,120';;
+11) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --backprop';;
+12) Option=$Option'--heuristic=Berkmin --berk-max=512';;
+13) Option=$Option'--dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000';;
+14) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
+15) Option=$Option'--restarts=256 --local-restart';;
+16) Option=$Option'--eq=20 --backprop';;
+17) Option=$Option'--heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic';;
+18) Option=$Option'--heuristic=Berkmin --berk-max=512 --berk-huang';;
+19) Option=$Option'--restarts=256';;
+20) Option=$Option'--restarts=256 --save-progress';;
+20) Option=$Option'--heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ';;
+21) Option=$Option'--restarts=256 --local-restart --save-progress';;
+22) Option=$Option'--heuristic=Bekmin --berk-ma';;
+23) Option=$Option'--restarts=100,1.5,1000';;

@@ -1,0 +1,1696 @@
+Setup:
+Option = --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,1,2) move(2,1,3) move(2,2,2) move(2,2,3) move(2,3,2) move(2,3,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,1,2) move(5,2,2) move(6,1,1) move(6,1,2) move(6,1,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,2,3) move(8,3,1) move(8,3,2) move(9,2,2) move(9,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,2) table(1,3,1,-6) table(1,2,2,4) table(1,3,2,3) table(1,2,3,7) table(1,3,3,5) table(2,1,1,1) table(2,1,2,-5) table(2,2,2,-7) table(2,1,3,-3) table(2,2,3,-4) table(3,2,1,4) table(3,3,1,3) table(3,2,2,7) table(3,3,2,5) table(3,3,3,-1) table(4,2,1,-5) table(4,3,1,-7) table(4,1,1,-9) table(4,2,2,-3) table(4,3,2,-4) table(4,1,2,-8) table(4,1,3,6) table(4,2,3,-2) table(5,2,2,8) table(5,1,2,3) table(5,3,3,-1) table(6,1,1,1) table(6,3,2,-3) table(6,2,2,-8) table(7,2,1,2) table(7,3,1,-6) table(7,1,2,4) table(7,3,3,9) table(7,1,3,7) table(8,1,1,1) table(8,2,3,-5) table(8,2,2,-8) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,1,2) table(7,2,2,-8) table(7,3,2,-3) table(7,2,3,-5) table(7,1,1,1) table(6,2,3,5) table(6,1,3,7) table(6,3,3,9) table(6,1,2,4) table(6,3,1,-6) table(6,2,1,2) table(5,2,3,-2) table(5,1,3,6) table(5,3,2,-4) table(5,1,1,-9) table(5,3,1,-7) table(5,2,1,-5) table(4,3,3,-1) table(3,2,3,-2) table(3,1,3,6) table(3,1,2,-8) table(3,1,1,-9) table(2,3,3,9) table(2,3,2,8) table(2,3,1,-6) table(2,2,1,2) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,1) move(4,1,2) move(4,1,3) move(5,1,2) move(5,1,3) move(6,1,1) move(6,1,2) move(6,1,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,1,3,8) table(3,3,2,9) table(3,3,3,-1) table(4,2,1,-7) table(4,2,2,-4) table(4,1,1,-8) table(4,3,1,6) table(4,2,3,-2) table(5,3,2,9) table(5,3,3,-1) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,3,-1) table(4,1,3,5) table(4,3,2,9) table(4,1,2,3) table(3,2,3,-2) table(3,3,1,6) table(3,2,2,-4) table(3,1,2,-3) table(3,2,1,-7) table(3,1,1,-5) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,3,1,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 26.298s (Solving: 26.26s 1st Model: 14.93s Unsat: 0.21s)
+CPU Time    : 101.430s
+Choices     : 623350
+Conflicts   : 461294
+Restarts    : 167
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 461088 (Binary:  0.8% Ternary:  0.6% Other: 98.6%)
+  Conflict  : 461088 (Average Length: 246.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 440813
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 50
+Problems    : 51     (Average Length: 10.90) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,3,1) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,2,3) move(6,3,3) move(7,2,2) move(7,2,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(9,3,1) move(9,3,2) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(3,2,3,8) table(3,2,1,7) table(3,2,2,5) table(4,1,1,1) table(4,1,3,-5) table(4,3,1,-3) table(4,3,2,-4) table(4,1,2,-8) table(4,2,2,6) table(4,3,3,-2) table(5,2,1,2) table(5,3,2,-6) table(5,2,2,4) table(5,2,3,3) table(6,1,1,1) table(6,1,3,-5) table(6,3,1,-9) table(6,3,3,-3) table(6,1,2,-8) table(7,2,1,2) table(7,3,2,-6) table(8,1,1,1) table(8,3,1,-9) table(8,3,3,-3) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,1,2,4) table(8,2,3,8) table(8,3,2,-6) table(8,2,1,2) table(7,1,2,-8) table(7,2,3,-4) table(7,3,3,-3) table(7,3,1,-9) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,2,3,7) table(6,2,2,4) table(6,3,2,-6) table(6,2,1,2) table(5,1,2,-8) table(5,3,1,-9) table(5,3,3,-7) table(5,1,3,-5) table(5,1,1,1) table(4,2,1,7) table(4,2,3,9) table(3,3,3,-2) table(3,3,2,-4) table(3,3,1,-3) table(3,1,2,-9) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,2,1) move(1,2,2) move(1,3,1) move(1,3,2) move(2,2,1) move(2,2,2) move(3,1,3) move(3,2,3) move(3,3,3) move(4,1,3) move(4,2,3) move(5,1,3) move(6,2,1) move(6,2,2) move(6,2,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,4) table(1,3,1,3) table(1,2,2,7) table(1,3,2,5) table(2,1,1,1) table(2,2,1,-7) table(2,1,2,-9) table(2,2,2,-4) table(2,1,3,-8) table(2,2,3,6) table(2,3,3,-2) table(3,1,3,2) table(3,2,3,-6) table(3,3,3,8) table(3,3,1,3) table(3,3,2,5) table(4,1,1,1) table(4,2,1,-7) table(4,1,2,-9) table(4,2,2,-4) table(4,1,3,6) table(4,2,3,-2) table(5,1,3,-6) table(5,3,3,8) table(5,3,1,3) table(5,3,2,5) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,2,3,-2) table(5,2,2,-4) table(5,1,2,-9) table(5,2,1,-7) table(5,1,1,1) table(4,3,2,5) table(4,3,1,3) table(4,3,3,8) table(3,2,2,-4) table(3,1,2,-9) table(3,2,1,-7) table(3,1,1,1) table(2,3,2,5) table(2,3,1,3) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,3,1) move(1,3,2) move(2,1,3) move(2,2,3) move(3,2,2) move(3,2,3) move(4,2,3) move(4,3,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,2,1) move(7,2,2) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,3,1,4) table(1,3,2,7) table(2,1,1,1) table(2,2,1,-5) table(2,1,2,-9) table(2,2,2,-3) table(2,3,3,-2) table(3,1,3,-6) table(3,3,1,4) table(3,2,3,3) table(3,3,2,7) table(4,1,1,1) table(4,2,1,-5) table(4,1,2,-9) table(4,3,3,-3) table(4,2,2,-8) table(5,2,3,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,2,1,-5) table(6,3,2,6) table(6,2,2,-2) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,1,-5) table(5,1,1,1) table(4,3,2,7) table(4,3,1,4) table(4,1,3,-6) table(4,2,3,2) table(3,3,3,-2) table(3,2,2,-8) table(3,1,2,-9) table(3,2,1,-5) table(3,1,1,1) table(2,3,2,7) table(2,3,1,4) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,2,2,-3) table(1,1,2,-9) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,2,1,-8) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,3,5) table(2,2,2,3) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 9.544s (Solving: 9.50s 1st Model: 2.25s Unsat: 0.25s)
+CPU Time    : 34.340s
+Choices     : 666219
+Conflicts   : 150206
+Restarts    : 239
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 150079 (Binary:  1.4% Ternary:  1.0% Other: 97.6%)
+  Conflict  : 150079 (Average Length: 452.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 134624
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 65
+Problems    : 66     (Average Length: 21.17) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=VSIDS
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 6.363s (Solving: 6.31s 1st Model: 5.92s Unsat: 0.39s)
+CPU Time    : 24.490s
+Choices     : 151564
+Conflicts   : 127133
+Restarts    : 77
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 126767 (Binary:  1.8% Ternary:  1.0% Other: 97.2%)
+  Conflict  : 126767 (Average Length: 181.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 107533
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 499
+Problems    : 500    (Average Length: 22.19) 
+
+Setup:
+Option = --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,2) move(1,1,3) move(1,2,2) move(1,2,3) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,2,3) move(7,3,3) move(8,2,2) move(8,3,2) move(9,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,-6) table(1,2,2,8) table(1,1,3,3) table(1,2,3,9) table(2,1,1,1) table(2,2,1,-5) table(2,3,1,-7) table(2,1,3,-9) table(2,2,3,-3) table(2,3,2,-4) table(2,3,3,-2) table(3,2,1,2) table(3,1,2,-6) table(3,2,2,4) table(3,3,1,3) table(3,2,3,7) table(3,3,3,5) table(4,1,1,1) table(4,2,2,-5) table(4,3,2,-7) table(4,1,3,-9) table(4,3,3,-4) table(5,2,1,2) table(5,1,2,4) table(5,3,1,3) table(5,3,2,9) table(5,1,3,7) table(5,2,3,5) table(6,1,1,1) table(6,3,2,-5) table(6,2,3,-9) table(7,2,1,2) table(7,2,2,-6) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(8,1,1,1) table(8,2,3,-8) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,1,2) table(7,2,3,-8) table(7,3,2,-5) table(7,1,1,1) table(6,1,3,7) table(6,3,1,3) table(6,1,2,4) table(6,3,3,8) table(6,2,2,-6) table(6,2,1,2) table(5,3,3,6) table(5,2,2,-8) table(5,1,1,1) table(4,3,1,3) table(4,2,3,8) table(4,1,2,-6) table(4,2,1,2) table(3,3,2,-8) table(3,1,3,-9) table(3,1,1,1) table(2,2,2,8) table(2,1,2,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,2,1,-8) table(2,3,3,-2) table(3,1,1,2) table(3,2,3,8) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,1,1,1) table(4,3,1,-7) table(4,1,2,-9) table(4,3,2,-4) table(4,2,1,-8) table(4,3,3,-2) table(5,1,3,-6) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,3,-2) table(5,2,1,-8) table(5,3,2,-4) table(5,2,3,-3) table(5,1,2,-9) table(5,3,1,-7) table(5,2,2,-5) table(5,1,1,1) table(4,2,3,5) table(4,2,2,3) table(4,1,3,-6) table(3,3,1,6) table(3,2,2,-3) table(3,2,1,-5) table(2,2,3,5) table(2,2,2,3) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,1,2) move(3,1,3) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(5,3,1) move(5,3,2) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,2,1,3) table(3,2,3,9) table(4,1,1,1) table(4,1,3,-5) table(4,3,1,-7) table(4,2,1,-9) table(4,2,3,-3) table(4,3,2,-4) table(4,1,2,-8) table(4,3,3,-2) table(5,2,2,-6) table(5,3,1,4) table(5,3,2,7) table(6,1,1,1) table(6,1,3,-5) table(6,2,2,-7) table(6,2,3,-4) table(6,1,2,-8) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,3,3,9) table(6,3,1,3) table(6,2,1,2) table(5,3,3,-2) table(5,1,2,-8) table(5,2,3,-3) table(5,2,1,-9) table(5,1,3,-5) table(5,1,1,1) table(4,2,2,-6) table(3,3,3,-2) table(3,2,2,6) table(3,1,2,-8) table(3,3,2,-4) table(3,3,1,-7) table(3,1,3,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 17.062s (Solving: 17.01s 1st Model: 2.32s Unsat: 0.28s)
+CPU Time    : 66.920s
+Choices     : 448327
+Conflicts   : 325704
+Restarts    : 186
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 325495 (Binary:  0.9% Ternary:  0.7% Other: 98.4%)
+  Conflict  : 325495 (Average Length: 189.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 317962
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 14.57) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,2) move(1,1,3) move(2,1,3) move(2,2,3) move(2,3,3) move(3,2,1) move(3,2,2) move(3,3,1) move(3,3,2) move(4,3,2) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,2,1) move(7,2,2) move(8,1,2) move(8,2,2) move(9,1,3) move(9,2,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,8) table(1,1,3,9) table(2,1,1,1) table(2,2,1,-5) table(2,3,1,-7) table(2,3,3,-9) table(2,2,2,-3) table(2,3,2,-4) table(3,1,3,2) table(3,2,3,-6) table(3,1,2,8) table(3,2,1,4) table(3,3,1,3) table(3,2,2,7) table(3,3,2,5) table(4,1,1,1) table(4,3,2,-5) table(4,3,3,-9) table(5,1,3,2) table(5,1,2,8) table(5,2,1,4) table(5,3,1,3) table(5,2,2,9) table(5,2,3,5) table(6,1,1,1) table(6,1,2,-5) table(6,3,3,-7) table(6,1,3,-9) table(6,2,3,-8) table(6,3,2,6) table(6,2,2,-2) table(7,2,1,2) table(7,3,1,3) table(8,1,1,1) table(8,3,3,-7) table(8,1,3,-9) table(8,2,3,-8) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,3,1,3) table(8,1,2,4) table(8,2,1,2) table(7,3,2,6) table(7,2,3,-8) table(7,2,2,-4) table(7,1,3,-9) table(7,3,3,-7) table(7,1,2,-5) table(7,1,1,1) table(6,3,1,3) table(6,2,1,4) table(5,3,2,6) table(5,3,3,-7) table(5,1,1,1) table(4,2,2,7) table(4,3,1,3) table(4,2,1,4) table(4,1,2,8) table(4,2,3,-6) table(4,1,3,2) table(3,3,3,-9) table(3,1,1,1) table(2,1,2,8) table(2,2,3,-6) table(2,1,3,2) table(1,3,3,-2) table(1,2,3,6) table(1,3,2,-4) table(1,2,2,-3) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,2) move(1,2,2) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,3,1) move(3,3,2) move(4,2,1) move(4,2,2) move(4,2,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,2,2) move(8,3,2) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,3) table(1,2,2,9) table(2,1,1,1) table(2,3,1,-7) table(2,2,1,-9) table(2,3,2,-4) table(2,1,3,-8) table(2,2,3,6) table(2,3,3,-2) table(3,2,1,4) table(3,1,2,3) table(3,3,2,9) table(3,2,2,7) table(4,1,1,1) table(4,3,1,-5) table(4,2,2,-7) table(4,2,3,-4) table(4,1,3,-8) table(4,3,3,-2) table(5,2,1,-6) table(5,2,2,8) table(5,1,2,4) table(5,3,2,9) table(5,1,3,7) table(6,1,1,1) table(6,2,2,-9) table(6,3,2,-8) table(6,3,3,6) table(7,2,1,2) table(7,2,2,-6) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,-5) table(7,1,1,1) table(6,2,3,5) table(6,1,3,7) table(6,3,1,3) table(6,1,2,4) table(6,2,1,2) table(5,3,3,-2) table(5,2,3,-3) table(5,3,1,-5) table(5,1,1,1) table(4,3,2,9) table(4,1,2,3) table(4,2,1,-6) table(3,3,3,-2) table(3,2,3,6) table(3,1,3,-8) table(3,3,1,-5) table(3,1,1,1) table(2,2,2,5) table(2,1,2,3) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,3,1) move(3,3,2) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,3,1) move(7,3,2) move(7,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(3,2,3,8) table(3,3,1,4) table(3,2,1,3) table(3,3,2,7) table(3,2,2,5) table(4,1,1,1) table(4,1,3,-5) table(4,1,2,-8) table(4,2,2,6) table(4,3,3,-2) table(5,2,1,2) table(5,3,2,-6) table(6,1,1,1) table(6,3,1,-9) table(6,3,3,-3) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,2,2,5) table(6,1,3,7) table(6,1,2,4) table(6,2,3,8) table(6,3,2,-6) table(6,2,1,2) table(5,1,2,-8) table(5,2,3,-4) table(5,3,3,-3) table(5,3,1,-9) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,7) table(4,2,3,9) table(4,2,1,3) table(4,3,1,4) table(3,3,3,-2) table(3,1,2,-9) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 21.257s (Solving: 21.04s 1st Model: 12.94s Unsat: 0.31s)
+CPU Time    : 82.850s
+Choices     : 458474
+Conflicts   : 356531
+Restarts    : 0
+
+Atoms       : 2722   (Original: 2722 Auxiliary: 0)
+Rules       : 14915  (1: 14791/14879 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13491 
+Equivalences: 2366   (Atom=Atom: 421 Body=Body: 63 Other: 1882)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4950 Frozen:  350)
+Constraints : 50108  (Binary: 69.1% Ternary:  7.9% Other: 23.0%)
+Lemmas      : 356379 (Binary:  0.9% Ternary:  0.8% Other: 98.4%)
+  Conflict  : 356379 (Average Length: 127.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 339541
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 54
+Problems    : 55     (Average Length: 11.75) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 4.006s (Solving: 3.86s 1st Model: 3.86s Unsat: 0.00s)
+CPU Time    : 15.150s
+Choices     : 101639
+Conflicts   : 85756
+Restarts    : 60
+
+Atoms       : 2722   (Original: 2722 Auxiliary: 0)
+Rules       : 14915  (1: 14791/14879 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13491 
+Equivalences: 2366   (Atom=Atom: 421 Body=Body: 63 Other: 1882)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4950 Frozen:  350)
+Constraints : 50402  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 85701  (Binary:  1.7% Ternary:  1.1% Other: 97.2%)
+  Conflict  : 85701  (Average Length: 88.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 71355 
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 6
+Problems    : 7      (Average Length: 2.00) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,3) move(3,2,3) move(3,3,3) move(4,2,3) move(5,3,1) move(5,3,2) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,3,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,2) table(1,3,1,-6) table(1,2,2,4) table(1,3,2,3) table(1,2,3,7) table(1,3,3,5) table(2,1,1,1) table(2,3,1,-5) table(2,1,2,-9) table(2,3,2,-3) table(2,1,3,-8) table(2,3,3,6) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(4,1,1,1) table(4,3,1,-5) table(4,1,2,-9) table(4,3,2,-3) table(5,2,1,2) table(5,1,3,-6) table(5,3,3,8) table(5,2,2,4) table(5,3,1,3) table(5,2,3,7) table(5,3,2,5) table(6,1,1,1) table(6,2,3,-5) table(6,3,2,-7) table(6,1,2,-9) table(6,3,3,-4) table(6,2,2,-8) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,1,1) table(6,3,1,3) table(6,1,3,-6) table(6,2,1,2) table(5,1,2,-9) table(5,1,1,1) table(4,2,3,7) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,2,3,-7) table(3,3,1,-5) table(3,1,1,1) table(2,2,3,7) table(2,2,2,4) table(2,2,1,2) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,3) move(3,2,3) move(3,3,3) move(4,2,3) move(5,3,1) move(5,3,2) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,2) table(1,3,1,-6) table(1,2,2,4) table(1,3,2,3) table(1,2,3,7) table(1,3,3,5) table(2,1,1,1) table(2,3,1,-5) table(2,1,2,-9) table(2,3,2,-3) table(2,1,3,-8) table(2,3,3,6) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(4,1,1,1) table(4,3,1,-5) table(4,1,2,-9) table(4,3,2,-3) table(5,2,1,2) table(5,1,3,-6) table(5,3,3,8) table(5,2,2,4) table(5,3,1,3) table(5,2,3,7) table(5,3,2,5) table(6,1,1,1) table(6,2,3,-5) table(6,3,2,-7) table(6,1,2,-9) table(6,3,3,-4) table(6,2,2,-8) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,3,1,3) table(6,1,3,-6) table(6,2,1,2) table(5,1,2,-9) table(5,1,1,1) table(4,2,3,7) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,2,3,-7) table(3,3,1,-5) table(3,1,1,1) table(2,2,3,7) table(2,2,2,4) table(2,2,1,2) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 7
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 11.512s (Solving: 11.46s 1st Model: 4.18s Unsat: 0.03s)
+CPU Time    : 45.170s
+Choices     : 894064
+Conflicts   : 188228
+Restarts    : 354
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 188018 (Binary:  1.3% Ternary:  0.9% Other: 97.9%)
+  Conflict  : 188018 (Average Length: 367.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 143803
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 32
+Problems    : 33     (Average Length: 8.12) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,2,3) move(2,2,2) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,3) move(4,2,3) move(4,3,3) move(5,2,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,3,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,-6) table(1,2,2,3) table(1,2,3,5) table(2,1,1,1) table(2,2,2,-5) table(2,3,1,-7) table(2,1,2,-9) table(2,2,3,-3) table(2,3,2,-4) table(2,1,3,-8) table(2,3,3,-2) table(3,2,1,2) table(3,2,2,4) table(3,3,1,3) table(3,2,3,7) table(3,3,2,5) table(4,1,1,1) table(4,2,3,-7) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,3,8) table(5,2,2,4) table(5,3,1,3) table(5,2,3,7) table(5,3,2,5) table(6,1,1,1) table(6,2,3,-5) table(6,3,2,-7) table(6,1,2,-9) table(6,3,3,-4) table(6,2,2,-8) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,1,1) table(6,3,1,3) table(6,1,3,-6) table(6,2,1,2) table(5,1,2,-9) table(5,1,1,1) table(4,3,2,5) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,6) table(3,1,3,-8) table(3,1,2,-9) table(3,1,1,1) table(2,2,1,-6) table(1,3,3,-2) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,3,1,6) table(5,1,3,-6) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,3,-2) table(5,2,1,-8) table(5,3,2,-4) table(5,2,3,-3) table(5,1,2,-9) table(5,3,1,-7) table(5,2,2,-5) table(5,1,1,1) table(4,3,3,-1) table(4,2,2,5) table(4,1,3,7) table(4,3,2,9) table(4,2,1,3) table(4,1,2,4) table(4,2,3,8) table(4,1,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 103.634s (Solving: 103.59s 1st Model: 99.13s Unsat: 0.14s)
+CPU Time    : 394.270s
+Choices     : 1627482
+Conflicts   : 1210693
+Restarts    : 550
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 1210189 (Binary:  0.4% Ternary:  0.4% Other: 99.2%)
+  Conflict  : 1210189 (Average Length: 314.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1189878
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 71
+Problems    : 72     (Average Length: 12.31) 
+
+Setup:
+Option = --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 8.209s (Solving: 8.06s 1st Model: 8.06s Unsat: 0.00s)
+CPU Time    : 29.610s
+Choices     : 195934
+Conflicts   : 152679
+Restarts    : 58
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4940 Frozen:  359)
+Constraints : 50340  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 152625 (Binary:  1.1% Ternary:  0.9% Other: 98.0%)
+  Conflict  : 152625 (Average Length: 81.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 132740
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 7
+Problems    : 8      (Average Length: 2.25) 
+
+Setup:
+Option = --threads 4 --stat --restarts=16000
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,1) move(6,1,2) move(6,2,1) move(6,2,2) move(7,1,1) move(7,1,2) move(7,1,3) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,3,2,9) table(5,3,3,-1) table(6,1,3,-3) table(6,3,1,6) table(6,2,3,-2) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,3,-1) table(6,2,1,5) table(6,1,2,7) table(6,3,2,9) table(6,1,1,4) table(6,2,2,8) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 8
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 6
+Time        : 43.009s (Solving: 42.96s 1st Model: 18.69s Unsat: 0.18s)
+CPU Time    : 167.630s
+Choices     : 1122642
+Conflicts   : 827087
+Restarts    : 32
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 826739 (Binary:  0.4% Ternary:  0.4% Other: 99.2%)
+  Conflict  : 826739 (Average Length: 243.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 810349
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 86
+Problems    : 87     (Average Length: 12.60) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 6.628s (Solving: 6.49s 1st Model: 6.09s Unsat: 0.40s)
+CPU Time    : 25.340s
+Choices     : 181276
+Conflicts   : 142642
+Restarts    : 120
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4940 Frozen:  359)
+Constraints : 50340  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 142527 (Binary:  1.4% Ternary:  1.0% Other: 97.6%)
+  Conflict  : 142527 (Average Length: 112.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 127492
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 74
+Problems    : 75     (Average Length: 10.71) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 6.888s (Solving: 6.74s 1st Model: 6.73s Unsat: 0.00s)
+CPU Time    : 26.270s
+Choices     : 194167
+Conflicts   : 153036
+Restarts    : 63
+
+Atoms       : 2722   (Original: 2722 Auxiliary: 0)
+Rules       : 14915  (1: 14791/14879 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13491 
+Equivalences: 2363   (Atom=Atom: 422 Body=Body: 62 Other: 1879)
+Tight       : Yes
+
+Variables   : 14830  (Eliminated: 4950 Frozen:  341)
+Constraints : 50402  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 152942 (Binary:  1.3% Ternary:  1.0% Other: 97.8%)
+  Conflict  : 152942 (Average Length: 99.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 126184
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 5
+Problems    : 6      (Average Length: 1.83) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,1) move(1,1,2) move(1,2,1) move(1,2,2) move(2,2,2) move(2,2,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,1) move(5,2,1) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,1) move(7,2,1) move(7,3,1) move(8,3,3) move(9,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,1,3) table(1,2,1,9) table(1,1,2,5) table(1,2,2,-1) table(2,2,3,1) table(2,3,1,-7) table(2,3,2,-4) table(2,1,3,-8) table(2,3,3,-2) table(3,1,1,2) table(3,3,1,8) table(3,1,2,4) table(3,1,3,7) table(3,2,1,-1) table(4,3,3,1) table(4,2,3,-8) table(5,3,2,-6) table(5,1,2,4) table(5,3,1,9) table(5,1,3,7) table(5,2,2,5) table(6,3,3,-9) table(6,1,1,-3) table(6,2,3,-8) table(6,3,2,6) table(6,2,1,-2) table(7,2,1,2) table(7,1,2,4) table(7,3,1,3) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,2,3,-8) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,1,2) table(7,3,2,6) table(7,2,3,-8) table(7,3,3,-9) table(7,1,1,1) table(6,3,1,-1) table(6,2,2,5) table(6,1,3,7) table(6,1,2,4) table(5,2,1,-2) table(5,2,3,-8) table(5,1,1,-3) table(5,3,3,1) table(4,2,2,5) table(4,1,3,7) table(4,3,1,9) table(4,2,1,3) table(4,1,2,4) table(4,3,2,-6) table(4,1,1,2) table(3,2,2,6) table(3,3,3,-3) table(3,2,3,-9) table(3,3,2,-5) table(2,1,2,5) table(2,2,1,9) table(2,1,1,3) table(2,2,2,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,3,1,-7)
+Optimization: 9
+Answer: 2
+move(1,2,1) move(1,2,2) move(2,1,1) move(2,1,2) move(2,1,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,2,1) move(3,3,1) move(4,2,1) move(4,2,2) move(4,2,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(6,1,1) move(6,1,2) move(6,2,1) move(6,2,2) move(7,1,1) move(7,1,2) move(7,1,3) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,2,2,-5) table(2,2,3,-3) table(3,1,1,2) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,3,1,6) table(5,3,2,9) table(5,3,3,-1) table(6,1,3,-3) table(6,3,1,6) table(6,2,3,-2) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,3,-1) table(6,2,1,5) table(6,1,2,7) table(6,3,2,9) table(6,1,1,4) table(6,2,2,8) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,3,-1) table(4,2,2,5) table(4,1,3,7) table(4,3,2,9) table(4,2,1,3) table(4,1,2,4) table(4,2,3,8) table(4,1,1,2) table(3,3,1,6) table(3,2,1,-8) table(3,2,3,-3) table(3,2,2,-5) table(2,3,3,-1) table(2,1,3,7) table(2,3,2,9) table(2,1,2,4) table(2,3,1,8) table(2,2,1,-6) table(2,1,1,2) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,3,1) move(1,3,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,3,1) move(7,3,2) move(7,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,3,1,4) table(1,3,2,7) table(2,1,1,1) table(2,2,1,-5) table(2,1,2,-9) table(2,2,2,-3) table(2,3,3,-2) table(3,1,3,-6) table(3,2,3,8) table(3,3,1,4) table(3,2,1,3) table(3,3,2,7) table(3,2,2,5) table(4,1,1,1) table(4,1,3,-5) table(4,1,2,-8) table(4,2,2,6) table(4,3,3,-2) table(5,2,1,2) table(5,3,2,-6) table(6,1,1,1) table(6,3,1,-9) table(6,3,3,-3) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,2,2,5) table(6,1,3,7) table(6,1,2,4) table(6,2,3,8) table(6,3,2,-6) table(6,2,1,2) table(5,1,2,-8) table(5,2,3,-4) table(5,3,3,-3) table(5,3,1,-9) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,7) table(4,2,3,9) table(4,2,1,3) table(4,3,1,4) table(3,3,3,-2) table(3,1,2,-9) table(3,1,1,1) table(2,3,2,7) table(2,3,1,4) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,2,2,-3) table(1,1,2,-9) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 29.967s (Solving: 29.92s 1st Model: 10.23s Unsat: 0.13s)
+CPU Time    : 117.590s
+Choices     : 709211
+Conflicts   : 525911
+Restarts    : 222
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 525597 (Binary:  0.7% Ternary:  0.6% Other: 98.7%)
+  Conflict  : 525597 (Average Length: 249.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 501621
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 56
+Problems    : 57     (Average Length: 14.61) 
+
+Setup:
+Option = --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,1,1) move(2,1,2) move(2,1,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,1) move(3,1,2) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,1,2) move(7,2,2) move(7,3,2) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(9,1,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,2) table(1,3,1,-6) table(1,2,2,4) table(1,3,2,3) table(1,2,3,7) table(1,3,3,5) table(2,1,1,-5) table(2,2,1,-7) table(2,1,2,-3) table(2,2,2,-4) table(2,1,3,6) table(2,2,3,-2) table(3,3,1,8) table(3,1,1,3) table(3,3,2,9) table(3,1,2,5) table(3,3,3,-1) table(4,1,1,1) table(4,3,2,-5) table(4,1,2,-9) table(4,3,3,-3) table(4,1,3,-8) table(5,2,1,2) table(5,2,2,4) table(5,3,1,3) table(5,2,3,7) table(5,3,2,5) table(6,1,1,1) table(6,1,3,-5) table(6,2,2,-7) table(6,2,3,-4) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(7,2,2,7) table(8,1,1,1) table(8,1,3,-7) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,1,3,-5) table(7,1,1,1) table(6,3,3,9) table(6,3,1,3) table(6,3,2,8) table(6,1,2,-6) table(6,2,1,2) table(5,3,3,6) table(5,1,3,-8) table(5,1,2,-9) table(5,1,1,1) table(4,2,3,7) table(4,2,2,4) table(4,3,1,-6) table(4,2,1,2) table(3,2,3,-2) table(3,1,3,6) table(3,2,2,-4) table(3,2,1,-7) table(2,3,3,-1) table(2,3,2,9) table(2,3,1,8) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,2,1) move(1,2,2) move(2,1,1) move(2,1,2) move(2,1,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,3) move(4,2,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,2,2,-5) table(2,2,3,-3) table(3,2,1,3) table(3,2,2,5) table(4,1,1,1) table(4,3,1,-7) table(4,1,2,-9) table(4,3,2,-4) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,2,2,4) table(5,2,3,7) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,1,-8) table(5,3,3,-3) table(5,1,2,-9) table(5,3,2,-5) table(5,1,1,1) table(4,2,2,5) table(4,2,1,3) table(4,2,3,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,3,6) table(3,1,3,-8) table(3,3,2,-4) table(3,1,2,-9) table(3,3,1,-7) table(3,1,1,1) table(2,3,3,-1) table(2,1,3,7) table(2,3,2,9) table(2,1,2,4) table(2,3,1,8) table(2,2,1,-6) table(2,1,1,2) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 66.559s (Solving: 66.52s 1st Model: 60.90s Unsat: 0.23s)
+CPU Time    : 254.900s
+Choices     : 1322862
+Conflicts   : 982264
+Restarts    : 147
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 981978 (Binary:  0.4% Ternary:  0.4% Other: 99.2%)
+  Conflict  : 981978 (Average Length: 297.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 943859
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 53
+Problems    : 54     (Average Length: 9.74) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,2) move(1,1,3) move(1,2,2) move(1,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,2,1) move(3,2,2) move(3,3,1) move(3,3,2) move(4,2,1) move(4,2,2) move(4,2,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,1,2) move(7,2,2) move(7,3,2) move(8,2,1) move(8,2,2) move(8,2,3) move(8,3,1) move(8,3,2) move(8,3,3) move(9,3,1) move(9,3,2) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,-6) table(1,2,2,8) table(1,1,3,3) table(1,2,3,9) table(2,1,1,1) table(2,2,1,-5) table(3,1,2,-6) table(3,1,3,3) table(3,2,3,9) table(3,3,3,7) table(3,3,2,5) table(4,1,1,1) table(4,2,1,-9) table(4,3,1,-8) table(5,1,2,-6) table(5,1,3,3) table(6,1,1,1) table(6,2,1,-9) table(6,2,2,-3) table(6,3,2,-4) table(6,3,1,-8) table(6,2,3,6) table(6,3,3,-2) table(7,1,2,4) table(7,2,2,3) table(7,1,3,7) table(8,1,1,1) table(8,3,2,-3) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,1,2,4) table(8,2,3,8) table(8,3,1,-6) table(8,2,1,2) table(7,3,3,-2) table(7,2,3,6) table(7,3,1,-8) table(7,2,1,-9) table(7,3,2,-5) table(7,1,1,1) table(6,1,2,5) table(6,1,3,7) table(5,3,3,-2) table(5,3,1,-8) table(5,3,2,-4) table(5,2,1,-9) table(5,2,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,3,3,7) table(4,1,3,3) table(4,2,3,4) table(4,1,2,-6) table(4,2,2,2) table(3,2,2,-2) table(3,3,1,-8) table(3,2,1,-4) table(3,1,1,1) table(2,3,3,7) table(2,2,3,9) table(2,1,3,3) table(2,3,2,4) table(2,2,2,8) table(2,1,2,-6) table(2,3,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,1) move(1,1,2) move(1,1,3) move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,2,2) move(2,2,3) move(3,2,1) move(3,3,1) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,1) move(5,2,2) move(5,2,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,1,2) table(1,2,1,-6) table(1,3,1,8) table(1,1,2,4) table(1,2,2,3) table(1,3,2,9) table(1,1,3,7) table(1,2,3,5) table(1,3,3,-1) table(2,2,2,-5) table(2,2,3,-3) table(3,1,1,2) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,1,1,1) table(4,3,1,-7) table(4,1,2,-9) table(4,3,2,-4) table(4,3,3,-2) table(5,1,3,-6) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,3,-2) table(5,2,1,-8) table(5,3,2,-4) table(5,2,3,-3) table(5,1,2,-9) table(5,3,1,-7) table(5,2,2,-5) table(5,1,1,1) table(4,2,2,5) table(4,2,1,3) table(4,2,3,8) table(4,1,3,-6) table(3,3,1,6) table(3,2,1,-8) table(3,2,3,-3) table(3,2,2,-5) table(2,3,3,-1) table(2,1,3,7) table(2,3,2,9) table(2,1,2,4) table(2,3,1,8) table(2,2,1,-6) table(2,1,1,2)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(1,2,3) move(2,2,2) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,1,2) move(5,2,2) move(5,3,2) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,1,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,-6) table(1,2,2,3) table(1,2,3,5) table(2,1,1,1) table(2,2,2,-5) table(2,3,1,-7) table(2,1,2,-9) table(2,2,3,-3) table(2,3,2,-4) table(2,1,3,-8) table(2,3,3,-2) table(3,2,1,2) table(3,2,2,4) table(3,3,1,3) table(3,2,3,7) table(3,3,2,5) table(4,1,1,1) table(4,1,3,-5) table(4,2,2,-7) table(4,2,3,-4) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(5,2,2,7) table(6,1,1,1) table(6,1,3,-7) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,2,2,5) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,1,3,-5) table(5,1,1,1) table(4,3,3,9) table(4,3,1,3) table(4,3,2,8) table(4,1,2,-6) table(4,2,1,2) table(3,3,3,6) table(3,1,3,-8) table(3,1,2,-9) table(3,1,1,1) table(2,2,1,-6) table(1,3,3,-2) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 20.875s (Solving: 20.68s 1st Model: 11.87s Unsat: 0.34s)
+CPU Time    : 81.420s
+Choices     : 430424
+Conflicts   : 340437
+Restarts    : 0
+
+Atoms       : 2722   (Original: 2722 Auxiliary: 0)
+Rules       : 14915  (1: 14791/14879 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13491 
+Equivalences: 2366   (Atom=Atom: 421 Body=Body: 63 Other: 1882)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4950 Frozen:  350)
+Constraints : 50108  (Binary: 69.1% Ternary:  7.9% Other: 23.0%)
+Lemmas      : 340165 (Binary:  1.0% Ternary:  0.8% Other: 98.3%)
+  Conflict  : 340165 (Average Length: 132.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 320900
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 57
+Problems    : 58     (Average Length: 10.86) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --local-restart
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,1) move(1,1,2) move(2,1,2) move(2,1,3) move(2,2,2) move(2,2,3) move(3,1,3) move(4,2,3) move(4,3,3) move(5,2,1) move(5,2,2) move(6,2,2) move(7,1,1) move(7,1,2) move(7,1,3) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,2,1) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,1,9) table(1,1,2,-1) table(2,2,3,1) table(2,2,1,-5) table(2,3,1,-7) table(2,3,2,-4) table(2,3,3,-2) table(3,1,2,-6) table(3,2,2,8) table(3,1,1,9) table(4,2,1,-5) table(4,3,1,-7) table(4,1,3,-3) table(4,3,2,-4) table(5,2,3,2) table(5,1,2,-6) table(5,1,1,9) table(5,2,2,5) table(5,3,3,-1) table(6,2,2,-5) table(6,3,1,-7) table(6,1,3,-3) table(6,3,2,-4) table(6,2,1,-8) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,1,-2) table(7,3,2,6) table(7,3,3,-9) table(7,1,1,1) table(6,3,3,-1) table(6,1,1,9) table(6,1,2,-6) table(6,2,3,2) table(5,2,1,-8) table(5,3,2,-4) table(5,1,3,-3) table(5,3,1,-7) table(4,3,3,-1) table(4,1,1,9) table(4,2,2,8) table(4,1,2,-6) table(4,2,3,2) table(3,3,3,-2) table(3,3,2,-4) table(3,1,3,-3) table(3,3,1,-7) table(3,2,1,-5) table(3,2,3,1) table(2,1,1,9) table(2,1,3,3) table(2,2,2,8) table(2,1,2,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,2,2,-3) table(1,3,1,-7) table(1,2,1,-5)
+Optimization: 9
+Answer: 2
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(6,1,1) move(6,1,2) move(6,1,3) move(6,2,1) move(6,2,2) move(6,2,3) move(7,1,1) move(7,1,2) move(7,2,1) move(7,2,2) move(7,3,1) move(7,3,2) move(8,1,1) move(8,1,2) move(8,1,3) move(8,2,1) move(8,2,2) move(8,2,3) move(8,3,1) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,3,1,6) table(5,1,1,2) table(5,2,1,3) table(5,3,2,9) table(5,3,3,-1) table(6,1,3,-3) table(6,3,1,6) table(6,2,3,-2) table(7,1,2,-6) table(7,3,3,-1) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,3,-2) table(7,2,1,-8) table(7,3,2,-4) table(7,1,3,-3) table(7,1,1,-9) table(7,3,1,-7) table(7,2,2,-5) table(6,3,3,-1) table(6,2,1,5) table(6,1,2,7) table(6,3,2,9) table(6,1,1,4) table(6,2,2,8) table(5,3,1,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(4,3,3,-1) table(4,2,2,5) table(4,1,3,7) table(4,3,2,9) table(4,2,1,3) table(4,1,2,4) table(4,2,3,8) table(4,1,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 51.987s (Solving: 51.94s 1st Model: 26.14s Unsat: 0.19s)
+CPU Time    : 204.010s
+Choices     : 1050560
+Conflicts   : 777420
+Restarts    : 793
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 777175 (Binary:  0.6% Ternary:  0.5% Other: 98.9%)
+  Conflict  : 777175 (Average Length: 283.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 754643
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 56
+Problems    : 57     (Average Length: 13.63) 
+
+Setup:
+Option = --threads 4 --stat --eq=20 --backprop
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,3,1) move(1,3,2) move(2,3,2) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,2,2) move(5,3,2) move(6,3,1) move(6,3,2) move(7,2,2) move(7,2,3) move(8,3,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,4) table(1,3,1,3) table(1,2,2,7) table(1,3,2,5) table(2,1,1,1) table(2,3,2,-5) table(2,1,2,-9) table(2,1,3,-8) table(2,2,3,6) table(2,3,3,-2) table(3,2,1,2) table(3,3,1,-6) table(3,2,2,5) table(4,1,1,1) table(4,2,3,-5) table(5,2,1,2) table(5,3,1,-6) table(5,1,2,4) table(5,3,3,9) table(5,1,3,7) table(6,1,1,1) table(6,2,3,-5) table(6,2,2,-8) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,1,1) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,1,2) table(5,2,2,-8) table(5,3,2,-3) table(5,2,3,-5) table(5,1,1,1) table(4,1,3,7) table(4,3,3,9) table(4,2,2,3) table(4,1,2,4) table(4,3,2,8) table(4,3,1,-6) table(4,2,1,2) table(3,1,3,-8) table(3,3,3,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,2,-7) table(3,1,1,1) table(2,2,2,7) table(2,3,1,3) table(2,2,1,4) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,1) move(1,1,2) move(1,1,3) move(1,2,1) move(1,2,2) move(1,2,3) move(1,3,1) move(1,3,2) move(1,3,3) move(2,2,1) move(2,3,1) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(4,1,3) move(5,1,2) move(5,1,3) move(6,1,1) move(6,1,2) move(6,2,1) move(6,2,2) move(7,1,1) move(7,1,2) move(7,1,3) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,1,2) table(1,2,1,-6) table(1,3,1,8) table(1,1,2,4) table(1,2,2,3) table(1,3,2,9) table(1,1,3,7) table(1,2,3,5) table(1,3,3,-1) table(2,2,1,-8) table(2,3,1,6) table(3,1,3,8) table(3,3,2,9) table(3,3,3,-1) table(4,2,1,-7) table(4,2,2,-4) table(4,1,1,-8) table(4,3,1,6) table(4,2,3,-2) table(5,3,2,9) table(5,3,3,-1) table(6,1,3,-3) table(6,3,1,6) table(6,2,3,-2) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,3,-1) table(6,2,1,5) table(6,1,2,7) table(6,3,2,9) table(6,1,1,4) table(6,2,2,8) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,3,-1) table(4,1,3,5) table(4,3,2,9) table(4,1,2,3) table(3,2,3,-2) table(3,3,1,6) table(3,2,2,-4) table(3,1,2,-3) table(3,2,1,-7) table(3,1,1,-5) table(2,3,3,-1) table(2,2,3,5) table(2,1,3,7) table(2,3,2,9) table(2,2,2,3) table(2,1,2,4) table(2,1,1,2)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 94.866s (Solving: 94.82s 1st Model: 88.57s Unsat: 0.18s)
+CPU Time    : 372.790s
+Choices     : 1863850
+Conflicts   : 1388112
+Restarts    : 186
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2370   (Atom=Atom: 429 Body=Body: 54 Other: 1887)
+Tight       : Yes
+
+Variables   : 14823  (Eliminated:    0 Frozen:  349)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 1387378 (Binary:  0.3% Ternary:  0.3% Other: 99.4%)
+  Conflict  : 1387378 (Average Length: 286.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1366009
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 106
+Problems    : 107    (Average Length: 14.46) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,2,1,-8) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,3,5) table(2,2,2,3) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 6.130s (Solving: 5.97s 1st Model: 5.97s Unsat: 0.00s)
+CPU Time    : 23.270s
+Choices     : 138356
+Conflicts   : 118932
+Restarts    : 56
+
+Atoms       : 2722   (Original: 2722 Auxiliary: 0)
+Rules       : 14915  (1: 14791/14879 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13491 
+Equivalences: 2366   (Atom=Atom: 421 Body=Body: 63 Other: 1882)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4950 Frozen:  350)
+Constraints : 50402  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 118758 (Binary:  1.6% Ternary:  0.9% Other: 97.5%)
+  Conflict  : 118758 (Average Length: 100.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 104614
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 4
+Problems    : 5      (Average Length: 1.60) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,2) move(1,2,2) move(1,3,2) move(2,3,3) move(3,3,1) move(3,3,2) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,2,1) move(6,3,1) move(7,1,1) move(7,1,2) move(7,1,3) move(8,1,1) move(8,1,2) move(8,1,3) move(8,2,1) move(8,2,2) move(8,2,3) move(8,3,1) move(8,3,2) move(8,3,3) move(9,2,1) move(9,2,2) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,4) table(1,2,2,3) table(1,3,2,9) table(2,1,1,1) table(2,2,1,-5) table(2,3,1,-7) table(2,1,3,-8) table(2,2,3,6) table(3,3,3,2) table(3,1,2,4) table(3,2,2,3) table(3,3,2,7) table(4,1,1,1) table(4,2,1,-5) table(4,2,3,-7) table(4,3,1,-9) table(4,3,3,-3) table(4,1,3,-8) table(4,2,2,-2) table(5,2,2,2) table(5,3,1,8) table(5,1,1,3) table(5,1,3,9) table(5,2,1,7) table(5,2,3,5) table(5,3,3,-1) table(6,3,1,-7) table(6,3,2,-4) table(6,2,1,-8) table(6,1,2,6) table(7,2,2,2) table(7,1,2,-6) table(7,2,3,5) table(7,3,3,-1) table(8,1,1,1) table(8,2,1,-5) table(8,3,2,6) table(8,2,2,-2) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(7,2,1,-8) table(7,3,2,-4) table(7,1,3,-3) table(7,1,1,-9) table(7,3,1,-7) table(6,3,3,-1) table(6,2,3,5) table(6,1,3,9) table(6,1,1,3) table(6,2,2,2) table(5,1,2,6) table(5,3,2,-4) table(4,1,2,4) table(4,3,2,-6) table(3,2,3,6) table(3,1,3,-8) table(3,3,1,-9) table(3,2,1,-5) table(3,1,1,1) table(2,3,2,9) table(2,2,2,3) table(2,1,2,4) table(2,3,3,2) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,1,1) move(2,1,2) move(2,1,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(5,1,1) move(5,1,2) move(5,1,3) move(6,1,1) move(6,1,2) move(6,2,1) move(6,2,2) move(7,1,1) move(7,1,2) move(7,2,1) move(7,2,2) move(7,3,1) move(7,3,2) move(8,1,1) move(8,1,2) move(8,1,3) move(8,2,1) move(8,2,2) move(8,2,3) move(8,3,1) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,2,1,-8) table(2,3,1,6) table(3,1,3,8) table(3,3,2,9) table(3,3,3,-1) table(4,2,1,-7) table(4,2,2,-4) table(4,3,1,6) table(4,2,3,-2) table(5,3,2,9) table(5,3,3,-1) table(6,1,3,-3) table(6,3,1,6) table(6,2,3,-2) table(7,1,2,-6) table(7,3,3,-1) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,3,-2) table(7,2,1,-8) table(7,3,2,-4) table(7,1,3,-3) table(7,1,1,-9) table(7,3,1,-7) table(7,2,2,-5) table(6,3,3,-1) table(6,2,1,5) table(6,1,2,7) table(6,3,2,9) table(6,1,1,4) table(6,2,2,8) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,3,-1) table(4,1,2,5) table(4,3,2,9) table(4,1,1,3) table(4,1,3,8) table(3,2,3,-2) table(3,3,1,6) table(3,2,2,-4) table(3,1,2,-3) table(3,2,1,-7) table(3,1,1,-5) table(2,3,3,-1) table(2,2,3,5) table(2,1,3,7) table(2,3,2,9) table(2,2,2,3) table(2,1,2,4) table(2,1,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 68.417s (Solving: 68.36s 1st Model: 38.83s Unsat: 0.14s)
+CPU Time    : 264.090s
+Choices     : 1582614
+Conflicts   : 1070083
+Restarts    : 267
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 1069526 (Binary:  0.4% Ternary:  0.3% Other: 99.3%)
+  Conflict  : 1069526 (Average Length: 286.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1052725
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 69
+Problems    : 70     (Average Length: 13.24) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(1,3,1) move(1,3,2) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,1,2) move(3,1,3) move(3,2,2) move(3,2,3) move(3,3,2) move(3,3,3) move(4,2,2) move(4,3,2) move(5,3,1) move(5,3,2) move(6,2,2) move(6,2,3) move(7,2,2) move(8,3,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,4) table(1,3,1,3) table(1,2,2,7) table(1,3,2,5) table(2,1,1,1) table(2,2,2,-5) table(2,3,2,-7) table(2,1,2,-9) table(2,2,3,-3) table(2,3,3,-4) table(2,1,3,-8) table(3,2,1,2) table(3,3,1,-6) table(3,3,2,8) table(3,1,2,4) table(3,2,2,3) table(3,3,3,9) table(3,1,3,7) table(3,2,3,5) table(4,1,1,1) table(4,3,2,-3) table(4,2,2,-8) table(5,2,1,2) table(5,1,2,4) table(5,3,1,3) table(5,3,3,9) table(5,1,3,7) table(5,2,3,5) table(6,1,1,1) table(6,2,2,-5) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,1,1) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,2,2,-8) table(5,1,1,1) table(4,2,3,5) table(4,1,3,7) table(4,3,3,9) table(4,1,2,4) table(4,3,1,-6) table(4,2,1,2) table(3,1,1,1) table(2,3,1,-6) table(2,2,1,2) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,1,2,-9) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,1) move(6,1,2) move(6,1,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,3,2,9) table(5,3,3,-1) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,2,3,-2) table(5,3,1,6) table(5,1,1,-8) table(5,2,2,-4) table(5,1,3,-3) table(5,2,1,-7) table(5,1,2,-5) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,3,1) move(4,3,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(4,2,3,-3) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,5) table(4,2,2,7) table(4,2,1,4) table(4,3,2,8) table(4,1,3,-6) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 117.849s (Solving: 117.80s 1st Model: 107.09s Unsat: 0.18s)
+CPU Time    : 463.760s
+Choices     : 1453216
+Conflicts   : 1091332
+Restarts    : 1213
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 1090667 (Binary:  0.4% Ternary:  0.4% Other: 99.2%)
+  Conflict  : 1090667 (Average Length: 319.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1069915
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 71
+Problems    : 72     (Average Length: 12.40) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --save-progress
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,2,1) move(2,2,2) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,3) move(4,2,3) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,1,3) move(8,3,3) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,2,2,-5) table(2,3,1,-7) table(2,1,2,-9) table(2,2,3,-3) table(2,3,2,-4) table(2,1,3,-8) table(2,3,3,-2) table(3,2,1,2) table(3,2,2,4) table(3,3,1,3) table(3,2,3,7) table(3,3,2,5) table(4,1,1,1) table(4,2,3,-7) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(5,2,2,7) table(6,1,1,1) table(6,1,3,-7) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,1,1) table(6,2,2,5) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,6) table(3,1,3,-8) table(3,1,2,-9) table(3,1,1,1) table(2,2,1,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,3,1) move(6,3,2) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,2,1,-8) table(2,3,3,-2) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,3,1,-5) table(4,2,2,-7) table(4,2,3,-4) table(4,1,2,-8) table(4,3,2,6) table(5,2,1,2) table(5,1,3,-6) table(5,3,3,8) table(5,2,2,4) table(5,2,3,7) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,2,-3) table(5,1,2,-9) table(5,3,1,-5) table(5,1,1,1) table(4,3,3,9) table(4,1,3,3) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,3,1,-5) table(3,1,1,1) table(2,2,3,5) table(2,2,2,3) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(1,2,3) move(2,3,1) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,3) move(4,2,3) move(4,3,3) move(5,3,1) move(5,3,2) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,-6) table(1,2,2,3) table(1,2,3,5) table(2,1,1,1) table(2,1,2,-9) table(2,3,2,-4) table(2,1,3,-8) table(2,3,3,-2) table(3,2,1,2) table(3,2,2,4) table(4,1,1,1) table(4,3,1,-5) table(4,1,2,-9) table(4,3,2,-3) table(5,2,1,2) table(5,1,3,-6) table(5,3,3,8) table(5,2,2,4) table(5,3,1,3) table(5,2,3,7) table(5,3,2,5) table(6,1,1,1) table(6,2,3,-5) table(6,3,2,-7) table(6,1,2,-9) table(6,3,3,-4) table(6,2,2,-8) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,3,1,3) table(6,1,3,-6) table(6,2,1,2) table(5,1,2,-9) table(5,1,1,1) table(4,2,3,7) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,6) table(3,1,3,-8) table(3,3,2,-3) table(3,1,2,-9) table(3,2,3,-7) table(3,3,1,-5) table(3,1,1,1) table(2,2,3,5) table(2,3,1,7) table(2,2,2,3) table(2,2,1,-6) table(1,3,3,-2) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,2,1,-8) table(2,3,3,-2) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,3,1,-5) table(3,1,1,1) table(2,2,3,5) table(2,2,2,3) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 12.755s (Solving: 12.72s 1st Model: 6.75s Unsat: 0.28s)
+CPU Time    : 49.990s
+Choices     : 932352
+Conflicts   : 182145
+Restarts    : 287
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 182008 (Binary:  1.5% Ternary:  1.0% Other: 97.5%)
+  Conflict  : 182008 (Average Length: 372.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 148659
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 61
+Problems    : 62     (Average Length: 11.84) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --save-progress
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,3,3) move(2,1,1) move(2,1,2) move(3,1,2) move(3,1,3) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,1) move(5,2,1) move(6,3,1) move(7,2,2) move(7,2,3) move(8,2,2) move(9,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,3,3,2) table(2,2,1,-5) table(2,3,1,-7) table(2,2,2,-3) table(2,3,2,-4) table(2,1,3,-8) table(2,2,3,6) table(3,3,3,2) table(3,1,2,-6) table(3,2,2,8) table(3,1,3,3) table(3,1,1,9) table(4,3,3,-9) table(4,3,1,-3) table(4,2,2,-8) table(4,3,2,6) table(4,1,1,-2) table(5,2,1,2) table(5,1,2,4) table(5,1,3,7) table(5,2,3,5) table(6,1,1,1) table(6,3,3,-9) table(6,2,2,-8) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,1,3,7) table(8,1,1,1) table(8,3,3,-9) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,2,2,5) table(8,1,3,7) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,3,3,-9) table(7,2,2,-5) table(7,1,1,1) table(6,2,3,5) table(6,1,3,7) table(6,3,1,3) table(6,1,2,4) table(6,2,1,2) table(5,3,2,6) table(5,2,2,-8) table(5,3,1,-3) table(5,3,3,-9) table(5,1,1,1) table(4,2,1,-1) table(4,2,3,5) table(4,1,3,7) table(4,1,2,4) table(3,3,2,-4) table(3,3,1,-7) table(3,2,1,-5) table(3,2,3,1) table(2,1,2,-1) table(2,1,1,9) table(2,3,3,2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,2) move(1,1,3) move(1,2,2) move(1,2,3) move(1,3,2) move(1,3,3) move(2,2,2) move(2,3,2) move(3,1,2) move(3,1,3) move(3,2,2) move(3,2,3) move(3,3,2) move(3,3,3) move(4,2,1) move(4,2,2) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,2) table(1,2,2,-6) table(1,3,2,8) table(1,1,3,4) table(1,2,3,3) table(1,3,3,9) table(2,1,1,1) table(2,2,1,-5) table(2,3,1,-7) table(2,2,2,-8) table(2,3,2,6) table(3,1,3,-6) table(3,2,3,8) table(4,1,1,1) table(4,3,1,-7) table(4,1,2,-9) table(4,3,2,-4) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,2,2,4) table(5,2,3,7) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,1,-8) table(5,3,3,-3) table(5,1,2,-9) table(5,3,2,-5) table(5,1,1,1) table(4,2,2,5) table(4,2,1,3) table(4,2,3,8) table(4,1,3,-6) table(3,3,3,-2) table(3,3,2,-4) table(3,2,2,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,1,-5) table(3,1,1,1) table(2,3,3,9) table(2,2,3,3) table(2,1,3,4) table(2,1,2,2) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,2) move(1,2,2) move(1,3,2) move(2,2,2) move(2,2,3) move(2,3,2) move(2,3,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,2,1) move(4,2,2) move(5,2,1) move(6,2,3) move(6,3,3) move(7,1,3) move(7,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,2,4) table(1,2,2,3) table(1,3,2,9) table(2,1,1,1) table(2,2,1,-5) table(2,3,1,-7) table(2,2,3,-9) table(2,3,3,-3) table(2,1,3,-8) table(3,2,2,2) table(3,1,2,4) table(3,3,1,3) table(3,3,3,7) table(4,1,1,1) table(4,2,3,-9) table(4,1,3,-8) table(4,3,2,6) table(4,2,1,-2) table(5,2,1,2) table(5,1,2,4) table(5,3,1,3) table(5,3,3,7) table(5,2,2,5) table(6,1,1,1) table(6,2,3,-7) table(6,1,3,-8) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,2,2,5) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,1,2) table(5,3,2,6) table(5,1,3,-8) table(5,2,3,-9) table(5,1,1,1) table(4,2,2,5) table(4,3,3,7) table(4,3,1,3) table(4,1,2,4) table(3,3,2,6) table(3,1,3,-8) table(3,2,3,-9) table(3,2,1,-5) table(3,1,1,1) table(2,1,2,4) table(2,3,2,-6) table(2,2,2,2) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,3,1,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 8.344s (Solving: 8.30s 1st Model: 2.40s Unsat: 0.27s)
+CPU Time    : 32.770s
+Choices     : 736797
+Conflicts   : 140235
+Restarts    : 222
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 139966 (Binary:  1.8% Ternary:  1.1% Other: 97.1%)
+  Conflict  : 139966 (Average Length: 339.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 123059
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 50
+Problems    : 51     (Average Length: 10.53) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,1,2,-9) table(2,3,1,-8) table(3,2,1,2) table(3,1,3,-6) table(3,3,3,8) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,2,-3) table(3,1,2,-9) table(3,3,1,-5) table(3,1,1,1) table(2,3,3,5) table(2,2,3,7) table(2,3,2,3) table(2,2,2,4) table(2,1,3,-6) table(2,2,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 6
+Time        : 5.360s (Solving: 5.22s 1st Model: 5.21s Unsat: 0.00s)
+CPU Time    : 20.710s
+Choices     : 125675
+Conflicts   : 105703
+Restarts    : 67
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4940 Frozen:  359)
+Constraints : 50340  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 105640 (Binary:  1.7% Ternary:  1.1% Other: 97.2%)
+  Conflict  : 105640 (Average Length: 119.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 84330 
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 8
+Problems    : 9      (Average Length: 2.44) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,3,1) move(3,1,3) move(3,2,3) move(3,3,3) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(4,3,2) move(4,3,3) move(5,2,1) move(5,2,2) move(5,3,1) move(5,3,2) move(6,2,3) move(7,3,1) move(7,3,2) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(9,1,2) move(9,2,2) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,1,2,-9) table(2,3,2,-4) table(2,1,3,-8) table(2,2,3,6) table(2,3,3,-2) table(3,1,3,2) table(3,2,3,-6) table(3,3,3,8) table(3,2,1,3) table(3,3,1,7) table(3,2,2,5) table(4,1,1,1) table(4,2,3,-5) table(4,1,2,-8) table(4,2,2,6) table(4,3,2,-2) table(5,2,1,2) table(5,3,1,-6) table(5,1,3,4) table(5,3,3,9) table(6,1,1,1) table(6,2,2,-7) table(6,3,2,-3) table(6,1,2,-8) table(7,2,1,2) table(7,1,3,4) table(7,3,1,3) table(7,3,3,9) table(7,2,3,5) table(8,1,1,1) table(8,1,2,-5) table(8,2,2,-4) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,2,-7) table(7,1,1,1) table(6,2,3,5) table(6,3,3,9) table(6,1,3,4) table(6,3,1,-6) table(6,2,1,2) table(5,1,2,-8) table(5,3,2,-3) table(5,2,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,1,7) table(4,3,3,9) table(4,2,1,3) table(4,1,3,4) table(3,3,2,-4) table(3,1,2,-9) table(3,1,1,1) table(2,2,2,5) table(2,3,1,7) table(2,2,1,3) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,1,1) move(2,1,2) move(2,1,3) move(2,2,1) move(2,2,2) move(2,2,3) move(2,3,1) move(2,3,2) move(2,3,3) move(3,2,2) move(3,2,3) move(4,1,1) move(4,1,2) move(4,1,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,2,1,-8) table(2,3,1,6) table(3,1,1,2) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,1,1,1) table(4,3,1,-7) table(4,1,2,-9) table(4,3,2,-4) table(4,3,3,-2) table(5,2,1,2) table(5,1,3,-6) table(5,2,2,4) table(5,2,3,7) table(6,1,1,1) table(6,1,2,-9) table(7,2,1,2) table(7,3,1,3) table(7,3,3,9) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,3,2,6) table(7,1,2,-8) table(7,2,3,-4) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,5) table(6,2,3,7) table(6,3,1,3) table(6,2,2,4) table(6,3,3,8) table(6,1,3,-6) table(6,2,1,2) table(5,3,1,-8) table(5,3,3,-3) table(5,1,2,-9) table(5,3,2,-5) table(5,1,1,1) table(4,2,2,5) table(4,2,1,3) table(4,2,3,8) table(4,1,3,-6) table(3,3,1,6) table(3,2,1,-8) table(3,2,3,-3) table(3,2,2,-5) table(2,3,3,-1) table(2,2,3,5) table(2,1,3,7) table(2,3,2,9) table(2,2,2,3) table(2,1,2,4) table(2,1,1,2) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,2,1) move(1,2,2) move(2,3,1) move(2,3,2) move(3,1,3) move(3,2,3) move(4,1,2) move(4,1,3) move(4,2,2) move(4,2,3) move(5,2,1) move(5,2,2) move(5,2,3) move(6,2,1) move(6,2,2) move(6,2,3) move(6,3,1) move(6,3,2) move(6,3,3) move(7,1,2) move(7,1,3) move(7,2,2) move(7,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,1,2,-9) table(2,1,3,-8) table(2,2,3,6) table(2,3,3,-2) table(3,1,3,-6) table(3,2,3,8) table(3,3,1,4) table(3,2,1,3) table(3,3,2,7) table(3,2,2,5) table(4,1,1,1) table(4,1,3,-5) table(4,1,2,-8) table(4,2,2,6) table(4,3,3,-2) table(5,2,2,-6) table(5,3,1,4) table(5,3,2,7) table(6,1,1,1) table(6,1,3,-5) table(6,2,2,-7) table(6,2,3,-4) table(6,1,2,-8) table(6,3,2,6) table(7,2,1,2) table(7,2,3,8) table(7,1,2,4) table(7,3,1,3) table(7,3,3,9) table(7,1,3,7) table(7,2,2,5) table(7,3,2,6) table(7,1,1,1) table(6,3,3,9) table(6,3,1,3) table(6,2,1,2) table(5,3,3,-2) table(5,1,2,-8) table(5,2,3,-3) table(5,2,1,-9) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,7) table(4,2,3,9) table(4,2,1,3) table(4,3,1,4) table(3,3,3,-2) table(3,1,2,-9) table(3,1,1,1) table(2,2,2,5) table(2,3,2,7) table(2,2,1,3) table(2,3,1,4) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 7
+Answer: 4
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,1,2) move(5,1,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,2,1,2) table(3,1,3,-6) table(3,2,2,4) table(3,2,3,7) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,3,1,3) table(5,3,3,9) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,3,2,6) table(5,1,2,-8) table(5,2,3,-4) table(5,2,2,-7) table(5,1,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,1,-8) table(3,3,3,-3) table(3,1,2,-9) table(3,3,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 15.346s (Solving: 15.30s 1st Model: 9.43s Unsat: 0.30s)
+CPU Time    : 60.280s
+Choices     : 1178574
+Conflicts   : 250250
+Restarts    : 247
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 249857 (Binary:  1.1% Ternary:  0.7% Other: 98.2%)
+  Conflict  : 249857 (Average Length: 398.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 232911
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 61
+Problems    : 62     (Average Length: 16.11) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000
+Model = model.lp
+Data = data/gen_prob_297.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(1,2,1) move(1,2,2) move(2,1,3) move(2,2,3) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,1,2) move(4,1,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,3,1) move(8,3,2) move(8,3,3) move(9,1,2) move(9,1,3) move(9,2,2) move(9,2,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,2,1,3) table(1,2,2,5) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,1,2) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,2,2,-5) table(4,1,2,-7) table(4,2,3,-3) table(4,1,3,-4) table(4,2,1,-8) table(4,3,1,6) table(5,1,3,-6) table(5,2,3,8) table(5,3,1,4) table(5,2,1,3) table(5,3,2,7) table(5,2,2,5) table(6,1,1,1) table(6,1,3,-5) table(6,1,2,-8) table(6,2,2,6) table(6,3,3,-2) table(7,2,1,2) table(7,3,2,-6) table(8,1,1,1) table(8,1,3,-5) table(8,2,2,-7) table(8,2,3,-4) table(8,1,2,-8) table(8,3,2,6) table(9,2,1,2) table(9,2,3,8) table(9,1,2,4) table(9,3,1,3) table(9,3,3,9) table(9,1,3,7) table(9,2,2,5) table(9,3,2,6) table(9,1,1,1) table(8,3,3,9) table(8,3,1,3) table(8,2,1,2) table(7,1,2,-8) table(7,2,3,-4) table(7,3,3,-3) table(7,3,1,-9) table(7,2,2,-7) table(7,1,3,-5) table(7,1,1,1) table(6,3,2,7) table(6,2,3,9) table(6,2,1,3) table(6,3,1,4) table(5,3,3,-2) table(5,1,2,-9) table(5,1,1,1) table(4,3,3,-1) table(4,3,2,9) table(4,1,1,2) table(3,3,1,6) table(3,2,1,-8) table(3,2,3,-3) table(3,2,2,-5) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,2,3,6) table(1,1,3,-8) table(1,3,2,-4) table(1,1,2,-9) table(1,3,1,-7) table(1,1,1,1)
+Optimization: 9
+Answer: 2
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,1,1) move(3,1,2) move(3,1,3) move(3,2,1) move(3,2,2) move(3,2,3) move(3,3,1) move(3,3,2) move(3,3,3) move(4,2,1) move(4,2,2) move(4,2,3) move(5,1,1) move(5,1,2) move(5,1,3) move(5,2,1) move(5,2,2) move(5,2,3) move(5,3,1) move(5,3,2) move(5,3,3) move(6,2,1) move(6,2,2) move(6,3,1) move(6,3,2) move(7,2,1) move(7,2,2) move(7,2,3) move(7,3,1) move(7,3,2) move(7,3,3) move(8,1,2) move(8,1,3) move(8,2,2) move(8,2,3) move(8,3,2) move(8,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,1,2) table(3,1,2,4) table(3,3,2,9) table(3,1,3,7) table(3,3,3,-1) table(4,3,1,6) table(5,1,3,-6) table(6,1,1,1) table(6,1,2,-9) table(6,2,3,-3) table(6,3,3,-2) table(7,2,1,2) table(7,1,3,-6) table(7,3,1,3) table(8,1,1,1) table(8,3,2,6) table(8,2,2,5) table(8,1,3,7) table(8,3,3,9) table(8,3,1,3) table(8,1,2,4) table(8,2,3,8) table(8,2,1,2) table(7,2,2,-8) table(7,3,3,-4) table(7,1,2,-9) table(7,3,2,-7) table(7,2,3,-5) table(7,1,1,1) table(6,3,1,5) table(6,2,2,7) table(6,2,1,4) table(6,3,2,8) table(6,1,3,-6) table(5,3,3,-2) table(5,2,1,-8) table(5,3,2,-4) table(5,2,3,-3) table(5,1,2,-9) table(5,3,1,-7) table(5,2,2,-5) table(5,1,1,1) table(4,3,3,-1) table(4,2,2,5) table(4,1,3,7) table(4,3,2,9) table(4,2,1,3) table(4,1,2,4) table(4,2,3,8) table(4,1,1,2) table(3,3,1,6) table(3,2,1,-8) table(3,2,3,-3) table(3,2,2,-5) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 8
+Answer: 3
+move(1,1,3) move(1,2,3) move(2,2,1) move(2,2,2) move(3,2,1) move(3,2,2) move(3,2,3) move(4,2,1) move(4,2,2) move(4,2,3) move(4,3,1) move(4,3,2) move(4,3,3) move(5,2,2) move(5,2,3) move(5,3,2) move(5,3,3) move(6,1,2) move(6,1,3) move(6,2,2) move(6,2,3) move(6,3,2) move(6,3,3) table(0,1,1,1) table(0,2,1,-5) table(0,3,1,-7) table(0,1,2,-9) table(0,2,2,-3) table(0,3,2,-4) table(0,1,3,-8) table(0,2,3,6) table(0,3,3,-2) table(1,1,3,-6) table(1,2,3,8) table(2,1,1,1) table(2,3,1,-7) table(2,1,2,-9) table(2,3,2,-4) table(2,3,3,-2) table(3,1,3,-6) table(4,1,1,1) table(4,1,2,-9) table(5,2,1,2) table(5,1,3,-6) table(5,3,1,3) table(6,1,1,1) table(6,3,2,6) table(6,2,2,5) table(6,1,3,7) table(6,3,3,9) table(6,3,1,3) table(6,1,2,4) table(6,2,3,8) table(6,2,1,2) table(5,2,2,-8) table(5,3,3,-4) table(5,1,2,-9) table(5,3,2,-7) table(5,2,3,-5) table(5,1,1,1) table(4,3,2,5) table(4,2,3,7) table(4,3,1,3) table(4,2,2,4) table(4,3,3,8) table(4,1,3,-6) table(4,2,1,2) table(3,3,3,-2) table(3,2,1,-8) table(3,3,2,-4) table(3,2,3,-3) table(3,1,2,-9) table(3,3,1,-7) table(3,2,2,-5) table(3,1,1,1) table(2,2,2,5) table(2,2,1,3) table(2,2,3,8) table(2,1,3,-6) table(1,3,3,-2) table(1,3,2,-4) table(1,2,2,-3) table(1,1,2,-9) table(1,3,1,-7) table(1,2,1,-5) table(1,1,1,1)
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 71.684s (Solving: 71.63s 1st Model: 52.96s Unsat: 0.21s)
+CPU Time    : 282.440s
+Choices     : 1149146
+Conflicts   : 856069
+Restarts    : 712
+
+Atoms       : 2722  
+Rules       : 14827  (1: 14791 2: 26 3: 9 6: 1)
+Bodies      : 13484 
+Equivalences: 2373   (Atom=Atom: 428 Body=Body: 55 Other: 1890)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 855711 (Binary:  0.5% Ternary:  0.4% Other: 99.1%)
+  Conflict  : 855711 (Average Length: 292.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 832601
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 57
+Problems    : 58     (Average Length: 10.98) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Setup:
+Option = --threads 4 --stat --heuristic=VSIDS
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 1.829s (Solving: 1.79s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 7.080s
+Choices     : 55079
+Conflicts   : 44405
+Restarts    : 37
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 44383  (Binary:  3.5% Ternary:  1.4% Other: 95.1%)
+  Conflict  : 44383  (Average Length: 134.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 25429 
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.50) 
+
+Setup:
+Option = --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.478s (Solving: 0.44s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 1.720s
+Choices     : 26010
+Conflicts   : 15795
+Restarts    : 28
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 15786  (Binary:  5.4% Ternary:  2.2% Other: 92.3%)
+  Conflict  : 15786  (Average Length: 92.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 6715  
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.50) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.297s (Solving: 0.14s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.670s
+Choices     : 5131
+Conflicts   : 3420
+Restarts    : 15
+
+Atoms       : 2718   (Original: 2718 Auxiliary: 0)
+Rules       : 14911  (1: 14787/14875 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13485 
+Equivalences: 2355   (Atom=Atom: 417 Body=Body: 62 Other: 1876)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4944 Frozen:  350)
+Constraints : 50414  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 3415   (Binary:  8.9% Ternary:  4.0% Other: 87.1%)
+  Conflict  : 3415   (Average Length: 58.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.50) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.242s (Solving: 0.20s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.770s
+Choices     : 37114
+Conflicts   : 4644
+Restarts    : 17
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 4637   (Binary:  7.6% Ternary:  2.4% Other: 90.0%)
+  Conflict  : 4637   (Average Length: 86.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.50) 
+
+Setup:
+Option = --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.172s (Solving: 0.03s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.220s
+Choices     : 137
+Conflicts   : 80
+Restarts    : 0
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4946 Frozen:  359)
+Constraints : 50328  (Binary: 70.4% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 79     (Binary:  8.9% Ternary:  5.1% Other: 86.1%)
+  Conflict  : 79     (Average Length: 15.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 4
+Problems    : 5      (Average Length: 1.60) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.190s (Solving: 0.05s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.270s
+Choices     : 645
+Conflicts   : 391
+Restarts    : 2
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4946 Frozen:  359)
+Constraints : 50328  (Binary: 70.4% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 390    (Binary: 12.6% Ternary:  5.6% Other: 81.8%)
+  Conflict  : 390    (Average Length: 30.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 5
+Problems    : 6      (Average Length: 2.17) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.160s (Solving: 0.02s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.170s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 2718   (Original: 2718 Auxiliary: 0)
+Rules       : 14911  (1: 14787/14875 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13485 
+Equivalences: 2352   (Atom=Atom: 418 Body=Body: 61 Other: 1873)
+Tight       : Yes
+
+Variables   : 14830  (Eliminated: 4944 Frozen:  341)
+Constraints : 50414  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 0
+Problems    : 0      (Average Length: 0.00) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.154s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.150s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 2718   (Original: 2718 Auxiliary: 0)
+Rules       : 14911  (1: 14787/14875 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13485 
+Equivalences: 2355   (Atom=Atom: 417 Body=Body: 62 Other: 1876)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4944 Frozen:  350)
+Constraints : 11527  (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+Setup:
+Option = --threads 4 --stat --restarts=256 --save-progress
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.157s (Solving: 0.11s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.420s
+Choices     : 13158
+Conflicts   : 2372
+Restarts    : 8
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 2367   (Binary:  6.4% Ternary:  2.9% Other: 90.7%)
+  Conflict  : 2367   (Average Length: 107.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.50) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.172s (Solving: 0.03s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.210s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4946 Frozen:  359)
+Constraints : 50328  (Binary: 70.4% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 0
+Problems    : 0      (Average Length: 0.00) 
+
+Setup:
+Option = --threads 4 --stat
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 0.150s (Solving: 0.11s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.420s
+Choices     : 5700
+Conflicts   : 3230
+Restarts    : 14
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 3227   (Binary:  8.2% Ternary:  3.0% Other: 88.7%)
+  Conflict  : 3227   (Average Length: 71.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.25) 
+
