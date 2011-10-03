@@ -92,7 +92,7 @@ Grid<_N,_M> gridFromFile(QString filename)
 	int w = dimension[0].toInt();
 	int h = dimension[1].toInt();
 
-	if( w != 3 || h != 3 ) {
+	if( w != _M || h != _N ) {
 		qDebug() << "Only able to solve" << _N << "x" << _M << "puzzles.";
 		return Grid<_N,_M>();
 	}
