@@ -1,6 +1,6 @@
 {
 	"type" : "application/spinpossible",
 	"dimension" : [3, 3],
-	"description" : "Valtentins schwierigeres Problem",
-	"grid" : [4, -1, 3, -2, 5, -8, -7, 6, -9]
+	"description" : "Level 9 Problem",
+	"grid" : [4, 7, -1, -5, -8, 3, 6, 9, 2]
 }
