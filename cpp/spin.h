@@ -25,5 +25,6 @@ QList<Spin> getAllSpins() {
         return result;
 }
 
+bool isBefore(const Spin& a, const Spin& b);
 
 #endif // SPIN_H
