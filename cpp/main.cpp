@@ -19,8 +19,6 @@ Grid<_N,_M> gridFromFile(QString filename);
 
 int main(int argc, char *argv[])
 {
-	qDebug() << argc;
-
 	Grid<_N,_M> problemGrid;
 	if ( argc >= 2 ) {
 		problemGrid = gridFromFile(argv[1]);
@@ -105,6 +103,8 @@ Grid<_N,_M> gridFromFile(QString filename)
 	}
 
 	Grid<_N,_M> grid(gridTiles);
+
+	qDebug() << "Description of loaded grid:" << problemGridVariant["description"].toString();
 
 	return grid;
 }
