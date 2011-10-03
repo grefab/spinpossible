@@ -107,3 +107,43 @@ Data = data/gregor8.lp
 clasp version 2.0.1
 Reading from stdin
 Solving...
+UNKNOWN
+
+INTERRUPTED : 1
+Models      : 0+    
+Time        : 99.996s (Solving: 99.95s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 392.940s
+Choices     : 1651736
+Conflicts   : 1238000
+Restarts    : 72
+
+Atoms       : 2718  
+Rules       : 14823  (1: 14787 2: 26 3: 9 6: 1)
+Bodies      : 13478 
+Equivalences: 2362   (Atom=Atom: 424 Body=Body: 54 Other: 1884)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 1237483 (Binary:  0.3% Ternary:  0.3% Other: 99.4%)
+  Conflict  : 1237483 (Average Length: 322.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1188017
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 3
+Problems    : 4      (Average Length: 1.25) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model = model.lp
+Data = data/gregor8.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...

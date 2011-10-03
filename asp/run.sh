@@ -15,7 +15,7 @@ Option=$Option' --threads 4 --stat '
 
 Strategy=$2
 case $Strategy in
-    #0) Option=$Option'--heuristic=Berkmin --berk-max=163';;
+    0) Option=$Option'--heuristic=Berkmin --berk-max=163';;
     1) Option=$Option'--restarts=100,1.5,1000 --local-restart --save-progress';;
     2) Option=$Option'--heuristic=VSIDS';;
     3) Option=$Option'--deletion=1,1,1 --reduce-on-restart';;
