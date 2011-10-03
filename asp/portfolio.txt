@@ -1,0 +1,25 @@
+--restarts=100,1.5,1000 --local-restart --save-progress
+--heuristic=VSIDS
+
+--deletion=1,1,1 --reduce-on-restart
+--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+ --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+--restarts=100,1.5,1000 --save-progress
+--restarts=100,1.5,1000 --local-restart
+--otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+--restarts=16000
+--sat-pre=20,25,120
+--sat-pre=20,25,120 --trans-ext=dynamic --backprop
+--heuristic=Berkmin --berk-max=512
+--dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+--restarts=256 --local-restart
+--eq=20 --backprop
+--heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+--heuristic=Berkmin --berk-max=512 --berk-huang
+--restarts=256
+--restarts=256 --save-progress
+--heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+--restarts=256 --local-restart --save-progress
+--heuristic=Bekmin --berk-ma
+--restarts=100,1.5,1000

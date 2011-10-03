@@ -15,7 +15,7 @@ Option=$Option' --threads 4 --stat '
 
 Strategy=x
 case $Strategy in
-    x) Option=$Option'--heuristic=Berkmin --berk-max=100';;
+    x) Option=$Option'--heuristic=Berkmin --berk-max=188';;
     y) Option=$Option'--heuristic=Berkmin --berk-max=512';;
     0) Option=$Option'--heuristic=Vmtf';;
     1) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;

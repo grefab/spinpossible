@@ -7,11 +7,11 @@ upperLeft(K,X,Y) :- move(K,X,Y,_,_).
 isSingle(K) :- move(K,X,Y,0,0). 
 :- k(K;K+1), isSingle(K), not isSingle(K+1). 
 
+#containment
+containing(K) :- move(K+1,X,Y), not move(K,X,Y). 
+:- intersecting(K), not containing(K), k(K).
+
 # big one in the end
 :- k(K), not final(K), move(K,0,0,n-1,n-1). 
 
-#containment
-not_containing(K) :- move(K+1,X,Y), not move(K,X,Y). 
-
-:- not not_containing(K), move(K,
 
