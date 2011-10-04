@@ -20284,3 +20284,817 @@ Solving...
 Answer: 1
 move(9,1,3,0,0) move(8,2,3,1,0) move(7,1,3,1,0) move(6,1,1,0,2) move(5,1,2,1,0) move(4,2,1,0,1) move(3,1,2,0,1) move(2,1,2,2,0) move(1,3,1,0,1)
 Optimization: 9
+Answer: 2
+move(8,3,1,0,0) move(7,1,2,1,0) move(6,2,1,1,2) move(5,1,2,0,1) move(4,1,1,1,1) move(3,1,1,0,1) move(2,2,1,1,1) move(1,2,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 208.673s (Solving: 208.62s 1st Model: 5.04s Unsat: 28.08s)
+CPU Time    : 826.730s
+Choices     : 5045525
+Conflicts   : 1542348
+Restarts    : 1497
+
+Atoms       : 2824  
+Rules       : 15676  (1: 15640 2: 26 3: 9 6: 1)
+Bodies      : 13926 
+Equivalences: 2380   (Atom=Atom: 433 Body=Body: 54 Other: 1893)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1541959 (Binary:  0.1% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1541959 (Average Length: 896.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1520623
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 335
+Problems    : 336    (Average Length: 65.35) 
+
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_514.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_514.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,2,2,0,1) move(7,1,2,1,0) move(6,2,2,1,1) move(5,1,1,1,2) move(4,1,1,2,0) move(3,1,1,1,1) move(2,2,1,1,2) move(1,1,2,1,1)
+Optimization: 9
+Answer: 2
+move(8,3,1,0,0) move(7,1,2,1,0) move(6,2,1,1,2) move(5,1,2,0,1) move(4,1,1,1,1) move(3,1,1,0,1) move(2,2,1,1,1) move(1,2,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 55.431s (Solving: 55.38s 1st Model: 14.46s Unsat: 17.43s)
+CPU Time    : 220.520s
+Choices     : 985644
+Conflicts   : 758672
+Restarts    : 1164
+
+Atoms       : 2824  
+Rules       : 15676  (1: 15640 2: 26 3: 9 6: 1)
+Bodies      : 13926 
+Equivalences: 2380   (Atom=Atom: 433 Body=Body: 54 Other: 1893)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 758489 (Binary:  0.2% Ternary:  0.1% Other: 99.6%)
+  Conflict  : 758489 (Average Length: 244.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 741566
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 180
+Problems    : 181    (Average Length: 37.08) 
+
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,1,3,1,0) move(7,1,1,0,2) move(6,2,1,0,2) move(5,1,1,2,1) move(4,2,2,1,1) move(3,1,2,1,1) move(2,2,1,0,1) move(1,1,2,2,0)
+Optimization: 9
+Answer: 2
+move(8,1,3,1,0) move(7,1,1,0,2) move(6,1,1,2,1) move(5,2,2,1,0) move(4,3,2,0,1) move(3,2,3,1,0) move(2,1,2,1,1) move(1,2,1,0,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 74.669s (Solving: 74.63s 1st Model: 42.99s Unsat: 18.26s)
+CPU Time    : 297.330s
+Choices     : 1562568
+Conflicts   : 1221888
+Restarts    : 696
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1221700 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1221700 (Average Length: 261.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1205914
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 160
+Problems    : 161    (Average Length: 25.27) 
+
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,2,2) move(8,2,2,1,0) move(7,2,1,0,2) move(6,3,1,0,2) move(5,2,1,1,1) move(4,1,2,1,1) move(3,1,1,1,1) move(2,2,2,1,0) move(1,1,1,1,2)
+Optimization: 9
+Answer: 2
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,1) move(5,1,1,1,0) move(4,2,2,1,1) move(3,1,1,1,2) move(2,2,1,1,2) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 66.459s (Solving: 66.42s 1st Model: 27.38s Unsat: 31.87s)
+CPU Time    : 264.560s
+Choices     : 2894971
+Conflicts   : 802972
+Restarts    : 867
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 802758 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 802758 (Average Length: 706.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 785612
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 196
+Problems    : 197    (Average Length: 35.18) 
+
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,2,2,1) move(8,1,1,1,1) move(7,1,3,2,0) move(6,2,2,1,1) move(5,2,1,0,1) move(4,1,1,1,0) move(3,2,1,1,2) move(2,1,3,2,0) move(1,3,1,0,2)
+Optimization: 9
+Answer: 2
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,1) move(5,1,1,1,0) move(4,2,2,1,1) move(3,1,1,1,2) move(2,2,1,1,2) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 90.996s (Solving: 90.93s 1st Model: 72.79s Unsat: 0.01s)
+CPU Time    : 360.540s
+Choices     : 1487839
+Conflicts   : 1319797
+Restarts    : 148
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1319668 (Binary:  0.2% Ternary:  0.1% Other: 99.8%)
+  Conflict  : 1319668 (Average Length: 213.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1274344
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 9
+Problems    : 10     (Average Length: 3.80) 
+
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,1,3,1,0) move(7,1,1,0,2) move(6,2,1,0,2) move(5,1,1,2,1) move(4,2,2,1,1) move(3,1,2,1,1) move(2,2,1,0,1) move(1,1,2,2,0)
+Optimization: 9
+Answer: 2
+move(8,1,2,1,1) move(7,1,1,1,1) move(6,3,1,0,2) move(5,1,2,1,0) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 107.326s (Solving: 107.27s 1st Model: 58.42s Unsat: 23.35s)
+CPU Time    : 427.460s
+Choices     : 2036077
+Conflicts   : 1589863
+Restarts    : 786
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1589639 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1589639 (Average Length: 270.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1580903
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 163
+Problems    : 164    (Average Length: 41.00) 
+
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,1,2,1,1) move(7,1,1,1,1) move(6,3,1,0,2) move(5,1,2,1,0) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 75.975s (Solving: 75.83s 1st Model: 75.82s Unsat: 0.01s)
+CPU Time    : 301.770s
+Choices     : 1193270
+Conflicts   : 1050800
+Restarts    : 128
+
+Atoms       : 2826   (Original: 2826 Auxiliary: 0)
+Rules       : 15766  (1: 15642/15730 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13935 
+Equivalences: 2378   (Atom=Atom: 428 Body=Body: 63 Other: 1887)
+Tight       : Yes
+
+Variables   : 15467  (Eliminated: 4988 Frozen:  350)
+Constraints : 51819  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 1050742 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1050742 (Average Length: 179.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1013151
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 8
+Problems    : 9      (Average Length: 7.33) 
+
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,1) move(8,1,2,0,1) move(7,2,2,1,0) move(6,2,1,0,2) move(5,3,2,0,1) move(4,2,1,1,1) move(3,1,2,2,1) move(2,2,1,1,1) move(1,1,1,1,1)
+Optimization: 9
+Answer: 2
+move(8,1,1,1,0) move(7,3,1,0,2) move(6,1,2,1,1) move(5,1,1,1,1) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 152.861s (Solving: 152.82s 1st Model: 55.77s Unsat: 58.63s)
+CPU Time    : 608.260s
+Choices     : 3266462
+Conflicts   : 1040046
+Restarts    : 1209
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1025202 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1025202 (Average Length: 749.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 967945
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 61809
+Problems    : 61810  (Average Length: 91.65) 
+
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,1) move(5,1,1,1,0) move(4,2,2,1,1) move(3,2,1,1,1) move(2,1,1,1,2) move(1,2,1,1,2)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 35.335s (Solving: 35.19s 1st Model: 16.37s Unsat: 18.82s)
+CPU Time    : 139.790s
+Choices     : 735120
+Conflicts   : 591545
+Restarts    : 472
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated: 4976 Frozen:  359)
+Constraints : 51786  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 591433 (Binary:  0.3% Ternary:  0.2% Other: 99.5%)
+  Conflict  : 591433 (Average Length: 82.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 570683
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 122
+Problems    : 123    (Average Length: 24.69) 
+
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,2) move(5,1,2,1,1) move(4,1,3,1,0) move(3,2,1,1,2) move(2,1,1,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 81.140s (Solving: 80.99s 1st Model: 56.38s Unsat: 24.61s)
+CPU Time    : 322.330s
+Choices     : 1508667
+Conflicts   : 1247508
+Restarts    : 657
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated: 4976 Frozen:  359)
+Constraints : 51786  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 1247276 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1247276 (Average Length: 163.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1234943
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 174
+Problems    : 175    (Average Length: 27.04) 
+
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,1) move(5,2,2,1,1) move(4,1,1,1,2) move(3,1,3,1,0) move(2,2,1,1,2) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 53.127s (Solving: 52.97s 1st Model: 27.30s Unsat: 25.67s)
+CPU Time    : 211.210s
+Choices     : 1060425
+Conflicts   : 865455
+Restarts    : 529
+
+Atoms       : 2826   (Original: 2826 Auxiliary: 0)
+Rules       : 15766  (1: 15642/15730 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13935 
+Equivalences: 2375   (Atom=Atom: 429 Body=Body: 62 Other: 1884)
+Tight       : Yes
+
+Variables   : 15071  (Eliminated: 4988 Frozen:  341)
+Constraints : 51819  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 865251 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 865251 (Average Length: 148.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 849477
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 135
+Problems    : 136    (Average Length: 31.74) 
+
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,1,1,1,0) move(7,3,1,0,2) move(6,1,2,1,1) move(5,1,1,1,1) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 57.391s (Solving: 57.24s 1st Model: 57.23s Unsat: 0.01s)
+CPU Time    : 227.550s
+Choices     : 924480
+Conflicts   : 810571
+Restarts    : 122
+
+Atoms       : 2826   (Original: 2826 Auxiliary: 0)
+Rules       : 15766  (1: 15642/15730 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13935 
+Equivalences: 2378   (Atom=Atom: 428 Body=Body: 63 Other: 1887)
+Tight       : Yes
+
+Variables   : 15467  (Eliminated: 4988 Frozen:  350)
+Constraints : 51819  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 810495 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 810495 (Average Length: 165.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 763100
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 9
+Problems    : 10     (Average Length: 5.90) 
+
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,2) move(8,2,1,1,1) move(7,2,2,1,0) move(6,1,3,1,0) move(5,2,2,1,1) move(4,2,1,0,2) move(3,1,1,1,0) move(2,2,2,1,0) move(1,1,1,1,2)
+Optimization: 9
+Answer: 2
+move(8,3,1,0,2) move(7,1,2,1,1) move(6,1,1,1,1) move(5,1,2,1,0) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 134.566s (Solving: 134.51s 1st Model: 77.99s Unsat: 42.09s)
+CPU Time    : 536.680s
+Choices     : 3007111
+Conflicts   : 911100
+Restarts    : 1306
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 910704 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 910704 (Average Length: 776.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 892671
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 290
+Problems    : 291    (Average Length: 49.26) 
+
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,1) move(8,1,1,1,0) move(7,3,1,0,2) move(6,1,3,1,0) move(5,2,2,1,1) move(4,1,1,1,2) move(3,2,1,1,2) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 9
+Answer: 2
+move(8,1,1,1,0) move(7,1,2,1,1) move(6,1,1,1,1) move(5,2,1,1,2) move(4,2,1,0,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 49.707s (Solving: 49.55s 1st Model: 30.03s Unsat: 17.95s)
+CPU Time    : 197.610s
+Choices     : 863074
+Conflicts   : 746507
+Restarts    : 370
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated: 4976 Frozen:  359)
+Constraints : 51786  (Binary: 70.1% Ternary:  7.2% Other: 22.6%)
+Lemmas      : 746287 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 746287 (Average Length: 167.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 729533
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 115
+Problems    : 116    (Average Length: 18.70) 
+
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,1,1,1) move(8,3,1,0,1) move(7,1,2,2,1) move(6,1,1,1,1) move(5,1,1,0,2) move(4,1,1,2,1) move(3,1,1,2,0) move(2,2,2,1,0) move(1,3,1,0,2)
+Optimization: 9
+Answer: 2
+move(8,3,1,0,2) move(7,2,1,1,0) move(6,1,1,1,1) move(5,2,2,1,1) move(4,1,1,1,2) move(3,1,3,1,0) move(2,2,1,1,2) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 48.923s (Solving: 48.87s 1st Model: 21.31s Unsat: 14.43s)
+CPU Time    : 195.040s
+Choices     : 1206114
+Conflicts   : 928903
+Restarts    : 27
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 928689 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 928689 (Average Length: 210.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 911880
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 174
+Problems    : 175    (Average Length: 31.47) 
+
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(8,1,2,1,1) move(7,1,1,1,1) move(6,3,1,0,2) move(5,1,2,1,0) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 32.238s (Solving: 32.01s 1st Model: 7.90s Unsat: 24.11s)
+CPU Time    : 127.780s
+Choices     : 733454
+Conflicts   : 597241
+Restarts    : 0
+
+Atoms       : 2826   (Original: 2826 Auxiliary: 0)
+Rules       : 15766  (1: 15642/15730 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13935 
+Equivalences: 2378   (Atom=Atom: 428 Body=Body: 63 Other: 1887)
+Tight       : Yes
+
+Variables   : 15467  (Eliminated: 4988 Frozen:  350)
+Constraints : 51181  (Binary: 68.7% Ternary:  8.4% Other: 22.9%)
+Lemmas      : 597060 (Binary:  0.3% Ternary:  0.2% Other: 99.5%)
+  Conflict  : 597060 (Average Length: 91.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 583920
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 160
+Problems    : 161    (Average Length: 29.20) 
+
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,2,1,1) move(8,1,1,2,1) move(7,2,1,1,1) move(6,1,1,1,0) move(5,1,1,0,2) move(4,2,1,1,2) move(3,1,1,1,2) move(2,1,2,2,1) move(1,1,1,0,1)
+Optimization: 9
+Answer: 2
+move(8,1,2,1,1) move(7,1,1,1,1) move(6,3,1,0,2) move(5,1,2,1,0) move(4,2,1,1,2) move(3,1,1,1,1) move(2,2,2,1,1) move(1,1,2,1,1)
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 92.577s (Solving: 92.54s 1st Model: 44.84s Unsat: 35.92s)
+CPU Time    : 369.200s
+Choices     : 1527270
+Conflicts   : 1200580
+Restarts    : 1120
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1172524 (Binary:  0.2% Ternary:  0.2% Other: 99.6%)
+  Conflict  : 1172524 (Average Length: 215.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1151756
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 46427
+Problems    : 46428  (Average Length: 39.67) 
+
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
