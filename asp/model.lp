@@ -4,8 +4,8 @@ c(1..n).
 k(1..9). 
 #hide. 
 #show move/5. 
-%#show move/3. 
-%#show table/4. 
+#show move/3. 
+#show table/4. 
 
 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).

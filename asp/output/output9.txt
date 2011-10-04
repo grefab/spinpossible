@@ -21104,3 +21104,5532 @@ Optimization: 9
 Answer: 2
 move(8,3,1,0,2) move(7,1,2,1,0) move(6,2,2,1,0) move(5,1,1,1,1) move(4,1,3,1,0) move(3,2,1,1,2) move(2,2,1,1,1) move(1,2,2,1,1)
 Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 67.507s (Solving: 67.47s 1st Model: 41.17s Unsat: 21.51s)
+CPU Time    : 268.380s
+Choices     : 1324588
+Conflicts   : 1031793
+Restarts    : 486
+
+Atoms       : 2826  
+Rules       : 15678  (1: 15642 2: 26 3: 9 6: 1)
+Bodies      : 13928 
+Equivalences: 2385   (Atom=Atom: 435 Body=Body: 55 Other: 1895)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 1031593 (Binary:  0.2% Ternary:  0.1% Other: 99.7%)
+  Conflict  : 1031593 (Average Length: 242.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1010747
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 180
+Problems    : 181    (Average Length: 36.12) 
+
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.006s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.013s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.012s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.011s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.011s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.013s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.012s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.006s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.012s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.012s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.015s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.011s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.014s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.015s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.015s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.005s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 18 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 19 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --eq=20 --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1168   (Atom=Atom: 303 Body=Body: 40 Other: 825)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 20 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512 --berk-huang
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 21 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 22 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 23 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Bekmin --berk-ma
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+initial state:
+Setup:
+xxxxxxxxxx 24 data/100/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 0 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 1 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 2 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=VSIDS
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 3 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 4 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 5 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 6 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.008s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 7 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 17     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 8 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1978   (Atom=Atom: 304 Body=Body: 41 Other: 1633)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 9 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 10 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=256 --save-progress
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.009s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 11 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1946   (Original: 1343 Auxiliary: 603)
+Rules       : 4475   (1: 3215/4439 2: 26/17 3: 9/9 6: 1/1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 3263   (Eliminated:    0 Frozen:   16)
+Constraints : 8      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 12 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=16000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 13 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 14 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 15 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 16 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.004s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.000s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343  
+Rules       : 3251   (1: 3215 2: 26 3: 9 6: 1)
+Bodies      : 1450  
+Equivalences: 1926   (Atom=Atom: 334 Body=Body: 54 Other: 1538)
+Tight       : Yes
+
+Variables   : 1769   (Eliminated:    0 Frozen:  349)
+Constraints : 539    (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:
+Setup:
+xxxxxxxxxx 17 data/100/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model : model.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 0.010s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 0
+Conflicts   : 0
+Restarts    : 0
+
+Atoms       : 1343   (Original: 1343 Auxiliary: 0)
+Rules       : 3339   (1: 3215/3303 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 1449  
+Equivalences: 1303   (Atom=Atom: 327 Body=Body: 54 Other: 922)
+Tight       : Yes
+
+Variables   : 0      (Eliminated:    0 Frozen:    0)
+Constraints : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
+  Conflict  : 0      (Average Length: 0.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 0     
+initial state:

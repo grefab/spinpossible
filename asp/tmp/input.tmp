@@ -4,8 +4,8 @@ c(1..n).
 k(1..9). 
 #hide. 
 #show move/5. 
-%#show move/3. 
-%#show table/4. 
+#show move/3. 
+#show table/4. 
 
 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
@@ -59,12 +59,12 @@ upperLeft(K,X,Y) :- move(K,X,Y,_,_).
 containing(K) :- move(K;K+1), move(K+1,X,Y), not move(K,X,Y). 
 :- intersecting(K), not containing(K), k(K).
 
-init(3,3,7).
-init(2,3,3).
-init(1,3,-8).
-init(3,2,-9).
+init(3,3,-9).
+init(2,3,7).
+init(1,3,1).
+init(3,2,2).
 init(2,2,5).
-init(1,2,-2).
+init(1,2,3).
 init(3,1,4).
-init(2,1,-1).
-init(1,1,-6).
+init(2,1,-6).
+init(1,1,8).
