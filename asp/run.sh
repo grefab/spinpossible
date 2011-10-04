@@ -27,26 +27,26 @@ case $Strategy in
     9) Option=$Option'--heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic';;
     10) Option=$Option'--restarts=256 --save-progress';;
     11) Option=$Option'--heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ';;
-    #9) Option=$Option'--restarts=16000';;
-    #4) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
-    #7) Option=$Option'--restarts=100,1.5,1000 --local-restart';;
-    #12) Option=$Option'--heuristic=Berkmin --berk-max=512';;
-    #13) Option=$Option'--dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000';;
-    #14) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
-    #15) Option=$Option'--restarts=256 --local-restart';;
-    #16) Option=$Option'--eq=20 --backprop';;
-    #18) Option=$Option'--heuristic=Berkmin --berk-max=512 --berk-huang';;
-    #19) Option=$Option'--restarts=256';;
-    #22) Option=$Option'--restarts=256 --local-restart --save-progress';;
-    #23) Option=$Option'--heuristic=Bekmin --berk-ma';;
-    #24) Option=$Option'--restarts=100,1.5,1000';;
+    12) Option=$Option'--restarts=16000';;
+    13) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
+    14) Option=$Option'--restarts=100,1.5,1000 --local-restart';;
+    15) Option=$Option'--heuristic=Berkmin --berk-max=512';;
+    16) Option=$Option'--dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000';;
+    17) Option=$Option'--sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str';;
+    18) Option=$Option'--restarts=256 --local-restart';;
+    19) Option=$Option'--eq=20 --backprop';;
+    20) Option=$Option'--heuristic=Berkmin --berk-max=512 --berk-huang';;
+    21) Option=$Option'--restarts=256';;
+    22) Option=$Option'--restarts=256 --local-restart --save-progress';;
+    23) Option=$Option'--heuristic=Bekmin --berk-ma';;
+    24) Option=$Option'--restarts=100,1.5,1000';;
 esac
 
 
 echo Setup: 
-echo Option = $Option
-echo Model = $Model
-echo Data = $Data
+echo xxxxxxxxxx $Strategy $Data xxxxxxxxxxx
+echo Option      : $Option
+echo Model       : $Model
 
 echo
 cat $Model > $Input
@@ -66,7 +66,7 @@ cat $Output | grep 'table' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort 
 #echo
 cat print.pl >> $FormatOutput
 prolog -f $FormatOutput -g start -t halt 2>> $Error > $PrettyOutput
-#cat $PrettyOutput
+cat $PrettyOutput
 ##column -t -s ';' $PrettyOutput
 #echo
 

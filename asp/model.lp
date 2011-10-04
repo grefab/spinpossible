@@ -47,10 +47,15 @@ final(M) :- k(M), M = #max[move(K)=K:k(K)].
 
 % symmetry breaker
 % single ones in the end
-%isSingle(K) :- move(K,X,Y,0,0). 
-%:- move(K;K+1), isSingle(K), not isSingle(K+1). 
+isSingle(K) :- move(K,X,Y,0,0). 
+:- move(K;K+1), isSingle(K), not isSingle(K+1). 
 
 % nonintersecting:
-%intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
-%upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
-%:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
+upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+
+%#containment
+containing(K) :- move(K;K+1), move(K+1,X,Y), not move(K,X,Y). 
+:- intersecting(K), not containing(K), k(K).
+

@@ -47,19 +47,24 @@ final(M) :- k(M), M = #max[move(K)=K:k(K)].
 
 % symmetry breaker
 % single ones in the end
-%isSingle(K) :- move(K,X,Y,0,0). 
-%:- move(K;K+1), isSingle(K), not isSingle(K+1). 
+isSingle(K) :- move(K,X,Y,0,0). 
+:- move(K;K+1), isSingle(K), not isSingle(K+1). 
 
 % nonintersecting:
-%intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
-%upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
-%:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
-init(1,1,4).  
-init(2,1,7).  
-init(3,1,-1). 
-init(1,2,-5).  
-init(2,2,-8). 
-init(3,2,3). 
-init(1,3,6). 
-init(2,3,9). 
-init(3,3,2).  
+intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
+upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+
+%#containment
+containing(K) :- move(K;K+1), move(K+1,X,Y), not move(K,X,Y). 
+:- intersecting(K), not containing(K), k(K).
+
+init(3,3,-8).
+init(2,3,7).
+init(1,3,5).
+init(3,2,-3).
+init(2,2,2).
+init(1,2,-6).
+init(3,1,1).
+init(2,1,-4).
+init(1,1,-9).
