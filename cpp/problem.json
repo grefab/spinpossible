@@ -1,5 +1,6 @@
 {
 	"type" : "application/spinpossible",
 	"dimension" : [3, 3],
-	"grid" : [1, 2, 7, 4, 5, 8, 3, 6, 9]
+	"description" : "Level 9 Problem",
+	"grid" : [4, 7, -1, -5, -8, 3, 6, 9, 2]
 }
