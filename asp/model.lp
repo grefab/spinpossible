@@ -56,6 +56,6 @@ upperLeft(K,X,Y) :- move(K,X,Y,_,_).
 :- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
 
 %#containment
-containing(K) :- move(K;K+1), move(K+1,X,Y), not move(K,X,Y). 
+containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
 :- intersecting(K), not containing(K), k(K).
 

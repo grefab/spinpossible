@@ -26633,3 +26633,4 @@ Lemmas      : 0      (Binary:  0.0% Ternary:  0.0% Other:  0.0%)
   Other     : 0      (Average Length: 0.0) 
   Deleted   : 0     
 initial state:
+Setup:
