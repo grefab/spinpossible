@@ -1,4 +1,6 @@
-start :- makeList(9,L), shuffle(L,LL), printList(LL).
+size(4).
+
+start :- size(N), NN is N*N, makeList(NN,L), shuffle(L,LL), printList(LL).
 
 writeL([]).
 writeL([X|Y]):- write(X), writeL(Y). 
@@ -9,8 +11,9 @@ printEntry(X,Y,E) :-
 printList([]). 
 printList([H|R]) :- 
     length([H|R],K), 
-    X is ((K-1) mod 3) +1,
-    Y is round((K+1)/3),
+    size(N),
+    X is ((K-1) mod N) +1,
+    Y is round((K+1)/N),
     printEntry(X,Y,H), 
     printList(R). 
 

@@ -1,9 +1,13 @@
 writeL([]).
 writeL([X|Y]):- write(X), writeL(Y). 
+sizeList([1,2,3]) :- size(3). 
+sizeList([1,2,3,4]) :- size(4). 
 
 
-writeS(A) :- number(A), A < 0, !, write(A).
-writeS(A) :- write(' '), write(A). 
+writeS(A) :- number(A), A < -9, !, write(A).
+writeS(A) :- number(A), A < 0, !, write(' '),  write(A).
+writeS(A) :- number(A), A > 9, !, write(' '), write(A).
+writeS(A) :- write('  '), write(A). 
 
 printSwitch(K,X,Y):-
     (move(K,X,Y) ->
@@ -15,14 +19,16 @@ printRow(K,X,Y):-
     writeS(V).
 
 printTable(K) :- 
-    forall(member(Y,[1,2,3]),
-        ( forall(member(X,[1,2,3]), printRow(K,X,Y)),nl)
+    sizeList(L),
+    forall(member(Y,L),
+        ( forall(member(X,L), printRow(K,X,Y)),nl)
     ), 
     nl. 
 
 printSwitch(K) :- 
-    forall(member(Y,[1,2,3]),
-        ( forall(member(X,[1,2,3]), printSwitch(K,X,Y)),nl)
+    sizeList(L),
+    forall(member(Y,L),
+        ( forall(member(X,L), printSwitch(K,X,Y)),nl)
     ), 
     nl. 
 
@@ -35,9 +41,6 @@ start :-
 printMoves(K) :- 
     move(K,_X,_Y), 
     !,
-    %XX is X + R,
-    %YY is Y + D,
-    %writeL(['move ',K,': (',X,',',Y,') to (',XX,',',YY,')']),nl,nl,
     writeL(['move ',K,': ']),nl,nl,
     printSwitch(K),
     printTable(K),

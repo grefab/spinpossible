@@ -40,6 +40,9 @@ case $Strategy in
     22) Option=$Option'--restarts=256 --local-restart --save-progress';;
     23) Option=$Option'--heuristic=Bekmin --berk-ma';;
     24) Option=$Option'--restarts=100,1.5,1000';;
+    25) Option=$Option'--restart-on-model -r 64 --heu=Vsids --opt-heu ';;
+    26) Option=$Option'--restart-on-model --save-progress -r 32 --heu=Vsids ';;
+    27) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
 esac
 
 
