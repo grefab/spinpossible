@@ -1,0 +1,105 @@
+MODULE main
+
+VAR 
+	cell : array 1..3 of array 1..3 of -9..9;
+	finished : boolean;
+IVAR 
+	l1 : 1..3; 
+	l2 : 1..3; 
+	r1 : 1..3; 
+	r2 : 1..3;
+
+INVAR -- probably not necessary
+	cell[1][1] != 0 & cell[1][2] != 0 &	cell[1][3] != 0 &
+ 	cell[2][1] != 0 &	cell[2][2] != 0 &	cell[2][3] != 0 &
+ 	cell[3][1] != 0 &	cell[3][2] != 0 &	cell[3][3] != 0;
+  
+-- Example Puzzle
+-- -2 -1 3
+-- 4 5 6
+-- 7 8 9
+
+-- -7 2 3
+-- 1 5 6
+-- 4 8 9
+
+-- 1 2 3
+-- 4 5 6
+-- -9 -7 -8
+
+INVARSPEC
+	!finished;
+
+
+-- now hidden in state variable finished
+-- INVARSPEC 
+-- 	!(  cell[1][1]=1 & cell[1][2]=2 & cell[1][3]=3 &
+-- 			cell[2][1]=4 & cell[2][2]=5 & cell[2][3]=6 &
+-- 			cell[3][1]=7 & cell[3][2]=8 & cell[3][3]=9);
+
+ASSIGN
+-- puzzle initialization
+	init(cell[1][1]) := -7;
+	init(cell[1][2]) := 2;
+	init(cell[1][3]) := 3;
+
+	init(cell[2][1]) := 1;
+	init(cell[2][2]) := 5;
+	init(cell[2][3]) := 6;
+
+	init(cell[3][1]) := 4;
+	init(cell[3][2]) := 8;
+	init(cell[3][3]) := 9; 
+
+
+  init(finished) := FALSE;
+
+  next(cell[1][1]) := 
+		case
+			l1 <= 1 & 1 <= l2 & r1 <= 1 & 1 <= r2 : -cell[l1+l2 - 1][r1+r2 - 1];
+     																	 TRUE : cell[1][1];
+		esac;
+  next(cell[1][2]) :=
+    case
+			l1 <= 1 & 1 <= l2 & r1 <= 2 & 2 <= r2 : -cell[l1+l2 - 1][r1+r2 - 2];
+     																	 TRUE : cell[1][2];
+		esac;
+  next(cell[1][3]) :=
+    case
+			l1 <= 1 & 1 <= l2 & r1 <= 3 & 3 <= r2 : -cell[l1+l2 - 1][r1+r2 - 3];
+     																	 TRUE : cell[1][3];
+		esac;
+  next(cell[2][1]) :=
+    case
+			l1 <= 2 & 2 <= l2 & r1 <= 1 & 1 <= r2 : -cell[l1+l2 - 2][r1+r2 - 1];
+     																	 TRUE : cell[2][1];
+		esac;
+  next(cell[2][2]) :=
+    case
+			l1 <= 2 & 2 <= l2 & r1 <= 2 & 2 <= r2 : -cell[l1+l2 - 2][r1+r2 - 2];
+     																	 TRUE : cell[2][2];
+		esac;
+  next(cell[2][3]) :=
+    case
+			l1 <= 2 & 2 <= l2 & r1 <= 3 & 3 <= r2 : -cell[l1+l2 - 2][r1+r2 - 3];
+     																	 TRUE : cell[2][3];
+		esac;
+  next(cell[3][1]) :=
+    case
+			l1 <= 3 & 3 <= l2 & r1 <= 1 & 1 <= r2 : -cell[l1+l2 - 3][r1+r2 - 1];
+     																	 TRUE : cell[3][1];
+		esac;
+  next(cell[3][2]) :=
+    case
+			l1 <= 3 & 3 <= l2 & r1 <= 2 & 2 <= r2 : -cell[l1+l2 - 3][r1+r2 - 2];
+     																	 TRUE : cell[3][2];
+		esac;
+  next(cell[3][3]) :=
+    case
+			l1 <= 3 & 3 <= l2 & r1 <= 3 & 3 <= r2 : -cell[l1+l2 - 3][r1+r2 - 3];
+     																	 TRUE : cell[3][3];
+		esac;
+
+  next(finished):=next(cell[1][1]=1) & next(cell[1][2]=2) & next(cell[1][3]=3) &
+  								next(cell[2][1]=4) & next(cell[2][2]=5) & next(cell[2][3]=6) &
+                  next(cell[3][1]=7) & next(cell[3][2]=8) & next(cell[3][3]=9);
