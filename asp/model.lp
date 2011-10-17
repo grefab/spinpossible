@@ -1,13 +1,15 @@
-#const n=4. 
+#const n=3. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..21). 
+k(1..9). 
 size(n). 
 #hide. 
 #show move/5. 
 #show move/3. 
 #show table/4. 
 #show final/1.
+#show isOk/3.
+#show fixed/3.
 #show size/1.
 
 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
@@ -50,29 +52,37 @@ table(K+1,X,Y,V) :-
 %initial and final state
 table(0,X,Y,V) :- init(X,Y,V). 
 final(K) :- K = { move(N) : k(N) }.
-isOk(X,Y) :-  table(F,X,Y,V), final(F), V = (n*(Y-1)+X), c(X;Y), k(F). 
+isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y). 
+
+surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
+surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
+surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).
+fixed(K,0;n+1,Y) :- c(Y), move(K). 
+fixed(K,X,0;n+1) :- c(X), move(K). 
+fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
+:- fixed(K,X,Y), move(K+1,X,Y). 
 
 %:- k(K), c(X;Y), 2 { table(K,X,Y,_) }.
 :- K>1, move(K), not move(K-1). 
-:- final(0). 
-%:- c(X;Y), not isOk(X,Y). 
+:- final(K), c(X;Y), not isOk(K,X,Y). 
 
-#minimize[move(_)@1].
-#minimize[not isOk(X,Y)@2 : c(X;Y)]. 
+#minimize[move(_)@2].
+%#minimize[not fixed(K,X,Y)@1 : c(X;Y) : k(K)]. 
+:- final(0). 
 
 % symmetry breaker
 % no repetitive squares
 :- move(K;K+1), move(K,X,Y,R,D), move(K+1,X,Y,R,D). 
 
 %% single ones in the end
-%isSingle(K) :- move(K,X,Y,0,0). 
-%:- move(K;K+1), isSingle(K), not isSingle(K+1). 
+isSingle(K) :- move(K,X,Y,0,0). 
+:- move(K;K+1), isSingle(K), not isSingle(K+1). 
 %
 %% nonintersecting:
-%intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
-%upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
-%:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
+upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
 %
 %% containment
-%containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
-%:- intersecting(K), not containing(K), k(K).
+containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
+:- intersecting(K), not containing(K), k(K).
