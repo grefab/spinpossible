@@ -39,6 +39,7 @@ table(K+1,X,Y,V) :-
     table(K,X,Y,V), 
     not move(K+1,X,Y). 
 
+% reasoning backwars. but makes it slower, why?
 %table(K-1,X1,Y1,V1) :- 
 %    table(K,X2,Y2,V2), 
 %    switch(K,X1,Y1,X2,Y2), 
@@ -54,13 +55,13 @@ table(0,X,Y,V) :- init(X,Y,V).
 final(K) :- K = { move(N) : k(N) }.
 isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y). 
 
-surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
-surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
-surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).
-fixed(K,0;n+1,Y) :- c(Y), move(K). 
-fixed(K,X,0;n+1) :- c(X), move(K). 
-fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
-:- fixed(K,X,Y), move(K+1,X,Y). 
+%surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
+%surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
+%surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).
+%fixed(K,0;n+1,Y) :- c(Y), move(K). 
+%fixed(K,X,0;n+1) :- c(X), move(K). 
+%fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
+%:- fixed(K,X,Y), move(K+1,X,Y). 
 
 %:- k(K), c(X;Y), 2 { table(K,X,Y,_) }.
 :- K>1, move(K), not move(K-1). 

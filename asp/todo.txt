@@ -1,13 +1,15 @@
 h1. new: 
-# dont do repeating moves:
-:- move(K,X,Y,R,D), move(K+1,X,Y,R,D). 
-
-# choose number of moves, then implication makes choice constraint. might improve search because no check anmore for holes in sequence of moves. 
+# improve fixed. still does not work properly
+# find better heuristics for 4*4
+# find valuation function, good heuristic for 4*4
+# start doc/paper.tex
 
 h1. done
 # nonintersecting:
 # single ones in the end
 # containment
+# dont do repeating moves:
+# choose number of moves, then implication makes choice constraint. might improve search because no check anmore for holes in sequence of moves. 
 
 
 
