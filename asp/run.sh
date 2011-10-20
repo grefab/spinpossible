@@ -2,7 +2,7 @@
 
 #Data=data/p1.lp
 Data=$1
-Model=model2.lp
+Model=modellp
 UniqueFolder=tmp
 
 Input=$UniqueFolder/input.tmp
