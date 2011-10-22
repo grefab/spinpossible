@@ -1,0 +1,852 @@
+Setup:
+Option = --threads 4 --stat --heuristic=Berkmin --berk-max=163
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,1) move(8,1,1,2,2) move(7,1,2,2,0) move(6,3,1,0,2) move(5,1,1,1,0) move(4,2,1,0,1) move(3,1,2,2,1) move(2,2,1,1,0) move(1,1,1,1,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 2152.423s (Solving: 2152.38s 1st Model: 1081.56s Unsat: 1070.82s)
+CPU Time    : 8544.770s
+Choices     : 22477409
+Conflicts   : 17655123
+Restarts    : 1291
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 17653056 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 17653056 (Average Length: 436.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 17628213
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 192
+Problems    : 193    (Average Length: 41.12) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --local-restart --save-progress
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,3,3,0,0) move(8,2,1,1,1) move(7,3,1,0,2) move(6,1,1,2,0) move(5,1,1,1,1) move(4,1,1,0,2) move(3,1,2,2,1) move(2,1,1,1,0) move(1,1,3,2,0)
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Optimum   : unknown
+Optimization: 9
+Time        : 3999.997s (Solving: 3999.96s 1st Model: 145.40s Unsat: 0.00s)
+CPU Time    : 15876.200s
+Choices     : 50275953
+Conflicts   : 18872454
+Restarts    : 5834
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 18870457 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 18870457 (Average Length: 1147.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 18785315
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 131
+Problems    : 132    (Average Length: 57.24) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=VSIDS
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,3,1,0) move(8,1,1,0,1) move(7,1,2,0,1) move(6,1,1,2,1) move(5,3,2,0,1) move(4,1,1,2,2) move(3,1,2,1,1) move(2,3,3,0,0) move(1,1,3,2,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 2401.271s (Solving: 2401.22s 1st Model: 1057.78s Unsat: 1343.43s)
+CPU Time    : 9529.340s
+Choices     : 22213383
+Conflicts   : 19470146
+Restarts    : 1323
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 19468365 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 19468365 (Average Length: 500.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 19441893
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 129
+Problems    : 130    (Average Length: 23.39) 
+
+Setup:
+Option = --threads 4 --stat --deletion=1,1,1 --reduce-on-restart
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,1) move(8,1,1,0,2) move(7,3,1,0,1) move(6,1,1,2,2) move(5,1,3,2,0) move(4,3,2,0,1) move(3,2,1,1,1) move(2,1,1,1,2) move(1,2,2,1,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 3301.299s (Solving: 3301.26s 1st Model: 1420.54s Unsat: 1880.72s)
+CPU Time    : 13098.060s
+Choices     : 45862828
+Conflicts   : 35101983
+Restarts    : 1607
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 35099336 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 35099336 (Average Length: 460.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 35075633
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 191
+Problems    : 192    (Average Length: 38.66) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,1) move(8,2,1,0,2) move(7,1,3,1,0) move(6,2,2,1,1) move(5,1,2,1,1) move(4,1,1,2,2) move(3,1,1,2,0) move(2,1,1,1,1) move(1,1,2,2,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1643.004s (Solving: 1642.85s 1st Model: 341.72s Unsat: 1301.13s)
+CPU Time    : 6516.450s
+Choices     : 15960691
+Conflicts   : 14162211
+Restarts    : 1420
+
+Atoms       : 2716   (Original: 2716 Auxiliary: 0)
+Rules       : 14909  (1: 14785/14873 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13481 
+Equivalences: 2349   (Atom=Atom: 415 Body=Body: 62 Other: 1872)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4952 Frozen:  350)
+Constraints : 50398  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 14158946 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 14158946 (Average Length: 239.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 14134767
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 179
+Problems    : 180    (Average Length: 26.66) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --save-progress
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,1,0,1) move(8,2,2,1,1) move(7,1,2,1,0) move(6,1,1,2,0) move(5,1,3,1,0) move(4,3,2,0,0) move(3,1,1,1,1) move(2,2,1,0,2) move(1,2,2,1,0)
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Optimum   : unknown
+Optimization: 9
+Time        : 4000.000s (Solving: 3999.96s 1st Model: 84.96s Unsat: 0.00s)
+CPU Time    : 15860.280s
+Choices     : 46364106
+Conflicts   : 18681111
+Restarts    : 6947
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 18679503 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 18679503 (Average Length: 957.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 18556566
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 142
+Problems    : 143    (Average Length: 24.48) 
+
+Setup:
+Option = --threads 4 --stat --otfs=1 --recursive-str --reverse-arcs=2 --sat-pre=20,25,120,-1,2
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,0,2) move(8,2,1,0,0) move(7,1,3,1,0) move(6,1,1,0,1) move(5,3,1,0,2) move(4,1,2,2,1) move(3,2,2,0,1) move(2,1,2,1,0) move(1,2,1,1,2)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1877.540s (Solving: 1877.39s 1st Model: 598.95s Unsat: 1278.44s)
+CPU Time    : 7437.320s
+Choices     : 21609766
+Conflicts   : 17895362
+Restarts    : 905
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4945 Frozen:  359)
+Constraints : 50330  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 17893415 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 17893415 (Average Length: 96.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 17857334
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 152
+Problems    : 153    (Average Length: 31.80) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,2,1,0) move(8,1,1,1,1) move(7,2,2,1,0) move(6,1,1,1,0) move(5,2,1,0,2) move(4,2,1,1,0) move(3,1,2,2,1) move(2,1,2,1,1) move(1,2,1,1,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1598.951s (Solving: 1598.81s 1st Model: 154.10s Unsat: 1444.71s)
+CPU Time    : 6325.490s
+Choices     : 18546630
+Conflicts   : 15521462
+Restarts    : 1869
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4945 Frozen:  359)
+Constraints : 50330  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 15519986 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 15519986 (Average Length: 218.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 15493193
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 212
+Problems    : 213    (Average Length: 38.45) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --backprop
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,0,1) move(8,1,1,2,2) move(7,2,1,1,0) move(6,3,1,0,1) move(5,1,2,2,1) move(4,1,1,0,1) move(3,1,2,1,1) move(2,1,3,2,0) move(1,1,3,0,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1787.162s (Solving: 1787.01s 1st Model: 201.06s Unsat: 1585.96s)
+CPU Time    : 7073.030s
+Choices     : 17974727
+Conflicts   : 15028669
+Restarts    : 1525
+
+Atoms       : 2716   (Original: 2716 Auxiliary: 0)
+Rules       : 14909  (1: 14785/14873 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13481 
+Equivalences: 2346   (Atom=Atom: 416 Body=Body: 61 Other: 1869)
+Tight       : Yes
+
+Variables   : 14830  (Eliminated: 4952 Frozen:  341)
+Constraints : 50398  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 15027160 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 15027160 (Average Length: 234.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 15003731
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 167
+Problems    : 168    (Average Length: 33.56) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,2,2,1) move(8,2,1,0,2) move(7,2,2,1,1) move(6,1,1,1,2) move(5,1,1,2,2) move(4,1,2,2,1) move(3,2,1,1,0) move(2,1,1,1,1) move(1,1,1,0,2)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1920.954s (Solving: 1920.81s 1st Model: 747.80s Unsat: 1173.00s)
+CPU Time    : 7600.070s
+Choices     : 16792502
+Conflicts   : 15009036
+Restarts    : 1334
+
+Atoms       : 2716   (Original: 2716 Auxiliary: 0)
+Rules       : 14909  (1: 14785/14873 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13481 
+Equivalences: 2349   (Atom=Atom: 415 Body=Body: 62 Other: 1872)
+Tight       : Yes
+
+Variables   : 14922  (Eliminated: 4952 Frozen:  350)
+Constraints : 50398  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 15005899 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 15005899 (Average Length: 245.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 14982442
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 170
+Problems    : 171    (Average Length: 20.95) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --save-progress
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,3,3,0,0) move(8,2,2,1,0) move(7,1,2,1,1) move(6,1,1,2,1) move(5,3,2,0,1) move(4,3,1,0,2) move(3,2,2,1,1) move(2,1,2,2,0) move(1,1,1,0,1)
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Optimum   : unknown
+Optimization: 9
+Time        : 3999.999s (Solving: 3999.96s 1st Model: 30.21s Unsat: 0.00s)
+CPU Time    : 15734.660s
+Choices     : 46952317
+Conflicts   : 17861150
+Restarts    : 14864
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated:    0 Frozen:  359)
+Constraints : 67026  (Binary: 78.4% Ternary:  0.6% Other: 21.0%)
+Lemmas      : 17859322 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 17859322 (Average Length: 778.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 17713600
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 20
+Problems    : 21     (Average Length: 8.14) 
+
+Setup:
+Option = --threads 4 --stat --heu=VSIDS --sat-pre=20,25,120 --trans-ext=integ
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,1,0,2) move(8,2,2,1,1) move(7,1,1,1,1) move(6,1,1,2,2) move(5,2,1,1,1) move(4,1,2,2,1) move(3,1,1,1,1) move(2,1,2,1,0) move(1,2,1,0,2)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 1425.933s (Solving: 1425.78s 1st Model: 221.17s Unsat: 1204.60s)
+CPU Time    : 5417.690s
+Choices     : 13318883
+Conflicts   : 11862229
+Restarts    : 1201
+
+Atoms       : 2716  
+Rules       : 14821  (1: 14785 2: 26 3: 9 6: 1)
+Bodies      : 13474 
+Equivalences: 2356   (Atom=Atom: 422 Body=Body: 54 Other: 1880)
+Tight       : Yes
+
+Variables   : 14915  (Eliminated: 4945 Frozen:  359)
+Constraints : 50330  (Binary: 70.5% Ternary:  6.6% Other: 22.9%)
+Lemmas      : 11860395 (Binary:  0.0% Ternary:  0.0% Other: 99.9%)
+  Conflict  : 11860395 (Average Length: 261.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 11839431
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 175
+Problems    : 176    (Average Length: 22.78) 
+
+Setup:
+Option = --threads 4 --stat --restarts=16000
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,2) move(8,2,1,0,2) move(7,1,2,2,1) move(6,1,1,1,2) move(5,2,1,1,1) move(4,1,2,2,1) move(3,2,1,1,2) move(2,2,2,1,0) move(1,3,1,0,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 270.983s (Solving: 270.94s 1st Model: 22.42s Unsat: 248.52s)
+CPU Time    : 1068.730s
+Choices     : 5822166
+Conflicts   : 4498723
+Restarts    : 175
+
+Atoms       : 2822  
+Rules       : 15674  (1: 15638 2: 26 3: 9 6: 1)
+Bodies      : 13922 
+Equivalences: 2374   (Atom=Atom: 431 Body=Body: 54 Other: 1889)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 4498374 (Binary:  0.1% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 4498374 (Average Length: 325.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 4479326
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 239
+Problems    : 240    (Average Length: 44.56) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,2,1) move(8,2,2,1,1) move(7,1,2,1,1) move(6,1,1,0,2) move(5,1,2,1,1) move(4,1,2,2,0) move(3,1,1,1,2) move(2,1,1,2,0) move(1,1,2,0,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 210.025s (Solving: 209.79s 1st Model: 11.19s Unsat: 198.60s)
+CPU Time    : 832.310s
+Choices     : 4322428
+Conflicts   : 3498644
+Restarts    : 0
+
+Atoms       : 2822   (Original: 2822 Auxiliary: 0)
+Rules       : 15762  (1: 15638/15726 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13929 
+Equivalences: 2367   (Atom=Atom: 424 Body=Body: 62 Other: 1881)
+Tight       : Yes
+
+Variables   : 15467  (Eliminated: 4986 Frozen:  350)
+Constraints : 51205  (Binary: 68.8% Ternary:  8.3% Other: 22.9%)
+Lemmas      : 3498460 (Binary:  0.1% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3498460 (Average Length: 97.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3480351
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 109
+Problems    : 110    (Average Length: 27.41) 
+
+Setup:
+Option = --threads 4 --stat --restarts=100,1.5,1000 --local-restart
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,2) move(8,2,1,0,2) move(7,1,2,2,1) move(6,1,1,1,2) move(5,2,1,1,1) move(4,1,2,2,1) move(3,2,1,1,2) move(2,2,2,1,0) move(1,3,1,0,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 341.824s (Solving: 341.78s 1st Model: 71.26s Unsat: 270.52s)
+CPU Time    : 1321.620s
+Choices     : 4923812
+Conflicts   : 3834846
+Restarts    : 3919
+
+Atoms       : 2822  
+Rules       : 15674  (1: 15638 2: 26 3: 9 6: 1)
+Bodies      : 13922 
+Equivalences: 2374   (Atom=Atom: 431 Body=Body: 54 Other: 1889)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 3834650 (Binary:  0.1% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3834650 (Average Length: 342.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3814856
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 242
+Problems    : 243    (Average Length: 72.86) 
+
+Setup:
+Option = --threads 4 --stat --heuristic=Berkmin --berk-max=512
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,3,1,0,2) move(7,1,2,2,1) move(6,2,2,1,1) move(5,2,1,0,2) move(4,1,1,1,1) move(3,1,2,2,0) move(2,2,1,1,1) move(1,2,3,1,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 252.208s (Solving: 252.17s 1st Model: 20.00s Unsat: 232.16s)
+CPU Time    : 991.300s
+Choices     : 4296971
+Conflicts   : 3359095
+Restarts    : 1179
+
+Atoms       : 2822  
+Rules       : 15674  (1: 15638 2: 26 3: 9 6: 1)
+Bodies      : 13922 
+Equivalences: 2374   (Atom=Atom: 431 Body=Body: 54 Other: 1889)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 3358919 (Binary:  0.1% Ternary:  0.1% Other: 99.8%)
+  Conflict  : 3358919 (Average Length: 307.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3337952
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 198
+Problems    : 199    (Average Length: 46.58) 
+
+Setup:
+Option = --threads 4 --stat --dinit=800,10000 --dsched=5000,1.1 --deletion=3,1.1,10000
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,3,1,0,2) move(7,1,2,2,1) move(6,2,2,1,1) move(5,2,1,0,2) move(4,1,1,1,1) move(3,1,2,2,0) move(2,2,1,1,1) move(1,2,3,1,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 250.574s (Solving: 250.52s 1st Model: 34.11s Unsat: 216.42s)
+CPU Time    : 985.600s
+Choices     : 4665653
+Conflicts   : 3654331
+Restarts    : 1061
+
+Atoms       : 2822  
+Rules       : 15674  (1: 15638 2: 26 3: 9 6: 1)
+Bodies      : 13922 
+Equivalences: 2374   (Atom=Atom: 431 Body=Body: 54 Other: 1889)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 3654117 (Binary:  0.1% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3654117 (Average Length: 316.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3597413
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 235
+Problems    : 236    (Average Length: 68.45) 
+
+Setup:
+Option = --threads 4 --stat --sat-pre=20,25,120 --trans-ext=dynamic --initial-look=10 --restarts=no --recursive-str
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,2,2) move(8,2,1,0,1) move(7,1,1,2,0) move(6,2,1,0,2) move(5,1,1,1,1) move(4,2,2,1,1) move(3,2,1,1,1) move(2,1,2,2,1) move(1,1,1,1,1)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 242.320s (Solving: 242.08s 1st Model: 16.10s Unsat: 225.98s)
+CPU Time    : 927.280s
+Choices     : 4809182
+Conflicts   : 3881333
+Restarts    : 0
+
+Atoms       : 2822   (Original: 2822 Auxiliary: 0)
+Rules       : 15762  (1: 15638/15726 2: 26/10 3: 9/9 6: 1/1)
+Bodies      : 13929 
+Equivalences: 2367   (Atom=Atom: 424 Body=Body: 62 Other: 1881)
+Tight       : Yes
+
+Variables   : 15467  (Eliminated: 4986 Frozen:  350)
+Constraints : 51205  (Binary: 68.8% Ternary:  8.3% Other: 22.9%)
+Lemmas      : 3880959 (Binary:  0.1% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3880959 (Average Length: 100.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3859317
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 139
+Problems    : 140    (Average Length: 25.34) 
+
+Setup:
+Option = --threads 4 --stat --restarts=256 --local-restart
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,2,3,1,0) move(8,3,1,0,2) move(7,1,2,2,1) move(6,2,2,1,1) move(5,2,1,0,2) move(4,1,1,1,1) move(3,1,2,2,0) move(2,2,1,1,1) move(1,2,3,1,0)
+Optimization: 9
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 9
+Time        : 315.855s (Solving: 315.81s 1st Model: 28.43s Unsat: 287.38s)
+CPU Time    : 1221.070s
+Choices     : 4272171
+Conflicts   : 3364344
+Restarts    : 3983
+
+Atoms       : 2822  
+Rules       : 15674  (1: 15638 2: 26 3: 9 6: 1)
+Bodies      : 13922 
+Equivalences: 2374   (Atom=Atom: 431 Body=Body: 54 Other: 1889)
+Tight       : Yes
+
+Variables   : 15460  (Eliminated:    0 Frozen:  359)
+Constraints : 68543  (Binary: 78.1% Ternary:  1.2% Other: 20.8%)
+Lemmas      : 3364199 (Binary:  0.1% Ternary:  0.1% Other: 99.8%)
+  Conflict  : 3364199 (Average Length: 357.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3346147
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 207
+Problems    : 208    (Average Length: 43.90) 
+
+Setup:
+Option = --threads 4 --stat --eq=20 --backprop
+Model = model.lp
+Data = data/mareike.lp
+
+------------ Grounding: tmp/input.tmp to tmp/problem.tmp ------------
+------------ tmp/problem.tmp > searching... > tmp/output.tmp------------
+clasp version 2.0.1
+Reading from stdin
+Solving...
+Answer: 1
+move(9,1,1,1,2) move(8,2,1,0,2) move(7,1,1,1,0) move(6,1,2,2,1) move(5,1,1,1,2) move(4,2,1,1,1) move(3,1,2,2,1) move(2,2,1,1,2) move(1,3,1,0,1)
+Optimization: 9

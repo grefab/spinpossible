@@ -4,12 +4,12 @@ c(1..n).
 k(1..9). 
 size(n). 
 #hide. 
-#show move/5. 
+%#show move/5. 
 #show move/3. 
 #show table/4. 
-#show final/1.
-#show isOk/3.
-#show fixed/3.
+%#show final/1.
+%#show isOk/3.
+%#show fixed/3.
 #show size/1.
 
 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
@@ -82,7 +82,7 @@ isSingle(K) :- move(K,X,Y,0,0).
 %% nonintersecting:
 intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
 upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
-:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) < (n*(YY-1)+XX).  
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
 %
 %% containment
 containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
