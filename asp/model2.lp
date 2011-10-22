@@ -14,7 +14,7 @@ size(n).
 dom(AX,AY,BX,BY,X,Y) :- 
     c(AX;AY;X;Y),
     BX=AX..n,
-    BY=AX..n, 
+    BY=AY..n, 
     AX <= X, X <= BX, AY <= Y, Y <= BY. 
 
 { move(K,AX,AY,BX,BY) : dom(AX,AY,BX,BY,_,_) } 1 :- k(K). 
