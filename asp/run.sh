@@ -2,7 +2,7 @@
 
 #Data=data/p1.lp
 Data=$1
-Model=model2.lp
+Model=model.lp
 UniqueFolder=tmp
 
 Input=$UniqueFolder/input.tmp
@@ -11,7 +11,7 @@ Output=$UniqueFolder/output.tmp
 FormatOutput=$UniqueFolder/foutput.tmp
 PrettyOutput=$UniqueFolder/prettyOutput.csv
 Error=$UniqueFolder/error.tmp
-Option=$Option' --threads 4 --stat '
+Option=$Option' --threads 4 '
 
 Strategy=$2
 case $Strategy in
