@@ -43,6 +43,7 @@ case $Strategy in
     25) Option=$Option'--restart-on-model -r 64 --heu=Vsids --opt-heu ';;
     26) Option=$Option'--restart-on-model --save-progress -r 32 --heu=Vsids ';;
     27) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
+    28) Option=$Option'--trans-ext=dynamic --sat-pre=20,25,120 --initial-look=10 --restarts=no --heu=VSIDS';;
 esac
 
 
