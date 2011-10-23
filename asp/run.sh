@@ -46,18 +46,18 @@ case $Strategy in
 esac
 
 
-echo Setup: 
+echo start
 echo xxxxxxxxxx $Strategy $Data xxxxxxxxxxx
 echo Option      : $Option
-echo Model       : $Model
+#echo Model       : $Model
 
 echo
 cat $Model > $Input
 cat $Data >> $Input
 
-echo ------------ Grounding: $Input to $Problem  ------------
+#echo ------------ Grounding: $Input to $Problem  ------------
 cat $Input | gringo > $Problem
-echo ------------ $Problem \> searching... \> $Output------------  
+#echo ------------ $Problem \> searching... \> $Output------------  
 
 #cat $Problem | clasp $Option
 cat $Problem | timeout $3 clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
