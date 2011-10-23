@@ -11,7 +11,7 @@ Output=$UniqueFolder/output.tmp
 FormatOutput=$UniqueFolder/foutput.tmp
 PrettyOutput=$UniqueFolder/prettyOutput.csv
 Error=$UniqueFolder/error.tmp
-Option=$Option' --threads 4 '
+Option=$Option' --threads 4 --stat --time-limit='$3' '
 
 Strategy=$2
 case $Strategy in
@@ -60,7 +60,7 @@ cat $Input | gringo > $Problem
 #echo ------------ $Problem \> searching... \> $Output------------  
 
 #cat $Problem | clasp $Option
-cat $Problem | timeout $3 clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
+cat $Problem | clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
 #echo $Option                
     
 cat $Output | grep 'table' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
