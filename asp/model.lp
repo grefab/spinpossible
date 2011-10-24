@@ -12,7 +12,7 @@ size(n).
 %#show fixed/3.
 #show size/1.
 
-{ move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
+ { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
 move(K) :- move(K,_,_,_,_).
@@ -54,7 +54,7 @@ table(K+1,X,Y,V) :-
 table(0,X,Y,V) :- init(X,Y,V). 
 final(K) :- K = { move(N) : k(N) }.
 isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y). 
-
+%
 %surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
 %surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
 %surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).

@@ -1,0 +1,10086 @@
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_500.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 8
+Time        : 95.550s (Solving: 95.50s 1st Model: 36.89s Unsat: 32.97s)
+CPU Time    : 380.160s
+initial state:
+  8 -6  4
+  3  5  2
+  1  7 -9
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  9 -7 -1
+ -2 -5 -3
+ -4  6 -8
+
+move 2: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  9  5 -1
+ -2  7 -3
+ -4  6 -8
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  9  5 -1
+ -2  8 -6
+ -4  3 -7
+
+move 4: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  9  5  6
+ -2  8  1
+ -4  3 -7
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  9  5  6
+ -2  8  1
+  7 -3  4
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  9 -4  3
+ -2 -1 -8
+  7 -6 -5
+
+move 7: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_501.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 24.695s (Solving: 24.66s 1st Model: 19.05s Unsat: 2.55s)
+CPU Time    : 98.090s
+initial state:
+ -8  4 -1
+ -2 -3  7
+ -5 -6 -9
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  6  5 -1
+  3  2  7
+ -4  8 -9
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+ -3  5 -1
+ -6  2  7
+ -4  8 -9
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1 -5  3
+ -6  2  7
+ -4  8 -9
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1 -5  3
+ -7 -2  6
+ -4  8 -9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+ -7  5  6
+ -4  8 -9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_502.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 168.367s (Solving: 168.33s 1st Model: 6.84s Unsat: 1.75s)
+CPU Time    : 670.130s
+initial state:
+  6  3 -1
+  2  7 -4
+  9 -8 -5
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1 -3 -6
+  2  7 -4
+  9 -8 -5
+
+move 2: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  6  3
+  2  7 -4
+  9 -8 -5
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  6  3
+  8 -9 -4
+ -7 -2 -5
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  6  3
+  4  9 -8
+ -7 -2 -5
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -9 -8
+ -7 -6 -5
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_503.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 43.159s (Solving: 43.12s 1st Model: 12.55s Unsat: 1.49s)
+CPU Time    : 171.630s
+initial state:
+ -1 -9 -6
+  8  2 -4
+ -3  5 -7
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  3 -9 -6
+ -8  2 -4
+  1  5 -7
+
+move 2: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  3  7 -5
+ -8  4 -2
+  1  6  9
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  3  7 -5
+ -6 -1 -2
+ -4  8  9
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  6 -5
+ -7 -3 -2
+ -4  8  9
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+ -7  5 -6
+ -4  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5 -6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_504.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 60.467s (Solving: 60.42s 1st Model: 25.20s Unsat: 1.68s)
+CPU Time    : 240.510s
+initial state:
+  7 -5  2
+ -3  4  8
+ -9  1 -6
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -8 -4  3
+ -2  5 -7
+ -9  1 -6
+
+move 2: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -8 -4  3
+ -2 -1 -7
+ -9 -5 -6
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  8 -7
+ -9 -5 -6
+
+move 4: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5 -7
+ -9 -8 -6
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+ -9 -8  7
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_505.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 26.121s (Solving: 26.08s 1st Model: 17.14s Unsat: 3.75s)
+CPU Time    : 103.620s
+initial state:
+ -3 -1  8
+ -9 -5  2
+ -6 -7  4
+
+move 1: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -3 -1  8
+ -9  7  2
+ -6  5  4
+
+move 2: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -3 -2 -7
+ -9 -8  1
+ -6  5  4
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  7  2  3
+ -9 -8  1
+ -6  5  4
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  7  2  3
+ -4 -5  6
+ -1  8  9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4 -5  6
+ -7  8  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_506.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 37.873s (Solving: 37.84s 1st Model: 18.29s Unsat: 2.46s)
+CPU Time    : 150.610s
+initial state:
+ -5  8 -4
+  9  1 -7
+ -6 -2  3
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  2  6 -4
+ -1 -9 -7
+ -8  5  3
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -6 -2 -4
+ -1 -9 -7
+ -8  5  3
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+ -6 -5 -4
+ -1  9 -7
+ -8  2  3
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -6 -5 -4
+ -3 -2  8
+  7 -9  1
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -6 -5 -4
+ -3 -2 -1
+  7 -9 -8
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7 -9 -8
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_507.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 28.743s (Solving: 28.71s 1st Model: 4.24s Unsat: 3.19s)
+CPU Time    : 114.280s
+initial state:
+ -6 -8 -5
+ -4 -3 -2
+  9  1 -7
+
+move 1: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+ -6 -8 -5
+ -4 -3 -2
+ -1 -9 -7
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1 -8 -5
+  4 -3 -2
+  6 -9 -7
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  8
+  6 -9 -7
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  8
+  7  9 -6
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  9 -8
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_508.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 86.430s (Solving: 86.39s 1st Model: 58.17s Unsat: 1.27s)
+CPU Time    : 343.620s
+initial state:
+  9 -2  1
+ -6  7  8
+  5 -4 -3
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  9 -2 -8
+ -6  7 -1
+  5 -4 -3
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  8  2 -9
+ -6  7 -1
+  5 -4 -3
+
+move 3: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  8  2  3
+ -6  7  1
+  5 -4  9
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  8  2  3
+ -1 -7  6
+  5 -4  9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  2  3
+ -8 -7  6
+  5 -4  9
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4 -5  6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_509.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 90.642s (Solving: 90.60s 1st Model: 41.25s Unsat: 41.61s)
+CPU Time    : 360.680s
+initial state:
+  3  6 -8
+  7  9 -4
+ -5 -2  1
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  3  6 -8
+ -1  2  5
+  4 -9 -7
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -4  6 -8
+  1  2  5
+ -3 -9 -7
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  8 -6  4
+  1  2  5
+ -3 -9 -7
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  8 -6  4
+  9  3  5
+ -2 -1 -7
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  8 -6  4
+ -5 -3 -9
+ -2 -1 -7
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  8  9  3
+ -5 -4  6
+ -2 -1 -7
+
+move 7: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+ -9 -8 -7
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_510.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 8
+Time        : 136.143s (Solving: 136.11s 1st Model: 9.56s Unsat: 30.57s)
+CPU Time    : 541.810s
+initial state:
+  4  2  5
+ -1 -7 -8
+  9 -6  3
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  4  2  5
+  6 -9 -8
+  7  1  3
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  4  2  5
+  6 -3 -1
+  7  8  9
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  3 -6  5
+ -2 -4 -1
+  7  8  9
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  3  1  4
+ -2 -5  6
+  7  8  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  3  5  4
+ -2 -1  6
+  7  8  9
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -5 -3  4
+ -2 -1  6
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+ -5 -4  3
+ -2 -1  6
+  7  8  9
+
+move 8: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_511.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 111.080s (Solving: 111.04s 1st Model: 2.82s Unsat: 1.94s)
+CPU Time    : 441.830s
+initial state:
+ -4 -2 -3
+  8  7  1
+  6  9 -5
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -1 -7 -8
+  3  2  4
+  6  9 -5
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  8  7  1
+  3  2  4
+  6  9 -5
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  8  7  1
+  3  2  4
+  6  5 -9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  8  7  1
+ -5 -6  4
+ -2 -3 -9
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  8  9  3
+ -5 -4  6
+ -2 -1 -7
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+ -9 -8 -7
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_512.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 33.201s (Solving: 33.16s 1st Model: 2.65s Unsat: 1.41s)
+CPU Time    : 131.950s
+initial state:
+ -2  6  8
+ -5 -1  7
+ -3 -9  4
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -2  6  8
+  9  3  7
+  1  5  4
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -3 -9  8
+ -6  2  7
+  1  5  4
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -3 -4 -5
+ -6 -7 -2
+  1 -8  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -3 -4 -5
+  8 -1 -2
+  7  6  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -8 -5
+  4  3 -2
+  7  6  9
+
+move 6: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_513.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 77.577s (Solving: 77.53s 1st Model: 13.80s Unsat: 2.04s)
+CPU Time    : 308.610s
+initial state:
+ -4 -9 -3
+  1 -6 -8
+  7 -5  2
+
+move 1: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -4 -9 -3
+  1 -2  5
+  7  8  6
+
+move 2: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -5  2 -1
+  3  9  4
+  7  8  6
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -5 -4 -9
+  3  1 -2
+  7  8  6
+
+move 4: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -5 -4 -6
+  3  1  2
+  7  8  9
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -5 -4 -6
+ -2 -1 -3
+  7  8  9
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2 -6
+  4  5 -3
+  7  8  9
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_514.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 89.906s (Solving: 89.86s 1st Model: 11.03s Unsat: 0.95s)
+CPU Time    : 357.600s
+initial state:
+ -9 -4  1
+ -6  2 -3
+  5  7 -8
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  8 -7 -5
+  3 -2  6
+ -1  4  9
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  8 -7 -5
+ -9 -4  1
+ -6  2 -3
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -2  6 -5
+  4  9  1
+  7 -8 -3
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -2 -1 -9
+  4  5 -6
+  7 -8 -3
+
+move 5: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  2 -9
+  4  5 -6
+  7 -8 -3
+
+move 6: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7 -8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_515.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 161.882s (Solving: 161.85s 1st Model: 10.92s Unsat: 1.40s)
+CPU Time    : 644.180s
+initial state:
+ -6 -1  4
+ -2  5 -9
+ -8  3  7
+
+move 1: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -6 -5  4
+ -2  1 -9
+ -8  3  7
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -6 -5  4
+ -3  8 -9
+ -1  2  7
+
+move 3: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -6 -5  4
+ -3 -2 -9
+ -1 -8  7
+
+move 4: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  9  2  3
+ -4  5  6
+ -1 -8  7
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+ -9 -8  7
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_516.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 32.108s (Solving: 32.07s 1st Model: 3.49s Unsat: 1.46s)
+CPU Time    : 127.630s
+initial state:
+  4 -3  1
+ -8 -9 -2
+  6 -5 -7
+
+move 1: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  4  5  1
+ -8  9 -2
+  6  3 -7
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  4  5  2
+ -8  9 -1
+  6  3 -7
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -2 -5 -4
+ -8  9 -1
+  6  3 -7
+
+move 4: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -6 -5 -4
+  8  9 -1
+  2  3 -7
+
+move 5: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -6 -5 -4
+ -3 -2 -1
+ -9 -8 -7
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -9 -8 -7
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_517.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 8
+Time        : 94.942s (Solving: 94.91s 1st Model: 26.14s Unsat: 40.86s)
+CPU Time    : 377.840s
+initial state:
+ -3  2 -6
+ -5 -8 -4
+ -9 -7  1
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  5  2 -6
+  3 -8 -4
+ -9 -7  1
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  5  2 -6
+  4  8 -3
+ -9 -7  1
+
+move 3: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  5  2  3
+  4  8  6
+ -9 -7  1
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  5  2  3
+  4  8  6
+ -1  7  9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+ -4  8  6
+ -5  7  9
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+ -7  5  6
+ -8  4  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  2  3
+ -7  5  6
+ -4  8  9
+
+move 8: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_518.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 172.401s (Solving: 172.36s 1st Model: 71.26s Unsat: 3.18s)
+CPU Time    : 686.160s
+initial state:
+ -2  3 -5
+  7  4  8
+ -6  1  9
+
+move 1: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -2  3 -5
+  7 -9 -1
+ -6 -8 -4
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  9 -7 -5
+ -3  2 -1
+ -6 -8 -4
+
+move 3: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  7 -9 -5
+ -3  2 -1
+ -6 -8 -4
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  7  5  9
+ -3  2 -1
+ -6 -8 -4
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  7  8  9
+ -3 -2 -1
+ -6 -5 -4
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+ -9 -8 -7
+ -6 -5 -4
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_519.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 63.165s (Solving: 63.13s 1st Model: 29.32s Unsat: 0.91s)
+CPU Time    : 251.060s
+initial state:
+  6 -3 -2
+ -5  8 -9
+ -1 -4  7
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  5 -3 -2
+ -6  8 -9
+ -1 -4  7
+
+move 2: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  5 -3 -2
+ -6  8 -7
+ -1 -4  9
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  5 -3 -2
+  7 -8  6
+ -1 -4  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  5 -3 -2
+  8 -7  6
+ -1 -4  9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1 -3 -2
+ -8 -7  6
+ -5 -4  9
+
+move 6: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+ -8 -7  6
+ -5 -4  9
+
+move 7: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_520.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 92.088s (Solving: 92.05s 1st Model: 63.09s Unsat: 3.01s)
+CPU Time    : 366.390s
+initial state:
+ -6 -4  7
+ -9 -8  5
+ -2  1  3
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -6 -4  7
+ -3 -1  2
+ -5  8  9
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  3  7
+  4  6  2
+ -5  8  9
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1 -6  7
+  4 -3  2
+ -5  8  9
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1 -6  7
+  4 -3  2
+ -9 -8  5
+
+move 5: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1 -6 -5
+  4 -3 -2
+ -9 -8 -7
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -9 -8 -7
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_521.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 9
+Answer: 6
+Optimization: 9
+Answer: 7
+Optimization: 8
+Answer: 8
+Optimization: 7
+Answer: 9
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 9
+  Optimum   : yes
+Optimization: 6
+Time        : 59.257s (Solving: 59.21s 1st Model: 3.69s Unsat: 0.31s)
+CPU Time    : 235.440s
+initial state:
+  9 -3 -6
+ -5 -4 -7
+  1  2  8
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  9 -3  7
+ -5 -4  6
+  1  2  8
+
+move 2: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  9 -7  3
+ -5 -4  6
+  1  2  8
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -2 -1  3
+  4  5  6
+  7 -9  8
+
+move 4: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7 -9  8
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7 -8  9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_522.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 6
+Time        : 26.636s (Solving: 26.59s 1st Model: 3.67s Unsat: 0.11s)
+CPU Time    : 105.860s
+initial state:
+ -8 -7  2
+ -4  3  5
+  1  9 -6
+
+move 1: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+ -8 -7  2
+ -4  3  5
+ -9 -1 -6
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -8 -7  2
+ -4  3  5
+ -9  6  1
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -6  9  2
+ -3  4  5
+  7  8  1
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -6 -5 -4
+ -3 -2 -9
+  7  8  1
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -6 -5 -4
+ -3 -2 -1
+  7  8  9
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_523.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 59.805s (Solving: 59.76s 1st Model: 13.31s Unsat: 11.14s)
+CPU Time    : 237.800s
+initial state:
+ -4  5  8
+ -2  6  1
+ -9  7 -3
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -4  3 -7
+ -2 -1 -6
+ -9 -8 -5
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -4  3  5
+ -2 -1  6
+ -9 -8  7
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -5 -3  4
+ -2 -1  6
+ -9 -8  7
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+ -5 -4  3
+ -2 -1  6
+ -9 -8  7
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -9 -8  7
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_524.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 40.563s (Solving: 40.53s 1st Model: 20.98s Unsat: 2.92s)
+CPU Time    : 161.260s
+initial state:
+ -2 -6  9
+ -8  7 -1
+  4  5 -3
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -7  8  9
+  6  2 -1
+  4  5 -3
+
+move 2: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -7  8  9
+  6  2  3
+  4  5  1
+
+move 3: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -3 -2 -6
+ -9 -8  7
+  4  5  1
+
+move 4: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -3 -2 -1
+ -9 -8 -7
+  4  5  6
+
+move 5: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+ -9 -8 -7
+  4  5  6
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2  3
+ -6 -5 -4
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_525.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 82.976s (Solving: 82.93s 1st Model: 8.60s Unsat: 1.23s)
+CPU Time    : 330.020s
+initial state:
+ -2 -8 -3
+ -9  6  7
+  1 -4 -5
+
+move 1: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -2 -8 -3
+ -9  6  7
+  1  5  4
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -2 -8 -4
+ -9  6 -7
+  1  5  3
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -2 -8 -4
+ -3 -5 -1
+  7 -6  9
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+ -2  6 -4
+ -3  5 -1
+  7  8  9
+
+move 5: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1 -5  3
+  4 -6  2
+  7  8  9
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1 -5  3
+  4 -2  6
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_526.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 22.328s (Solving: 22.29s 1st Model: 3.74s Unsat: 2.86s)
+CPU Time    : 88.700s
+initial state:
+  2 -5 -4
+  8 -6 -9
+ -1 -3 -7
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  2  7  3
+  8  9  6
+ -1  4  5
+
+move 2: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -6 -9 -8
+ -3 -7 -2
+ -1  4  5
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -6 -5 -4
+ -3  2  7
+ -1  8  9
+
+move 4: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -6 -5 -4
+  1  2  7
+  3  8  9
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -6 -5 -4
+ -7 -2 -1
+  3  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -6 -5 -4
+ -3 -2 -1
+  7  8  9
+
+move 7: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_527.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+Answer: 5
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 6
+Time        : 57.717s (Solving: 57.67s 1st Model: 14.84s Unsat: 0.26s)
+CPU Time    : 229.510s
+initial state:
+ -8  1  2
+ -6 -3 -7
+  4 -5  9
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -8  7  3
+ -6 -2 -1
+  4 -5  9
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -8  7  3
+  1  2  6
+  4 -5  9
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  5 -4  3
+ -2 -1  6
+ -7  8  9
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4 -5  6
+ -7  8  9
+
+move 5: 
+
+  -  -  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_528.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 6
+Time        : 23.541s (Solving: 23.50s 1st Model: 14.28s Unsat: 0.49s)
+CPU Time    : 93.550s
+initial state:
+ -7  4 -5
+  6 -2 -1
+ -8  3  9
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+ -6  4 -5
+  7 -2 -1
+ -8  3  9
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -6  4 -5
+ -3  8 -1
+  2 -7  9
+
+move 3: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1 -8  3
+  5 -4  6
+  2 -7  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1 -8  3
+  4 -5  6
+  2 -7  9
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1 -8  3
+  4 -5  6
+  7 -2  9
+
+move 6: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_529.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 42.273s (Solving: 42.24s 1st Model: 37.54s Unsat: 2.26s)
+CPU Time    : 168.040s
+initial state:
+  4 -6 -3
+  5 -9  7
+  1 -2  8
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  4 -6 -8
+  5 -9 -7
+  1 -2  3
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  4 -6 -8
+ -3  2 -1
+  7  9 -5
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  4 -9 -8
+ -3 -2 -1
+  7  6 -5
+
+move 4: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  8  9 -4
+  7  6 -5
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4 -9 -8
+  7  6 -5
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5 -6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_530.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 146.968s (Solving: 146.92s 1st Model: 64.53s Unsat: 1.98s)
+CPU Time    : 584.800s
+initial state:
+  4 -7  5
+ -1 -3  9
+  8 -6 -2
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -8 -7  5
+  1 -3  9
+ -4 -6 -2
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -8 -7  5
+  1  2  6
+ -4 -9  3
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -8 -7  5
+  1  2  6
+ -4 -3  9
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  3  4  5
+ -2 -1  6
+  7  8  9
+
+move 5: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -5 -4 -3
+ -2 -1  6
+  7  8  9
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2 -3
+  4  5  6
+  7  8  9
+
+move 7: 
+
+  -  -  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_531.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 59.099s (Solving: 59.06s 1st Model: 7.57s Unsat: 0.77s)
+CPU Time    : 234.450s
+initial state:
+  6 -5 -4
+  3 -1 -7
+ -8 -2 -9
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  6 -5 -4
+  9  2  8
+  7  1 -3
+
+move 2: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  6 -5 -4
+  9  2  3
+  7  1 -8
+
+move 3: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -3 -2 -9
+  4  5 -6
+  7  1 -8
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -3 -2 -9
+  4  5 -6
+  7  8 -1
+
+move 5: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -3 -2  1
+  4  5  6
+  7  8  9
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -1  2  3
+  4  5  6
+  7  8  9
+
+move 7: 
+
+  *  -  -
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_532.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 75.646s (Solving: 75.61s 1st Model: 6.59s Unsat: 2.04s)
+CPU Time    : 300.920s
+initial state:
+  5  4 -3
+  9  6  8
+  1 -7  2
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  3 -4 -5
+  9  6  8
+  1 -7  2
+
+move 2: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  3 -4 -5
+  9  7  8
+  1 -6  2
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  3 -4 -5
+ -8 -7 -9
+  1 -6  2
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  3 -4 -5
+  6 -1 -9
+  7  8  2
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -6 -5
+  4 -3 -9
+  7  8  2
+
+move 6: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_533.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 64.713s (Solving: 64.67s 1st Model: 6.41s Unsat: 1.85s)
+CPU Time    : 257.450s
+initial state:
+ -8 -1 -9
+ -3  5 -7
+ -4  6 -2
+
+move 1: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -8 -5 -9
+ -3  1 -7
+ -4  6 -2
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -8 -5  2
+ -3  1  7
+ -4  6  9
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -8 -7 -1
+ -3 -2  5
+ -4  6  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -8 -7 -1
+ -6  4  5
+  2  3  9
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -8 -7 -1
+ -5 -4  6
+  2  3  9
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -3 -2 -1
+  4  5  6
+  7  8  9
+
+move 7: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_534.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 8
+Time        : 120.597s (Solving: 120.56s 1st Model: 12.39s Unsat: 37.33s)
+CPU Time    : 479.540s
+initial state:
+  6  3 -1
+  8 -2  4
+ -5  9 -7
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  6  3 -4
+  8 -2  1
+ -5  9 -7
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  6  3 -4
+ -9  5  1
+  2 -8 -7
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  6 -1 -5
+ -9  4 -3
+  2 -8 -7
+
+move 4: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1 -6 -5
+ -9  4 -3
+  2 -8 -7
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1 -6 -5
+  7  8 -2
+  3 -4  9
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1 -6 -5
+  4 -3 -2
+ -8 -7  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -8 -7  9
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_535.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 108.624s (Solving: 108.58s 1st Model: 13.94s Unsat: 51.98s)
+CPU Time    : 432.120s
+initial state:
+  8 -3  2
+  9 -1  7
+  6  4 -5
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -2  3 -8
+  9 -1  7
+  6  4 -5
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -9 -8
+ -3  2  7
+  6  4 -5
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1 -9 -8
+ -3  2  7
+ -4 -6 -5
+
+move 4: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1 -9 -8
+  4  2  7
+  3 -6 -5
+
+move 5: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1 -9 -8
+  4  5  6
+  3 -7 -2
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1 -9 -8
+  4  5  6
+  7 -3 -2
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4 -6 -5
+  7  8  9
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_536.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 181.130s (Solving: 181.09s 1st Model: 14.18s Unsat: 1.43s)
+CPU Time    : 720.840s
+initial state:
+  6  7 -1
+ -3  5  8
+ -9 -2  4
+
+move 1: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  6  7 -1
+  9  5  8
+  3 -2  4
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -5 -9 -1
+ -7 -6  8
+  3 -2  4
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+ -5 -9 -1
+ -7 -6  8
+  2 -3  4
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -5 -4  3
+ -7 -8  6
+  2  1  9
+
+move 5: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -5 -4  3
+ -2 -8  6
+  7  1  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -5 -4  3
+ -2 -1  6
+  7  8  9
+
+move 7: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_537.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+Answer: 4
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 6
+Time        : 17.768s (Solving: 17.73s 1st Model: 2.67s Unsat: 0.18s)
+CPU Time    : 70.540s
+initial state:
+ -8  9 -2
+ -5 -1  7
+  4  6 -3
+
+move 1: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -8  1 -2
+ -5 -9  7
+  4  6 -3
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -8  1  3
+ -5 -9 -7
+  4  6  2
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+ -8  1  3
+ -5 -9 -7
+ -2 -6 -4
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -8  1  3
+ -5  4  6
+ -2  7  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -7  2  3
+ -4  5  6
+ -1  8  9
+
+move 6: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_538.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 42.954s (Solving: 42.92s 1st Model: 34.32s Unsat: 2.87s)
+CPU Time    : 170.700s
+initial state:
+  1 -8  5
+ -6 -2  9
+ -3 -4 -7
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1 -8  5
+  4  3  9
+  2  6 -7
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1 -8  5
+  4 -9 -3
+  2  6 -7
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1 -8  5
+  4 -9 -3
+  7 -6 -2
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1 -8  5
+  4  2  6
+  7  3  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1 -3  5
+  4 -2  6
+  7  8  9
+
+move 6: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1 -5  3
+  4 -2  6
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_539.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 32.112s (Solving: 32.08s 1st Model: 8.42s Unsat: 4.49s)
+CPU Time    : 127.600s
+initial state:
+ -4 -5 -8
+ -6 -1 -7
+  2  3  9
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  8  5  4
+ -6 -1 -7
+  2  3  9
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  6  4
+ -5 -8 -7
+  2  3  9
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  7  8
+ -5 -4 -6
+  2  3  9
+
+move 4: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -8 -7 -1
+ -5 -4 -6
+  2  3  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -3 -2 -1
+  4  5 -6
+  7  8  9
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5 -6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_540.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Enumerated: 4
+  Optimum   : unknown
+Optimization: 9
+Time        : 200.091s (Solving: 200.06s 1st Model: 35.24s Unsat: 0.00s)
+CPU Time    : 796.220s
+initial state:
+  7 -3 -6
+ -8  4  9
+  1 -5  2
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  7 -3 -6
+ -2  5 -1
+ -9 -4  8
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  9 -3 -6
+  2  5 -1
+ -7 -4  8
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  9 -3 -6
+  2  1 -5
+ -7 -4  8
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  9 -1 -6
+  2  3 -5
+ -7 -4  8
+
+move 5: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1 -9 -6
+  2  3 -5
+ -7 -4  8
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1 -9 -6
+ -8  4  7
+  5 -3 -2
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+ -8 -7 -4
+  5  6  9
+
+move 8: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+ -6 -5 -4
+  7  8  9
+
+move 9: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_541.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Enumerated: 4
+  Optimum   : unknown
+Optimization: 8
+Time        : 200.001s (Solving: 199.96s 1st Model: 46.99s Unsat: 0.00s)
+CPU Time    : 796.070s
+initial state:
+  2 -5 -7
+ -1  8 -4
+ -3  6 -9
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  9 -6  3
+  4 -8  1
+  7  5 -2
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -3  6 -9
+  4 -8  1
+  7  5 -2
+
+move 3: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+ -3  6 -1
+  4 -8  9
+  7  5 -2
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -3  6 -1
+  4 -8  9
+  7  2 -5
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+ -3 -2 -1
+  4  8  9
+  7 -6 -5
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  8  9
+  7 -6 -5
+
+move 7: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7 -9 -8
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_542.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+Answer: 7
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 7
+  Optimum   : yes
+Optimization: 6
+Time        : 41.219s (Solving: 41.18s 1st Model: 1.06s Unsat: 0.26s)
+CPU Time    : 163.890s
+initial state:
+ -9 -4  3
+ -5 -1  2
+  6 -7 -8
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  5  3
+  4  9  2
+  6 -7 -8
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  5  3
+  4  9  2
+  7 -6 -8
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  5  3
+  4  8  6
+  7 -2 -9
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -8  6
+  7 -5 -9
+
+move 5: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_543.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 59.082s (Solving: 59.04s 1st Model: 10.65s Unsat: 0.93s)
+CPU Time    : 234.850s
+initial state:
+  2  7  9
+  4  5  6
+ -8 -1 -3
+
+move 1: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  2  7  9
+  4  5  6
+  1  8 -3
+
+move 2: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  2  3 -8
+  4 -6 -5
+  1 -9 -7
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  6 -4 -8
+ -3 -2 -5
+  1 -9 -7
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  6 -4 -8
+  9 -1 -5
+  2  3 -7
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -9 -8
+  4 -6 -5
+  2  3 -7
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1 -9 -8
+  4 -6 -5
+  7 -3 -2
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_544.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 133.545s (Solving: 133.50s 1st Model: 32.27s Unsat: 1.86s)
+CPU Time    : 531.130s
+initial state:
+ -4 -5  6
+  8  2 -9
+  7 -3 -1
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  9 -2 -8
+ -6  5  4
+  7 -3 -1
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  2 -9 -8
+ -6  5  4
+  7 -3 -1
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  2  1  3
+ -6 -4 -5
+  7  8  9
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  2  1  3
+  5  4  6
+  7  8  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -4 -5  3
+ -1 -2  6
+  7  8  9
+
+move 6: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1 -5  3
+  4 -2  6
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_545.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 168.093s (Solving: 168.05s 1st Model: 12.00s Unsat: 42.92s)
+CPU Time    : 668.910s
+initial state:
+  9  6  7
+  8  2 -1
+  5 -3  4
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  9 -4  3
+  8  1 -2
+  5 -7 -6
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  9 -4  3
+  2 -1 -8
+  5 -7 -6
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -2  3
+  4 -9 -8
+  5 -7 -6
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  7  3
+  4  9 -8
+  5  2 -6
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  7  3
+  4  9 -8
+  6 -2 -5
+
+move 6: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -9 -8
+  6 -7 -5
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_546.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 13.558s (Solving: 13.52s 1st Model: 1.95s Unsat: 3.60s)
+CPU Time    : 53.790s
+initial state:
+  1  8  6
+  4 -9 -3
+  5  7 -2
+
+move 1: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  8  6
+  4  2 -7
+  5  3  9
+
+move 2: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  8  6
+  4 -3 -7
+  5 -2  9
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  7  3
+  4 -6 -8
+  5 -2  9
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  7  3
+  4  8  6
+  5 -2  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -8  6
+  5 -7  9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  2  3
+  4 -8  6
+  7 -5  9
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_547.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 131.572s (Solving: 131.53s 1st Model: 24.27s Unsat: 2.78s)
+CPU Time    : 523.280s
+initial state:
+  3  1 -4
+ -5  2 -9
+ -7 -6 -8
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  5  1 -4
+ -3  2 -9
+ -7 -6 -8
+
+move 2: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  5  6 -4
+ -3 -2 -9
+ -7 -1 -8
+
+move 3: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -6 -5 -4
+ -3 -2 -9
+ -7 -1 -8
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -6 -5 -4
+ -3 -2 -9
+ -7  8  1
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -6 -5 -4
+ -3 -2 -1
+ -7  8  9
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_548.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 183.311s (Solving: 183.26s 1st Model: 8.79s Unsat: 32.11s)
+CPU Time    : 729.380s
+initial state:
+  5  2 -6
+  4  3  9
+ -8 -1  7
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  6 -2 -5
+  4  3  9
+ -8 -1  7
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  6 -2 -5
+  4  3  9
+ -8 -7  1
+
+move 3: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  6 -2 -1
+  4  3 -9
+ -8 -7  5
+
+move 4: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2 -6
+  4  3 -9
+ -8 -7  5
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2 -6
+  4  3 -5
+ -8 -7  9
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  2 -6
+  4  5 -3
+ -8 -7  9
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -8 -7  9
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_549.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 47.333s (Solving: 47.29s 1st Model: 8.42s Unsat: 1.13s)
+CPU Time    : 188.220s
+initial state:
+  7 -8 -2
+  1 -5 -3
+ -9  6 -4
+
+move 1: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  7 -8 -2
+  1 -5 -3
+  4 -6  9
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -4 -8 -2
+ -1 -5 -3
+ -7 -6  9
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1 -8 -2
+  4 -5 -3
+ -7 -6  9
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  6 -2
+  4  5 -3
+ -7  8  9
+
+move 5: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  2 -6
+  4  5 -3
+ -7  8  9
+
+move 6: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_550.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 57.456s (Solving: 57.42s 1st Model: 18.24s Unsat: 12.81s)
+CPU Time    : 228.490s
+initial state:
+ -9  1 -5
+  7  6  8
+ -2 -3 -4
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -8 -6 -7
+  5 -1  9
+ -2 -3 -4
+
+move 2: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8  4  3
+  5 -9  1
+ -2  7  6
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -8  4  3
+  5 -6 -7
+ -2 -1  9
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+ -8  4  3
+  5  7  6
+ -2 -1  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+ -7 -5  6
+ -4  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4 -5  6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_551.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+Answer: 7
+Optimization: 5
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 7
+  Optimum   : yes
+Optimization: 5
+Time        : 23.097s (Solving: 23.06s 1st Model: 6.38s Unsat: 0.04s)
+CPU Time    : 91.630s
+initial state:
+  4 -8  3
+ -9 -5  6
+ -1  7 -2
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1 -8  3
+  9 -5  6
+ -4  7 -2
+
+move 2: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1 -8  3
+  4 -5  6
+ -9  7 -2
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1 -8  3
+  4 -5  6
+  2 -7  9
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1 -8  3
+  4 -5  6
+  7 -2  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_552.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 7
+Answer: 7
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 7
+  Optimum   : yes
+Optimization: 7
+Time        : 28.973s (Solving: 28.93s 1st Model: 4.36s Unsat: 2.01s)
+CPU Time    : 115.160s
+initial state:
+  2 -5  4
+ -8  7 -9
+  1 -6 -3
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  2 -5  3
+ -8  7  9
+  1 -6 -4
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  2 -5  3
+ -8 -9 -7
+  1 -6 -4
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  6 -1  3
+  9  8 -7
+  5 -2 -4
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  6  2  3
+  9 -8 -7
+  5  1 -4
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  6  2  3
+  9 -8 -7
+ -1 -5 -4
+
+move 6: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+ -9 -8 -7
+ -6 -5 -4
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_553.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 7
+Answer: 5
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 6
+Time        : 19.516s (Solving: 19.48s 1st Model: 8.03s Unsat: 0.30s)
+CPU Time    : 77.540s
+initial state:
+ -3  8  9
+ -7 -2  5
+ -4 -6  1
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -3 -5  2
+ -7 -9 -8
+ -4 -6  1
+
+move 2: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -3 -5  2
+  4 -9 -8
+  7 -6  1
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -3 -5  2
+  4 -1  6
+  7  8  9
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -3  1  2
+  4  5  6
+  7  8  9
+
+move 5: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -2 -1  3
+  4  5  6
+  7  8  9
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_554.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 54.097s (Solving: 54.05s 1st Model: 22.10s Unsat: 1.61s)
+CPU Time    : 215.050s
+initial state:
+ -7  6 -1
+ -5  2 -9
+  4 -3 -8
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  8  3 -4
+  9 -2  5
+  1 -6  7
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  8  3 -4
+ -7  6 -1
+ -5  2 -9
+
+move 3: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  8  3 -4
+  5  6 -1
+  7  2 -9
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -6 -5 -4
+ -3 -8 -1
+  7  2 -9
+
+move 5: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -6 -5 -4
+ -3 -2 -1
+  7  8 -9
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_555.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 68.205s (Solving: 68.17s 1st Model: 6.74s Unsat: 2.47s)
+CPU Time    : 271.330s
+initial state:
+  5  3  1
+  6 -7 -2
+ -9  4 -8
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  5  8 -4
+  6  2  7
+ -9 -1 -3
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -8 -5 -4
+  6  2  7
+ -9 -1 -3
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -8 -7 -2
+  6  4  5
+ -9 -1 -3
+
+move 4: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -8 -7 -2
+ -5 -4 -6
+ -9 -1 -3
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  9 -2
+  4  5 -6
+  7  8 -3
+
+move 6: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  2 -9
+  4  5 -6
+  7  8 -3
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_556.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 95.461s (Solving: 95.42s 1st Model: 31.10s Unsat: 1.65s)
+CPU Time    : 379.080s
+initial state:
+  5 -2 -9
+  8  1 -3
+  4 -7 -6
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  5  6  7
+  8  3 -1
+  4  9  2
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  5  6  7
+  8  1 -3
+  4  9  2
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  5  6  7
+  8  1 -3
+ -2 -9 -4
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  9  2  7
+ -1 -8 -3
+ -6 -5 -4
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  2  7
+ -9 -8 -3
+ -6 -5 -4
+
+move 6: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+ -9 -8 -7
+ -6 -5 -4
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_557.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 56.988s (Solving: 56.95s 1st Model: 18.05s Unsat: 0.75s)
+CPU Time    : 226.350s
+initial state:
+  3 -2 -7
+ -9  6 -4
+ -8 -1 -5
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  5  1  8
+  4 -6  9
+  7  2 -3
+
+move 2: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  5 -8 -1
+  4 -6  9
+  7  2 -3
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  5 -8 -1
+  4  3 -2
+  7 -9  6
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  5 -8 -1
+  4  3 -2
+  7 -6  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  5  6 -1
+  4 -3 -2
+  7  8  9
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_558.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 53.454s (Solving: 53.42s 1st Model: 12.41s Unsat: 40.18s)
+CPU Time    : 212.630s
+initial state:
+  5 -1  6
+ -4  7  2
+  9 -8  3
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+ -3  8 -9
+ -2 -7  4
+ -6  1 -5
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -3  8 -9
+ -1  6  4
+  7  2 -5
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -3 -4 -6
+ -1  9 -8
+  7  2 -5
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+ -3  6  4
+ -1  9 -8
+  7  2 -5
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+ -3 -2  4
+ -1 -9 -8
+  7 -6 -5
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -4  2  3
+ -1 -9 -8
+  7 -6 -5
+
+move 7: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_559.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 70.040s (Solving: 70.00s 1st Model: 20.41s Unsat: 41.55s)
+CPU Time    : 278.540s
+initial state:
+  2  8 -5
+ -7  6 -1
+ -4 -9 -3
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  2  3  9
+ -7  1 -6
+ -4  5 -8
+
+move 2: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  2 -9 -3
+ -7  1 -6
+ -4  5 -8
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  2 -9 -3
+ -7  1 -6
+ -5  4 -8
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  2  8 -4
+ -7  6 -1
+ -5  3  9
+
+move 5: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  2  8 -4
+  5  6 -1
+  7  3  9
+
+move 6: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1 -6 -5
+  4 -8 -2
+  7  3  9
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 8: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_560.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Enumerated: 4
+  Optimum   : unknown
+Optimization: 9
+Time        : 199.999s (Solving: 199.96s 1st Model: 13.72s Unsat: 0.00s)
+CPU Time    : 796.040s
+initial state:
+ -2  4  7
+ -1 -6  3
+  5 -8 -9
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  6  1  7
+ -4  2  3
+  5 -8 -9
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -5  1  7
+  4  2  3
+ -6 -8 -9
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -5  1  7
+  4  9  8
+ -6 -3 -2
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -5 -9  7
+  4 -1  8
+ -6 -3 -2
+
+move 5: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -7  9  5
+  4 -1  8
+ -6 -3 -2
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -4  5
+ -9  7  8
+ -6 -3 -2
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+ -9 -8 -7
+ -6 -5  4
+
+move 8: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2  3
+ -4  5  6
+  7  8  9
+
+move 9: 
+
+  -  -  -
+  *  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_561.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 39.958s (Solving: 39.92s 1st Model: 5.21s Unsat: 2.85s)
+CPU Time    : 158.810s
+initial state:
+  1  5  6
+  2  8  7
+  4 -9 -3
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  5  6
+  3  9 -4
+ -7 -8 -2
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  5  6
+  4 -9 -3
+ -7 -8 -2
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  8
+  4  3  9
+ -7 -6 -5
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  2  8
+  4 -9 -3
+ -7 -6 -5
+
+move 5: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4 -9 -8
+ -7 -6 -5
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_562.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 53.898s (Solving: 53.85s 1st Model: 3.59s Unsat: 45.19s)
+CPU Time    : 214.290s
+initial state:
+ -8  2 -7
+  5 -4  6
+  9 -1 -3
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  3  1 -9
+ -6  4 -5
+  7 -2  8
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  6  1 -9
+ -3  4 -5
+  7 -2  8
+
+move 3: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  6  1 -8
+ -3  4  5
+  7 -2  9
+
+move 4: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -5 -4  3
+  8 -1 -6
+  7 -2  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -8  3
+  4  5 -6
+  7 -2  9
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1 -8  3
+  4  6 -5
+  7 -2  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -6 -5
+  7  8  9
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_563.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Optimum   : yes
+Optimization: 8
+Time        : 97.316s (Solving: 97.28s 1st Model: 54.08s Unsat: 43.20s)
+CPU Time    : 387.170s
+initial state:
+  6  5 -8
+ -4  1 -7
+ -2  9 -3
+
+move 1: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -5 -6 -8
+ -4  1 -7
+ -2  9 -3
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -5 -6 -8
+  3 -9  2
+  7 -1  4
+
+move 3: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -5 -6 -8
+  3 -4  1
+  7 -2  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+ -5 -6 -8
+  4 -3  1
+  7 -2  9
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -5 -1  3
+  4  8  6
+  7 -2  9
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  5  3
+  4  8  6
+  7 -2  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -8  6
+  7 -5  9
+
+move 8: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_564.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 32.807s (Solving: 32.77s 1st Model: 4.44s Unsat: 2.22s)
+CPU Time    : 130.380s
+initial state:
+ -3  7 -6
+  5 -4 -9
+  1 -8  2
+
+move 1: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -3  7 -6
+  5 -4 -2
+  1 -8  9
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+ -3  7  2
+  5 -4  6
+  1 -8  9
+
+move 3: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -2 -7  3
+  5 -4  6
+  1 -8  9
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  8 -1  3
+  4 -5  6
+  7  2  9
+
+move 5: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1 -8  3
+  4 -5  6
+  7  2  9
+
+move 6: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1 -2  3
+  4  5  6
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_565.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 73.015s (Solving: 72.98s 1st Model: 23.38s Unsat: 34.05s)
+CPU Time    : 290.450s
+initial state:
+  4 -7 -2
+  3  9  6
+  1  5 -8
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -5 -1 -2
+ -9 -3  6
+  7 -4 -8
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  5 -2
+ -9 -3  6
+  7 -4 -8
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  4 -2
+ -9  3  6
+  7 -5 -8
+
+move 4: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1 -3 -2
+ -9 -4  6
+  7 -5 -8
+
+move 5: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+ -9 -4  6
+  7 -5 -8
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  9  6
+  7 -5 -8
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7 -9 -8
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_566.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 59.396s (Solving: 59.36s 1st Model: 8.39s Unsat: 2.84s)
+CPU Time    : 236.190s
+initial state:
+ -4 -8  1
+  2  3 -6
+  7  9  5
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+ -5 -9 -7
+  6 -3 -2
+ -1  8  4
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  7  9  5
+  6 -3 -2
+ -1  8  4
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  9  5
+ -6 -3 -2
+ -7  8  4
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+ -6 -5 -9
+ -7  8  4
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2  3
+ -6 -5 -4
+ -7  8  9
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_567.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 62.628s (Solving: 62.59s 1st Model: 9.07s Unsat: 1.69s)
+CPU Time    : 248.920s
+initial state:
+  7  4  1
+ -8 -2  6
+ -9  5 -3
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  7  4  1
+ -5  9  6
+  2  8 -3
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  5  4  1
+ -7  9  6
+  2  8 -3
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  5 -6 -9
+ -7 -1 -4
+  2  8 -3
+
+move 4: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  5 -6 -9
+ -2 -1 -4
+  7  8 -3
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  2 -9
+  6 -5 -4
+  7  8 -3
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2 -9
+  4  5 -6
+  7  8 -3
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_568.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 190.985s (Solving: 190.94s 1st Model: 97.67s Unsat: 1.75s)
+CPU Time    : 759.770s
+initial state:
+  5 -6 -8
+ -7 -9 -4
+ -3 -1 -2
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  3 -8
+  9  7 -4
+  6 -5 -2
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  3 -8
+  5 -6 -4
+ -7 -9 -2
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  3 -8
+  4  6 -5
+ -7 -9 -2
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  9
+  4  5 -6
+ -7  8 -3
+
+move 5: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+ -7  8 -9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_569.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 26.276s (Solving: 26.24s 1st Model: 0.44s Unsat: 4.35s)
+CPU Time    : 104.360s
+initial state:
+  1 -3  8
+  5  7  4
+ -6 -9  2
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1 -3  8
+ -2  9  6
+ -4 -7 -5
+
+move 2: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1 -3 -6
+ -2  9 -8
+ -4 -7 -5
+
+move 3: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  6  3
+ -2  9 -8
+ -4 -7 -5
+
+move 4: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  6  3
+  4  9 -8
+  2 -7 -5
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+  1  6  3
+  4  9 -8
+  7 -2 -5
+
+move 6: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 7: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_570.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 82.909s (Solving: 82.87s 1st Model: 61.72s Unsat: 2.16s)
+CPU Time    : 329.650s
+initial state:
+ -4  1 -9
+ -2  8 -7
+ -3  5 -6
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -8  2 -9
+ -1  4 -7
+ -3  5 -6
+
+move 2: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  2 -9
+  8  4 -7
+ -3  5 -6
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  2 -9
+  6 -5  3
+  7 -4 -8
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1  2 -9
+  6 -5  3
+  7  8  4
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2 -9
+  6 -5 -4
+  7  8 -3
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2 -9
+  4  5 -6
+  7  8 -3
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_571.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 31.936s (Solving: 31.89s 1st Model: 10.69s Unsat: 3.30s)
+CPU Time    : 126.960s
+initial state:
+ -3 -9 -2
+ -7 -6 -1
+ -4 -8 -5
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  8  4 -2
+  6  7 -1
+  9  3 -5
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  8  4 -2
+ -3 -9 -1
+ -7 -6 -5
+
+move 3: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  9  3
+  2 -4 -8
+ -7 -6 -5
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  9  3
+  4 -2 -8
+ -7 -6 -5
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4 -9 -8
+ -7 -6 -5
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_572.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+Answer: 4
+Optimization: 7
+Answer: 5
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 5
+  Optimum   : yes
+Optimization: 7
+Time        : 53.599s (Solving: 53.56s 1st Model: 26.36s Unsat: 0.21s)
+CPU Time    : 213.160s
+initial state:
+  7 -1 -3
+  2  5  4
+ -6  8  9
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -8  6 -3
+ -5 -2  4
+  1 -7  9
+
+move 2: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -8  6 -3
+ -5  7  4
+  1  2  9
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -8 -7 -3
+ -5 -6  4
+  1  2  9
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+ -8 -7 -3
+ -5 -4  6
+  1  2  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -2 -1 -3
+  4  5  6
+  7  8  9
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  2 -3
+  4  5  6
+  7  8  9
+
+move 7: 
+
+  -  -  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_573.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 8
+Answer: 7
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 7
+  Optimum   : yes
+Optimization: 7
+Time        : 105.828s (Solving: 105.78s 1st Model: 3.21s Unsat: 2.61s)
+CPU Time    : 420.990s
+initial state:
+  2  1 -5
+ -9 -8 -6
+  4  7 -3
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  2  1 -5
+  3 -7 -4
+  6  8  9
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  7 -3 -5
+ -1 -2 -4
+  6  8  9
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1 -3 -5
+ -7 -2 -4
+  6  8  9
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  1  5  3
+ -7 -2 -4
+  6  8  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+ -7 -5 -4
+  6  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+ -6 -5 -4
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_574.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 55.935s (Solving: 55.89s 1st Model: 30.18s Unsat: 2.82s)
+CPU Time    : 222.440s
+initial state:
+  5 -3 -2
+  1  7  8
+  6  9  4
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+ -6 -3 -2
+ -1  7  8
+ -5  9  4
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+ -6 -3 -2
+ -1  7  8
+ -4 -9  5
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+ -6 -3 -2
+ -1  7  8
+  9  4  5
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -6 -5 -4
+ -1 -8 -7
+  9  2  3
+
+move 5: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -6 -5 -4
+ -3 -2 -9
+  7  8  1
+
+move 6: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+ -6 -5 -4
+ -3 -2 -1
+  7  8  9
+
+move 7: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_575.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 76.800s (Solving: 76.75s 1st Model: 4.88s Unsat: 2.27s)
+CPU Time    : 305.260s
+initial state:
+ -8  9  1
+  6  5  3
+  2 -4  7
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8 -7  4
+  6 -3 -5
+  2 -1 -9
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1 -2  4
+  3 -6 -5
+  7  8 -9
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+ -3 -2  4
+ -1 -6 -5
+  7  8 -9
+
+move 4: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -4  2  3
+ -1 -6 -5
+  7  8 -9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  2  3
+  4 -6 -5
+  7  8 -9
+
+move 6: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_576.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 34.741s (Solving: 34.69s 1st Model: 8.68s Unsat: 2.21s)
+CPU Time    : 138.090s
+initial state:
+  9 -2  1
+  6 -4  8
+  3  7  5
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  9 -8  4
+  6 -1  2
+  3  7  5
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -4  8 -9
+  6 -1  2
+  3  7  5
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -6 -9
+ -8  4  2
+  3  7  5
+
+move 4: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1 -6 -5
+ -8  4 -2
+  3  7  9
+
+move 5: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1 -6 -5
+ -7 -3 -2
+ -4  8  9
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+ -7  5  6
+ -4  8  9
+
+move 7: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_577.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 21.097s (Solving: 21.05s 1st Model: 13.85s Unsat: 3.58s)
+CPU Time    : 83.680s
+initial state:
+ -2  1  3
+  4  6  8
+ -9 -7  5
+
+move 1: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -2  1  3
+ -5  7  9
+ -8 -6 -4
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+ -2  1  3
+ -5 -9 -7
+ -8 -6 -4
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  6  8  3
+  9  5 -7
+ -1  2 -4
+
+move 4: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  8  3
+ -9  5 -7
+ -6  2 -4
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1 -5  3
+ -9 -8 -7
+ -6  2 -4
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1 -5  3
+  4 -2  6
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_578.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 37.334s (Solving: 37.30s 1st Model: 12.47s Unsat: 3.41s)
+CPU Time    : 148.280s
+initial state:
+  5  4  8
+ -1 -9  3
+  7  6  2
+
+move 1: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  5  4  8
+ -1 -2 -6
+  7 -3  9
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  5  4  8
+  2  1 -6
+  7 -3  9
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  5  6 -1
+  2 -8 -4
+  7 -3  9
+
+move 4: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1 -6 -5
+  2 -8 -4
+  7 -3  9
+
+move 5: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1 -6 -5
+  2  3 -4
+  7  8  9
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_579.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 7
+Answer: 3
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 6
+Time        : 15.769s (Solving: 15.73s 1st Model: 6.71s Unsat: 0.33s)
+CPU Time    : 62.570s
+initial state:
+ -8 -5  7
+  6 -2 -1
+ -9 -3 -4
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8  4  3
+  6  1  2
+ -9 -7  5
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+ -8  4  3
+ -5  7  9
+ -2 -1 -6
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+ -7  5  9
+ -4  8 -6
+
+move 4: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  9
+  7  8 -6
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_580.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 78.465s (Solving: 78.43s 1st Model: 25.93s Unsat: 40.18s)
+CPU Time    : 312.060s
+initial state:
+  9 -7 -8
+  4 -2  6
+ -1 -5 -3
+
+move 1: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  8  7 -9
+  4 -2  6
+ -1 -5 -3
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -7 -8 -9
+  4 -2  6
+ -1 -5 -3
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -7 -8 -9
+ -6  2 -4
+ -1 -5 -3
+
+move 4: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -7 -8  3
+ -6  2  4
+ -1 -5  9
+
+move 5: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -7 -8  3
+ -6  5  4
+ -1 -2  9
+
+move 6: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -7 -8  3
+ -4 -5  6
+ -1 -2  9
+
+move 7: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1 -8  3
+  4 -5  6
+  7 -2  9
+
+move 8: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_581.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Enumerated: 2
+  Optimum   : unknown
+Optimization: 9
+Time        : 200.000s (Solving: 199.96s 1st Model: 85.41s Unsat: 0.00s)
+CPU Time    : 796.110s
+initial state:
+ -6  9  2
+  4 -8 -5
+ -1 -7  3
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+ -4  9  2
+  6 -8 -5
+ -1 -7  3
+
+move 2: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+ -2 -9  4
+  6 -8 -5
+ -1 -7  3
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -2 -3  7
+  6  5  8
+ -1 -4  9
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+ -2 -7  3
+  6  5  8
+ -1 -4  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+ -2 -5  3
+  6  7  8
+ -1 -4  9
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  5  2  3
+  6  7  8
+ -1 -4  9
+
+move 7: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+ -6  7  8
+ -5 -4  9
+
+move 8: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+ -8 -7  6
+ -5 -4  9
+
+move 9: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_582.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 39.507s (Solving: 39.47s 1st Model: 25.50s Unsat: 1.94s)
+CPU Time    : 157.060s
+initial state:
+ -1 -9 -5
+  4  7 -6
+ -3  8  2
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -7 -4 -5
+  9  1 -6
+ -3  8  2
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -7 -4 -5
+  6 -1 -9
+ -3  8  2
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  3 -4 -5
+ -6 -1 -9
+  7  8  2
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  6 -5
+  4 -3 -9
+  7  8  2
+
+move 5: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  1  6 -5
+  4 -3 -2
+  7  8  9
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5 -6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_583.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 103.638s (Solving: 103.60s 1st Model: 46.19s Unsat: 3.00s)
+CPU Time    : 412.280s
+initial state:
+ -8  3  9
+ -1 -4  2
+ -6 -7 -5
+
+move 1: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+ -8  3  9
+ -1 -2  4
+ -6 -7 -5
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+ -8  3  9
+ -1 -2  4
+ -6  5  7
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+ -8  3  9
+ -5  6  4
+  2  1  7
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8 -7 -1
+ -5 -4 -6
+  2 -9 -3
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  9 -2 -1
+  4  5 -6
+  7  8 -3
+
+move 6: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2 -9
+  4  5 -6
+  7  8 -3
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_584.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 23.465s (Solving: 23.43s 1st Model: 6.41s Unsat: 4.41s)
+CPU Time    : 93.040s
+initial state:
+  6  7 -2
+  8  4 -3
+ -1 -5  9
+
+move 1: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+ -7 -6 -2
+  8  4 -3
+ -1 -5  9
+
+move 2: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+ -7  2  6
+  8  4 -3
+ -1 -5  9
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+ -7  2  6
+ -4 -8 -3
+ -1 -5  9
+
+move 4: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  6
+  4 -8 -3
+  7 -5  9
+
+move 5: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4 -8 -6
+  7 -5  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5 -6
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_585.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 7
+Time        : 109.553s (Solving: 109.51s 1st Model: 18.67s Unsat: 1.37s)
+CPU Time    : 435.590s
+initial state:
+  9 -8 -4
+  7  1 -6
+  3 -2 -5
+
+move 1: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  9 -8 -4
+  7  2 -6
+  3 -1 -5
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -2 -7 -4
+  8 -9 -6
+  3 -1 -5
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+ -2 -7 -4
+  8 -9 -6
+  5  1 -3
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -2 -7 -4
+  8  3 -1
+  5  6  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -6 -5 -4
+ -3 -8 -1
+  7  2  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -6 -5 -4
+ -3 -2 -1
+  7  8  9
+
+move 7: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_586.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 19.733s (Solving: 19.69s 1st Model: 6.76s Unsat: 1.72s)
+CPU Time    : 78.350s
+initial state:
+  3  1 -8
+  6  5  2
+  9 -4  7
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  4 -9 -8
+ -5 -6  2
+ -1 -3  7
+
+move 2: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  4 -7  3
+ -5 -2  6
+ -1  8  9
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  4  2  3
+ -5  7  6
+ -1  8  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  4  2  3
+ -7  5  6
+ -1  8  9
+
+move 5: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  7  5  6
+ -4  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+ -7  8  9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_587.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 6
+Time        : 18.257s (Solving: 18.22s 1st Model: 5.45s Unsat: 0.30s)
+CPU Time    : 72.450s
+initial state:
+  4  5  3
+ -9  6 -1
+  2  7  8
+
+move 1: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  4 -3 -5
+ -9  6 -1
+  2  7  8
+
+move 2: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  3 -4 -5
+ -9  6 -1
+  2  7  8
+
+move 3: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  3 -4 -5
+ -8 -7 -2
+  1 -6  9
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  3 -4 -5
+  6 -1 -2
+  7  8  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -6 -5
+  4 -3 -2
+  7  8  9
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_588.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 123.268s (Solving: 123.23s 1st Model: 47.65s Unsat: 40.88s)
+CPU Time    : 490.200s
+initial state:
+  9 -3  4
+ -5 -6 -1
+ -8 -7  2
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  9 -3  4
+  7  8 -1
+  6  5  2
+
+move 2: 
+
+  -  -  -
+  -  -  *
+  -  -  *
+
+  9 -3  4
+  7  8 -2
+  6  5  1
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  9 -3  4
+  7  8 -2
+  6 -1 -5
+
+move 4: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1 -6  4
+ -8 -7 -2
+  3 -9 -5
+
+move 5: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1 -6  4
+ -8 -7 -2
+  3  5  9
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1 -6  4
+ -5 -3 -2
+  7  8  9
+
+move 7: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  1  2  3
+ -5 -4  6
+  7  8  9
+
+move 8: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_589.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 45.172s (Solving: 45.13s 1st Model: 3.63s Unsat: 1.33s)
+CPU Time    : 179.360s
+initial state:
+ -1 -8  4
+  3  7 -9
+  5 -6  2
+
+move 1: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  6 -5  4
+ -7 -3 -9
+  8  1  2
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  6 -5  4
+  9  3  7
+  8  1  2
+
+move 3: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+ -3 -9  4
+  5 -6  7
+  8  1  2
+
+move 4: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -3 -2 -1
+  5 -7  6
+  8 -4  9
+
+move 5: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  5 -7  6
+  8 -4  9
+
+move 6: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4 -8  6
+  7 -5  9
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_590.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+Answer: 5
+Optimization: 7
+Answer: 6
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 6
+  Optimum   : yes
+Optimization: 6
+Time        : 102.572s (Solving: 102.54s 1st Model: 11.50s Unsat: 0.24s)
+CPU Time    : 408.070s
+initial state:
+ -9 -8  4
+ -1 -7 -3
+ -2  6 -5
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+  5 -6  2
+  3  7  1
+ -4  8  9
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  5 -6  2
+ -7 -3  1
+ -4  8  9
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+  5 -1  3
+ -7 -2  6
+ -4  8  9
+
+move 4: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1 -5  3
+ -7 -2  6
+ -4  8  9
+
+move 5: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+ -7  5  6
+ -4  8  9
+
+move 6: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_591.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 32.858s (Solving: 32.82s 1st Model: 1.86s Unsat: 7.03s)
+CPU Time    : 130.470s
+initial state:
+  1 -7  6
+  2  8 -9
+ -4 -5 -3
+
+move 1: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  5  6
+  2 -8 -9
+ -4  7 -3
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  *  *  *
+
+  1  5  6
+  3 -7  4
+  9  8 -2
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  5  6
+ -8 -9  4
+  7 -3 -2
+
+move 4: 
+
+  -  -  -
+  -  *  *
+  -  -  -
+
+  1  5  6
+ -8 -4  9
+  7 -3 -2
+
+move 5: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  5  6
+  4  8  9
+  7 -3 -2
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 7: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_592.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 8
+Time        : 65.874s (Solving: 65.84s 1st Model: 3.47s Unsat: 50.77s)
+CPU Time    : 262.000s
+initial state:
+  4  1  5
+ -3  7 -8
+ -6  2  9
+
+move 1: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  4  1  5
+ -7  3 -8
+ -6  2  9
+
+move 2: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+  4  1  5
+  6  3 -8
+  7  2  9
+
+move 3: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  8 -3 -6
+ -5 -1 -4
+  7  2  9
+
+move 4: 
+
+  -  *  *
+  -  -  -
+  -  -  -
+
+  8  6  3
+ -5 -1 -4
+  7  2  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  5  3
+ -6 -8 -4
+  7  2  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  5  3
+ -6 -2 -4
+  7  8  9
+
+move 7: 
+
+  -  *  -
+  -  *  -
+  -  -  -
+
+  1  2  3
+ -6 -5 -4
+  7  8  9
+
+move 8: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_593.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 8
+Time        : 170.384s (Solving: 170.34s 1st Model: 87.99s Unsat: 33.24s)
+CPU Time    : 677.870s
+initial state:
+  6  5 -2
+  3 -8  9
+  1  7  4
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  *  *  *
+
+ -4 -7 -1
+ -9  8 -3
+  2 -5 -6
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -4 -7 -1
+  3 -8  9
+  2 -5 -6
+
+move 3: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -4  6  5
+  3 -9  8
+  2  1  7
+
+move 4: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -8  9 -3
+ -5 -6  4
+  2  1  7
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8 -7 -1
+ -5 -4  6
+  2  3 -9
+
+move 6: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -3 -2 -1
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  *  *  *
+  -  -  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_594.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 2
+  Optimum   : yes
+Optimization: 8
+Time        : 80.413s (Solving: 80.38s 1st Model: 9.77s Unsat: 41.00s)
+CPU Time    : 319.900s
+initial state:
+ -2  8  7
+  6 -4  9
+  1  3 -5
+
+move 1: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -2  8  7
+ -1 -4  9
+ -6  3 -5
+
+move 2: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+ -2  8  7
+ -9  4  1
+ -6  3 -5
+
+move 3: 
+
+  -  -  -
+  *  -  -
+  *  -  -
+
+ -2  8  7
+  6  4  1
+  9  3 -5
+
+move 4: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -2  8  7
+  6 -3  1
+  9 -4 -5
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  -  -
+
+ -2 -1  3
+  6 -7 -8
+  9 -4 -5
+
+move 6: 
+
+  *  *  -
+  -  -  -
+  -  -  -
+
+  1  2  3
+  6 -7 -8
+  9 -4 -5
+
+move 7: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  1  2  3
+  4 -9 -8
+  7 -6 -5
+
+move 8: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_595.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 8
+Answer: 4
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 7
+Time        : 71.235s (Solving: 71.19s 1st Model: 14.66s Unsat: 2.19s)
+CPU Time    : 283.300s
+initial state:
+  3 -4 -8
+  1 -7 -5
+ -6  2 -9
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  6 -4 -8
+ -1 -7 -5
+ -3  2 -9
+
+move 2: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  6 -4 -8
+ -1 -7 -5
+ -3  9 -2
+
+move 3: 
+
+  -  -  -
+  *  *  -
+  *  *  -
+
+  6 -4 -8
+ -9  3 -5
+  7  1 -2
+
+move 4: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  6 -4 -8
+ -9 -1 -5
+  7 -3 -2
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1  9 -8
+  4 -6 -5
+  7 -3 -2
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4  5  6
+  7  8 -9
+
+move 7: 
+
+  -  -  -
+  -  -  -
+  -  -  *
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_596.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+SATISFIABLE
+
+INTERRUPTED : 1
+Models      : 1+    
+  Enumerated: 4
+  Optimum   : unknown
+Optimization: 9
+Time        : 199.997s (Solving: 199.95s 1st Model: 3.65s Unsat: 0.00s)
+CPU Time    : 796.040s
+initial state:
+ -6  7 -8
+  4  1  9
+ -2 -3 -5
+
+move 1: 
+
+  -  -  *
+  -  -  *
+  -  -  *
+
+ -6  7  5
+  4  1 -9
+ -2 -3  8
+
+move 2: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+ -6  7  5
+ -1 -4 -9
+ -2 -3  8
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+  1  7  5
+  6 -4 -9
+ -2 -3  8
+
+move 4: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  7  5
+  4 -6 -9
+ -2 -3  8
+
+move 5: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1 -8  3
+  4  9  6
+ -2 -5 -7
+
+move 6: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1 -8  3
+  4  9  6
+  7  5  2
+
+move 7: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1 -8  3
+  4 -5  6
+  7 -9  2
+
+move 8: 
+
+  -  -  -
+  -  -  -
+  -  *  *
+
+  1 -8  3
+  4 -5  6
+  7 -2  9
+
+move 9: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_597.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 8
+Answer: 3
+Optimization: 7
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 3
+  Optimum   : yes
+Optimization: 7
+Time        : 26.695s (Solving: 26.66s 1st Model: 9.55s Unsat: 1.62s)
+CPU Time    : 106.010s
+initial state:
+ -8 -9 -7
+  5  2  6
+ -4  3 -1
+
+move 1: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+ -8  1 -3
+  5 -6 -2
+ -4  7  9
+
+move 2: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  2  6 -5
+  3 -1  8
+ -4  7  9
+
+move 3: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  4  6 -5
+ -3 -1  8
+ -2  7  9
+
+move 4: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+ -8  1  3
+  5 -6 -4
+ -2  7  9
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+ -7  2  3
+  6 -5 -4
+ -1  8  9
+
+move 6: 
+
+  *  -  -
+  *  -  -
+  *  -  -
+
+  1  2  3
+ -6 -5 -4
+  7  8  9
+
+move 7: 
+
+  -  -  -
+  *  *  *
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_598.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 8
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 4
+  Optimum   : yes
+Optimization: 8
+Time        : 103.965s (Solving: 103.93s 1st Model: 20.41s Unsat: 32.40s)
+CPU Time    : 413.520s
+initial state:
+ -9  5 -8
+  3  2  7
+ -1 -4  6
+
+move 1: 
+
+  *  -  -
+  *  -  -
+  -  -  -
+
+ -3  5 -8
+  9  2  7
+ -1 -4  6
+
+move 2: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+ -3  5 -8
+  9 -6  4
+ -1 -7 -2
+
+move 3: 
+
+  -  -  -
+  -  -  -
+  *  *  -
+
+ -3  5 -8
+  9 -6  4
+  7  1 -2
+
+move 4: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+ -3  5 -8
+  9 -1  4
+  7  6 -2
+
+move 5: 
+
+  *  *  -
+  *  *  -
+  -  -  -
+
+  1 -9 -8
+ -5  3  4
+  7  6 -2
+
+move 6: 
+
+  -  *  *
+  -  *  *
+  -  *  *
+
+  1  2 -6
+ -5 -4 -3
+  7  8  9
+
+move 7: 
+
+  -  -  *
+  -  -  *
+  -  -  -
+
+  1  2  3
+ -5 -4  6
+  7  8  9
+
+move 8: 
+
+  -  -  -
+  *  *  -
+  -  -  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
+start
+xxxxxxxxxx 10 data/gen_3/gen_prob_599.lp xxxxxxxxxxx
+Option : --threads 4 --restarts=256 --save-progress
+
+clasp version 2.0.3
+Reading from stdin
+Solving...
+Answer: 1
+Optimization: 9
+Answer: 2
+Optimization: 9
+Answer: 3
+Optimization: 9
+Answer: 4
+Optimization: 9
+Answer: 5
+Optimization: 8
+Answer: 6
+Optimization: 7
+Answer: 7
+Optimization: 6
+OPTIMUM FOUND
+
+Models      : 1     
+  Enumerated: 7
+  Optimum   : yes
+Optimization: 6
+Time        : 60.603s (Solving: 60.56s 1st Model: 4.88s Unsat: 0.25s)
+CPU Time    : 240.800s
+initial state:
+ -5  4  9
+ -3 -8 -2
+  6 -1 -7
+
+move 1: 
+
+  *  *  *
+  *  *  *
+  -  -  -
+
+  2  8  3
+ -9 -4  5
+  6 -1 -7
+
+move 2: 
+
+  *  *  -
+  *  *  -
+  *  *  -
+
+  1 -6  3
+  4  9  5
+ -8 -2 -7
+
+move 3: 
+
+  -  *  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4 -9  5
+ -8  6 -7
+
+move 4: 
+
+  -  -  -
+  -  -  -
+  *  *  *
+
+  1  2  3
+  4 -9  5
+  7 -6  8
+
+move 5: 
+
+  -  -  -
+  -  *  *
+  -  *  *
+
+  1  2  3
+  4 -8  6
+  7 -5  9
+
+move 6: 
+
+  -  -  -
+  -  *  -
+  -  *  -
+
+  1  2  3
+  4  5  6
+  7  8  9
+
+finish
