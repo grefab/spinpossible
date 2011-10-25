@@ -2,12 +2,14 @@
 
 //#define NO_SINGLES
 //#define NO_DOUBLES
+#define SYMMETRY
 
 int main ( int argc, char** argv )
 {
-    int d, i, j, k, l, m;
-    int tmp;
-    int mark[10];
+    int d, i, j, k, l, tmp;
+    int mark[10], marks[37][10];
+
+    for( i = 1; i <= 36; i++ ) for( k = 1; k <=9; k++ ) marks[i][k] = 0;
 
     if( argc != 11 )
     {
@@ -17,10 +19,11 @@ int main ( int argc, char** argv )
 
     int moves = atoi(argv[10]) + 1;
     int nrofvars = moves * 100 + (moves-1) * 36;
-    int nrofclauses = 189 + 2514 * (moves-1);
+    int nrofclauses = 180 + 2505 * (moves-1);
 
-//    nrofclauses -= 9*moves;
-    nrofclauses += moves * 36 * 9;
+#ifdef SYMMETRY
+    nrofclauses += (moves-2) * 535;
+#endif
 #ifdef NO_SINGLES
 	nrofclauses += 9 * (moves-1) ; 
 #endif
@@ -43,7 +46,6 @@ int main ( int argc, char** argv )
         for( j = 19; j <= 24; j++ )
 	    printf("-%i 0\n", 100 * moves + (i-1)*36 + j );
 #endif
-
     for( i = 1; i <= 9; i++ )
     {
 	tmp = atoi(argv[i]);
@@ -54,18 +56,6 @@ int main ( int argc, char** argv )
 
 	printf("%i 0\n", tmp < 0?i*10:-i*10 ); 
     }
-
-    for( i = 1; i <= moves; i++ )
-	for( k = 1; k <= 9; k++ )
-	{
-	    for( l = 1; l <= 9; l++ )
-		printf("%i ", (i-1)*100 + (k-1)*10 + l );
-	    printf("0\n"); 
-
-	    for( l = 1; l <= 9; l++ )
-	        for( m = l+1; m <= 9; m++ )
-		    printf("-%i -%i 0\n", (i-1)*100 + (k-1)*10 + l, (i-1)*100 + (k-1)*10 + m );
-	}
 
     // fixing last states: 90 clauses
     for( k = 1; k <= 9; k++ )
@@ -105,6 +95,7 @@ int main ( int argc, char** argv )
 		for( k=1; k<=9; k++ )
 		    if( mark[ k ] == tmp )
 		    {
+			if( tmp <= moves * 100 + 36 ) marks[ tmp - moves * 100 ][ k ] = 1;
 			printf("-%i -%i 0\n",  tmp, i*100 - 10 + k );
 			for( l=1; l <= 9; l++ )
 			{
@@ -117,4 +108,21 @@ int main ( int argc, char** argv )
 		    else printf("-%i %i 0\n", tmp, i*100 - 10 + k );
 	    }
     }
+#ifdef SYMMETRY
+    for( i = 1; i <= 36; i++ )
+	for( j = 1; j <= i; j++ )
+	{
+	    int flag = 0;
+	    for( k = 1; k <= 9; k++ )
+	    {
+		if( marks[ i ][ k ] == 1 && marks[ j ][ k ] == 1 ) flag |= 1;
+		if( marks[ i ][ k ] == 1 && marks[ j ][ k ] == 0 ) flag |= 2;
+		if( marks[ i ][ k ] == 0 && marks[ j ][ k ] == 1 ) flag |= 4;
+	    }
+
+	    if( flag != 7 )
+	        for( k = 1; k < moves - 1; k++ )
+		    printf("-%i -%i 0\n", moves*100 +(k-1)*36 + i, moves * 100 + k*36 + j );
+	}
+#endif
 }
