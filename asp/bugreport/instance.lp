@@ -4,13 +4,7 @@ c(1..n).
 k(1..9). 
 size(n). 
 #hide. 
-%#show move/5. 
-#show move/3. 
-#show table/4. 
-%#show final/1.
-%#show isOk/3.
-%#show fixed/3.
-#show size/1.
+#show move/5. 
 
  { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 
@@ -44,7 +38,6 @@ table(0,X,Y,V) :- init(X,Y,V).
 final(K) :- K = { move(N) : k(N) }.
 isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y). 
 
-%:- k(K), c(X;Y), 2 { table(K,X,Y,_) }.
 :- K>1, move(K), not move(K-1). 
 :- final(K), c(X;Y), not isOk(K,X,Y). 
 
@@ -76,4 +69,15 @@ fixed(K,0;n+1,Y) :- c(Y), move(K).
 fixed(K,X,0;n+1) :- c(X), move(K). 
 fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
 :- fixed(K,X,Y), move(K+1,X,Y). 
-%#minimize[not fixed(K,X,Y)@1 : c(X;Y) : k(K)]. 
+
+% simple problem
+init(1,1,9).
+init(2,1,2).
+init(3,1,3).
+init(1,2,4).
+init(2,2,5).
+init(3,2,6).
+init(1,3,7).
+init(2,3,8).
+init(3,3,1).
+

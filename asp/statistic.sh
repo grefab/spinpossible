@@ -5,13 +5,13 @@
 #for x in {0..24}; do echo $x; ./run.sh data/mareike.lp $x 800 >> output/output9.txt; done
 
 # 100 randomly generated puzzles
-for x in {1,10}
+for x in {11,17}
 do 
 echo $x
-   for p in data/gen_3/*; 
+   for p in data/gen_3/gen_*; 
    do
       echo $p
-      ./run.sh $p $x 200 | grep -v 'size' >> output/strategy-$x-gen-500.txt ;
+      ./run.sh $p $x 300 | grep -v 'size' >> output/strategy-$x-gen-500-fixed.txt ;
    done;
 done;
        
