@@ -12,7 +12,7 @@ $ uname -a
 Linux my_computer 3.0.0-12-generic #20-Ubuntu SMP Fri Oct 7 14:56:25 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux
 [/code]
 
-Unfortunately I did not find a small szenario where I obsered this problem. So to reproduce I have uploaded the whole program on github, see [url]https://github.com/grefab/spinpossible/tree/master/asp/bugreport/[/url]
+Unfortunately I did not find a small scenario where I observed this problem. So to reproduce I have uploaded the whole program on github, see [url]https://github.com/grefab/spinpossible/tree/master/asp/bugreport/[/url]
 
 Run gringo/clasp on instance.lp. On my machine it happens nondeterministically and I  have to run it several times to observe the effect. 
 [code]
