@@ -1,4 +1,9 @@
 h1. new: 
+# start encoding with differences
+# define ordering on reactangle by differences
+# orientete trable ( all this without choices)
+#
+# 
 # improve fixed. still does not work properly
 # find better heuristics for 4*4
 # find valuation function, good heuristic for 4*4
