@@ -56,8 +56,6 @@ isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y).
 :- move(K;K+1), move(K,X,Y,R,D), move(K+1,X,Y,R,D). 
 
 %% single ones in the end
-isSingle(K) :- move(K,X,Y,0,0). 
-:- move(K;K+1), isSingle(K), not isSingle(K+1). 
 %
 %% nonintersecting:
 intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
@@ -69,11 +67,11 @@ containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y).
 :- intersecting(K), not containing(K), k(K).
 
 %
-surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
-surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
-surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).
-fixed(K,0;n+1,Y) :- c(Y), move(K). 
-fixed(K,X,0;n+1) :- c(X), move(K). 
-fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
-:- fixed(K,X,Y), move(K+1,X,Y). 
+%surround(X,Y,XX,Y) :- c(X;Y), XX = X-1. 
+%surround(X,Y,XX,Y) :- c(X;Y), XX = X+1. 
+%surround(X,Y,YY,XX) :- surround(X,Y,XX,YY).
+%fixed(K,0;n+1,Y) :- c(Y), move(K). 
+%fixed(K,X,0;n+1) :- c(X), move(K). 
+%fixed(K,X,Y) :- isOk(K,X,Y), 3 {fixed(K,XX,YY) : surround(X,Y,XX,YY) }. 
+%:- fixed(K,X,Y), move(K+1,X,Y). 
 %#minimize[not fixed(K,X,Y)@1 : c(X;Y) : k(K)]. 

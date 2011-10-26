@@ -7,11 +7,16 @@
 # 100 randomly generated puzzles
 for x in {11,17}
 do 
-echo $x
-   for p in data/gen_3/gen_*; 
-   do
-      echo $p
-      ./run.sh $p $x 300 | grep -v 'size' >> output/strategy-$x-gen-500-fixed.txt ;
-   done;
+    echo $x
+    for m in {model.lp,model-fixed.lp} 
+    do
+        echo $m
+        for p in data/gen_3/gen_*
+        do 
+           echo $p;
+           #./run.sh $p $x 300 $m | grep -v 'size' | tee - a output/out-$x-$m.txt | grep '^Time\|Optimization'
+           ./run.sh $p $x 300 $m| grep -v 'size' >>  output/out-$x-$m.txt  
+        done
+    done;
 done;
        
