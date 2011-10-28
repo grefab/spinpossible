@@ -2,7 +2,7 @@
 
 #Data=data/p1.lp
 Data=$1
-Model=model.lp
+Model=$4
 UniqueFolder=tmp
 
 Input=$UniqueFolder/input.tmp
@@ -70,7 +70,7 @@ cat $Output | grep 'table' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort 
 #echo
 cat print.pl >> $FormatOutput
 prolog -f $FormatOutput -g start -t halt 2>> $Error > $PrettyOutput
-#cat $PrettyOutput
+cat $PrettyOutput
 ##column -t -s ';' $PrettyOutput
 #echo
 
