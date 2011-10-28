@@ -1,0 +1,53 @@
+\documentclass[]{llncs}
+
+
+
+\author{Marijn J.H. Heule}
+
+\institute{Department of Software Technology\\
+Delft University of Technology\\
+\email{marijn@heule.nl}}
+
+
+\title{Compact SAT Encoding of Spinpossible}
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{SAT translation}
+
+$M$ refers to the number of moves.
+
+\paragraph{State variables} The SAT encoding described in this paper . The meaning for variable $x_{i,j,k}$ is as follows: if $x_{i,j,k}$ is assigned to true, then square $i$ contains symbol $j$ at time $k$.
+There are a special state variables $x_{i,0,k}$ to indicate whether the symbol on square $i$ is rotated. If $x_{i,0,k} = 1$ the symbol on square $i$ at time $k$ is upside down.  
+
+\paragraph{Fixing initial and final state} Using the following unit clauses, the state variables of the final state can be fixed:
+
+\begin{equation}
+\bigwedge_{i=1}^9  (x_{i,i,M}) \land \bigwedge_{i=1}^9 \bigwedge_{j=0}^{i-1} (\bar x_{i,j ,M}) \land  \bigwedge_{i=1}^9 \bigwedge_{j=i+1}^{9} (\bar x_{i,j ,M})
+\end{equation}
+
+\paragraph{Equality constraints} The first type of auxiliary variables are {\em equality variables} $e_{i,k}$. The meaning of these variables is as follows: if $e_{i,k}$ is assigned to true, then then
+tile $i$ is not modified during move $k$, or expressed in state variables: $\bar x_{i,j,k} \leftrightarrow \bar x_{i,j,k+1}$. The following clauses show the {\em equality constraints} that define
+the equality variables:
+
+\begin{equation}
+\bigwedge_{i=1}^9 \bigwedge_{j=0}^9 \bigwedge_{k=0}^{M-1} \big( (\bar e_{i,k} \lor \bar x_{i,j,k} \lor x_{i,j,k+1}) \land (\bar e_{i,k} \lor x_{i,j,k} \lor \bar x_{i,j,k+1}) \big )
+\end{equation}
+
+\paragraph{Transition constraints} The second type of auxiliary variables are {\em transition variables} $t_{k,m}$.
+
+
+\begin{equation}
+\bigwedge_{k=0}^{M-1} (\bigvee_{m=1}^{36} t_{k,m}) \land \bigwedge_{i \notin S_m} (\bar t_{k,m} \lor e_{i,k}) \land \bigwedge_{i \in S_m} (\bar t_{k,m} \lor \bar e_{i,k})
+\end{equation}
+
+
+
+\paragraph{Symmetry breaking predicates}
+
+
+\end{document}
