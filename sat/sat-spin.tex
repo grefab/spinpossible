@@ -19,7 +19,14 @@ Delft University of Technology\\
 
 \section{SAT translation}
 
-$M$ refers to the number of moves.
+\begin{itemize}
+\item $A := \{1,\dots,9\}$ the set of squares
+\item $M := \{1,\dots,36\}$ the set of moves
+\item $S_m$ the subset of $A$ corresponding to the squares touched by move $m \in M$
+\item $d_m$ the distance of move $m \in M$ computes as the max + min element in $S_m$
+\item $N$ refers to the number of moves.
+
+\end{itemize}
 
 \paragraph{State variables} The SAT encoding described in this paper . The meaning for variable $x_{i,j,k}$ is as follows: if $x_{i,j,k}$ is assigned to true, then square $i$ contains symbol $j$ at time $k$.
 There are a special state variables $x_{i,0,k}$ to indicate whether the symbol on square $i$ is rotated. If $x_{i,0,k} = 1$ the symbol on square $i$ at time $k$ is upside down.  
@@ -27,24 +34,41 @@ There are a special state variables $x_{i,0,k}$ to indicate whether the symbol o
 \paragraph{Fixing initial and final state} Using the following unit clauses, the state variables of the final state can be fixed:
 
 \begin{equation}
-\bigwedge_{i=1}^9  (x_{i,i,M}) \land \bigwedge_{i=1}^9 \bigwedge_{j=0}^{i-1} (\bar x_{i,j ,M}) \land  \bigwedge_{i=1}^9 \bigwedge_{j=i+1}^{9} (\bar x_{i,j ,M})
+\bigwedge_{i=1}^9  (x_{i,i,N+1}) \land \bigwedge_{i=1}^9 \bigwedge_{j=0}^{i-1} (\bar x_{i,j ,N+1}) \land  \bigwedge_{i=1}^9 \bigwedge_{j=i+1}^{9} (\bar x_{i,j ,N+1})
 \end{equation}
 
-\paragraph{Equality constraints} The first type of auxiliary variables are {\em equality variables} $e_{i,k}$. The meaning of these variables is as follows: if $e_{i,k}$ is assigned to true, then then
+\paragraph{Equality constraints} The first type of auxiliary variables are {\em equality variables} $e_{i,k}$. The meaning of these variables is as follows: if $e_{i,k}$ is assigned to true, then 
 tile $i$ is not modified during move $k$, or expressed in state variables: $\bar x_{i,j,k} \leftrightarrow \bar x_{i,j,k+1}$. The following clauses show the {\em equality constraints} that define
 the equality variables:
 
 \begin{equation}
-\bigwedge_{i=1}^9 \bigwedge_{j=0}^9 \bigwedge_{k=0}^{M-1} \big( (\bar e_{i,k} \lor \bar x_{i,j,k} \lor x_{i,j,k+1}) \land (\bar e_{i,k} \lor x_{i,j,k} \lor \bar x_{i,j,k+1}) \big )
+\bigwedge_{i=1}^9 \bigwedge_{j=0}^9 \bigwedge_{k=0}^{N} \big( (\bar e_{i,k} \lor \bar x_{i,j,k} \lor x_{i,j,k+1}) \land (\bar e_{i,k} \lor x_{i,j,k} \lor \bar x_{i,j,k+1}) \big )
 \end{equation}
 
 \paragraph{Transition constraints} The second type of auxiliary variables are {\em transition variables} $t_{k,m}$.
-
+The meaning of these variables is as follows: if $t_{k,m}$ is assigned to true, then at time $k$ move $m$ is applied.
+First we need clauses to ensure that at each step exactly one move is applied. For each more we need one clause of
+length $|M|$ that enforces that at least one move is done. The equality variables are reused to make sure that for each $k$
+at-most-one of the variables $t_{k,m}$ with $m \in M$ can be true. The clauses below describe the implementation.
+Notice that this implementation also realizes that tiles that are not affected during move $m$ (i.e.\ $i \in A \setminus S_m$)
+are made equal using the equality constraints.
 
 \begin{equation}
-\bigwedge_{k=0}^{M-1} (\bigvee_{m=1}^{36} t_{k,m}) \land \bigwedge_{i \notin S_m} (\bar t_{k,m} \lor e_{i,k}) \land \bigwedge_{i \in S_m} (\bar t_{k,m} \lor \bar e_{i,k})
+\bigwedge_{k=0}^{N} (\bigvee_{m \in M} t_{k,m}) \land \bigwedge_{k=0}^{N} \bigwedge_{m \in M} \bigwedge_{i \in A \setminus S_m} (\bar t_{k,m} \lor e_{i,k}) \land
+ \bigwedge_{k=0}^{N} \bigwedge_{m \in M} \bigwedge_{i \in S_m} (\bar t_{k,m} \lor \bar e_{i,k})
 \end{equation}
 
+Second, tiles have to change places. This is encoded as follows:
+
+\begin{equation}
+\bigwedge_{k=0}^{N} \bigwedge_{m \in M} \bigwedge_{i \in S_m} \bigwedge_{j=1}^9 \big( (\bar t_{k,m} \lor \bar x_{i,j,k} \lor x_{d_m - i,j,k + 1} ) \land (\bar t_{k,m} \lor x_{i,j,k} \lor \bar x_{d_m - i,j,k + 1} ) \big)
+\end{equation}
+
+Third, the tiles that have changed places have to be rotated. This is done using the following clauses.
+
+\begin{equation}
+\bigwedge_{k=0}^{N} \bigwedge_{m \in M} \bigwedge_{i \in S_m} \big( (\bar t_{k,m} \lor x_{i,0,k} \lor x_{d_m - i,0,k + 1} ) \land (\bar t_{k,m} \lor \bar x_{i,0,k} \lor \bar x_{d_m - i,0,k + 1} ) \big)
+\end{equation}
 
 
 \paragraph{Symmetry breaking predicates}
