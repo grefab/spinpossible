@@ -1,13 +1,13 @@
 #const n=3. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..9). 
+k(1..8). 
 size(n). 
 #show move/3. 
 #show table/4. 
 #show size/1.
 
-{ move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
+1 { move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 
 move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
 move(K) :- move(K,_,_,_,_).
@@ -43,7 +43,7 @@ isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y).
 :- K>1, move(K), not move(K-1). 
 :- final(K), c(X;Y), not isOk(K,X,Y). 
 
-#minimize[move(_)@2].
+%#minimize[move(_)@2].
 :- final(0). 
 
 % symmetry breaker
@@ -64,11 +64,11 @@ containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y).
 :- intersecting(K), not containing(K), k(K).
 
 %%
-%fixedX(K,0;n+1) :- k(K). 
-%fixedY(K,0;n+1) :- k(K). 
-%fixedX(K,X) :- c(X), fixedX(K,X-1), n {isOk(K,X,Y) : c(Y)} n. 
-%fixedX(K,X) :- c(X), fixedX(K,X+1), n {isOk(K,X,Y) : c(Y)} n. 
-%fixedY(K,Y) :- c(Y), fixedY(K,Y-1), n {isOk(K,X,Y) : c(X)} n. 
-%fixedY(K,Y) :- c(Y), fixedY(K,Y+1), n {isOk(K,X,Y) : c(X)} n. 
-%:- fixedX(K,X), move(K+1,X,_). 
-%:- fixedY(K,Y), move(K+1,_,Y). 
+fixedX(K,0;n+1) :- k(K). 
+fixedY(K,0;n+1) :- k(K). 
+fixedX(K,X) :- c(X), fixedX(K,X-1), n {isOk(K,X,Y) : c(Y)} n. 
+fixedX(K,X) :- c(X), fixedX(K,X+1), n {isOk(K,X,Y) : c(Y)} n. 
+fixedY(K,Y) :- c(Y), fixedY(K,Y-1), n {isOk(K,X,Y) : c(X)} n. 
+fixedY(K,Y) :- c(Y), fixedY(K,Y+1), n {isOk(K,X,Y) : c(X)} n. 
+:- fixedX(K,X), move(K+1,X,_). 
+:- fixedY(K,Y), move(K+1,_,Y). 
