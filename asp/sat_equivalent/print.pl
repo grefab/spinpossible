@@ -16,6 +16,14 @@ printSwitch(K,X,Y):-
 
 printRow(K,X,Y):-
     state(K,X,Y,V),
+    V > 0,
+    state(K,X,Y,0),
+    !,
+    VV is -V,
+    writeS(VV).
+
+printRow(K,X,Y):-
+    state(K,X,Y,V),
     writeS(V).
 
 printTable(K) :- 
@@ -49,12 +57,3 @@ printMoves(K) :-
 
 printMoves(_) :- 
     write('finish'),nl. 
-
-% transformation
-table(K,X,Y,V) :- 
-    cell(K,x,X,Y,DX),
-    cell(K,y,X,Y,DY),
-    cell(K,p,X,Y,P),
-    size(N),
-    V is (1-2*P)*((DX+X) * N + (Y+DY) + 1).
-

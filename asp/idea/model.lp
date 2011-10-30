@@ -1,3 +1,4 @@
+#const final=8. 
 #const n=3. 
 #hide.
 #show size/1. 
@@ -9,12 +10,10 @@
 size(n). 
 c(0..n-1). 
 delta(-(n-1)..n-1).
-k(1..9). 
+k(1..final). 
 s(K) :- k(K).
 s(0). 
 d(x;y).
-e(x;y;p).
-p(0..1). 
 
 %switch(move,dim,from,to)
 { switch(K,D,A,B) : A <= B : c(B) } 1 :- c(A), k(K), d(D). 
@@ -78,12 +77,11 @@ upperLeft(K,X,Y) :- move(K,X,Y), not move(K,X-1,Y), not move(K,X,Y-1).
 :- not isSingle(K+1), not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
 :- isSingle(K;K+1), not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
 
-%
-%% containment
+% containment
 containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
 :- intersecting(K), not containing(K), k(K).
 
-%initilizing: 
+%initializing: 
 state(0,x,X,Y,DV) :- 
     init(X,Y,V), 
     DV = ((#abs(V)-1) #div n) - X.
