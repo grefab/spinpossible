@@ -6,7 +6,7 @@ k(1..final).
 
 % fixing final state
 :- c(X;Y), not state(final,X,Y,X*n+Y+1).  % (1)
-%:- c(X;Y), Z = 1..n*n, state(final+1,X,Y,Z), Z != X*n+Y+1. % (1)
+:- c(X;Y), Z = 1..n*n, state(final+1,X,Y,Z), Z != X*n+Y+1. % (1)
 
 %equality constraints 
 state(K+1,X,Y,V) :- k(K+1), state(K,X,Y,V), not move(K,X,Y).  % (2)
