@@ -38,8 +38,8 @@ first and $3$ and $-4$ in the second requires the same kind of spins.
 \end{scope} 
 \end{tikzpicture}
 
-Human players detect that instantely. We will explain in following two paragraphs how
-to arrive at a representation such that these two board and the neccessary spins to
+Human players detect that instantly. We will explain in following two paragraphs how
+to arrive at a representation such that these two board and the necessary spins to
 solve them, are the same. 
 
 \paragraph{Vector representation: } First we choose a different representation of the
@@ -74,12 +74,12 @@ of the board.
 
 It remains to be shown that the overhead of estimating the correct turn and changing
 the board justifies the decrease in visited nodes.  The basic idea is that the
-computed nogoods have a wider usage throught the search tree.
+computed nogoods have a wider usage through out the search tree.
 
 \paragraph{Fixing boarder rows/columns: } The two boards from the motivation are now
-quite similar, but still not the same. To find the ultimative canonical
+quite similar, but still not the same. To find the ultimate canonical
 representation we need to realize that the side column what is not used by the spins
-to solve such a board is not needed and can be omited. This still has to be proven
+to solve such a board is not needed and can be omitted. This still has to be proven
 ...
 
 If we remove the unused columns and rows before estimating the maximal element of the
@@ -136,7 +136,7 @@ $(0,0)$ to $(2,2)$ for the second.  But they have more in common: the middle col
 switches the same cells. This means the switches of the first spin are implied by the
 second spin. How do we use that in our encoding?
 
-Using the breakdown of dimensions we encode a move just in one dimension (omiting
+Using the breakdown of dimensions we encode a move just in one dimension (omitting
 step number and dimension):
 
 \begin{verbatim} 
