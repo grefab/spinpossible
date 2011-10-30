@@ -52,28 +52,12 @@ echo xxxxxxxxxx $Strategy $Data xxxxxxxxxxx
 echo Option      : $Option
 #echo Model       : $Model
 
-echo
 cat $Model > $Input
 cat $Data >> $Input
 
-#echo ------------ Grounding: $Input to $Problem  ------------
 cat $Input | gringo > $Problem
-#echo ------------ $Problem \> searching... \> $Output------------  
-
-#cat $Problem | clasp $Option
-cat $Problem | clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
-#echo $Option                
-    
+cat $Problem | clasp $Option 2>>$Error| tee $Output 
 cat $Output | grep 'state' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
-    
-#echo ------------ csv Output : $PrettyOutput ------------ 
-#echo
 cat print.pl >> $FormatOutput
 prolog -f $FormatOutput -g start -t halt 2>> $Error > $PrettyOutput
 cat $PrettyOutput
-##column -t -s ';' $PrettyOutput
-#echo
-
-#echo
-#echo ------------ errors while processing: $Error ------------ 
-#cat $Error     
