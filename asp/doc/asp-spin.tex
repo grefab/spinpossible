@@ -115,8 +115,8 @@ representing these three boards as state variables we need the following predica
 \begin{verbatim} 
 state(x,X,Y,V) :- m(X), n(Y), m(V). %n*m*m 
 state(y,X,Y,V) :- m(X), n(Y), n(V). %n*m*n 
-parity(X,Y) :- m(X), n(Y).
-%n*m \end{verbatim}
+parity(X,Y) :- m(X), n(Y).  %n*m 
+\end{verbatim}
 
 These are in total $n*m*(n+m)$ variables!
 
