@@ -36,7 +36,7 @@ state(K+1,y,X2,Y2,Y1-Y2+V) :-
 
 parity(K+1,X,Y) :- 
         move(K+1,X,Y),
-        k(K),
+        s(K),
         not parity(K,X,Y).
 
 parity(K+1,X,Y) :- 
