@@ -73,10 +73,25 @@ Third, the tiles that have changed places have to be rotated. This is done using
 
 \paragraph{Symmetry breaking predicates}
 
+Spinpossible has many solution symmetries. First, we illustrate this by an example. We will denote by $I$ the initial state and by $G$ the goal state. Let list $L$ refer to a solution being a sequence of moves that transform $I$ into $G$.
+Consider a solution $L$ with the first move only spinning the tile with symbol $1$. We can construct $|L|$ symmetric solutions as follows: remove the first move from $L$ and insert a move at position $i \in \{1,\ldots, |L|\}$ that only flips 
+the tile containing symbol $1$ in the state after $i-1$ moves.
+
+A SAT solver is not aware of that a list of moves $L$ is symmetric with a list $L'$. As a consequence, it may explore all symmetric sequences of moves during the search. It is common practice to deal with the problem by 
+adding {\em symmetry breaking predicates} (SBPs).
+
+SBPs enforce an order to those moves that have no fixed position in a solution. There are three types of these kind of moves. First, all moves that flip a single tile. Second, two moves $n$ and $m$ do not influence each other ($S_n \cap S_m = \emptyset$).
+Third,  one move $n$  is fully part of move $m$ ($S_n \subseteq S_m$).
+
 
 \begin{equation}
 B_m = \{ n \in M \mid n \leq m \mathrm{~and~} ( S_n \subseteq S_m \mathrm{~or~} S_n \supset S_m \mathrm{~or~} S_n \cap S_m = \emptyset) \}
 \end{equation}
+
+The above definition of $B_m$ can be simplified in case the moves are sorted such that for all pairs of moves $n$, $m$ hold that if $n < m$, then $|S_n| \leq |S_m|$.
+Given such a sorting, the check $S_n \supset S_m$ becomes redundant.
+
+After computing for $m \in M$ each $B_m$, it is easy to generate the SBPs:
 
 \begin{equation}
 \bigwedge_{k=0}^{N} \bigwedge_{m \in M} \bigwedge_{n \in B_m} (\bar t_{k,m} \lor \bar t_{k+1,n}) 
