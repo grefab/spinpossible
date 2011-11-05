@@ -3,7 +3,8 @@
 //#define NO_SINGLES
 //#define NO_DOUBLES
 #define SYMMETRY
-#define LOG_ENCODING
+//#define LOG_ENCODING
+//#define ROW_COLUMN
 
 int main ( int argc, char** argv )
 {
@@ -23,20 +24,18 @@ int main ( int argc, char** argv )
 
     int moves = atoi(argv[10]) + 1;
     int nrofvars = moves * 100 + (moves-1) * 36;
-    int nrofclauses = 2 * nroftiles * (colorvars+1) * moves + 2325 * (moves-1);
-
-#ifdef LOG_ENCODING
-    nrofclauses -= 1000 * (moves-1);
+    int nrofclauses = 2 * nroftiles * (colorvars+1) * moves + 325 * (moves-1) + 200 * (colorvars+1) * (moves-1);
+#ifdef ROW_COLUMN
+    nrofclauses += (2*nroftiles*(colorvars+1) - 36*3 + 4) * (moves-1);
 #endif
 #ifdef SYMMETRY
-    if( moves > 2 )
-    nrofclauses += (moves-2) * 535;
+    if( moves > 2 ) nrofclauses += (moves-2) * 535;
 #endif
 #ifdef NO_SINGLES
-	nrofclauses += nroftiles * (moves-1) ; 
+    nrofclauses += nroftiles * (moves-1) ; 
 #endif
 #ifdef NO_DOUBLES
-	nrofclauses += 12 * (moves-1) ; 
+    nrofclauses += 12 * (moves-1) ; 
 #endif
     printf("p cnf %i %i\n", nrofvars, nrofclauses );
 
@@ -93,6 +92,26 @@ int main ( int argc, char** argv )
     }
 
     // equivalence constraints: 2 * nroftiles * (colorvars+1) clauses per MOVE
+#ifdef ROW_COLUMN
+    for( i = 1; i < moves; i++ )
+    {
+	tmp = i*100 - 10;
+	for( k = 0; k < nroftiles; k++ )
+	    for( l = 1; l <= (colorvars+1); l++ )
+	    {
+		int s = (i-1)*100 + k*10 + l;
+		printf("-%i %i -%i 0\n", tmp + (k/3) + 1, s,  s+100 );
+		printf("-%i -%i %i 0\n", tmp + (k/3) + 1, s,  s+100 );
+		printf("-%i %i -%i 0\n", tmp + (k%3) + 4, s,  s+100 );
+		printf("-%i -%i %i 0\n", tmp + (k%3) + 4, s,  s+100 );
+	    }
+
+	printf("-%i -%i -%i 0\n", tmp+1, tmp+2, tmp+3 );
+	printf("-%i -%i -%i 0\n", tmp+4, tmp+5, tmp+6 );
+	printf("%i -%i %i 0\n", tmp+1, tmp+2, tmp+3 );
+	printf("%i -%i %i 0\n", tmp+4, tmp+5, tmp+6 );
+    }
+#else
     for( i = 1; i < moves; i++ )
 	for( k = 1; k <= nroftiles; k++ )
 	    for( l = 1; l <= (colorvars+1); l++ )
@@ -102,6 +121,7 @@ int main ( int argc, char** argv )
 		printf("-%i -%i %i 0\n", e, f, f + 100 );
 		printf("-%i %i -%i 0\n", e, f, f + 100 );
 	    }
+#endif
 
     // clauses for the transition constraints
     tmp = moves * 100;
@@ -125,7 +145,9 @@ int main ( int argc, char** argv )
 		    if( mark[ k ] == tmp )
 		    {
 			if( tmp <= moves * 100 + 36 ) marks[ tmp - moves * 100 ][ k ] = 1;
+#ifndef ROW_COLUMN
 			printf("-%i -%i 0\n",  tmp, i*100 - 10 + k );
+#endif
 			for( l = 1; l <= colorvars; l++ )
 			{
 			    printf("-%i %i -%i 0\n", tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
@@ -134,9 +156,33 @@ int main ( int argc, char** argv )
 			printf("-%i %i %i 0\n",   tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
 			printf("-%i -%i -%i 0\n", tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
 		    }
+#ifndef ROW_COLUMN
 		    else printf("-%i %i 0\n", tmp, i*100 - 10 + k );
+#endif
 	    }
     }
+
+#ifdef ROW_COLUMN
+    tmp = moves * 100;
+    for( i = 1; i < moves; i++ )
+      for( j = 1; j <= 36; j++ )
+      {
+        tmp++;
+	for( k = 0; k <= 2; k++ )
+	{
+	    int flag = marks[j][3*k+1] | marks[j][3*k+2] | marks[j][3*k+3];
+	    if (flag) printf("-%i -%i 0\n", tmp, i*100 - 9 + k );
+	    else      printf("-%i %i 0\n" , tmp, i*100 - 9 + k );
+	}
+	for( k = 1; k <= 3; k++ )
+	{
+	    int flag = marks[j][k+0] | marks[j][k+3] | marks[j][k+6];
+	    if (flag) printf("-%i -%i 0\n", tmp, i*100 - 7 + k );
+	    else      printf("-%i %i 0\n" , tmp, i*100 - 7 + k );
+	}
+      }
+#endif
+
 #ifdef SYMMETRY
     for( i = 1; i <= 36; i++ )
 	for( j = 1; j <= i; j++ )
