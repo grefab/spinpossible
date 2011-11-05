@@ -3,13 +3,17 @@
 //#define NO_SINGLES
 //#define NO_DOUBLES
 #define SYMMETRY
+#define LOG_ENCODING
 
 int main ( int argc, char** argv )
 {
     int d, i, j, k, l, tmp;
     int mark[10], marks[37][10];
-
-    for( i = 1; i <= 36; i++ ) for( k = 1; k <=9; k++ ) marks[i][k] = 0;
+    int colorvars = 9, nroftiles = 9;
+#ifdef LOG_ENCODING
+    colorvars = 4;
+#endif
+    for( i = 1; i <= 36; i++ ) for( k = 1; k <= nroftiles; k++ ) marks[i][k] = 0;
 
     if( argc != 11 )
     {
@@ -19,13 +23,17 @@ int main ( int argc, char** argv )
 
     int moves = atoi(argv[10]) + 1;
     int nrofvars = moves * 100 + (moves-1) * 36;
-    int nrofclauses = 180 + 2505 * (moves-1);
+    int nrofclauses = 2 * nroftiles * (colorvars+1) * moves + 2325 * (moves-1);
 
+#ifdef LOG_ENCODING
+    nrofclauses -= 1000 * (moves-1);
+#endif
 #ifdef SYMMETRY
+    if( moves > 2 )
     nrofclauses += (moves-2) * 535;
 #endif
 #ifdef NO_SINGLES
-	nrofclauses += 9 * (moves-1) ; 
+	nrofclauses += nroftiles * (moves-1) ; 
 #endif
 #ifdef NO_DOUBLES
 	nrofclauses += 12 * (moves-1) ; 
@@ -34,7 +42,7 @@ int main ( int argc, char** argv )
 
 #ifdef NO_SINGLES
     for( i = 1; i < moves; i++ )
-        for( j = 1; j <= 9; j++ )
+        for( j = 1; j <= nroftiles; j++ )
 	    printf("-%i 0\n", 100 * moves + (i-1)*36 + j );
 #endif
 #ifdef NO_DOUBLES
@@ -46,27 +54,48 @@ int main ( int argc, char** argv )
         for( j = 19; j <= 24; j++ )
 	    printf("-%i 0\n", 100 * moves + (i-1)*36 + j );
 #endif
-    for( i = 1; i <= 9; i++ )
+     // fixing the initial state: nroftiles * (colorsvars + 1) clauses
+    for( k = 1; k <= nroftiles; k++ )
     {
-	tmp = atoi(argv[i]);
-
-	for( k = 1; k <= 9; k++ )
-	    if( k == abs(tmp) ) printf("%i 0\n",  (i-1)*10 + k );
-	    else                printf("-%i 0\n", (i-1)*10 + k );
-
-	printf("%i 0\n", tmp < 0?i*10:-i*10 ); 
+	tmp = abs(atoi(argv[k]));
+	for( l = 1; l <= colorvars; l++ )
+	{
+#ifdef LOG_ENCODING
+	    if( tmp % 2 )  printf("%i 0\n",  (k-1)*10 + l );
+	    else           printf("-%i 0\n", (k-1)*10 + l );
+	    tmp = tmp >> 1;
+#else
+	    if( l == tmp ) printf("%i 0\n",  (k-1)*10 + l );
+	    else           printf("-%i 0\n", (k-1)*10 + l );
+#endif
+	}
+	tmp = atoi(argv[k]);
+	if( tmp < 0 ) 	   printf("%i 0\n",  (k-1)*10 + l );
+	else         	   printf("-%i 0\n", (k-1)*10 + l );
     }
 
-    // fixing last states: 90 clauses
-    for( k = 1; k <= 9; k++ )
-	for( l = 1; l <= 10; l++ )
-	    if( k == l ) printf("%i 0\n",  (moves-1)*100 + (k-1)*10 + l );
-	    else         printf("-%i 0\n", (moves-1)*100 + (k-1)*10 + l );
+    // fixing the goal state: nroftiles * (colorsvars + 1) clauses
+    for( k = 1; k <= nroftiles; k++ )
+    {
+	tmp = k;
+	for( l = 1; l <= colorvars; l++ )
+	{
+#ifdef LOG_ENCODING
+	    if( tmp % 2 ) printf("%i 0\n",  (moves-1)*100 + (k-1)*10 + l );
+	    else          printf("-%i 0\n", (moves-1)*100 + (k-1)*10 + l );
+	    tmp = tmp >> 1;
+#else
+	    if( k == l )  printf("%i 0\n",  (moves-1)*100 + (k-1)*10 + l );
+	    else          printf("-%i 0\n", (moves-1)*100 + (k-1)*10 + l );
+#endif
+	}
+	printf("-%i 0\n", (moves-1)*100 + (k-1)*10 + l );
+    }
 
-    // equivalence constraints" : 90 clauses per MOVE
+    // equivalence constraints: 2 * nroftiles * (colorvars+1) clauses per MOVE
     for( i = 1; i < moves; i++ )
-	for( k = 1; k <= 9; k++ )
-	    for( l = 1; l <= 10; l++ )
+	for( k = 1; k <= nroftiles; k++ )
+	    for( l = 1; l <= (colorvars+1); l++ )
 	    {
 		int e = 100*i-10+k;
 		int f = 100*i-10*(11-k)+l;
@@ -92,18 +121,18 @@ int main ( int argc, char** argv )
 		if( d>=3 ) { mark[j+3] = tmp; mark[j+d-3] = tmp; }
 		if( d==8 )   mark[5  ] = tmp;
 
-		for( k=1; k<=9; k++ )
+		for( k = 1; k <= nroftiles; k++ )
 		    if( mark[ k ] == tmp )
 		    {
 			if( tmp <= moves * 100 + 36 ) marks[ tmp - moves * 100 ][ k ] = 1;
 			printf("-%i -%i 0\n",  tmp, i*100 - 10 + k );
-			for( l=1; l <= 9; l++ )
+			for( l = 1; l <= colorvars; l++ )
 			{
 			    printf("-%i %i -%i 0\n", tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
 			    printf("-%i -%i %i 0\n", tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
 			}
-			printf("-%i %i %i 0\n",   tmp, (i-1)*100 + k*10, i*100 + (2*j+d-k)*10 );
-			printf("-%i -%i -%i 0\n", tmp, (i-1)*100 + k*10, i*100 + (2*j+d-k)*10 );
+			printf("-%i %i %i 0\n",   tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
+			printf("-%i -%i -%i 0\n", tmp, (i-1)*100 + (k-1)*10+l, i*100 + (2*j+d-k-1)*10+l );
 		    }
 		    else printf("-%i %i 0\n", tmp, i*100 - 10 + k );
 	    }
@@ -113,7 +142,7 @@ int main ( int argc, char** argv )
 	for( j = 1; j <= i; j++ )
 	{
 	    int flag = 0;
-	    for( k = 1; k <= 9; k++ )
+	    for( k = 1; k <= nroftiles; k++ )
 	    {
 		if( marks[ i ][ k ] == 1 && marks[ j ][ k ] == 1 ) flag |= 1;
 		if( marks[ i ][ k ] == 1 && marks[ j ][ k ] == 0 ) flag |= 2;
