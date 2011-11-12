@@ -64,7 +64,7 @@ cat $Input | gringo > $Problem
 cat $Problem | clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
 #echo $Option                
     
-cat $Output | grep 'table' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
+cat $Output | grep 'state' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
     
 #echo ------------ csv Output : $PrettyOutput ------------ 
 #echo

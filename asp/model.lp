@@ -4,16 +4,15 @@ c(1..n).
 k(1..9). 
 size(n). 
 #show move/3. 
-#show table/4. 
+#show state/4. 
 #show size/1.
 
-{ move(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
+{ spin(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 
-move(K,X..X+R,Y..Y+D) :- move(K,X,Y,R,D).
-move(K) :- move(K,_,_,_,_).
+move(K,X..X+R,Y..Y+D) :- spin(K,X,Y,R,D).
+move(K) :- spin(K,_,_,_,_).
 
-switch(X,-X) :- v(X). 
-switch(K,X,Y,X+R,Y+D) :- move(K,X,Y,R,D). 
+switch(K,X,Y,X+R,Y+D) :- spin(K,X,Y,R,D). 
 switch(K,X1+1,Y1,X2-1,Y2) :-
     switch(K,X1,Y1,X2,Y2),
     move(K,X1+1,Y1),
@@ -24,22 +23,20 @@ switch(K,X1,Y1+1,X2,Y2-1) :-
     move(K,X1,Y1+1),
     move(K,X2,Y2-1). 
 
-table(K+1,X2,Y2,V2) :- 
-    table(K,X1,Y1,V1), 
-    switch(K+1,X1,Y1,X2,Y2), 
-    switch(V1,V2). 
+state(K+1,X2,Y2,-V) :- 
+    state(K,X1,Y1,V), 
+    switch(K+1,X1,Y1,X2,Y2).
 
-table(K+1,X,Y,V) :- 
+state(K+1,X,Y,V) :- 
     move(K+1),
-    table(K,X,Y,V), 
+    state(K,X,Y,V), 
     not move(K+1,X,Y). 
 
 %initial and final state
-table(0,X,Y,V) :- init(X,Y,V). 
+state(0,X,Y,V) :- init(X,Y,V). 
 final(K) :- K = { move(N) : k(N) }.
-isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y). 
+isOk(K,X,Y) :-  state(K,X,Y,V), V = (n*(X-1)+Y), c(X;Y). 
 
-%:- k(K), c(X;Y), 2 { table(K,X,Y,_) }.
 :- K>1, move(K), not move(K-1). 
 :- final(K), c(X;Y), not isOk(K,X,Y). 
 
@@ -48,16 +45,12 @@ isOk(K,X,Y) :-  table(K,X,Y,V), V = (n*(Y-1)+X), c(X;Y).
 
 % symmetry breaker
 % no repetitive squares
-:- move(K;K+1), move(K,X,Y,R,D), move(K+1,X,Y,R,D). 
-
-%% single ones in the end
-isSingle(K) :- move(K,X,Y,0,0). 
-:- move(K;K+1), isSingle(K), not isSingle(K+1). 
+:- move(K;K+1), spin(K,X,Y,R,D), spin(K+1,X,Y,R,D). 
 %
 %% nonintersecting:
 intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
-upperLeft(K,X,Y) :- move(K,X,Y,_,_). 
-:- not isSingle(K+1), not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
+upperLeft(K,X,Y) :- spin(K,X,Y,_,_). 
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(X-1)+Y) > (n*(XX-1)+YY).  
 %
 %% containment
 containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 

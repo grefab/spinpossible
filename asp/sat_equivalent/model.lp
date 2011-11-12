@@ -13,7 +13,7 @@ dom(X1,Y1,X2,Y2) :- c(X1;Y1;X2;Y2), X1 <= X2, Y1 <= Y2.
 dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <= Y2.
 
 % choice variables 
-1 { move(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2) } 1 :- k(K).
+1 { spin(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2) } 1 :- k(K).
 1 { state(K,X,Y,V) : v(V) } 1 :- c(X;Y), k(K).
 0 { state(K,X,Y,0) } 1 :- c(X;Y), k(K).
 
@@ -27,19 +27,19 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
 :- s(K;K+1), not state(K+1,X,Y,V), state(K,X,Y,V), not move(K+1,X,Y).  % (2)
 
 % transition constraints
-move(K,X1..X2,Y1..Y2) :- move(K,X1,Y1,X2,Y2). % (3)
+move(K,X1..X2,Y1..Y2) :- spin(K,X1,Y1,X2,Y2). % (3)
 
 % (4)
 :-  s(K;K+1), v(V),
     state(K+1,X1+X2-X,Y1+Y2-Y,V),
     not state(K,X,Y,V),
-    move(K+1,X1,Y1,X2,Y2),
+    spin(K+1,X1,Y1,X2,Y2),
     dom(X,Y,X1,Y1,X2,Y2).
 
 :-  s(K;K+1), v(V), 
     not state(K+1,X1+X2-X,Y1+Y2-Y,V), 
     state(K,X,Y,V),
-    move(K+1,X1,Y1,X2,Y2),
+    spin(K+1,X1,Y1,X2,Y2),
     dom(X,Y,X1,Y1,X2,Y2).
 
 % (5)

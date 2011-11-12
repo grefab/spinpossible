@@ -15,20 +15,20 @@ printSwitch(K,X,Y):-
     writeS('-')).
 
 printRow(K,X,Y):-
-    table(K,X,Y,V),
+    state(K,X,Y,V),
     writeS(V).
 
 printTable(K) :- 
     sizeList(L),
-    forall(member(Y,L),
-        ( forall(member(X,L), printRow(K,X,Y)),nl)
+    forall(member(X,L),
+        ( forall(member(Y,L), printRow(K,X,Y)),nl)
     ), 
     nl. 
 
 printSwitch(K) :- 
     sizeList(L),
-    forall(member(Y,L),
-        ( forall(member(X,L), printSwitch(K,X,Y)),nl)
+    forall(member(X,L),
+        ( forall(member(Y,L), printSwitch(K,X,Y)),nl)
     ), 
     nl. 
 

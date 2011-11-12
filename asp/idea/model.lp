@@ -67,15 +67,11 @@ final(K) :-
 
 #minimize[move(_)].
 
-%% single ones in the end
-isSingle(K) :- move(K), { move(K,X,Y) } 1. 
-:- move(K+1), isSingle(K), not isSingle(K+1). 
 %
 %% nonintersecting:
 intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
 upperLeft(K,X,Y) :- move(K,X,Y), not move(K,X-1,Y), not move(K,X,Y-1). 
-:- not isSingle(K+1), not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
-:- isSingle(K;K+1), not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(Y-1)+X) > (n*(YY-1)+XX).  
 
 % containment
 containing(K) :- move(K;K+1), move(K,X,Y), not move(K+1,X,Y). 
