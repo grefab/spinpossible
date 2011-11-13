@@ -28,8 +28,9 @@
 
 \subsection{Motivation for vector representation}
 
-The two following problems are essentially the same. Replacing $-8$ with $1$ in the
-first and $3$ and $-4$ in the second requires the same kind of spins. 
+The two following problems are essentially the same.
+Replacing $-8$ with $1$ in the first and $3$ and $-4$ in the
+second requires the same kind of spins. 
 
 \begin{tikzpicture} 
 \spintable{\textbf{-8}}{2}{3}{4}{5}{6}{7}{\textbf{1}}{9}
@@ -38,13 +39,16 @@ first and $3$ and $-4$ in the second requires the same kind of spins.
 \end{scope} 
 \end{tikzpicture}
 
-Human players detect that instantly. We will explain in following two paragraphs how
-to arrive at a representation such that these two board and the necessary spins to
-solve them, are the same. 
+Human players detect that instantly. We will explain in
+following two paragraphs how to arrive at a representation
+such that these two board and the necessary spins to solve
+them, are the same. 
 
-\paragraph{Vector representation: } First we choose a different representation of the
-numbers on the boards. Each number is replaced by the vector pointing to where it
-should go, and the parity bit (if the number is upside down its 1, otherwise 0)
+\paragraph{Vector representation: } First we choose a
+different representation of the numbers on the boards. Each
+number is replaced by the vector pointing to where it should
+go, and the parity bit (if the number is upside down its 1,
+otherwise 0)
 
 \begin{tikzpicture} 
 \spintable{\textbf{-8}}{2}{3}{4}{5}{6}{7}{\textbf{1}}{9}
@@ -76,26 +80,32 @@ It remains to be shown that the overhead of estimating the correct turn and chan
 the board justifies the decrease in visited nodes.  The basic idea is that the
 computed nogoods have a wider usage through out the search tree.
 
-\paragraph{Fixing boarder rows/columns: } The two boards from the motivation are now
-quite similar, but still not the same. To find the ultimate canonical
-representation we need to realize that the side column what is not used by the spins
-to solve such a board is not needed and can be omitted. This still has to be proven
+\paragraph{Fixing boarder rows/columns: } The two boards
+from the motivation are now quite similar, but still not the
+same. To find the ultimate canonical representation we need
+to realize that the side column what is not used by the
+spins to solve such a board is not needed and can be
+omitted. This still has to be proven
 ...
 
-If we remove the unused columns and rows before estimating the maximal element of the
-symmetric translations the boards should finally be the same. This also means that
-throughout the search the board decreases in size as we fix more and more rows and
-columns. 
+If we remove the unused columns and rows before estimating
+the maximal element of the symmetric translations the boards
+should finally be the same. This also means that throughout
+the search the board decreases in size as we fix more and
+more rows and columns. 
 
 
-\paragraph{Decrease in state variables: } Let the size of the board be $m\cdot n$. In
-this paragraph we will omit the move $k$. With a direct approach, to encode $m*n$
-numbers with parity in $m*n$ positions requires $2*m^2\cdot n^2$ variables.
+\paragraph{Decrease in state variables: } Let the size of
+the board be $m\cdot n$. In this paragraph we will omit the
+move $k$. With a direct approach, to encode $m*n$ numbers
+with parity in $m*n$ positions requires $2*m^2\cdot n^2$
+variables.
+
 \begin{verbatim} 
 state(X,Y,V) :- m(X), n(Y), mn(V). % n*m*n*m*2 
 \end{verbatim} 
-By using the vector representation we can break down the board into each dimension
-(x-axis, y-axis, parity), e.g.: 
+By using the vector representation we can break down the
+board into each dimension (x-axis, y-axis, parity), e.g.: 
 
 \begin{tikzpicture} 
 \spintable{\textbf{-8}}{2}{3}{4}{5}{6}{7}{\textbf{1}}{9}
@@ -110,7 +120,8 @@ By using the vector representation we can break down the board into each dimensi
 \end{scope}
 \end{tikzpicture}
 
-representing these three boards as state variables we need the following predicates
+representing these three boards as state variables we need
+the following predicates
 
 \begin{verbatim} 
 state(x,X,Y,V) :- m(X), n(Y), m(V). %n*m*m 
@@ -131,13 +142,15 @@ What do the following problems have in common?
 \end{scope}
 \end{tikzpicture}
 
-Both can be solved in one step. With spin $(1,0)$ to $(1,2)$ for the first and spin
-$(0,0)$ to $(2,2)$ for the second.  But they have more in common: the middle column
-switches the same cells. This means the switches of the first spin are implied by the
-second spin. How do we use that in our encoding?
+Both can be solved in one step. With spin $(1,0)$ to $(1,2)$
+for the first and spin $(0,0)$ to $(2,2)$ for the second.
+But they have more in common: the middle column switches the
+same cells. This means the switches of the first spin are
+implied by the second spin. How do we use that in our
+encoding?
 
-Using the breakdown of dimensions we encode a move just in one dimension (omitting
-step number and dimension):
+Using the breakdown of dimensions we encode a move just in
+one dimension (omitting step number and dimension):
 
 \begin{verbatim} 
 switch(A+1,B-1) :- switch(A,B),A < B.   % (n^2+n)/2 
