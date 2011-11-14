@@ -18,10 +18,12 @@ d(x;y).
 %switch(move,dim,from,to)
 { switch(K,D,A,B) : A <= B : c(B) } 1 :- c(A), k(K), d(D). 
 switch(K,D,B,A) :- switch(K,D,A,B), A < B. 
+
 :- d(D), c(B), k(K), 2 { switch(K,D,A,B) }. 
 :- d(D), k(K), 2 { switch(K,D,A,A) }. 
 :- switch(K,D,A,B), B - A > 1, not switch(K,D,A+1,B-1), k(K), d(D). 
 :- switch(K,D,A,B), switch(K,D,C,E), k(K), d(D), A <= B, C <= E, A < C, B < E. 
+
 
 %update
 state(K+1,x,X2,Y2,X1-X2+V) :- 
@@ -34,10 +36,11 @@ state(K+1,y,X2,Y2,Y1-Y2+V) :-
         switch(K+1,x,X1,X2),
         switch(K+1,y,Y1,Y2).
 
-parity(K+1,X,Y) :- 
-        move(K+1,X,Y),
+parity(K+1,X2,Y2) :- 
+        switch(K+1,x,X1,X2),
+        switch(K+1,y,Y1,Y2),
         s(K),
-        not parity(K,X,Y).
+        not parity(K,X1,Y1).
 
 parity(K+1,X,Y) :- 
         k(K+1),

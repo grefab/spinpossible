@@ -1,4 +1,4 @@
-#const final=8. % final move
+#const=8. % final move
 #const n=3. % size of the table
 size(n). 
 #hide dom/4. 
