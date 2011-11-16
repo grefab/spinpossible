@@ -11,7 +11,7 @@ Output=$UniqueFolder/output.tmp
 FormatOutput=$UniqueFolder/foutput.tmp
 PrettyOutput=$UniqueFolder/prettyOutput.csv
 Error=$UniqueFolder/error.tmp
-Option=$Option' --backprop --threads 4 --stat --time-limit='$3' '
+Option=$Option' --threads 4 --stat --time-limit='$3' '
 
 Strategy=$2
 case $Strategy in
@@ -43,7 +43,7 @@ case $Strategy in
     25) Option=$Option'--restart-on-model -r 64 --heu=Vsids --opt-heu ';;
     26) Option=$Option'--restart-on-model --save-progress -r 32 --heu=Vsids ';;
     27) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
-    28) Option=$Option'--sat-prepro --trans-ext=dynamic --sat-pre=20,25,120 --initial-look=10 --restarts=no --heu=VSIDS';;
+    28) Option=$Option'--sat-prepro --trans-ext=dynamic --initial-look=10 --restarts=no --heu=VSIDS';;
 esac
 
 

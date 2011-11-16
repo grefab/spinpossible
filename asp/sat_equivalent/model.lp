@@ -13,7 +13,7 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
 
 % choice variables 
 1 { spin(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2) } 1  :- k(K).
-1 { state(K,X,Y,V) : v(V) } 1 :- c(X;Y), k(K).
+0 { state(K,X,Y,V) } 1 :- v(V), c(X;Y), k(K).
 0 { state(K,X,Y,0) } 1 :- c(X;Y), k(K).
 0 { equal(K,X,Y) } 1 :- c(X;Y), k(K).
 
