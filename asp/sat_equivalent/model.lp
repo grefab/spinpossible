@@ -19,8 +19,8 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
 
 % fixing final state
 :-  c(X;Y), not state(final,X,Y,X*n+Y+1).  % (1)
-:-  c(X;Y), state(final,X,Y,0).  % (1)
-:-  c(X;Y), Z = 1..n*n, state(final,X,Y,Z), Z != X*n+Y+1. % (1)
+:-  state(final,X,Y,0).  % (1)
+:-  Z = 1..n*n, state(final,X,Y,Z), Z != X*n+Y+1. % (1)
 
 % equality constraints 
 :-  s(K;K+1), 
@@ -49,7 +49,7 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
     spin(K+1,X1,Y1,X2,Y2),
     dom(X,Y,X1,Y1,X2,Y2). % (4)
 
-:-  s(K;K+1), v(V), 
+:-  s(K;K+1),
     not state(K+1,X1+X2-X,Y1+Y2-Y,V), 
     state(K,X,Y,V),
     spin(K+1,X1,Y1,X2,Y2),
@@ -68,9 +68,9 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
     dom(X,Y,X1,Y1,X2,Y2). % (5) 
 
 % symmetry breaking constraints
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), X2 < X3.
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), Y2 < Y3.
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), 
+:-  spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), X2 < X3.
+:-  spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), Y2 < Y3.
+:-  spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), 
     X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
 
 % translation between sat variables and asp predicates: 
