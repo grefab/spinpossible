@@ -10,9 +10,9 @@ writeS(A) :- number(A), A > 9, !, write(' '), write(A).
 writeS(A) :- write('  '), write(A). 
 
 printSwitch(K,X,Y):-
-    (move(K,X,Y) ->
-    writeS('*');
-    writeS('-')).
+    (equal(K,X,Y) ->
+    writeS('-');
+    writeS('*')).
 
 printRow(K,X,Y):-
     table(K,X,Y,V),
@@ -39,7 +39,7 @@ start :-
     printMoves(1). 
 
 printMoves(K) :- 
-    move(K,_X,_Y), 
+    spin(K), 
     !,
     writeL(['move ',K,': ']),nl,nl,
     printSwitch(K),
@@ -59,5 +59,5 @@ table(K,X,Y,V) :-
     state(K,y,X,Y,DY),
     state(K,p,X,Y,P),
     size(N),
-    V is (1-2*P)*((DX+X) * N + (Y+DY) + 1).
+    V is (1-2*P)*(DX*N+DY+1).
 
