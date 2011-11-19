@@ -1,0 +1,10 @@
+%mareike
+init(0,0,4).  
+init(0,1,7).  
+init(0,2,-1). 
+init(1,0,-5).  
+init(1,1,-8). 
+init(1,2,3). 
+init(2,0,6). 
+init(2,1,9). 
+init(2,2,2).  

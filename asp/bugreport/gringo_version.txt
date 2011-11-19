@@ -1,8 +1,0 @@
-gringo 3.0.3
-
-Copyright (C) Arne König
-Copyright (C) Benjamin Kaufmann
-Copyright (C) Roland Kaminski
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-Gringo is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
