@@ -5,6 +5,24 @@
 #define SYMMETRY
 //#define LOG_ENCODING
 //#define ROW_COLUMN
+//#define FOCUS
+
+void print_focus( int a, int b, int c, int t)
+{
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c, t + 90 + a );
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c, t + 90 + b );
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c, t + 90 + c );
+}
+
+void print_focuss( int a, int b, int c, int d, int e, int f, int t)
+{
+	printf("-%i %i -%i %i -%i %i "      , t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c );
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(d-1) +d, t + 10*d, t + 10*(e-1) +e, t + 10*e, t + 10*(f-1) +f, t + 10*f, t + 90 + d );
+	printf("-%i %i -%i %i -%i %i "      , t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c );
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(d-1) +d, t + 10*d, t + 10*(e-1) +e, t + 10*e, t + 10*(f-1) +f, t + 10*f, t + 90 + e );
+	printf("-%i %i -%i %i -%i %i "      , t + 10*(a-1) +a, t + 10*a, t + 10*(b-1) +b, t + 10*b, t + 10*(c-1) +c, t + 10*c );
+	printf("-%i %i -%i %i -%i %i %i 0\n", t + 10*(d-1) +d, t + 10*d, t + 10*(e-1) +e, t + 10*e, t + 10*(f-1) +f, t + 10*f, t + 90 + f );
+}
 
 int main ( int argc, char** argv )
 {
@@ -36,6 +54,10 @@ int main ( int argc, char** argv )
 #endif
 #ifdef NO_DOUBLES
     nrofclauses += 12 * (moves-1) ; 
+#endif
+#ifdef FOCUS
+    nrofclauses += 12 * (moves-1) ; 
+//    nrofclauses += 24 * (moves-1) ; 
 #endif
     printf("p cnf %i %i\n", nrofvars, nrofclauses );
 
@@ -181,6 +203,22 @@ int main ( int argc, char** argv )
 	    else      printf("-%i %i 0\n" , tmp, i*100 - 7 + k );
 	}
       }
+#endif
+
+#ifndef LOG_ENCODING
+  #ifdef FOCUS
+	for( k = 1; k < moves; k++ )
+	{
+	    print_focus (1, 2, 3,  (k-1) * 100 );	
+//	    print_focuss(1, 2, 3, 4, 5, 6,  (k-1) * 100 );	
+	    print_focus (1, 4, 7,  (k-1) * 100 );	
+//	    print_focuss(1, 4, 7, 2, 5, 8,  (k-1) * 100 );	
+	    print_focus (3, 6, 9,  (k-1) * 100 );	
+//	    print_focuss(3, 6, 9, 2, 5, 8, (k-1) * 100 );	
+	    print_focus (7, 8, 9,  (k-1) * 100 );	
+//	    print_focuss(7, 8, 9, 4, 5, 6, (k-1) * 100 );	
+	}
+  #endif
 #endif
 
 #ifdef SYMMETRY
