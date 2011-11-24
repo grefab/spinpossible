@@ -24,7 +24,6 @@ switch(K,D,B,A) :- switch(K,D,A,B), A < B.
 :- switch(K,D,A,B), B - A > 1, not switch(K,D,A+1,B-1), k(K), d(D). 
 :- switch(K,D,A,B), switch(K,D,C,E), k(K), d(D), A <= B, C <= E, A < C, B < E. 
 
-
 %update
 state(K+1,x,X2,Y2,X1-X2+V) :- 
         state(K,x,X1,Y1,V), 
