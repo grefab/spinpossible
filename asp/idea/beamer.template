@@ -1,0 +1,98 @@
+$if(legacy-header)$
+$legacy-header$
+$else$
+\documentclass{beamer}
+\usepackage{amsmath}
+$if(xetex)$
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \usepackage[utf8]{inputenc}
+\fi
+$else$
+\usepackage[utf8]{inputenc}
+$endif$
+$if(lhs)$
+\usepackage{listings}
+$endif$
+%% \setlength{\parindent}{0pt}
+%% \setlength{\parskip}{6pt plus 2pt minus 1pt}
+$endif$
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+$if(fancy-enums)$
+\usepackage{enumerate}
+$endif$
+$if(tables)$
+\usepackage{array}
+% This is needed because raggedright in table elements redefines \\:
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\let\PBS=\PreserveBackslash
+$endif$
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+$endif$
+$if(subscript)$
+\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+$endif$
+$if(links)$
+\usepackage[breaklinks=true]{hyperref}
+$endif$
+$if(url)$
+\usepackage{url}
+$endif$
+$if(graphics)$
+\usepackage{graphicx}
+$endif$
+$if(numbersections)$
+$else$
+%% \setcounter{secnumdepth}{0}
+$endif$
+$if(verbatim-in-note)$
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(title)$
+\title{$title$}
+$endif$
+\author{$for(author)$$author$$sep$\\$endfor$}
+$if(date)$
+\date{$date$}
+$endif$
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes}
+\usepackage{graphics}
+
+\newcommand{\TODO}[1]{\textcolor[rgb]{1.00,0.00,0.00}{#1} }
+
+\newcommand{\spintable}[9]{ 
+\node [matrix,ampersand replacement=\&,nodes={minimum size=4mm}]
+{
+    \node {#1}; \& \node{#2}; \& \node {#3}; \\ 
+    \node {#4}; \& \node{#5}; \& \node {#6}; \\ 
+    \node {#7}; \& \node{#8}; \& \node {#9}; \\ 
+}; 
+}
+
+% remove navigation bar
+\setbeamertemplate{navigation symbols}{}
+
+% transparent overlays
+\setbeamercovered{transparent}
+
+\begin{document}
+$if(title)$
+\begin{frame}[fragile]
+  \titlepage
+$endif$
+
+$body$
+
+\end{document}
