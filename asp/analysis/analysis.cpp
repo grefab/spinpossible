@@ -29,6 +29,8 @@ void Grasp::search() {
                 _solved[hash] = 1; 
                 int board1[X][Y]; 
                 hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
                 for (uint x = 0; x < X; x++) {
                     for (uint y = 0; y < Y; y++) {
                         for (uint xx = x; xx < X; xx++) {

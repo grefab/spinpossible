@@ -6,11 +6,12 @@
 #include <bitset>
 #include <queue>
 
-// {-9,-8,-7,-6,-5,-4,-3,-2,-1}
+// max board {-9,-8,-7,-6,-5,-4,-3,-2,-1}
 #define SIZE 602618880 
-#define X 1
-#define Y 9
-#define MAX_STEP 10 
+
+#define X 3
+#define Y 3
+#define MAX_STEP 10
 
 using namespace std;
 
@@ -37,8 +38,8 @@ class Grasp {
 
     private:
 
-    bitset<SIZE> _solved;
-    bitset<SIZE> _bit[MAX_STEP];
+        bitset<SIZE> _solved;
+        bitset<SIZE> _bit[MAX_STEP];
 };
 
 #endif
