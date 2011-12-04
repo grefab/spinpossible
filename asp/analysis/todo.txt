@@ -1,0 +1,11 @@
+* Fixing 
+
+* Make the move if you can fix ( all number already in the
+right row/column)
+
+* Make the move( 1x2) if you can fix also I can show how
+many boards are saved by the canonical board symmetry
+breaking (up to 7/8) 
+  
+* Same table with simpler problem (without numbers up side
+down)
