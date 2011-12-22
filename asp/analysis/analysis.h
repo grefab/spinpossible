@@ -11,7 +11,8 @@
 
 #define X 3
 #define Y 3
-#define MAX_STEP 10
+
+#define MAX_STEP 12
 
 using namespace std;
 
@@ -22,10 +23,9 @@ void update(Move move, int board[][Y], int result[][Y]);
 void print(int board[][Y]);
 unsigned int board_to_hash(int[][Y]);
 void hash_to_board(uint,int[][Y]);
+bool is_valid_move(Move move, int board2[][Y]);
 
 
-
-int test();
 int run();
 
 class Grasp {
@@ -38,8 +38,10 @@ class Grasp {
 
     private:
 
-        bitset<SIZE> _solved;
+        bitset<SIZE> _solved_bit;
+        bitset<SIZE> _solved_normal;
         bitset<SIZE> _bit[MAX_STEP];
+        bitset<SIZE> _normal[MAX_STEP];
 };
 
 #endif

@@ -2,7 +2,7 @@
 # makefile for the analysis project.
 #
 
-CC = g++ -Wall -g -Ofast
+CC = g++ -Wall -g -O3
 
 all: start
 

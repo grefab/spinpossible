@@ -6,7 +6,7 @@ k(1..final). %moves
 size(n). 
 
 % choice variables 
-{ spin(K,X1,Y1,X2,Y2) : X1 <= X2 : Y1 <= Y2 : c(X1;X2;Y1;Y2) } 1  :- k(K).  
+{ spin(K,X1,Y1,X2,Y2) : X1 > 1 : X1 <= X2 : Y1 <= Y2 : c(X1;X2;Y1;Y2) } 1  :- k(K).  
 
 % state update wrt. spin
 state(K+1,X1+X2-X,Y1+Y2-Y,-V) :- 
@@ -31,7 +31,8 @@ state(0,X,Y,V) :- init(X,Y,V).
 % optimization
 move(K) :- move(K,_,_).
 :- K>1, move(K), not move(K-1). 
-#minimize[move(_)].
+#minimize[move(_,_,_)@1].
+#minimize[move(_)@2].
 
 % symmetry breaking constraints
 :-  k(K+1), spin(K+1,X1,Y1,X2,Y2), spin(K,X3,Y3,X4,Y4), X2 < X3.

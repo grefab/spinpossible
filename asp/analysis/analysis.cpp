@@ -8,11 +8,14 @@
 #include "analysis.h"
 
 Grasp::Grasp() {
-    _solved.reset();
+    _solved_bit.reset();
+    _solved_normal.reset();
     for(uint i = 0; i < MAX_STEP; i++) {
         _bit[i].reset();
+        _normal[i].reset();
     }
     _bit[0][0] = 1; 
+    _normal[0][0] = 1; 
 }
 
 void Grasp::search() {
@@ -22,11 +25,11 @@ void Grasp::search() {
         time_t start;
         time(&start);
         for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-            if (_solved[hash]) { 
+            if (_solved_bit[hash]) { 
                 _bit[step][hash] = 0;
                 continue;
             } else if (_bit[step][hash]) {
-                _solved[hash] = 1; 
+                _solved_bit[hash] = 1; 
                 int board1[X][Y]; 
                 hash_to_board(hash,board1); 
                 //print(board1);
@@ -40,19 +43,76 @@ void Grasp::search() {
                                 Co c2(xx,yy); 
                                 Move move(c1,c2);
                                 update(move,board1,board2); 
-                                _bit[step+1][board_to_hash(board2)] = 1; 
+                                if (is_valid_move(move,board2)) {
+                                    _bit[step+1][board_to_hash(board2)] = 1; 
+                                }
                             }
                         }
                     }
                 }
             } 
         }
-        cout << step << "\t" << _bit[step].count() << "\t";
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[step][hash] = 0;
+                continue;
+            } else if (_normal[step][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                int board2[X][Y]; 
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                update(move,board1,board2); 
+                                _normal[step+1][board_to_hash(board2)] = 1; 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
         cout.precision(2);
         cout << (int) difftime(time(NULL),start) << " sec." << endl;
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if(_normal[step][hash] != _bit[step][hash]) {
+                int board[X][Y];
+                hash_to_board(hash,board);
+                cout << endl;
+                print(board);
+            }
+        }
+
     }
-    cout << "total\t" << _solved.count() << "\t";
+    cout << "total\t" << _solved_bit.count() << "\t";
     cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
+
+
+
+
+// defines strategy
+bool is_valid_move(Move move, int board2[][Y]) {
+
+    bool is_valid_move = false; 
+    //for (uint x = 0; x < X; x++) {
+    uint x = 0; 
+    if (move.first.first == x ) {
+        for (uint y = 0; y < Y && !is_valid_move; y++) {
+            if (board2[x][y] < 0 || abs(board2[x][y]) != x*2+y+1) is_valid_move = true;
+        }
+    } else {
+        is_valid_move = true;
+    }
+    //}
+    return is_valid_move;
 }
 
 
@@ -200,54 +260,10 @@ unsigned int board_to_hash(int board[][Y]) {
     r = r << X*Y; 
     r += parity; 
 
-    if ( r > pow(2,31) ) {
+    if ( r >= SIZE ) {
         cout << "ERROR overflow\t: hash value with " << r << endl;
+        print(board);
     }
     //cout << r << endl; 
     return r;
 }
-
-int test() 
-{
-
-    //int result[3][3] = {{0}};
-    ////cout << "size of " << sizeof(solved) << endl;
-    //int board[3][3] = {{-9,4,-7},{-6,-5,8},{-3,-2,-1}};
-    //print(board); 
-    //uint hash = board_to_hash(board);
-    //bitset<30> bits(hash); 
-    //cout << "bits of board " << bits.to_string() << endl;
-    //hash_to_board(hash,result);
-    //print(result);
-
-    //int board1[3][3] = {{-1,2,3},{4,-5,6},{7,8,9}};
-    //int board2[3][3] = {{0}}; 
-
-    //Co c1(1,1); 
-    //Co c2(1,2); 
-    //Move move1(c1,c2);
-
-    //update(move1,board1,board2); 
-    //cout << endl;
-    //hash_to_board(board_to_hash(board),result);
-    //print(result);
-    //cout << endl;
-    //hash_to_board(board_to_hash(board1),result);
-    //print(result);
-    //cout << endl;
-    //hash_to_board(board_to_hash(board2),result);
-    //print(result);
-    //cout << endl;
-    ////cout << "board 1" << endl; 
-    ////print(board1);
-    ////bits = board_to_hash(board1);
-    ////cout << "bits of board1 " << bits.to_string() << endl;
-
-
-    ////print(board2);
-    ////cout << "board 2" << endl; 
-    ////bits = board_to_hash(board2);
-    ////cout << "bits of board2 " << bits.to_string() << endl;
-
-    return 0;
-} 
