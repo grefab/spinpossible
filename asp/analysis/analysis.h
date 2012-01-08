@@ -23,7 +23,7 @@ void update(Move move, int board[][Y], int result[][Y]);
 void print(int board[][Y]);
 unsigned int board_to_hash(int[][Y]);
 void hash_to_board(uint,int[][Y]);
-bool is_valid_move(Move move, int board2[][Y]);
+bool is_valid_move(Move move, int board[][Y]);
 
 
 int run();
@@ -35,11 +35,13 @@ class Grasp {
         Grasp();
 
         void search();
+        void search2();
 
     private:
 
         bitset<SIZE> _solved_bit;
         bitset<SIZE> _solved_normal;
+        bitset<SIZE> _unique;
         bitset<SIZE> _bit[MAX_STEP];
         bitset<SIZE> _normal[MAX_STEP];
 };

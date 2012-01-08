@@ -40,8 +40,8 @@ move(K) :- move(K,_,_).
 :-  k(K+1), spin(K+1,X1,Y1,X2,Y2), spin(K,X3,Y3,X4,Y4), 
     X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
 
-% redundant
-:- c(X;Y), k(K), 2 { state(K,X,Y,V) }.
-:- k(K), not 9 { state(K,X,Y,V) } 9. 
-:- state(K,X,Y,V), state(K,X,Y,-V). 
-:- state(K,X,Y,V), state(K+1,X,Y,V), move(K+1,X,Y). 
+%% redundant
+%:- c(X;Y), k(K), 2 { state(K,X,Y,V) }.
+%:- k(K), not 9 { state(K,X,Y,V) } 9. 
+%:- state(K,X,Y,V), state(K,X,Y,-V). 
+%:- state(K,X,Y,V), state(K+1,X,Y,V), move(K+1,X,Y). 

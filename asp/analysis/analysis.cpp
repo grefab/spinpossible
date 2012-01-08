@@ -18,9 +18,105 @@ Grasp::Grasp() {
     _normal[0][0] = 1; 
 }
 
+/*
+ * finding unique solutions
+ */
+
+void Grasp::search2() {
+    time_t total;
+    time(&total);
+
+    for(uint step = 0; step < MAX_STEP; step++) {
+        time_t start;
+        time(&start);
+        _unique.reset();
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { //hasnt it been solved non-uniquely already before?
+                _bit[step][hash] = 0;
+                continue;
+            } else if (_bit[step][hash]) {
+                _solved_bit[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                int board2[X][Y]; 
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                update(move,board1,board2); 
+                                uint board2hash = board_to_hash(board2);
+                                if (_unique[board2hash] == 0) {
+                                    _bit[step+1][board2hash] = 1; 
+                                    _unique[board2hash] = 1;
+                                } else { // unique has been hit for the 
+                                    //second time! its not unique anymore
+                                    _bit[step+1][board2hash] = 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[step][hash] = 0;
+                continue;
+            } else if (_normal[step][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                int board2[X][Y]; 
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                update(move,board1,board2); 
+                                _normal[step+1][board_to_hash(board2)] = 1; 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+        if (step >= 9) {
+            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+                int board[X][Y];
+                if (_bit[step][hash] == 1) {
+                    hash_to_board(hash,board);
+                    cout << endl;
+                    print(board);
+                }
+            }
+        }
+
+    }
+    cout << "total\t" << _solved_bit.count() << "\t";
+    cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
+
+
+
+/*
+ * comparing fixed with nofixed strategy
+ */
 void Grasp::search() {
     time_t total;
     time(&total);
+
     for(uint step = 0; step < MAX_STEP; step++) {
         time_t start;
         time(&start);
@@ -99,14 +195,14 @@ void Grasp::search() {
 
 
 // defines strategy
-bool is_valid_move(Move move, int board2[][Y]) {
+bool is_valid_move(Move move, int board[][Y]) {
 
     bool is_valid_move = false; 
     //for (uint x = 0; x < X; x++) {
     uint x = 0; 
     if (move.first.first == x ) {
         for (uint y = 0; y < Y && !is_valid_move; y++) {
-            if (board2[x][y] < 0 || abs(board2[x][y]) != x*2+y+1) is_valid_move = true;
+            if (board[x][y] < 0 || abs(board[x][y]) != x*2+y+1) is_valid_move = true;
         }
     } else {
         is_valid_move = true;
@@ -125,7 +221,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search();
+    g.search2();
     return 0; 
 }
 
