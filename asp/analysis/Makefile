@@ -3,6 +3,7 @@
 #
 
 CC = g++ -Wall -g -O3
+#CC = g++ -Wall -g -oFast
 
 all: start
 
