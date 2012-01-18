@@ -10,7 +10,8 @@ Output=$UniqueFolder/output.tmp
 FormatOutput=$UniqueFolder/foutput.tmp
 PrettyOutput=$UniqueFolder/prettyOutput.csv
 Error=$UniqueFolder/error.tmp
-Option=$Option' --threads 4 --stat --time-limit='$3' '
+#Option=$Option' --threads 4 --stat --time-limit='$3' '
+Option=$Option' --stat --time-limit='$3' '
 
 Strategy=$2
 case $Strategy in
