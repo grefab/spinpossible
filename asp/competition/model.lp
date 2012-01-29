@@ -1,11 +1,10 @@
-#const final=9. % final move
 #const n=3. % size of the table
 size(n). 
 #hide dom/4. 
 #hide dom/6. 
 c(0..n-1). %coordinates  
-k(1..final). %moves
-s(0..final). %states(=inital + moves)
+k(1..F) :- final(F). %moves
+s(0..F) :- final(F). %states(= inital + moves)
 v(1..9). %values, 0 for parity
 
 dom(X1,Y1,X2,Y2) :- c(X1;Y1;X2;Y2), X1 <= X2, Y1 <= Y2. 
@@ -18,9 +17,9 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
 0 { equal(K,X,Y) } 1 :- c(X;Y), k(K).
 
 % fixing final state
-:-  c(X;Y), not state(final,X,Y,X*n+Y+1).  % (1)
-:-  c(X;Y), state(final,X,Y,0).  % (1)
-:-  c(X;Y), Z = 1..n*n, state(final,X,Y,Z), Z != X*n+Y+1. % (1)
+:-  c(X;Y), not state(F,X,Y,X*n+Y+1), final(F).  % (1)
+:-  c(X;Y), state(F,X,Y,0), final(F).  % (1)
+:-  c(X;Y), Z = 1..n*n, state(F,X,Y,Z), Z != X*n+Y+1, final(F). % (1)
 
 % equality constraints 
 :-  s(K;K+1), 
