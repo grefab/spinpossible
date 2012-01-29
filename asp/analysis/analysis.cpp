@@ -169,8 +169,71 @@ void Grasp::search() {
     cout << (int) difftime(time(NULL),total) << " sec." << endl;
 }
 
+/*
+ *  Determine the the maximum number of spins in an optimal
+ *  solution to a 3x3 Spinpossible board that only allows 2x2
+ *  square, 3x1 row, and 1x3 column spins.
+ */
 
 
+void Grasp::search3() {
+    time_t total;
+    time(&total);
+
+    int now = 0;
+
+    for(uint step = 0; _normal[now].any(); step++) {
+        _normal[(now+1)%2].reset();
+        time_t start;
+        time(&start);
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[now][hash] = 0;
+                continue;
+            } else if (_normal[now][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                if (xx+yy-x-y == 1 || (xx+yy-x-y == 2 && (xx-x == 0 || yy-y == 0))) {
+                                    int board2[X][Y]; 
+                                    Co c1(x,y); 
+                                    Co c2(xx,yy); 
+                                    Move move(c1,c2);
+                                    update(move,board1,board2); 
+                                    _normal[(now+1)%2][board_to_hash(board2)] = 1; 
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        cout << step << "\t" << _normal[now].count() << "\t";;
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+        now = (now+1)%2;
+        //if (step == 13) {
+        //    for(uint hash = 0; hash < SIZE; hash++) {
+        //        if(_normal[(now+1)%2][hash]) {
+        //            int board[X][Y];
+        //            hash_to_board(hash,board);
+        //            cout << endl;
+        //            print(board);
+        //        }
+        //    }
+        //}
+    }
+
+
+    cout << "total\t" << _solved_normal.count() << "\t";
+    cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
 
 // defines strategy
 bool is_valid_move(Move move, int board[][Y]) {
@@ -199,7 +262,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search2();
+    g.search3();
     return 0; 
 }
 

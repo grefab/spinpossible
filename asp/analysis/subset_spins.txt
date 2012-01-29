@@ -1,0 +1,245 @@
+"Determine the maximum number of spins in an optimal solution to a 3x3 Spinpossible board that only allows 2x2 square, 3x1 row, and 1x3 column spins"
+
+0	1	        0 sec.
+1	10	        3 sec.
+2	75	        3 sec.
+3	508	        2 sec.
+4	3141	        3 sec.
+5	17026	3 sec.
+6	73282	4 sec.
+7	211088	5 sec.
+8	278716	5 sec.
+9	139714	5 sec.
+10	13423	3 sec.
+11	294	        2 sec.
+12	2	        3 sec.
+total	737280	44 sec.
+
+If you are interested in the two boards that require 12 steps to solve, here they are: 
+
+ -1  4 -7
+  2 -5  8
+ -3  6 -9
+
+ -9  6 -3
+  8 -5  2
+ -7  4 -1
+
+
+
+I run the program including the 1x2, 3x3 spin:
+
+0	1	        0 sec.
+1	11	        3 sec.
+2	85	        2 sec.
+3	583	        3 sec.
+4	3649	        3 sec.
+5	20167	3 sec.
+6	90308	3 sec.
+7	284370	6 sec.
+8	489804	9 sec.
+9	418430	8 sec.
+10	153137	4 sec.
+11	13717	3 sec.
+12	296	        3 sec.
+13	2	        2 sec.
+total	1474560	56 sec.
+
+185 794 560 / 1 474 560 = 126
+
+and the two hardest ones are: 
+
+  1 -4  7
+ -2  5 -8
+  3 -6  9
+
+  9 -6  3
+ -8  5 -2
+  7 -4  1
+
+
+
+Excluding 1x1 spins: 
+
+0	1	          0 sec.
+1	27	          3 sec.
+2	481	          2 sec.
+3	7253	          3 sec.
+4	99522	  5 sec.
+5	1241500	  37 sec.
+6	13142978	  352 sec.
+7	84140870	  2231 sec.
+8	86625375	  2294 sec.
+9	536553	  17 sec.
+total	185794560	  4946 sec.
+
+So excluding single spins does not increase the lower bound of 9 spins. 
+
+excluding 1x1 and 1x2 spins: 
+
+0	1	  	  0 sec.
+1	15	  	  2 sec.
+2	161	  	  3 sec.
+3	1577   	  2 sec.
+4	14677	  3 sec.
+5	130305	  4 sec.
+6	1097267	  21 sec.
+7	8530820	  138 sec.
+8	52149572	  821 sec.
+9	111501265	  1745 sec.
+10	12368367	  197 sec.
+11	533	  	  2 sec.
+total	185794560	  2941 sec.
+
+and excluding 1x1, 1x2, 1x3, 2x2 spins:
+
+0	1		0 sec.
+1	5		3 sec.
+2	16		3 sec.
+3	46		2 sec.
+4	110		3 sec.
+5	224		2 sec.
+6	437		3 sec.
+7	865		3 sec.
+8	1728		2 sec.
+9	3456		3 sec.
+10	6608		2 sec.
+11	12332	2 sec.
+12	23124	3 sec.
+13	42558	3 sec.
+14	73130	3 sec.
+15	110414	3 sec.
+16	140141	4 sec.
+17	142095	3 sec.
+18	104525	4 sec.
+19	49157	3 sec.
+20	12954	2 sec.
+21	1728		3 sec.
+22	106		2 sec.
+total	725760	65 sec.
+
+((2^9) * (9 !)) / 725 760 = 256, interesting :-) 
+
+ok, now going the other direction: 
+
+allowing just 1x1 and 1x2: 
+
+0	1		  0 sec.
+1	21		  3 sec.
+2	232		  3 sec.
+3	1778		  2 sec.
+4	10510	  3 sec.
+5	50410	  4 sec.
+6	201375	  7 sec.
+7	678857	  16 sec.
+8	1942139	  43 sec.
+9	4721607	  100 sec.
+10	9744158	  203 sec.
+11	17026112	  344 sec.
+12	25090283	  507 sec.
+13	31018403	  628 sec.
+14	31950677	  649 sec.
+15	27182091	  553 sec.
+16	18886593	  387 sec.
+17	10562393	  218 sec.
+18	4663676	  98 sec.
+19	1583888	  35 sec.
+20	399193	  11 sec.
+21	71085	  4 sec.
+22	8410		  3 sec.
+23	634		  3 sec.
+24	33		  2 sec.
+25	1		  3 sec.
+total	185794560	  3832 sec.
+
+and just allowing the 1x2 spins:
+
+0	1		0 sec.
+1	12		3 sec.
+2	88		3 sec.
+3	470		3 sec.
+4	1978		2 sec.
+5	6658		3 sec.
+6	18081	3 sec.
+7	38936	3 sec.
+8	65246	4 sec.
+9	83000	3 sec.
+10	76688	4 sec.
+11	48316	3 sec.
+12	18975	3 sec.
+13	4024		3 sec.
+14	382		3 sec.
+15	24		2 sec.
+16	1		2 sec.
+total	362880	51 sec.
+
+((9 !) * (2^9)) / 362 880 = 512.
+
+And now allowing 1x2, 1x3, 2x2: 
+
+0	1	          0 sec.
+1	22	          3 sec.
+2	323	          3 sec.
+3	3986	          2 sec.
+4	44339	  4 sec.
+5	446596	  13 sec.
+6	3913213	  87 sec.
+7	25795964	  568 sec.
+8	86926235	  1889 sec.
+9	66086622	  1436 sec.
+10	2577133	  59 sec.
+11	126	          3 sec.
+total	185794560	  4070 sec.
+
+and allowing just 1x3, 2x2 and 2x3: 
+0	1	         0 sec.
+1	14	         3 sec.
+2	147	         2 sec.
+3	1430	         3 sec.
+4	13297	 3 sec.
+5	118294	 4 sec.
+6	999080	 19 sec.
+7	7806361	 122 sec.
+8	48474399	 735 sec.
+9	112189910	 1692 sec.
+10	16186620	 248 sec.
+11	5005	         3 sec.
+12	2	         2 sec.
+total	185794560	 2839 sec.
+
+And now allowing 1x2, 2x3:
+
+0	1	0 sec.
+1	16	2 sec.
+2	160	3 sec.
+3	1234	3 sec.
+4	7877	3 sec.
+5	38996	3 sec.
+6	118610	5 sec.
+7	139578	5 sec.
+8	54792	3 sec.
+9	1616	3 sec.
+total	362880	33 sec.
+
+((9 !) * (2^9)) / 362 880 = 512 
+
+And now allowing 1x2, 2x2:
+
+0	1	0 sec.
+1	16	3 sec.
+2	164	2 sec.
+3	1362	3 sec.
+4	10018	3 sec.
+5	66662	4 sec.
+6	401447	9 sec.
+7	2140370	38 sec.
+8	9359963	156 sec.
+9	27781548	457 sec.
+10      38604340	634 sec.
+11	13930750	231 sec.
+12	598787	13 sec.
+13	1839	3 sec.
+14	13	2 sec.
+total	92897280	1561 sec.
+
+((9 !) * (2^9)) / 92 897 280 = 2

@@ -12,7 +12,7 @@
 #define X 3
 #define Y 3
 
-#define MAX_STEP 12
+#define MAX_STEP 2
 
 using namespace std;
 
@@ -36,6 +36,7 @@ class Grasp {
 
         void search();
         void search2();
+        void search3();
 
     private:
 
