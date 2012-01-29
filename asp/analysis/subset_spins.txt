@@ -27,7 +27,7 @@ If you are interested in the two boards that require 12 steps to solve, here the
 
 
 
-I run the program including the 1x2, 3x3 spin:
+I run the program including the 1x2,1x3, and  3x3 spin:
 
 0	1	        0 sec.
 1	11	        3 sec.
