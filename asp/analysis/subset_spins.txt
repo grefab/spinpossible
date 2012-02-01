@@ -59,7 +59,7 @@ and the two hardest ones are:
 
 
 
-Excluding 1x1 spins: 
+All but excluding 1x1 spins: 
 
 0	1	          
 1	27	          
@@ -192,6 +192,7 @@ And now allowing 1x2, 1x3, 2x2:
 total	185794560	  
 
 and allowing just 1x3, 2x2 and 2x3: 
+
 0	1	         
 1	14	         
 2	147	         
@@ -207,7 +208,7 @@ and allowing just 1x3, 2x2 and 2x3:
 12	2	         
 total	185794560	 
 
-And now allowing 1x2, 2x3:
+allowing 1x2, 2x3:
 
 0	1	
 1	16	
@@ -223,7 +224,7 @@ total	362880
 
 ((9 !) * (2^9)) / 362 880 = 512 
 
-And now allowing 1x2, 2x2:
+allowing 1x2, 2x2:
 
 0	1	
 1	16	
@@ -235,7 +236,7 @@ And now allowing 1x2, 2x2:
 7	2140370	
 8	9359963	
 9	27781548	
-10      38604340	
+10  38604340	
 11	13930750	
 12	598787	
 13	1839	
