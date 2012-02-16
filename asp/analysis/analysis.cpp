@@ -3,9 +3,55 @@
 #include <sstream>
 #include <stdio.h>
 #include <list>
+#include <utility>
+#include <set>
 #include <time.h>
+#include <algorithm>
+#include <boost/foreach.hpp>
 #include <boost/functional/hash.hpp>
 #include "analysis.h"
+
+
+typedef std::pair<uint,uint> Spin;
+typedef std::set<Spin>  Spins;
+typedef std::vector<Spins>  SuperSpins;
+
+void createSubsets(SuperSpins& superset) {
+    std::vector<Spin> allSpins;
+    for (uint x = 0; x < X; x++) {
+        for (uint y = 0; y < Y; y++) {
+            allSpins.push_back(Spin(X-x,Y-y));
+        }
+    }
+    Spins first;
+    //first.insert(allSpins.back());
+    //allSpins.pop_back();
+    superset.push_back(first);
+
+    // allSpins has all combination of spin types 
+    
+    for(uint i = 0; i < allSpins.size(); i++) {
+        uint size = superset.size();
+        for(uint j = 0; j < size; j++) {
+            Spins s = superset[j];
+
+            s.insert(allSpins[i]);  
+
+            superset.push_back(s);
+        }
+    }
+}
+
+void printSpins(Spins spins) {
+    cout << "spins ";
+    BOOST_FOREACH(Spin s, spins) {
+        cout << s.first << "x" << s.second << " ";
+    }
+    cout << endl;
+}
+
+
+
 
 Grasp::Grasp() {
     _solved_bit.reset();
@@ -175,64 +221,84 @@ void Grasp::search() {
  *  square, 3x1 row, and 1x3 column spins.
  */
 
+bool comp(Spins a, Spins b) {
+    return a.size() < b.size();
+}
 
 void Grasp::search3() {
     time_t total;
     time(&total);
 
-    int now = 0;
+    SuperSpins superset;
+    createSubsets(superset);
 
-    for(uint step = 0; _normal[now].any(); step++) {
-        _normal[(now+1)%2].reset();
-        time_t start;
-        time(&start);
-        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-            if (_solved_normal[hash]) { 
-                _normal[now][hash] = 0;
-                continue;
-            } else if (_normal[now][hash]) {
-                _solved_normal[hash] = 1; 
-                int board1[X][Y]; 
-                hash_to_board(hash,board1); 
-                //print(board1);
-                //cout << endl;
-                for (uint x = 0; x < X; x++) {
-                    for (uint y = 0; y < Y; y++) {
-                        for (uint xx = x; xx < X; xx++) {
-                            for (uint yy = y; yy < Y; yy++) {
-                                if (xx+yy-x-y == 1 || (xx+yy-x-y == 2 && (xx-x == 0 || yy-y == 0))) {
-                                    int board2[X][Y]; 
+    std::sort(superset.begin(),superset.end(),comp);
+
+    for(uint index = 1; index < superset.size(); index ++) {
+
+        Spins spins = superset[index];
+        cout << endl;
+        printSpins(spins);
+        cout << endl;
+
+        time_t total;
+        time(&total);
+        _normal[0].reset();
+        _normal[0][0] = 1; 
+        _normal[1].reset();
+        _solved_normal.reset();
+
+        int now = 0;
+        for(uint step = 0; _normal[now].any(); step++) {
+            _normal[(now+1)%2].reset();
+            time_t start;
+            time(&start);
+            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+                if (_normal[now][hash]) {
+                    _solved_normal[hash] = 1; 
+                    int board1[X][Y]; 
+                    hash_to_board(hash,board1); 
+                    for (uint x = 0; x < X; x++) {
+                        for (uint y = 0; y < Y; y++) {
+                            for (uint xx = x; xx < X; xx++) {
+                                for (uint yy = y; yy < Y; yy++) {
                                     Co c1(x,y); 
                                     Co c2(xx,yy); 
                                     Move move(c1,c2);
-                                    update(move,board1,board2); 
-                                    _normal[(now+1)%2][board_to_hash(board2)] = 1; 
+
+                                    if ( spins.count(Spin(xx-x+1,yy-y+1)) > 0) {
+                                        int board2[X][Y]; 
+                                        update(move,board1,board2); 
+                                        uint new_hash = board_to_hash(board2);
+                                        if (_solved_normal[new_hash] == 0) {
+                                            _normal[(now+1)%2][new_hash] = 1; 
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
+                } 
+            }
+            cout << step << "\t" << _normal[now].count() << "\t";;
+            cout.precision(2);
+            cout << (int) difftime(time(NULL),start) << " sec." << endl;
+            if (step > 1 && _normal[(now+1)%2].count() == 0 && _normal[(now)%2].count() < 1000) {
+                for(uint hash = 0; hash < SIZE; hash++) {
+                    if(_normal[(now)%2][hash]) {
+                        int board[X][Y];
+                        hash_to_board(hash,board);
+                        cout << endl;
+                        print(board);
+                    }
                 }
-            } 
+            }
+            now = (now+1)%2;
         }
-        cout << step << "\t" << _normal[now].count() << "\t";;
-        cout.precision(2);
-        cout << (int) difftime(time(NULL),start) << " sec." << endl;
-        now = (now+1)%2;
-        //if (step == 13) {
-        //    for(uint hash = 0; hash < SIZE; hash++) {
-        //        if(_normal[(now+1)%2][hash]) {
-        //            int board[X][Y];
-        //            hash_to_board(hash,board);
-        //            cout << endl;
-        //            print(board);
-        //        }
-        //    }
-        //}
+        
+        cout << "\ntotal\t" << _solved_normal.count() << "\t";
+        cout << (int) difftime(time(NULL),total) << " sec." << endl;
     }
-
-
-    cout << "total\t" << _solved_normal.count() << "\t";
-    cout << (int) difftime(time(NULL),total) << " sec." << endl;
 }
 
 // defines strategy
