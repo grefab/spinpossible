@@ -1,19 +1,16 @@
 #!/bin/bash
 
-#Data=data/p1.lp
-Data=$1
-Model=model.lp
-UniqueFolder=tmp
+Data=tmp/board.lp
+Input=tmp/input.tmp
+Problem=tmp/problem.tmp
+Output=tmp/output.tmp
+FormatOutput=tmp/foutput.tmp
+PrettyOutput=tmp/prettyOutput.csv
+Error=tmp/error.tmp
+Option=$Option' --stat --time-limit='$2' '
+#Option=$Option' --threads 4 --stat --time-limit='$3' '
 
-Input=$UniqueFolder/input.tmp
-Problem=$UniqueFolder/problem.tmp
-Output=$UniqueFolder/output.tmp
-FormatOutput=$UniqueFolder/foutput.tmp
-PrettyOutput=$UniqueFolder/prettyOutput.csv
-Error=$UniqueFolder/error.tmp
-Option=$Option' --threads 4 --stat --time-limit='$3' '
-
-Strategy=$2
+Strategy=$1
 case $Strategy in
     0) Option=$Option'--heuristic=Berkmin --berk-max=163';;
     1) Option=$Option'--restarts=100,1.5,1000 --local-restart --save-progress';;
@@ -43,21 +40,17 @@ case $Strategy in
     25) Option=$Option'--restart-on-model -r 64 --heu=Vsids --opt-heu ';;
     26) Option=$Option'--restart-on-model --save-progress -r 32 --heu=Vsids ';;
     27) Option=$Option'--restart-on-model -r 4 --heuristic=Vsids --opt-heu ';;
-    28) Option=$Option'--sat-prepro --trans-ext=dynamic --initial-look=10 --restarts=no --heu=VSIDS';;
+    28) Option=$Option'--trans-ext=dynamic --sat-pre=20,25,120 --initial-look=10 --restarts=no --heu=VSIDS';;
 esac
 
-
-echo start
-echo xxxxxxxxxx $Strategy $Data xxxxxxxxxxx
-echo Option      : $Option
-#echo Model       : $Model
-
-cat $Model > $Input
+cat model.lp > $Input
 cat $Data >> $Input
-
 cat $Input | gringo > $Problem
-cat $Problem | clasp $Option 2>>$Error| tee $Output 
+
+echo Option      : $Option
+cat $Problem | clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
 cat $Output | grep 'state' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
+    
 cat print.pl >> $FormatOutput
 prolog -f $FormatOutput -g start -t halt 2>> $Error > $PrettyOutput
 cat $PrettyOutput

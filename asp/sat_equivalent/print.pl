@@ -46,7 +46,7 @@ start :-
     printMoves(1). 
 
 printMoves(K) :- 
-    equal(K,_X,_Y), 
+    state(K,_,_,_), 
     !,
     writeL(['move ',K,': ']),nl,nl,
     printSwitch(K),
