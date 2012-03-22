@@ -4,14 +4,14 @@ ASP Solution to Spinpossible
 
 This project contains several parts: 
 
-1) Several attempts to solve the spinpossible ridle with asp. The different
-encodings are organizied in different subfolders.  
+1) Several attempts to solve the spinpossible puzzle with ASP. The different
+encodings are organizes in different sub folders.  
     * aps1: 
     * asp2: 
     * asp3: 
     ...     
 
-2) Problem analysis written in c++. Here we exhausitvely analyze nxm boards. In
+2) Problem analysis written in c++. Here we exhaustively analyze nxm boards. In
 particular we analyze the idea to fix column and rows at the side as soon as
 they are solved. The problem analyzer came up with counter examples.  Also, we
 generate the most difficult 3x3 problems, namely those that one have exactly one
