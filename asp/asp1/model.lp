@@ -1,8 +1,7 @@
 #const n=3. 
-#const final=9. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..final). 
+k(1..N) :- final(N). 
 s(0). 
 s(K) :- k(K).
 size(n). 
@@ -10,7 +9,7 @@ size(n).
 #show state/4. 
 #show size/1.
 
-{ spin(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
+1 { spin(K,X,Y,R,D) : c(X;Y) : R=0..n-X : D=0..n-Y } 1 :- k(K). 
 
 move(K,X..X+R,Y..Y+D) :- spin(K,X,Y,R,D).
 move(K) :- move(K,_,_).
@@ -37,10 +36,10 @@ state(K+1,X,Y,V) :-
 
 %initial and final state
 state(0,X,Y,V) :- init(X,Y,V). 
-:-  not state(final,X,Y,V), V = (n*(X-1)+Y), c(X;Y). 
+:-  not state(N,X,Y,V), V = (n*(X-1)+Y), c(X;Y), final(N). 
 :- K>1, move(K), not move(K-1). 
 
-#minimize[move(_)].
+%#minimize[move(_)].
 
 %% symmetry breaker
 %% no repetitive squares

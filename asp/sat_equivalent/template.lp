@@ -7,8 +7,8 @@ init(2,3,X23) :- init(_X11,_X12,_X13,_X21,_X22,X23,_X31,_X32,_X33,_N).
 init(3,1,X31) :- init(_X11,_X12,_X13,_X21,_X22,_X23,X31,_X32,_X33,_N).
 init(3,2,X32) :- init(_X11,_X12,_X13,_X21,_X22,_X23,_X31,X32,_X33,_N).
 init(3,3,X33) :- init(_X11,_X12,_X13,_X21,_X22,_X23,_X31,_X32,X33,_N).
+final(N) :- init(_X11,_X12,_X13,_X21,_X22,_X23,_X31,_X32,_X33,N).
 
 state(0,X-1,Y-1,S) :- init(X,Y,S), S > 0.
 state(0,X-1,Y-1,-S) :- init(X,Y,S), S < 0.
 state(0,X-1,Y-1,0) :- init(X,Y,S), S < 0.
-final(N) :- init(_X11,_X12,_X13,_X21,_X22,_X23,_X31,_X32,_X33,N).
