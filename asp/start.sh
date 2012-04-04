@@ -14,5 +14,3 @@ while read L; do
     ../run.sh 17 1000
     cd -
 done
-
-

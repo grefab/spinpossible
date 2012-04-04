@@ -328,7 +328,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search2();
+    g.search();
     return 0; 
 }
 
