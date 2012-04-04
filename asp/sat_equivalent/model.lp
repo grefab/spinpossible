@@ -5,7 +5,7 @@ size(n).
 c(0..n-1). %coordinates  
 k(1..N) :- final(N). %moves
 s(0..N) :- final(N). %states(=inital + moves)
-v(1..9). %values, 0 for parity
+v(1..n*n). %values, 0 for parity
 
 dom(X1,Y1,X2,Y2) :- c(X1;Y1;X2;Y2), X1 <= X2, Y1 <= Y2. 
 dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <= Y2.

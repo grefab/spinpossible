@@ -20,7 +20,7 @@ The Benchmarks are in benchmark/. There are currently the following benchmarks a
 
 There is a script start.sh that is called with the encoding and the benchmark set. 
 
-    ./start.sh asp1 benchmark/b9_UNSAT.txt
+    ./start.sh asp1 benchmark/b9_50_UNSAT.txt
 
 2) Problem analysis written in c++. Here we exhaustively analyze nxm boards. In particular we analyze the idea to fix
 column and rows at the side as soon as they are solved. The problem analyzer came up with counter examples.  Also, we

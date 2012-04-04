@@ -103,7 +103,8 @@ void Grasp::search2() {
                                 if (_bit[step][hash] == 1 && _unique[board2hash] == 0) {
                                     _bit[step+1][board2hash] = 1; 
                                     _unique[board2hash] = 1;
-                                } else { // unique has been hit for the 
+                                } else { 
+                                    // unique has been hit for the 
                                     //second time! its not unique anymore
                                     _bit[step+1][board2hash] = 0;
                                 }
@@ -116,7 +117,7 @@ void Grasp::search2() {
         cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
         cout.precision(2);
         cout << (int) difftime(time(NULL),start) << " sec." << endl;
-        if (step >= 9) {
+        if (step >= 6) {
             for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
                 int board[X][Y];
                 if (_bit[step][hash] == 1) {
@@ -328,7 +329,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search();
+    g.search2();
     return 0; 
 }
 

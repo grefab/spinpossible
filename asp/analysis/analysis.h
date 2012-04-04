@@ -12,7 +12,7 @@
 #define X 3
 #define Y 3
 
-#define MAX_STEP 2
+#define MAX_STEP 10
 
 using namespace std;
 
