@@ -32,4 +32,3 @@ state(0,X,Y,V) :- init(X,Y,V).
 move(K) :- move(K,_,_).
 :- K>1, move(K), not move(K-1). 
 #minimize[move(_)].
-
