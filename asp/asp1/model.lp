@@ -41,18 +41,18 @@ state(0,X,Y,V) :- init(X,Y,V).
 
 %#minimize[move(_)].
 
-%% symmetry breaker
-%% no repetitive squares
-%:- s(K;K+1), spin(K,X,Y,R,D), spin(K+1,X,Y,R,D). 
-%%
-%%% nonintersecting:
-%intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
-%upperLeft(K,X,Y) :- spin(K,X,Y,_,_). 
-%:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(X-1)+Y) > (n*(XX-1)+YY).  
-%%
-%%% containment
-%containing(K) :- move(K+1), move(K,X,Y), not move(K+1,X,Y). 
-%:- intersecting(K), not containing(K), k(K).
+% symmetry breaker
+% no repetitive squares
+:- s(K;K+1), spin(K,X,Y,R,D), spin(K+1,X,Y,R,D). 
+%
+%% nonintersecting:
+intersecting(K) :- move(K,X,Y), move(K+1,X,Y). 
+upperLeft(K,X,Y) :- spin(K,X,Y,_,_). 
+:- not intersecting(K), upperLeft(K,X,Y), upperLeft(K+1,XX,YY), (n*(X-1)+Y) > (n*(XX-1)+YY).  
+%
+%% containment
+containing(K) :- move(K+1), move(K,X,Y), not move(K+1,X,Y). 
+:- intersecting(K), not containing(K), k(K).
 
 %%%
 %fixedX(K,0;n+1) :- k(K). 
