@@ -70,7 +70,7 @@ Grasp::Grasp() {
 /*
  * comparing fixed with nofixed strategy
  */
-void Grasp::search() {
+void Grasp::search1() {
     time_t total;
     time(&total);
 
@@ -149,75 +149,6 @@ void Grasp::search() {
 }
 
 /*
- * finding unique solutions
- */
-
-void Grasp::search2() {
-    time_t total;
-    time(&total);
-
-    for(uint step = 0; step < MAX_STEP; step++) {
-        time_t start;
-        time(&start);
-        _unique.reset();
-        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-            if (_solved_normal[hash]) { 
-                _normal[step][hash] = 0;
-                _bit[step][hash] = 0;
-                continue;
-            } else if (_normal[step][hash]) {
-                _solved_normal[hash] = 1; 
-                int board1[X][Y]; 
-                hash_to_board(hash,board1); 
-                //print(board1);
-                //cout << endl;
-                for (uint x = 0; x < X; x++) {
-                    for (uint y = 0; y < Y; y++) {
-                        for (uint xx = x; xx < X; xx++) {
-                            for (uint yy = y; yy < Y; yy++) {
-                                int board2[X][Y]; 
-                                Co c1(x,y); 
-                                Co c2(xx,yy); 
-                                Move move(c1,c2);
-                                update(move,board1,board2); 
-                                uint board2hash = board_to_hash(board2);
-                                // set the next level
-                                // without uniqueness 
-                                _normal[step+1][board2hash] = 1; 
-                                if (_bit[step][hash] == 1 && _unique[board2hash] == 0) {
-                                    _bit[step+1][board2hash] = 1; 
-                                    _unique[board2hash] = 1;
-                                } else { 
-                                    // unique has been hit for the 
-                                    //second time! its not unique anymore
-                                    _bit[step+1][board2hash] = 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-        cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
-        cout.precision(2);
-        cout << (int) difftime(time(NULL),start) << " sec." << endl;
-        if (step >= 5) {
-            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-                int board[X][Y];
-                if (_bit[step][hash] == 1) {
-                    hash_to_board(hash,board);
-                    cout << endl;
-                    print(board);
-                }
-            }
-        }
-
-    }
-    cout << "total\t" << _solved_bit.count() << "\t";
-    cout << (int) difftime(time(NULL),total) << " sec." << endl;
-}
-
-/*
  *  Determine the the maximum number of spins in an optimal
  *  solution to a 3x3 Spinpossible board that only allows 2x2
  *  square, 3x1 row, and 1x3 column spins.
@@ -227,7 +158,7 @@ bool comp(Spins a, Spins b) {
     return a.size() < b.size();
 }
 
-void Grasp::search3() {
+void Grasp::search2() {
     time_t total;
     time(&total);
 
@@ -303,7 +234,7 @@ void Grasp::search3() {
     }
 }
 
-void Grasp::search4() {
+void Grasp::search3() {
     time_t total;
     time(&total);
     _normal[0].reset();
@@ -418,7 +349,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search4();
+    g.search3();
     return 0; 
 }
 
