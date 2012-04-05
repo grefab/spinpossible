@@ -1,8 +1,7 @@
 #const n=3. 
-#const final=9. 
 v(-n*n..-1;1..n*n).  
 c(1..n). 
-k(1..final). 
+k(1..N) :- final(N). 
 size(n). 
 
 % spin
@@ -26,9 +25,9 @@ state(K+1,X,Y,V) :-
 state(0,X,Y,V) :- init(X,Y,V). 
 
 % final state
-:- not state(final,X,Y,V), V = (n*(X-1)+Y), c(X;Y). 
+:- not state(N,X,Y,V), V = (n*(X-1)+Y), c(X;Y), final(N). 
 
-% optimization
-move(K) :- move(K,_,_).
-:- K>1, move(K), not move(K-1). 
-#minimize[move(_)].
+%% optimization
+%move(K) :- move(K,_,_).
+%:- K>1, move(K), not move(K-1). 
+%#minimize[move(_)].
