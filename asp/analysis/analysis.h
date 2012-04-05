@@ -37,6 +37,7 @@ class Grasp {
         void search();
         void search2();
         void search3();
+        void search4();
 
     private:
 

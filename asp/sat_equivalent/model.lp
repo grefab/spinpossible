@@ -67,10 +67,10 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
     dom(X,Y,X1,Y1,X2,Y2). % (5) 
 
 % symmetry breaking constraints
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), X2 < X3.
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), Y2 < Y3.
-:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), 
-    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
+%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), X2 < X3.
+%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), Y2 < Y3.
+%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), 
+%    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
 
 % translation between sat variables and asp predicates: 
 % x_i,j,k = state(K,X,Y,V) where k = K, i = <X,Y> and j = V

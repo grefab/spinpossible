@@ -64,74 +64,6 @@ Grasp::Grasp() {
     _normal[0][0] = 1; 
 }
 
-/*
- * finding unique solutions
- */
-
-void Grasp::search2() {
-    time_t total;
-    time(&total);
-
-    for(uint step = 0; step < MAX_STEP; step++) {
-        time_t start;
-        time(&start);
-        _unique.reset();
-        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-            if (_solved_normal[hash]) { 
-                _normal[step][hash] = 0;
-                _bit[step][hash] = 0;
-                continue;
-            } else if (_normal[step][hash]) {
-                _solved_normal[hash] = 1; 
-                int board1[X][Y]; 
-                hash_to_board(hash,board1); 
-                //print(board1);
-                //cout << endl;
-                for (uint x = 0; x < X; x++) {
-                    for (uint y = 0; y < Y; y++) {
-                        for (uint xx = x; xx < X; xx++) {
-                            for (uint yy = y; yy < Y; yy++) {
-                                int board2[X][Y]; 
-                                Co c1(x,y); 
-                                Co c2(xx,yy); 
-                                Move move(c1,c2);
-                                update(move,board1,board2); 
-                                uint board2hash = board_to_hash(board2);
-                                // set the next level
-                                // without uniqueness 
-                                _normal[step+1][board2hash] = 1; 
-                                if (_bit[step][hash] == 1 && _unique[board2hash] == 0) {
-                                    _bit[step+1][board2hash] = 1; 
-                                    _unique[board2hash] = 1;
-                                } else { 
-                                    // unique has been hit for the 
-                                    //second time! its not unique anymore
-                                    _bit[step+1][board2hash] = 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-        cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
-        cout.precision(2);
-        cout << (int) difftime(time(NULL),start) << " sec." << endl;
-        if (step >= 6) {
-            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
-                int board[X][Y];
-                if (_bit[step][hash] == 1) {
-                    hash_to_board(hash,board);
-                    cout << endl;
-                    print(board);
-                }
-            }
-        }
-
-    }
-    cout << "total\t" << _solved_bit.count() << "\t";
-    cout << (int) difftime(time(NULL),total) << " sec." << endl;
-}
 
 
 
@@ -208,6 +140,75 @@ void Grasp::search() {
                 hash_to_board(hash,board);
                 cout << endl;
                 print(board);
+            }
+        }
+
+    }
+    cout << "total\t" << _solved_bit.count() << "\t";
+    cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
+
+/*
+ * finding unique solutions
+ */
+
+void Grasp::search2() {
+    time_t total;
+    time(&total);
+
+    for(uint step = 0; step < MAX_STEP; step++) {
+        time_t start;
+        time(&start);
+        _unique.reset();
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[step][hash] = 0;
+                _bit[step][hash] = 0;
+                continue;
+            } else if (_normal[step][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //print(board1);
+                //cout << endl;
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                int board2[X][Y]; 
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                update(move,board1,board2); 
+                                uint board2hash = board_to_hash(board2);
+                                // set the next level
+                                // without uniqueness 
+                                _normal[step+1][board2hash] = 1; 
+                                if (_bit[step][hash] == 1 && _unique[board2hash] == 0) {
+                                    _bit[step+1][board2hash] = 1; 
+                                    _unique[board2hash] = 1;
+                                } else { 
+                                    // unique has been hit for the 
+                                    //second time! its not unique anymore
+                                    _bit[step+1][board2hash] = 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        cout << step << "\t" << _normal[step].count() << "\t" << _bit[step].count() << "\t";;
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+        if (step >= 5) {
+            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+                int board[X][Y];
+                if (_bit[step][hash] == 1) {
+                    hash_to_board(hash,board);
+                    cout << endl;
+                    print(board);
+                }
             }
         }
 
@@ -302,6 +303,94 @@ void Grasp::search3() {
     }
 }
 
+void Grasp::search4() {
+    time_t total;
+    time(&total);
+    _normal[0].reset();
+    _normal[0][0] = 1; 
+    _normal[1].reset();
+    _bit[0].reset();
+    _bit[0][0] = 1; 
+    _bit[1].reset();
+    _solved_normal.reset();
+
+    int now = 0;
+    for(uint step = 0; _normal[now].any(); step++) {
+        _normal[(now+1)%2].reset();
+        _bit[(now+1)%2].reset();
+        //_unique.reset();
+        time_t start;
+        time(&start);
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_normal[now][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+
+                                int board2[X][Y]; 
+                                update(move,board1,board2); 
+                                uint new_hash = board_to_hash(board2);
+
+                                if (_solved_normal[new_hash] == 0) {
+                                    _normal[(now+1)%2][new_hash] = 1; 
+
+                                    if ( _unique[new_hash] == 0) {
+                                        if (_bit[now][hash] == 1) {
+                                            _bit[(now+1)%2][new_hash] = 1;
+                                        }
+                                    } else {
+                                       _bit[(now+1)%2][new_hash] = 0;
+                                    }
+                                }
+                                if ( _unique[new_hash] == 0) {
+                                    _unique[new_hash] = 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+
+        cout << step << "\t" << _normal[now].count() << "\t" << _bit[now].count() << "\t";;
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+
+        if (step >= 5) {
+            for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+                if(_bit[(now)%2][hash]) {
+                    int board[X][Y];
+                    hash_to_board(hash,board);
+                    cout << endl;
+                    print(board);
+                }
+            }
+        }
+
+        if (step > 1 && _bit[(now+1)%2].count() == 0 && _bit[(now)%2].count() < 1000) {
+            for(uint hash = 0; hash < SIZE; hash++) {
+                if(_bit[(now)%2][hash]) {
+                    int board[X][Y];
+                    hash_to_board(hash,board);
+                    cout << endl;
+                    print(board);
+                }
+            }
+        }
+        now = (now+1)%2;
+    }
+    
+    cout << "\ntotal\t" << _solved_normal.count() << "\t";
+    cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
+
 // defines strategy
 bool is_valid_move(Move move, int board[][Y]) {
 
@@ -329,7 +418,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search2();
+    g.search4();
     return 0; 
 }
 
