@@ -11,10 +11,12 @@ dom(X1,Y1,X2,Y2) :- c(X1;Y1;X2;Y2), X1 <= X2, Y1 <= Y2.
 dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <= Y2.
 
 % choice variables 
-1 { spin(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2) } 1  :- k(K).
+0 { spin(K,X1,Y1,X2,Y2) } 1  :- dom(X1,Y1,X2,Y2), k(K).
 0 { state(K,X,Y,V) } 1 :- v(V), c(X;Y), k(K).
 0 { state(K,X,Y,0) } 1 :- c(X;Y), k(K).
 0 { equal(K,X,Y) } 1 :- c(X;Y), k(K).
+
+:- k(K), not spin(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2).
 
 % fixing final state
 :-  c(X;Y), not state(N,X,Y,X*n+Y+1), final(N).  % (1)
