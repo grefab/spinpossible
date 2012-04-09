@@ -11,4 +11,5 @@ do
     sum=$(($sum + $num)); 
 done < $tmp ;
 
+cat $1 | grep '^Time' | wc -l 
 echo $sum
