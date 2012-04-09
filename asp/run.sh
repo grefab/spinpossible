@@ -14,7 +14,7 @@ Option=$Option' --stat --time-limit='$2' -n 0 '
 Strategy=$1
 case $Strategy in
     0) Option=$Option'';;
-    1) Option=$Option'--restarts=100,1.5,1000 --local-restart --save-progress';;
+    1) Option=$Option'--heu=VSIDS ';;
     2) Option=$Option'--heuristic=VSIDS';;
     3) Option=$Option'--deletion=1,1,1 --reduce-on-restart';;
     4) Option=$Option' --heu=VSIDS --sat-pre=20,25,120 --trans-ext=dynamic --loops=no --loops-in-heu=0';;

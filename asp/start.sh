@@ -11,6 +11,6 @@ while read L; do
     echo board ${L}
     echo
     ./encode.sh ${L} > tmp/board.lp
-    ../run.sh 0 10000
+    ../run.sh 1 10000
     cd -
 done

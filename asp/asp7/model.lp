@@ -1,5 +1,6 @@
 % Copyrights with Martin Gebser
 
+
 % possible swaps
 
 xpos(X)  :- init(X,_,_).
@@ -64,31 +65,25 @@ spin(N,S,I+1) :- spin(N,S,I), stay(N,I+1).
 
 % symmetry breaking
 
-xlow(X,I) :- xpos(X), xmov(X+1,I), 1 < I.
-xlow(X,I) :- xpos(X), xlow(X+1,I).
+dir(-1;1).
 
-xtop(X,I) :- xpos(X), xmov(X-1,I), 1 < I.
-xtop(X,I) :- xpos(X), xtop(X-1,I).
+xord(X,D,I) :- xpos(X), xmov(X-D,I), dir(D), 1 < I.
+xord(X,D,I) :- xpos(X), xord(X-D,D,I).
 
-ylow(Y,I) :- ypos(Y), ymov(Y+1,I), 1 < I.
-ylow(Y,I) :- ypos(Y), ylow(Y+1,I).
+yord(Y,D,I) :- ypos(Y), ymov(Y-D,I), dir(D), 1 < I.
+yord(Y,D,I) :- ypos(Y), yord(Y-D,D,I).
 
-ytop(Y,I) :- ypos(Y), ymov(Y-1,I), 1 < I.
-ytop(Y,I) :- ypos(Y), ytop(Y-1,I).
-
-dist(I) :- xmov(X,I), final(F), I = 1..F-1, xpos(X-1), not xlow(X-1,I+1).
-dist(I) :- xmov(X,I), final(F), I = 1..F-1, xpos(X+1), not xtop(X+1,I+1).
-dist(I) :- ymov(Y,I), final(F), I = 1..F-1, ypos(Y-1), not ylow(Y-1,I+1).
-dist(I) :- ymov(Y,I), final(F), I = 1..F-1, ypos(Y+1), not ytop(Y+1,I+1).
+dist(I) :- xmov(X,I), final(F), I = 1..F-1, dir(D), xpos(X+D), not xord(X+D,D,I+1).
+dist(I) :- ymov(Y,I), final(F), I = 1..F-1, dir(D), ypos(Y+D), not yord(Y+D,D,I+1).
 :- final(F), I = 1..F-1, not dist(I).
 
-xint(I) :- xmov(X,I), final(F), I = 1..F-1, xlow(X-1,I+1) : xpos(X-1), xtop(X+1,I+1) : xpos(X+1).
-yint(I) :- ymov(Y,I), final(F), I = 1..F-1, ylow(Y-1,I+1) : ypos(Y-1), ytop(Y+1,I+1) : ypos(Y+1).
-:- final(F), I = 1..F-1, not xint(I),              xmov(X,I), xtop(X,I+1).
-:- final(F), I = 1..F-1,     xint(I), not yint(I), ymov(Y,I), ytop(Y,I+1).
+xint(I) :- xmov(X,I), final(F), I = 1..F-1, xord(X+D,D,I+1) : dir(D) : xpos(X+D).
+yint(I) :- ymov(Y,I), final(F), I = 1..F-1, yord(Y+D,D,I+1) : dir(D) : ypos(Y+D).
+:- final(F), I = 1..F-1, not xint(I), xmov(X,I), xpos(X-1), xord(X+1,1,I+1) : xpos(X+1).
+:- final(F), I = 1..F-1, not yint(I), ymov(Y,I), ypos(Y-1), yord(Y+1,1,I+1) : ypos(Y+1), xint(I).
 
 % output atoms
-%
+
 state.
 
 #hide.
@@ -100,4 +95,3 @@ state.
 #show ypos/3.
 #show xrot/3.
 #show yrot/3.
-
