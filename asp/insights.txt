@@ -1,0 +1,21 @@
+The following are all run with clasp standard strategy. 
+
+output1 
+--------
+sat_equivalent still with cardinatily on moves
+total 18102
+
+output2
+-------
+sat_equivalent with redundant state constraints 
+total: 21677
+
+output3 
+-------
+sat_equivalent with more redundant constraints
+total: 17687
+
+output4 
+-------
+sat_equivalent with constraints 9 { states } 9. 
+total: 
