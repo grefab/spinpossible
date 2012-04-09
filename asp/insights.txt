@@ -18,4 +18,6 @@ total: 17687
 output4 
 -------
 sat_equivalent with constraints 9 { states } 9. 
-total: 
+total: 19913 
+
+
