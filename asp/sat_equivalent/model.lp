@@ -18,6 +18,14 @@ dom(X,Y,X1,Y1,X2,Y2) :- c(X;Y), dom(X1,Y1,X2,Y2), X1 <= X, X <= X2, Y1 <= Y, Y <
 
 :- k(K), not spin(K,X1,Y1,X2,Y2) : dom(X1,Y1,X2,Y2).
 
+% redundant
+
+:- state(K,X,Y,V), state(K,X,Y,VV), V != VV, V > 0, VV > 0.
+:- state(K,X,Y,V), state(K,XX,Y,V), V > 0, X != XX. 
+:- state(K,X,Y,V), state(K,X,YY,V), V > 0, Y != YY. 
+:- state(K,X,Y,V), state(K,XX,YY,V), V > 0, Y != YY, X != XX. 
+:- k(K), not 9 { state(K,X,Y,V) : V > 0 } 9. 
+
 % fixing final state
 :-  c(X;Y), not state(N,X,Y,X*n+Y+1), final(N).  % (1)
 :-  c(X;Y), state(N,X,Y,0), final(N).  % (1)
