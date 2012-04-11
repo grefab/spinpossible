@@ -14,4 +14,4 @@ state(y,0,V,Y) :- init(_X,Y,V), V > 0.
 state(x,0,|V|,X) :- init(X,_Y,V), V < 0.
 state(y,0,|V|,Y) :- init(_X,Y,V), V < 0.
 
-parity(x,0,X,Y,0) :- init(X,Y,S), S < 0.
+parity(0,|V|) :- init(X,Y,V), V < 0.

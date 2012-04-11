@@ -7,7 +7,7 @@ Output=tmp/output.tmp
 FormatOutput=tmp/foutput.tmp
 PrettyOutput=tmp/prettyOutput.csv
 Error=tmp/error.tmp
-#Option=$Option' --stat --time-limit='$2' '
+#Option=$Option' --stat --time-limit='$2' -n 0 '
 Option=$Option' --stat --time-limit='$2' '
 #Option=$Option' --threads 4 --stat --time-limit='$3' '
 

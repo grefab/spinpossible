@@ -10,25 +10,24 @@ writeS(A) :- number(A), A < 0, !, write(' '),  write(A).
 writeS(A) :- number(A), A > 9, !, write(' '), write(A).
 writeS(A) :- write('  '), write(A). 
 
-move(K,X,Y) :- 
-    mov(x,K,X),
-    mov(y,K,Y).
+move2(K,X,Y) :- 
+    move(x,K,X),
+    move(y,K,Y).
 
 printSwitch(K,X,Y):-
-    (move(K,X,Y) ->
+    (move2(K,X,Y) ->
     writeS('*');
     writeS('-')).
 
 state2(K,X,Y,V) :- 
     state(x,K,V,X), 
-    state(y,K,V,X).
-    
+    state(y,K,V,Y).
 
 
 printRow(K,X,Y):-
     state2(K,X,Y,V),
     VV is -V,
-    (parity(V,K) ->
+    (parity(K,V) ->
      writeS(VV);
      writeS(V)).
 

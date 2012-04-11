@@ -45,19 +45,35 @@ d(x;y). %dimensions
     state(D,K,V,C),
     not move(D,K+1,C),
     not parity(K+1,V). 
+
+:-  s(K;K+1), 
+    state(D,K,V,C),
+    not parity(K,V), 
+    not parity(K+1,V),
+    not state(D,K+1,V,C).
+
+:-  s(K;K+1), 
+    state(D,K,V,C),
+    parity(K,V), 
+    parity(K+1,V),
+    not state(D,K+1,V,C).
     
 :-  s(K;K+1), 
     parity(K,V), 
     state(D,K,V,C1),
-    state(D,K+1,V,C2),
-    C1 < C2,
+    state(DD,K,V,C2),
+    D < DD,
+    move(D,K+1,C1),
+    move(DD,K+1,C2),
     parity(K+1,V). 
 
 :-  s(K;K+1), 
     not parity(K,V), 
     state(D,K,V,C1),
-    state(D,K+1,V,C2),
-    C1 < C2,
+    state(DD,K,V,C2),
+    D < DD,
+    move(D,K+1,C1),
+    move(DD,K+1,C2),
     not parity(K+1,V). 
 
 % transition constraints
@@ -103,12 +119,28 @@ d(x;y). %dimensions
     not state(D,K+1,V,C1+C3-C). 
 
 %% symmetry breaking constraints
-%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), X2 < X3.
-%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), Y2 < Y3.
-%:-  s(K;K+1), spin(K,X1,Y1,X2,Y2), spin(K+1,X3,Y3,X4,Y4), 
+%:-  
+%    move(D,K,C1),
+%    not move(D,K,C1+1),
+%    not move(D,K+1,C2-1),
+%    move(D,K+1,C2),
+%    C1 < C2.
+    
+%:-  
+%    not move(x,K,X1-1),
+%    move(x,K,X1),
+%    move(x,K,X2),
+%    not move(x,K,X2+1),
+%    not move(y,K,Y1-1),
+%    move(y,K,Y1),
+%    move(y,K,Y2),
+%    not move(y,K,Y2+1),
+%    not move(x,K+1,X3-1),
+%    move(x,K+1,X3),
+%    move(x,K+1,X4),
+%    not move(x,K+1,X4+1),
+%    not move(y,K+1,Y3-1),
+%    move(y,K+1,Y3),
+%    move(y,K+1,Y4),
+%    not move(y,K+1,Y4+1),
 %    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
-
-% translation between sat variables and asp predicates: 
-% x_i,j,k = state(K,X,Y,V) where k = K, i = <X,Y> and j = V
-% e_i,k = equal(K,X,Y) where k = K, i = X,Y
-% t_k,m = spin(K,X1,Y1,X2,Y2) where k = K, m = X1,Y1,X2,Y2
