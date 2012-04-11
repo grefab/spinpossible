@@ -1,7 +1,8 @@
 writeL([]).
 writeL([X|Y]):- write(X), writeL(Y). 
-sizeList([0,1,2]) :- size(3). 
-sizeList([0,1,2,3]) :- size(4). 
+size(3). 
+sizeList([1,2,3]) :- size(3). 
+sizeList([1,2,3,4]) :- size(4). 
 
 
 writeS(A) :- number(A), A < -9, !, write(A).
@@ -9,14 +10,26 @@ writeS(A) :- number(A), A < 0, !, write(' '),  write(A).
 writeS(A) :- number(A), A > 9, !, write(' '), write(A).
 writeS(A) :- write('  '), write(A). 
 
+move2(K,X,Y) :- 
+    move(x,K,X),
+    move(y,K,Y).
+
 printSwitch(K,X,Y):-
-    (equal(K,X,Y) ->
-    writeS('-');
-    writeS('*')).
+    (move2(K,X,Y) ->
+    writeS('*');
+    writeS('-')).
+
+state2(K,X,Y,V) :- 
+    state(x,K,V,X), 
+    state(y,K,V,Y).
+
 
 printRow(K,X,Y):-
-    table(K,X,Y,V),
-    writeS(V).
+    state2(K,X,Y,V),
+    VV is -V,
+    (parity(K,V) ->
+     writeS(VV);
+     writeS(V)).
 
 printTable(K) :- 
     sizeList(L),
@@ -39,7 +52,7 @@ start :-
     printMoves(1). 
 
 printMoves(K) :- 
-    spin(K), 
+    move(_D,K,_C), 
     !,
     writeL(['move ',K,': ']),nl,nl,
     printSwitch(K),
@@ -50,14 +63,5 @@ printMoves(K) :-
 printMoves(_) :- 
     write('finish'),nl. 
 
-% transformation
-state(K,p,X,Y,P) :- 
-    (parity(K,X,Y) -> P = 1 ; P=0). 
 
-table(K,X,Y,V) :- 
-    state(K,x,X,Y,DX),
-    state(K,y,X,Y,DY),
-    state(K,p,X,Y,P),
-    size(N),
-    V is (1-2*P)*(DX*N+DY+1).
 

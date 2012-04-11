@@ -1,97 +1,148 @@
-#const final=9.
-#const n=3. 
+#const n=3. % size of the table
 size(n). 
-c(0..n-1). 
-k(1..final). 
-v(0..n-1). 
-s(K) :- k(K).
-s(0). 
-d(x;y).
+c(1..n). %coordinates
+v(1..n*n). %values
+k(1..N) :- final(N). %moves
+s(0..N) :- final(N). %states(=inital + moves)
+d(x;y). %dimensions
 
-% switch(step,dim,from, to)
-{ spin_a(K,D,A) : c(A) } 1 :- k(K), d(D). 
-{ spin_b(K,D,B) : c(B) } 1 :- k(K), d(D). 
+% choice variables 
+0 { move(D,K,C) } 1  :- d(D), k(K), c(C). 
+0 { state(D,K,V,C) } 1 :- d(D), k(K), c(C), v(V).
+0 { parity(K,V) } 1 :- k(K), v(V).
 
-spin(K) :- spin_a(K,_,_). 
-spin(K) :- spin_b(K,_,_). 
+:-  d(D), k(K), not move(D,K,C) : c(C).
+:-  state(D,K,V,C1), state(D,K,V,C2), C1 != C2. 
+:-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
 
-:- spin_a(K,D,A), spin_b(K,D,B), A > B.
+% restricts set of moves to rectangles
+:-  c(C2), 
+    C1 < C2, C2 < C3,
+    move(D,K,C1), 
+    move(D,K,C3), 
+    not move(D,K,C2).
 
-turn(x,A,B,A,B) :- c(A;B). 
-turn(y,A,B,B,A) :- c(A;B).
+% fixing final state
+:-  final(N), v(V), not state(x,N,V,((V-1) #div n)+1).
+:-  final(N), v(V), not state(y,N,V,((V-1) #mod n)+1).
+:-  final(N), parity(N,V).
 
-equal(K,X,Y) :- 
-    c(X;Y), k(K), 
-    not spin(K). 
+% equality constraints 
 
-equal(K,X,Y) :-
-    spin_a(K,D,T), 
-    c(A;B), 
-    A < T, 
-    turn(D,A,B,X,Y). 
+:-  s(K;K+1), 
+    state(D,K,V,C), 
+    not move(D,K+1,C), 
+    not state(D,K+1,V,C). 
 
-equal(K,X,Y) :-
-    spin_b(K,D,T), 
-    c(A;B), 
-    T < A, 
-    turn(D,A,B,X,Y). 
+:-  s(K;K+1), 
+    not parity(K,V), 
+    state(D,K,V,C),
+    not move(D,K+1,C),
+    parity(K+1,V). 
 
-spin_d(K,D,A+B) :- 
-    spin_a(K,D,A), 
-    spin_b(K,D,B),
-    A <= B. 
+:-  s(K;K+1), 
+    parity(K,V), 
+    state(D,K,V,C),
+    not move(D,K+1,C),
+    not parity(K+1,V). 
 
-state(K+1,D,X,Y,V) :- 
-    k(K+1),
-    equal(K+1,X,Y), 
-    state(K,D,X,Y,V). 
+:-  s(K;K+1), 
+    state(D,K,V,C),
+    not parity(K,V), 
+    not parity(K+1,V),
+    not state(D,K+1,V,C).
 
-state(K+1,D,DX-X,DY-Y,V) :- 
-    k(K+1), c(DX-X;DY-Y),
-    not equal(K+1,X,Y), 
-    state(K,D,X,Y,V), 
-    spin_d(K+1,x,DX),
-    spin_d(K+1,y,DY). 
+:-  s(K;K+1), 
+    state(D,K,V,C),
+    parity(K,V), 
+    parity(K+1,V),
+    not state(D,K+1,V,C).
+    
+:-  s(K;K+1), 
+    parity(K,V), 
+    state(D,K,V,C1),
+    state(DD,K,V,C2),
+    D < DD,
+    move(D,K+1,C1),
+    move(DD,K+1,C2),
+    parity(K+1,V). 
 
-parity(K+1,X,Y) :- 
-    k(K+1),
-    equal(K+1,X,Y), 
-    parity(K,X,Y). 
+:-  s(K;K+1), 
+    not parity(K,V), 
+    state(D,K,V,C1),
+    state(DD,K,V,C2),
+    D < DD,
+    move(D,K+1,C1),
+    move(DD,K+1,C2),
+    not parity(K+1,V). 
 
-parity(K+1,DX-X,DY-Y) :- 
-    s(K+1;K), c(DX-X;DY-Y;X;Y),
-    not equal(K+1,X,Y), 
-    not parity(K,X,Y), 
-    spin_d(K+1,x,DX),
-    spin_d(K+1,y,DY). 
+% transition constraints
 
+% 1 row/column touched
+:-  s(K;K+1), 
+    c(C2;C3),
+    state(D,K,V,C), 
+    not move(D,K+1,C2), not move(D,K+1,C3),
+    C != C2, C != C3, C2 < C3,
+    not state(D,K+1,V,C). 
 
-%redundent
-:- v(T), d(D), s(K), not n { state(K,D,X,Y,T) } n. 
-:- c(X;Y), d(D), s(K), 2 { state(K,D,X,Y,V) : v(V) }. 
-:- K>1, spin(K), not spin(K-1). 
+% 2 row/column touched
+:-  s(K;K+1), 
+    c(C3),
+    state(D,K,V,C), 
+    move(D,K+1,C1), move(D,K+1,C2), not move(D,K+1,C3),
+    C1 = C2+1, C1 != C3, C2 != C3, C != C3, 
+    parity(K,V), not parity(K+1,V), 
+    not state(D,K+1,V,C1+C2-C). 
 
+:-  s(K;K+1), 
+    c(C3),
+    state(D,K,V,C), 
+    move(D,K+1,C1), move(D,K+1,C2), not move(D,K+1,C3),
+    C1 = C2+1, C1 != C3, C2 != C3, C != C3, 
+    not parity(K,V), parity(K+1,V), 
+    not state(D,K+1,V,C1+C2-C). 
 
-% final state
-:- not state(final,x,X,Y,X), c(X;Y).
-:- not state(final,y,X,Y,Y), c(X;Y).
-:- parity(final,X,Y), c(X;Y).
+% 3 row/column touched
+:-  s(K;K+1), 
+    state(D,K,V,C), 
+    move(D,K+1,C1), move(D,K+1,C2), move(D,K+1,C3),
+    not parity(K,V), parity(K+1,V), 
+    C1 < C2, C2 < C3,
+    not state(D,K+1,V,C1+C3-C). 
 
-#minimize[spin(_)].
+:-  s(K;K+1), 
+    state(D,K,V,C), 
+    move(D,K+1,C1), move(D,K+1,C2), move(D,K+1,C3),
+    parity(K,V), not parity(K+1,V), 
+    C1 < C2, C2 < C3,
+    not state(D,K+1,V,C1+C3-C). 
 
-%% initial 
-pos(V,V) :- V = 1..9. 
-pos(-V,V) :- V = 1..9.
-state(0,x,X,Y,T) :- init(X,Y,V), pos(V,VV), T = (VV-1)/n. 
-state(0,y,X,Y,T) :- init(X,Y,V), pos(V,VV), T = (VV-1) #mod n. 
-parity(0,X,Y) :- init(X,Y,V), V < 0. 
-
-% symmetry breaking
-
-:- spin_a(K,D,A), spin_b(K+1,D,B), B < A. % disjoint
-:- spin_a(K,x,XA1), spin_b(K,x,XB1),
-   spin_a(K+1,x,XA2), spin_b(K+1,x,XB2),
-   spin_a(K,y,YA1), spin_b(K,y,YB1),
-   spin_a(K+1,y,YA2), spin_b(K+1,y,YB2),
-   XA1 <= XB1, XA2 <= XB2, YA1 <= YB1, YA2 <= YB2, 
-   XA1 >= XA2, XB1 <= XB2, YA1 >= YA2, YB1 <= YB2.
+% symmetry breaking constraints
+:-  move(D,K,C1),
+    not move(D,K,C1+1),
+    not move(D,K+1,C2-1),
+    move(D,K+1,C2),
+    C1 < C2.
+  
+:-  not move(x,K,X1-1),
+    move(x,K,X1),
+    move(x,K,X2),
+    not move(x,K,X2+1),
+    X1 <= X2,
+    not move(y,K,Y1-1),
+    move(y,K,Y1),
+    move(y,K,Y2),
+    not move(y,K,Y2+1),
+    Y1 <= Y2,
+    not move(x,K+1,X3-1),
+    move(x,K+1,X3),
+    move(x,K+1,X4),
+    not move(x,K+1,X4+1),
+    X3 <= X4,
+    not move(y,K+1,Y3-1),
+    move(y,K+1,Y3),
+    move(y,K+1,Y4),
+    not move(y,K+1,Y4+1),
+    Y3 <= Y4,
+    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.

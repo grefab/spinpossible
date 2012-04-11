@@ -53,13 +53,3 @@ upperLeft(K,X,Y) :- spin(K,X,Y,_,_).
 %% containment
 containing(K) :- move(K+1), move(K,X,Y), not move(K+1,X,Y). 
 :- intersecting(K), not containing(K), k(K).
-
-%%%
-%fixedX(K,0;n+1) :- k(K). 
-%fixedY(K,0;n+1) :- k(K). 
-%fixedX(K,X) :- c(X), fixedX(K,X-1), n {isOk(K,X,Y) : c(Y)} n. 
-%fixedX(K,X) :- c(X), fixedX(K,X+1), n {isOk(K,X,Y) : c(Y)} n. 
-%fixedY(K,Y) :- c(Y), fixedY(K,Y-1), n {isOk(K,X,Y) : c(X)} n. 
-%fixedY(K,Y) :- c(Y), fixedY(K,Y+1), n {isOk(K,X,Y) : c(X)} n. 
-%:- fixedX(K,X), move(K+1,X,_). 
-%:- fixedY(K,Y), move(K+1,_,Y). 
