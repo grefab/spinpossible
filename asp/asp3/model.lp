@@ -12,7 +12,10 @@ d(x;y). %dimensions
 0 { parity(K,V) } 1 :- k(K), v(V).
 
 :-  d(D), k(K), not move(D,K,C) : c(C).
+
+% redundant
 :-  state(D,K,V,C1), state(D,K,V,C2), C1 != C2. 
+%% the only non clause cardinality constaint
 :-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
 
 % restricts set of moves to rectangles
@@ -57,7 +60,66 @@ d(x;y). %dimensions
     parity(K,V), 
     parity(K+1,V),
     not state(D,K+1,V,C).
-    
+
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    parity(K,V1), parity(K+1,V1),
+%    parity(K,V2), parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    parity(K,V2), parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    not parity(K,V2), not parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    not parity(K,V2), not parity(K+1,V2),
+%    not parity(K,V3), not parity(K+1,V3).
+%
+%:-  s(K;K+1), v(V),
+%    move(x,K+1,1),
+%    move(x,K+1,2),
+%    move(x,K+1,3),
+%    move(y,K+1,1),
+%    move(y,K+1,2),
+%    move(y,K+1,3),
+%    not parity(K,V), 
+%    not parity(K+1,V).
+%
+%:-  move(x,K+1,1),
+%    move(x,K+1,2),
+%    move(x,K+1,3),
+%    move(y,K+1,1),
+%    move(y,K+1,2),
+%    move(y,K+1,3),
+%    parity(K,V), 
+%    parity(K+1,V).
+
 :-  s(K;K+1), 
     parity(K,V), 
     state(D,K,V,C1),
@@ -118,31 +180,31 @@ d(x;y). %dimensions
     C1 < C2, C2 < C3,
     not state(D,K+1,V,C1+C3-C). 
 
-% symmetry breaking constraints
-:-  move(D,K,C1),
-    not move(D,K,C1+1),
-    not move(D,K+1,C2-1),
-    move(D,K+1,C2),
-    C1 < C2.
-  
-:-  not move(x,K,X1-1),
-    move(x,K,X1),
-    move(x,K,X2),
-    not move(x,K,X2+1),
-    X1 <= X2,
-    not move(y,K,Y1-1),
-    move(y,K,Y1),
-    move(y,K,Y2),
-    not move(y,K,Y2+1),
-    Y1 <= Y2,
-    not move(x,K+1,X3-1),
-    move(x,K+1,X3),
-    move(x,K+1,X4),
-    not move(x,K+1,X4+1),
-    X3 <= X4,
-    not move(y,K+1,Y3-1),
-    move(y,K+1,Y3),
-    move(y,K+1,Y4),
-    not move(y,K+1,Y4+1),
-    Y3 <= Y4,
-    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
+%% symmetry breaking constraints
+%:-  move(D,K,C1),
+%    not move(D,K,C1+1),
+%    not move(D,K+1,C2-1),
+%    move(D,K+1,C2),
+%    C1 < C2.
+%  
+%:-  not move(x,K,X1-1),
+%    move(x,K,X1),
+%    move(x,K,X2),
+%    not move(x,K,X2+1),
+%    X1 <= X2,
+%    not move(y,K,Y1-1),
+%    move(y,K,Y1),
+%    move(y,K,Y2),
+%    not move(y,K,Y2+1),
+%    Y1 <= Y2,
+%    not move(x,K+1,X3-1),
+%    move(x,K+1,X3),
+%    move(x,K+1,X4),
+%    not move(x,K+1,X4+1),
+%    X3 <= X4,
+%    not move(y,K+1,Y3-1),
+%    move(y,K+1,Y3),
+%    move(y,K+1,Y4),
+%    not move(y,K+1,Y4+1),
+%    Y3 <= Y4,
+%    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.

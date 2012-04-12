@@ -167,7 +167,7 @@ void Grasp::search2() {
 
     std::sort(superset.begin(),superset.end(),comp);
 
-    for(uint index = 1; index < superset.size(); index ++) {
+    for(uint index = superset.size()-1; index < superset.size(); index ++) {
 
         Spins spins = superset[index];
         cout << endl;
@@ -216,7 +216,8 @@ void Grasp::search2() {
             cout << step << "\t" << _normal[now].count() << "\t";;
             cout.precision(2);
             cout << (int) difftime(time(NULL),start) << " sec." << endl;
-            if (step > 1 && _normal[(now+1)%2].count() == 0 && _normal[(now)%2].count() < 1000) {
+
+            if (step > 1 && _normal[(now+1)%2].count() == 0 ) {//&& _normal[(now)%2].count() < 1000) {
                 for(uint hash = 0; hash < SIZE; hash++) {
                     if(_normal[(now)%2][hash]) {
                         int board[X][Y];
@@ -349,7 +350,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search3();
+    g.search2();
     return 0; 
 }
 
