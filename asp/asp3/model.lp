@@ -48,7 +48,7 @@ d(x;y). %dimensions
     state(D,K,V,C),
     not move(D,K+1,C),
     not parity(K+1,V). 
-
+                                        
 :-  s(K;K+1), 
     state(D,K,V,C),
     not parity(K,V), 
@@ -61,65 +61,14 @@ d(x;y). %dimensions
     parity(K+1,V),
     not state(D,K+1,V,C).
 
-%:-  s(K;K+1), 
-%    state(D,K,V1,C),
-%    state(D,K,V2,C),
-%    state(D,K,V3,C),
-%    V1 != V2, V2 != V3, V1 != V3,
-%    move(D,K+1,C),
-%    parity(K,V1), parity(K+1,V1),
-%    parity(K,V2), parity(K+1,V2),
-%    parity(K,V3), parity(K+1,V3).
-%
-%:-  s(K;K+1), 
-%    state(D,K,V1,C),
-%    state(D,K,V2,C),
-%    state(D,K,V3,C),
-%    V1 != V2, V2 != V3, V1 != V3,
-%    move(D,K+1,C),
-%    not parity(K,V1), not parity(K+1,V1),
-%    parity(K,V2), parity(K+1,V2),
-%    parity(K,V3), parity(K+1,V3).
-%
-%:-  s(K;K+1), 
-%    state(D,K,V1,C),
-%    state(D,K,V2,C),
-%    state(D,K,V3,C),
-%    V1 != V2, V2 != V3, V1 != V3,
-%    move(D,K+1,C),
-%    not parity(K,V1), not parity(K+1,V1),
-%    not parity(K,V2), not parity(K+1,V2),
-%    parity(K,V3), parity(K+1,V3).
-%
-%:-  s(K;K+1), 
-%    state(D,K,V1,C),
-%    state(D,K,V2,C),
-%    state(D,K,V3,C),
-%    V1 != V2, V2 != V3, V1 != V3,
-%    move(D,K+1,C),
-%    not parity(K,V1), not parity(K+1,V1),
-%    not parity(K,V2), not parity(K+1,V2),
-%    not parity(K,V3), not parity(K+1,V3).
-%
-%:-  s(K;K+1), v(V),
-%    move(x,K+1,1),
-%    move(x,K+1,2),
-%    move(x,K+1,3),
-%    move(y,K+1,1),
-%    move(y,K+1,2),
-%    move(y,K+1,3),
-%    not parity(K,V), 
-%    not parity(K+1,V).
-%
-%:-  move(x,K+1,1),
-%    move(x,K+1,2),
-%    move(x,K+1,3),
-%    move(y,K+1,1),
-%    move(y,K+1,2),
-%    move(y,K+1,3),
-%    parity(K,V), 
-%    parity(K+1,V).
 
+
+
+% transition constraints
+
+% the following two clauses say that 
+% if a number is in C1,C2 then the parity 
+% needs to change.
 :-  s(K;K+1), 
     parity(K,V), 
     state(D,K,V,C1),
@@ -137,8 +86,6 @@ d(x;y). %dimensions
     move(D,K+1,C1),
     move(DD,K+1,C2),
     not parity(K+1,V). 
-
-% transition constraints
 
 % 1 row/column touched
 :-  s(K;K+1), 
@@ -208,3 +155,63 @@ d(x;y). %dimensions
 %    not move(y,K+1,Y4+1),
 %    Y3 <= Y4,
 %    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
+%
+% An alternative way to state that if 
+% a number is swapped, then orientation needs to 
+% change. 
+% But it is indeed very expensive (100K)
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    parity(K,V1), parity(K+1,V1),
+%    parity(K,V2), parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    parity(K,V2), parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    not parity(K,V2), not parity(K+1,V2),
+%    parity(K,V3), parity(K+1,V3).
+%
+%:-  s(K;K+1), 
+%    state(D,K,V1,C),
+%    state(D,K,V2,C),
+%    state(D,K,V3,C),
+%    V1 != V2, V2 != V3, V1 != V3,
+%    move(D,K+1,C),
+%    not parity(K,V1), not parity(K+1,V1),
+%    not parity(K,V2), not parity(K+1,V2),
+%    not parity(K,V3), not parity(K+1,V3).
+%
+%:-  s(K;K+1), v(V),
+%    move(,K+1,1),
+%    move(,K+1,2),
+%    move(,K+1,3),
+%    not parity(K,V), 
+%    not parity(K+1,V).
+%
+%:-  move(x,K+1,1),
+%    move(x,K+1,2),
+%    move(x,K+1,3),
+%    move(y,K+1,1),
+%    move(y,K+1,2),
+%    move(y,K+1,3),
+%    parity(K,V), 
+%    parity(K+1,V).
