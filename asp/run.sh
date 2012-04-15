@@ -50,7 +50,7 @@ cat $Input | gringo > $Problem
 
 echo Option      : $Option
 cat $Problem | clasp $Option 2>>$Error| tee $Output #| grep 'Optimization\|Answer\|Reading\|solving\|clasp'
-cat $Output | grep 'state' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
+cat $Output | grep 'state\|conf' |  tail -n 1 | sed 's/ /\n/g' | sed 's/$/./g' | sort  > $FormatOutput
     
 cat print.pl >> $FormatOutput
 prolog -f $FormatOutput -g start -t halt 2>> $Error > $PrettyOutput

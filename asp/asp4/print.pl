@@ -10,22 +10,22 @@ writeS(A) :- number(A), A < 0, !, write(' '),  write(A).
 writeS(A) :- number(A), A > 9, !, write(' '), write(A).
 writeS(A) :- write('  '), write(A). 
 
-move(K,X,Y) :- 
-    xmov(X,K),
-    ymov(Y,K).
+move2(K,X,Y) :- 
+    move(x,X,K),
+    move(y,Y,K).
 
 printSwitch(K,X,Y):-
-    (move(K,X,Y) ->
+    (move2(K,X,Y) ->
     writeS('*');
     writeS('-')).
 
 state(K,X,Y,V) :- 
-    xpos(V,X,K), 
-    ypos(V,Y,K).
+    conf(V,x,X,K), 
+    conf(V,y,Y,K).
 
 printRow(K,X,Y):-
     state(K,X,Y,V),
-    spin(V,S,K),
+    conf(V,S,K),
     VV is V * S,
     writeS(VV).
 
@@ -50,7 +50,7 @@ start :-
     printMoves(1). 
 
 printMoves(K) :- 
-    move(K,_X,_Y), 
+    move2(K,_X,_Y), 
     !,
     writeL(['move ',K,': ']),nl,nl,
     printSwitch(K),

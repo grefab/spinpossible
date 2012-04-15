@@ -127,34 +127,34 @@ d(x;y). %dimensions
     C1 < C2, C2 < C3,
     not state(D,K+1,V,C1+C3-C). 
 
-%% symmetry breaking constraints
-%:-  move(D,K,C1),
-%    not move(D,K,C1+1),
-%    not move(D,K+1,C2-1),
-%    move(D,K+1,C2),
-%    C1 < C2.
-%  
-%:-  not move(x,K,X1-1),
-%    move(x,K,X1),
-%    move(x,K,X2),
-%    not move(x,K,X2+1),
-%    X1 <= X2,
-%    not move(y,K,Y1-1),
-%    move(y,K,Y1),
-%    move(y,K,Y2),
-%    not move(y,K,Y2+1),
-%    Y1 <= Y2,
-%    not move(x,K+1,X3-1),
-%    move(x,K+1,X3),
-%    move(x,K+1,X4),
-%    not move(x,K+1,X4+1),
-%    X3 <= X4,
-%    not move(y,K+1,Y3-1),
-%    move(y,K+1,Y3),
-%    move(y,K+1,Y4),
-%    not move(y,K+1,Y4+1),
-%    Y3 <= Y4,
-%    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
+% symmetry breaking constraints
+:-  move(D,K,C1),
+    not move(D,K,C1+1),
+    not move(D,K+1,C2-1),
+    move(D,K+1,C2),
+    C1 < C2.
+  
+:-  not move(x,K,X1-1),
+    move(x,K,X1),
+    move(x,K,X2),
+    not move(x,K,X2+1),
+    X1 <= X2,
+    not move(y,K,Y1-1),
+    move(y,K,Y1),
+    move(y,K,Y2),
+    not move(y,K,Y2+1),
+    Y1 <= Y2,
+    not move(x,K+1,X3-1),
+    move(x,K+1,X3),
+    move(x,K+1,X4),
+    not move(x,K+1,X4+1),
+    X3 <= X4,
+    not move(y,K+1,Y3-1),
+    move(y,K+1,Y3),
+    move(y,K+1,Y4),
+    not move(y,K+1,Y4+1),
+    Y3 <= Y4,
+    X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
 %
 % An alternative way to state that if 
 % a number is swapped, then orientation needs to 
