@@ -15,8 +15,8 @@ d(x;y). %dimensions
 
 % redundant
 :-  state(D,K,V,C1), state(D,K,V,C2), C1 != C2. 
-%% the only non clause cardinality constaint
-:-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
+%% the only non clause cardinality constraint
+%:-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
 
 % restricts set of moves to rectangles
 :-  c(C2), 
