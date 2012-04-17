@@ -15,8 +15,28 @@ d(x;y). %dimensions
 
 % redundant
 :-  state(D,K,V,C1), state(D,K,V,C2), C1 != C2. 
-%% the only non clause cardinality constraint
-%:-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
+% the only non clause cardinality constraint
+:-  d(D), k(K), c(C), not 3 { state(D,K,V,C) } 3.
+
+%% naive alternative to the cardinality constraint. 
+%:-  d(D), k(K), c(C), 
+%    state(D,K,V1,C), 
+%    state(D,K,V2,C), 
+%    state(D,K,V3,C), 
+%    state(D,K,V4,C), 
+%    V1 < V2, V2 < V3, V3 < V4.
+%
+%:-  d(D), k(K), c(C), 
+%    v(V1;V2;V3;V4;V5;V6;V7),
+%    not state(D,K,V1,C), 
+%    not state(D,K,V2,C), 
+%    not state(D,K,V3,C), 
+%    not state(D,K,V4,C), 
+%    not state(D,K,V5,C), 
+%    not state(D,K,V6,C), 
+%    not state(D,K,V7,C), 
+%    V1 < V2, V2 < V3, V3 < V4, 
+%    V4 < V5, V5 < V6, V6 < V7.
 
 % restricts set of moves to rectangles
 :-  c(C2), 
@@ -155,7 +175,7 @@ d(x;y). %dimensions
     not move(y,K+1,Y4+1),
     Y3 <= Y4,
     X1 <= X3, X2 >= X4, Y1 <= Y3, Y2 >= Y4.
-%
+%%
 % An alternative way to state that if 
 % a number is swapped, then orientation needs to 
 % change. 
