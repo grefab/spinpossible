@@ -199,14 +199,14 @@ void Grasp::search2() {
                                     Co c2(xx,yy); 
                                     Move move(c1,c2);
 
-                                    if ( spins.count(Spin(xx-x+1,yy-y+1)) > 0) {
+                                    //if ( spins.count(Spin(xx-x+1,yy-y+1)) > 0) {
                                         int board2[X][Y]; 
                                         update(move,board1,board2); 
                                         uint new_hash = board_to_hash(board2);
                                         if (_solved_normal[new_hash] == 0) {
                                             _normal[(now+1)%2][new_hash] = 1; 
                                         }
-                                    }
+                                    //}
                                 }
                             }
                         }
@@ -323,6 +323,97 @@ void Grasp::search3() {
     cout << (int) difftime(time(NULL),total) << " sec." << endl;
 }
 
+void Grasp::search4() {
+    time_t total;
+    time(&total);
+    _normal[0].reset();
+    _normal[0][0] = 1; 
+    _normal[1].reset();
+    _solved_normal.reset();
+
+    int now = 0;
+    for(uint step = 0; _normal[now].any(); step++) {
+        _normal[(now+1)%2].reset();
+        time_t start;
+        time(&start);
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[now][hash] = 0;
+            } else if (_normal[now][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                //cout << "step " << step << "board 1\n";
+                //print(board1);
+                //cout << "\nboard 2s:\n";
+
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                int board2[X][Y]; 
+                                update(move,board1,board2); 
+                                //print(board2);
+                                //cout << "\nstep " << step << "  \n\n";
+                                _normal[(now+1)%2][board_to_hash(board2)] = 1; 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+
+        cout << step << "\t" << _normal[now].count() << "\t";
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+        now = (now+1)%2;
+    }
+    
+    cout << "\ntotal\t" << _solved_normal.count() << "\t";
+    cout << (int) difftime(time(NULL),total) << " sec." << endl;
+}
+
+void Grasp::search5() {
+    time_t total;
+    time(&total);
+
+    for(uint step = 0; step < MAX_STEP; step++) {
+        time_t start;
+        time(&start);
+
+        for(uint hash = 0; hash < SIZE && ( !step == 0 || hash == 0); hash++) {
+            if (_solved_normal[hash]) { 
+                _normal[step][hash] = 0;
+            } else if (_normal[step][hash]) {
+                _solved_normal[hash] = 1; 
+                int board1[X][Y]; 
+                hash_to_board(hash,board1); 
+                for (uint x = 0; x < X; x++) {
+                    for (uint y = 0; y < Y; y++) {
+                        for (uint xx = x; xx < X; xx++) {
+                            for (uint yy = y; yy < Y; yy++) {
+                                Co c1(x,y); 
+                                Co c2(xx,yy); 
+                                Move move(c1,c2);
+                                int board2[X][Y]; 
+                                update(move,board1,board2); 
+                                _normal[step+1][board_to_hash(board2)] = 1; 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        cout << step << "\t" << _normal[step].count() << "\t";
+        cout.precision(2);
+        cout << (int) difftime(time(NULL),start) << " sec." << endl;
+    }
+}
+
+
 // defines strategy
 bool is_valid_move(Move move, int board[][Y]) {
 
@@ -350,7 +441,7 @@ int main() {
 
 int run() {
     Grasp g; 
-    g.search2();
+    g.search4();
     return 0; 
 }
 
