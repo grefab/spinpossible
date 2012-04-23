@@ -110,16 +110,22 @@ d(x;y). %dimensions
 % 1 row/column touched
 :-  s(K;K+1), 
     c(C2;C3),
-    state(D,K,V,2), 
-    not move(D,K+1,1), not move(D,K+1,3),
-    not state(D,K+1,V,2). 
-
-:-  s(K;K+1), 
-    c(C2;C3),
     state(D,K,V,C), 
-    not move(D,K+1,2),
-    C != 2,
+    not move(D,K+1,C2), not move(D,K+1,C3),
+    C != C2, C != C3, C2 < C3,
     not state(D,K+1,V,C). 
+
+%alternative:
+%:-  s(K;K+1), 
+%    state(D,K,V,2), 
+%    not move(D,K+1,1), not move(D,K+1,3),
+%    not state(D,K+1,V,2). 
+%
+%:-  s(K;K+1), 
+%    state(D,K,V,C), 
+%    not move(D,K+1,2),
+%    C != 2,
+%    not state(D,K+1,V,C). 
 
 % 2 row/column touched
 :-  s(K;K+1), 
