@@ -1,0 +1,1441 @@
+running encoding asp3
+
+board -9 -2 6 8 -5 4 -7 -1 -3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 144.260s (Solving: 144.22s 1st Model: 0.00s Unsat: 144.22s)
+CPU Time    : 144.260s
+Choices     : 2149347
+Conflicts   : 1820935
+Restarts    : 22
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 1821303 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 1821303 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1785436
+initial state:
+
+board -9 6 -3 -1 -5 -7 4 -8 2 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 199.053s (Solving: 199.02s 1st Model: 0.00s Unsat: 199.02s)
+CPU Time    : 199.060s
+Choices     : 2759080
+Conflicts   : 2340427
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2340557 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2340557 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2286888
+initial state:
+
+board -9 -6 -3 -8 5 2 -7 -1 4 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 201.502s (Solving: 201.47s 1st Model: 0.00s Unsat: 201.47s)
+CPU Time    : 201.500s
+Choices     : 2494555
+Conflicts   : 2117015
+Restarts    : 22
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2117215 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2117215 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2059172
+initial state:
+
+board -8 -5 9 7 -6 2 3 4 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 153.603s (Solving: 153.45s 1st Model: 0.00s Unsat: 153.45s)
+CPU Time    : 153.600s
+Choices     : 2169282
+Conflicts   : 1828102
+Restarts    : 22
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 1828431 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 1828431 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1767791
+initial state:
+
+board -7 4 1 5 8 2 -3 -9 6 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 150.479s (Solving: 150.45s 1st Model: 0.00s Unsat: 150.45s)
+CPU Time    : 150.480s
+Choices     : 2323316
+Conflicts   : 1960285
+Restarts    : 22
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 1960540 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 1960540 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1909887
+initial state:
+
+board -6 -3 7 5 -8 -2 4 9 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 208.125s (Solving: 208.10s 1st Model: 0.00s Unsat: 208.10s)
+CPU Time    : 208.120s
+Choices     : 3028162
+Conflicts   : 2563316
+Restarts    : 23
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2563542 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2563542 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2509453
+initial state:
+
+board -6 4 -7 -1 -5 -8 -3 9 -2 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 189.392s (Solving: 189.36s 1st Model: 0.00s Unsat: 189.36s)
+CPU Time    : 189.390s
+Choices     : 2727205
+Conflicts   : 2296664
+Restarts    : 23
+
+Atoms       : 765   
+Rules       : 8641   (1: 7993 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 354    (Atom=Atom: 67 Body=Body: 0 Other: 287)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2296868 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2296868 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2256045
+initial state:
+
+board -5 -2 -8 6 3 -9 -7 4 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 216.129s (Solving: 216.05s 1st Model: 0.00s Unsat: 216.05s)
+CPU Time    : 216.130s
+Choices     : 3075269
+Conflicts   : 2606774
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2607128 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2607128 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2565952
+initial state:
+
+board -5 -3 2 1 6 -9 8 7 4 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 206.784s (Solving: 206.73s 1st Model: 0.00s Unsat: 206.73s)
+CPU Time    : 206.790s
+Choices     : 2935708
+Conflicts   : 2491920
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2492296 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2492296 (Average Length: 18.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2450292
+initial state:
+
+board -4 1 -3 -6 -9 -5 8 -2 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 236.929s (Solving: 236.90s 1st Model: 0.00s Unsat: 236.90s)
+CPU Time    : 236.930s
+Choices     : 3193207
+Conflicts   : 2708867
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2709124 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2709124 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2663973
+initial state:
+
+board -4 1 -7 3 6 -9 -2 -5 -8 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 202.552s (Solving: 202.52s 1st Model: 0.00s Unsat: 202.52s)
+CPU Time    : 202.560s
+Choices     : 2838134
+Conflicts   : 2402853
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2403205 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2403205 (Average Length: 18.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2334627
+initial state:
+
+board -4 2 -5 -3 9 6 -7 -8 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 209.124s (Solving: 209.08s 1st Model: 0.00s Unsat: 209.08s)
+CPU Time    : 209.130s
+Choices     : 3014803
+Conflicts   : 2549001
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2549292 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2549292 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2497977
+initial state:
+
+board -4 2 -5 -7 8 6 -3 9 1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 191.292s (Solving: 191.27s 1st Model: 0.00s Unsat: 191.27s)
+CPU Time    : 191.290s
+Choices     : 2848240
+Conflicts   : 2411814
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2412067 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2412067 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2363764
+initial state:
+
+board -4 6 1 -8 5 -2 -7 -9 3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 193.861s (Solving: 193.83s 1st Model: 0.00s Unsat: 193.83s)
+CPU Time    : 193.870s
+Choices     : 2797434
+Conflicts   : 2362475
+Restarts    : 23
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2362875 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2362875 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2315181
+initial state:
+
+board -4 -8 -9 -6 -2 -5 -7 -3 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 178.115s (Solving: 178.08s 1st Model: 0.00s Unsat: 178.08s)
+CPU Time    : 178.110s
+Choices     : 2606244
+Conflicts   : 2197135
+Restarts    : 22
+
+Atoms       : 767   
+Rules       : 8643   (1: 7995 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 358    (Atom=Atom: 69 Body=Body: 0 Other: 289)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2197436 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2197436 (Average Length: 18.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2156274
+initial state:
+
+board -3 -8 6 2 5 -9 -4 7 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 207.445s (Solving: 207.41s 1st Model: 0.00s Unsat: 207.41s)
+CPU Time    : 207.440s
+Choices     : 2948622
+Conflicts   : 2500564
+Restarts    : 23
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2501025 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2501025 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2430881
+initial state:
+
+board -2 -9 1 -4 7 6 5 -8 3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 254.217s (Solving: 254.18s 1st Model: 0.00s Unsat: 254.18s)
+CPU Time    : 254.230s
+Choices     : 3677916
+Conflicts   : 3125416
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 3125584 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3125584 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3071026
+initial state:
+
+board -2 9 -8 5 3 -6 4 7 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 248.382s (Solving: 248.27s 1st Model: 0.00s Unsat: 248.27s)
+CPU Time    : 248.390s
+Choices     : 3637563
+Conflicts   : 3081148
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 3081476 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3081476 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3023344
+initial state:
+
+board -1 -4 8 2 5 7 3 -6 -9 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 243.254s (Solving: 243.22s 1st Model: 0.00s Unsat: 243.22s)
+CPU Time    : 243.250s
+Choices     : 2944099
+Conflicts   : 2496936
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2497169 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2497169 (Average Length: 17.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2441459
+initial state:
+
+board -1 -5 9 2 4 -7 -3 6 8 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 183.287s (Solving: 183.21s 1st Model: 0.00s Unsat: 183.21s)
+CPU Time    : 183.290s
+Choices     : 2603165
+Conflicts   : 2206819
+Restarts    : 22
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2207158 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2207158 (Average Length: 17.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2156289
+initial state:
+
+board -1 -8 9 -5 -6 3 -4 -7 2 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 216.280s (Solving: 216.24s 1st Model: 0.00s Unsat: 216.24s)
+CPU Time    : 216.280s
+Choices     : 3024936
+Conflicts   : 2560530
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2560708 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2560708 (Average Length: 18.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2527123
+initial state:
+
+board 2 8 4 1 5 -6 -7 9 3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 217.350s (Solving: 217.32s 1st Model: 0.00s Unsat: 217.32s)
+CPU Time    : 217.350s
+Choices     : 3212978
+Conflicts   : 2706543
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2706823 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2706823 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2644567
+initial state:
+
+board 2 9 1 6 7 3 -5 4 8 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 222.771s (Solving: 222.74s 1st Model: 0.00s Unsat: 222.74s)
+CPU Time    : 222.770s
+Choices     : 3130823
+Conflicts   : 2648739
+Restarts    : 23
+
+Atoms       : 759   
+Rules       : 8635   (1: 7987 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 342    (Atom=Atom: 61 Body=Body: 0 Other: 281)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2648886 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2648886 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2604832
+initial state:
+
+board 3 2 -8 -5 6 7 -4 -1 -9 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 257.379s (Solving: 257.35s 1st Model: 0.00s Unsat: 257.35s)
+CPU Time    : 257.390s
+Choices     : 3751308
+Conflicts   : 3187826
+Restarts    : 23
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 3188023 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 3188023 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 3120453
+initial state:
+
+board 3 -4 1 -9 6 7 8 2 -5 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 189.178s (Solving: 189.14s 1st Model: 0.00s Unsat: 189.14s)
+CPU Time    : 189.180s
+Choices     : 2790942
+Conflicts   : 2356921
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2357181 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2357181 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2314335
+initial state:
+
+board 3 -6 5 8 -7 2 4 9 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 189.390s (Solving: 189.37s 1st Model: 0.00s Unsat: 189.37s)
+CPU Time    : 189.390s
+Choices     : 2785635
+Conflicts   : 2348053
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2348302 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2348302 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2306307
+initial state:
+
+board 3 9 -6 1 4 -5 8 -2 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 199.925s (Solving: 199.87s 1st Model: 0.00s Unsat: 199.87s)
+CPU Time    : 199.920s
+Choices     : 2849923
+Conflicts   : 2397908
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2398189 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2398189 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2352292
+initial state:
+
+board 4 -1 -7 -6 -3 8 2 9 5 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 192.997s (Solving: 192.95s 1st Model: 0.00s Unsat: 192.95s)
+CPU Time    : 193.000s
+Choices     : 2926867
+Conflicts   : 2478621
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2478969 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2478969 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2421172
+initial state:
+
+board 4 -7 -3 1 8 -5 9 -2 -6 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 174.528s (Solving: 174.50s 1st Model: 0.00s Unsat: 174.50s)
+CPU Time    : 174.530s
+Choices     : 2559596
+Conflicts   : 2168106
+Restarts    : 22
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2168379 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2168379 (Average Length: 17.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2112140
+initial state:
+
+board 4 9 6 -2 1 3 5 -8 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 227.860s (Solving: 227.83s 1st Model: 0.00s Unsat: 227.83s)
+CPU Time    : 227.870s
+Choices     : 3473754
+Conflicts   : 2943668
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2944077 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2944077 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2896199
+initial state:
+
+board 5 4 -2 7 1 -9 -3 -6 8 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 194.169s (Solving: 194.14s 1st Model: 0.00s Unsat: 194.14s)
+CPU Time    : 194.170s
+Choices     : 2894049
+Conflicts   : 2444892
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2445146 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2445146 (Average Length: 17.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2392034
+initial state:
+
+board 5 8 -3 2 -6 7 4 -1 -9 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 259.828s (Solving: 259.63s 1st Model: 0.00s Unsat: 259.63s)
+CPU Time    : 259.830s
+Choices     : 3198337
+Conflicts   : 2717169
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2717466 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2717466 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2672794
+initial state:
+
+board 6 -3 2 5 8 -1 4 9 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 226.513s (Solving: 226.26s 1st Model: 0.00s Unsat: 226.26s)
+CPU Time    : 226.520s
+Choices     : 3072364
+Conflicts   : 2590885
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2591107 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2591107 (Average Length: 17.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2536815
+initial state:
+
+board 6 -3 9 -1 -8 -5 -4 -2 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 180.940s (Solving: 180.91s 1st Model: 0.00s Unsat: 180.91s)
+CPU Time    : 180.930s
+Choices     : 2634108
+Conflicts   : 2234915
+Restarts    : 22
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2235126 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2235126 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2182771
+initial state:
+
+board 6 5 2 -4 -9 3 1 8 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 221.947s (Solving: 221.91s 1st Model: 0.00s Unsat: 221.91s)
+CPU Time    : 221.950s
+Choices     : 3186187
+Conflicts   : 2710766
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2711088 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2711088 (Average Length: 18.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2663982
+initial state:
+
+board 6 -9 -7 8 -4 -1 -3 -5 2 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 216.246s (Solving: 216.21s 1st Model: 0.00s Unsat: 216.21s)
+CPU Time    : 216.250s
+Choices     : 3078589
+Conflicts   : 2602892
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2603143 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2603143 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2547427
+initial state:
+
+board 7 1 -3 -8 -5 -2 9 4 -6 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 165.054s (Solving: 165.03s 1st Model: 0.00s Unsat: 165.03s)
+CPU Time    : 165.060s
+Choices     : 2402821
+Conflicts   : 2030957
+Restarts    : 22
+
+Atoms       : 763   
+Rules       : 8639   (1: 7991 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 350    (Atom=Atom: 65 Body=Body: 0 Other: 285)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2031185 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2031185 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 1988542
+initial state:
+
+board 7 3 -9 2 -5 1 4 -8 6 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 226.174s (Solving: 226.14s 1st Model: 0.00s Unsat: 226.14s)
+CPU Time    : 226.180s
+Choices     : 3257661
+Conflicts   : 2754377
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2754591 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2754591 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2702831
+initial state:
+
+board 7 4 9 1 -3 8 6 2 -5 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 244.410s (Solving: 244.33s 1st Model: 0.00s Unsat: 244.33s)
+CPU Time    : 244.420s
+Choices     : 2964477
+Conflicts   : 2505243
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2505532 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2505532 (Average Length: 18.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2450321
+initial state:
+
+board 7 -8 2 6 9 -4 5 1 3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 198.445s (Solving: 198.41s 1st Model: 0.00s Unsat: 198.41s)
+CPU Time    : 198.440s
+Choices     : 2741918
+Conflicts   : 2322083
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2322293 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2322293 (Average Length: 17.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2277240
+initial state:
+
+board 7 9 1 -5 2 6 4 -8 3 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 180.565s (Solving: 180.53s 1st Model: 0.00s Unsat: 180.53s)
+CPU Time    : 180.560s
+Choices     : 2729437
+Conflicts   : 2293553
+Restarts    : 23
+
+Atoms       : 760   
+Rules       : 8636   (1: 7988 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 344    (Atom=Atom: 62 Body=Body: 0 Other: 282)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2293808 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2293808 (Average Length: 17.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2256040
+initial state:
+
+board 8 -3 -6 -9 2 -5 -4 7 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 178.265s (Solving: 178.23s 1st Model: 0.00s Unsat: 178.23s)
+CPU Time    : 178.270s
+Choices     : 2627800
+Conflicts   : 2213177
+Restarts    : 22
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2213515 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2213515 (Average Length: 17.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2173938
+initial state:
+
+board 8 -5 2 7 4 -3 6 -9 -1 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 182.333s (Solving: 182.14s 1st Model: 0.00s Unsat: 182.14s)
+CPU Time    : 182.330s
+Choices     : 2769297
+Conflicts   : 2343515
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2343856 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2343856 (Average Length: 17.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2295763
+initial state:
+
+board 8 -5 9 -2 6 3 1 -4 7 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 224.991s (Solving: 224.94s 1st Model: 0.00s Unsat: 224.94s)
+CPU Time    : 224.990s
+Choices     : 3227666
+Conflicts   : 2733524
+Restarts    : 23
+
+Atoms       : 761   
+Rules       : 8637   (1: 7989 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 346    (Atom=Atom: 63 Body=Body: 0 Other: 283)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2733911 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2733911 (Average Length: 17.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2673685
+initial state:
+
+board 9 1 -7 -8 -4 -2 6 -3 -5 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 193.097s (Solving: 193.05s 1st Model: 0.00s Unsat: 193.05s)
+CPU Time    : 193.100s
+Choices     : 2786607
+Conflicts   : 2349027
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2349269 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2349269 (Average Length: 17.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2295778
+initial state:
+
+board 9 2 1 -7 -6 3 -8 -5 4 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 233.800s (Solving: 233.76s 1st Model: 0.00s Unsat: 233.76s)
+CPU Time    : 233.810s
+Choices     : 3248458
+Conflicts   : 2769739
+Restarts    : 23
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2769953 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2769953 (Average Length: 18.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2721354
+initial state:
+
+board 9 -6 -7 -8 -1 3 -4 2 -5 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 197.815s (Solving: 197.78s 1st Model: 0.00s Unsat: 197.78s)
+CPU Time    : 197.810s
+Choices     : 2915845
+Conflicts   : 2466126
+Restarts    : 23
+
+Atoms       : 764   
+Rules       : 8640   (1: 7992 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 352    (Atom=Atom: 66 Body=Body: 0 Other: 286)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2466278 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2466278 (Average Length: 18.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2430875
+initial state:
+
+board 9 8 -2 -7 4 1 -3 -5 6 8
+
+Option : --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.2
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 180.048s (Solving: 180.01s 1st Model: 0.00s Unsat: 180.01s)
+CPU Time    : 180.050s
+Choices     : 2644644
+Conflicts   : 2229363
+Restarts    : 22
+
+Atoms       : 762   
+Rules       : 8638   (1: 7990 2: 96 3: 552)
+Bodies      : 7590  
+Equivalences: 348    (Atom=Atom: 64 Body=Body: 0 Other: 284)
+Tight       : Yes
+
+Variables   : 8066   (Eliminated:    0 Frozen:  528)
+Constraints : 7037   (Binary:  7.2% Ternary:  6.7% Other: 86.1%)
+Lemmas      : 2229716 (Binary:  0.0% Ternary:  0.1% Other: 99.9%)
+  Conflict  : 2229716 (Average Length: 18.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0) 
+  Deleted   : 2191593
+initial state:

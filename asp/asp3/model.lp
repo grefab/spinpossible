@@ -115,7 +115,7 @@ d(x;y). %dimensions
     C != C2, C != C3, C2 < C3,
     not state(D,K+1,V,C). 
 
-%alternative:
+% alternative:
 %:-  s(K;K+1), 
 %    state(D,K,V,2), 
 %    not move(D,K+1,1), not move(D,K+1,3),
