@@ -85,6 +85,17 @@ sort(D,T) :- move(D,Z,T), down(D,Z,T+1).
  :- not sort(y,T), move(x,1,T+1), time(T).
  :- not sort(y,T), move(x,Z,T;T+1), 1 < Z, not end(x,Z,1).
 
+% auxilary redundant restrictions
+
+ :- conf(N,A,0;1), conf(N,D,Z,0), not conf(N,D,Z,1).
+ :- conf(N,A,T-1;T), final(T), conf(N,D,Z,T), not conf(N,D,Z,T-1).
+
+ :- prev(N,D,A,I,T), not next(N,D, A,I,T),     keep(N,T).
+ :- next(N,D,A,I,T), not prev(N,D, A,I,T),     keep(N,T).
+
+ :- prev(N,D,A,I,T), not next(N,D,A,I,T), not swap(D,T).
+ :- next(N,D,A,I,T), not prev(N,D,A,I,T), not swap(D,T).
+
 % output atoms
 
 #hide.
