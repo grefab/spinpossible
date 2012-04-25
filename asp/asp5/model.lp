@@ -33,6 +33,8 @@ conf(N,  1,               T) :- num(N), final(T).
 { conf(N,1;-1,T) } :- num(N), time(T), not final(T).
  :- conf(N,1;-1,T), time(T), not final(T).
  :- num(N), time(T), not final(T), not conf(N,1;-1,T).
+ :- conf(N,A,0;1), conf(N,D,Z,0), not conf(N,D,Z,1).
+ :- conf(N,A,T-1;T), final(T), conf(N,D,Z,T), not conf(N,D,Z,T-1).
 
 % rotate some (non-empty) rectangle for each transition
 
@@ -46,6 +48,7 @@ down(D,Z-1,T) :- down(D,Z,T), 2 < Z.
 keep(N,T) :- conf(N,D,Z,T), time(T), not move(D,Z,T).
  :- conf(N,D,Z,T), not move(D,Z,T+1), not keep(N,T+1), not final(T).
  :- time(T), keep(N,T) : num(N).
+%  :- time(1), keep(N,1) : num(N).
 
 % apply spins and restrict relocations to contents of rectangle
 
@@ -64,17 +67,23 @@ prev(N,D,A,I,T) :- step(D,Z,A,I,T), conf(N,D,Z,T-1).
 next(N,D,A,I,T) :- step(D,Z,A,I,T), conf(N,D,Z,T).
  :- prev(N,D,A,I,T), not next(N,D,-A,I,T), not keep(N,T).
  :- next(N,D,A,I,T), not prev(N,D,-A,I,T), not keep(N,T).
+ :- prev(N,D,A,I,T), not next(N,D, A,I,T),     keep(N,T).
+ :- next(N,D,A,I,T), not prev(N,D, A,I,T),     keep(N,T).
 
 % some relocations inapplicable if rectangle is a line
 
 swap(D,T) :- move(D,Z,T), down(D,Z+1,T).
  :- conf(N,D,Z,T), not conf(N,D,Z,T-1), not swap(D,T),   time(T).
  :- conf(N,D,Z,T), not conf(N,D,Z,T+1), not swap(D,T+1), not final(T).
+ :- prev(N,D,A,I,T), not next(N,D,A,I,T), not swap(D,T).
+ :- next(N,D,A,I,T), not prev(N,D,A,I,T), not swap(D,T).
 
 % move some other grid cell than preceding move
 
 dist(T) :- move(D,Z,T), not move(D,Z,T-1), 1 < T.
  :- time(T), not dist(T), 1 < T.
+% inct(T) :- keep(N,T), not keep(N,T+1), not final(T).
+%  :- time(T), not inct(T), not final(T).
 
 % order disjoint moves lexicographically
 
@@ -84,17 +93,6 @@ sort(D,T) :- move(D,Z,T), down(D,Z,T+1).
  :- not sort(y,T), move(x,Z,T), end(x,Z,1), not final(T).
  :- not sort(y,T), move(x,1,T+1), time(T).
  :- not sort(y,T), move(x,Z,T;T+1), 1 < Z, not end(x,Z,1).
-
-% auxilary redundant restrictions
-
- :- conf(N,A,0;1), conf(N,D,Z,0), not conf(N,D,Z,1).
- :- conf(N,A,T-1;T), final(T), conf(N,D,Z,T), not conf(N,D,Z,T-1).
-
- :- prev(N,D,A,I,T), not next(N,D, A,I,T),     keep(N,T).
- :- next(N,D,A,I,T), not prev(N,D, A,I,T),     keep(N,T).
-
- :- prev(N,D,A,I,T), not next(N,D,A,I,T), not swap(D,T).
- :- next(N,D,A,I,T), not prev(N,D,A,I,T), not swap(D,T).
 
 % output atoms
 
