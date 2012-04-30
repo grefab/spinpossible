@@ -1,0 +1,1777 @@
+running encoding asp4
+
+board -9 -2 6 8 -5 4 -7 -1 -3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 63.408s (Solving: 63.39s 1st Model: 0.00s Unsat: 63.39s)
+CPU Time    : 244.010s
+Choices     : 2088036
+Conflicts   : 1852047
+Restarts    : 361
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1851912 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1851912 (Average Length: 76.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1844394
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 81
+Problems    : 82     (Average Length: 12.26) 
+
+initial state:
+
+board -9 6 -3 -1 -5 -7 4 -8 2 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 55.443s (Solving: 55.43s 1st Model: 0.00s Unsat: 55.43s)
+CPU Time    : 213.320s
+Choices     : 1836364
+Conflicts   : 1629016
+Restarts    : 290
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1628900 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1628900 (Average Length: 73.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1621351
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 61
+Problems    : 62     (Average Length: 14.44) 
+
+initial state:
+
+board -9 -6 -3 -8 5 2 -7 -1 4 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 53.060s (Solving: 53.05s 1st Model: 0.00s Unsat: 53.05s)
+CPU Time    : 204.200s
+Choices     : 1738197
+Conflicts   : 1547899
+Restarts    : 291
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1547790 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1547790 (Average Length: 76.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1540562
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 63
+Problems    : 64     (Average Length: 15.05) 
+
+initial state:
+
+board -8 -5 9 7 -6 2 3 4 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 52.574s (Solving: 52.55s 1st Model: 0.00s Unsat: 52.55s)
+CPU Time    : 196.550s
+Choices     : 1714653
+Conflicts   : 1517277
+Restarts    : 369
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1517151 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1517151 (Average Length: 75.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1508904
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 70
+Problems    : 71     (Average Length: 14.34) 
+
+initial state:
+
+board -7 4 1 5 8 2 -3 -9 6 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 60.782s (Solving: 60.77s 1st Model: 0.00s Unsat: 60.77s)
+CPU Time    : 220.420s
+Choices     : 1803686
+Conflicts   : 1598783
+Restarts    : 324
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1598647 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1598647 (Average Length: 71.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1591007
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 89
+Problems    : 90     (Average Length: 13.42) 
+
+initial state:
+
+board -6 -3 7 5 -8 -2 4 9 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 67.049s (Solving: 67.03s 1st Model: 0.00s Unsat: 67.03s)
+CPU Time    : 244.010s
+Choices     : 1957894
+Conflicts   : 1739286
+Restarts    : 249
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1739161 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1739161 (Average Length: 75.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1729747
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 14.91) 
+
+initial state:
+
+board -6 4 -7 -1 -5 -8 -3 9 -2 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 63.328s (Solving: 63.31s 1st Model: 0.00s Unsat: 63.31s)
+CPU Time    : 230.370s
+Choices     : 1880244
+Conflicts   : 1666836
+Restarts    : 349
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1666675 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1666675 (Average Length: 75.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1657420
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 99
+Problems    : 100    (Average Length: 13.56) 
+
+initial state:
+
+board -5 -2 -8 6 3 -9 -7 4 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 58.412s (Solving: 58.40s 1st Model: 0.00s Unsat: 58.40s)
+CPU Time    : 212.170s
+Choices     : 1806985
+Conflicts   : 1599122
+Restarts    : 249
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1599023 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1599023 (Average Length: 73.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1590910
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 56
+Problems    : 57     (Average Length: 12.26) 
+
+initial state:
+
+board -5 -3 2 1 6 -9 8 7 4 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 81.585s (Solving: 81.56s 1st Model: 0.00s Unsat: 81.56s)
+CPU Time    : 295.910s
+Choices     : 2281255
+Conflicts   : 2034458
+Restarts    : 335
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2034335 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2034335 (Average Length: 78.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2025262
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 72
+Problems    : 73     (Average Length: 14.58) 
+
+initial state:
+
+board -4 1 -3 -6 -9 -5 8 -2 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 78.869s (Solving: 78.85s 1st Model: 0.00s Unsat: 78.85s)
+CPU Time    : 286.670s
+Choices     : 2315510
+Conflicts   : 2059093
+Restarts    : 350
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2058943 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2058943 (Average Length: 73.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2050614
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 69
+Problems    : 70     (Average Length: 17.24) 
+
+initial state:
+
+board -4 1 -7 3 6 -9 -2 -5 -8 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 56.575s (Solving: 56.56s 1st Model: 0.00s Unsat: 56.56s)
+CPU Time    : 205.100s
+Choices     : 1720693
+Conflicts   : 1526417
+Restarts    : 421
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1526290 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1526290 (Average Length: 77.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1518086
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 80
+Problems    : 81     (Average Length: 13.20) 
+
+initial state:
+
+board -4 2 -5 -3 9 6 -7 -8 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 65.892s (Solving: 65.88s 1st Model: 0.00s Unsat: 65.88s)
+CPU Time    : 238.830s
+Choices     : 1910171
+Conflicts   : 1693945
+Restarts    : 365
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1693823 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1693823 (Average Length: 73.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1686400
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 12.99) 
+
+initial state:
+
+board -4 2 -5 -7 8 6 -3 9 1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 57.099s (Solving: 57.08s 1st Model: 0.00s Unsat: 57.08s)
+CPU Time    : 208.430s
+Choices     : 1742782
+Conflicts   : 1550788
+Restarts    : 246
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1550660 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1550660 (Average Length: 72.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1542238
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 78
+Problems    : 79     (Average Length: 14.30) 
+
+initial state:
+
+board -4 6 1 -8 5 -2 -7 -9 3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 63.606s (Solving: 63.59s 1st Model: 0.00s Unsat: 63.59s)
+CPU Time    : 232.640s
+Choices     : 1936663
+Conflicts   : 1719026
+Restarts    : 328
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1718913 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1718913 (Average Length: 73.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1709759
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 71
+Problems    : 72     (Average Length: 12.96) 
+
+initial state:
+
+board -4 -8 -9 -6 -2 -5 -7 -3 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 55.793s (Solving: 55.78s 1st Model: 0.00s Unsat: 55.78s)
+CPU Time    : 204.420s
+Choices     : 1772960
+Conflicts   : 1563175
+Restarts    : 337
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1563051 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1563051 (Average Length: 72.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1555188
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 75
+Problems    : 76     (Average Length: 13.86) 
+
+initial state:
+
+board -3 -8 6 2 5 -9 -4 7 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 54.642s (Solving: 54.63s 1st Model: 0.00s Unsat: 54.63s)
+CPU Time    : 200.340s
+Choices     : 1674792
+Conflicts   : 1483502
+Restarts    : 239
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1483390 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1483390 (Average Length: 72.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1474743
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 63
+Problems    : 64     (Average Length: 10.53) 
+
+initial state:
+
+board -2 -9 1 -4 7 6 5 -8 3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 67.801s (Solving: 67.78s 1st Model: 0.00s Unsat: 67.78s)
+CPU Time    : 248.180s
+Choices     : 2049287
+Conflicts   : 1825796
+Restarts    : 300
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1825673 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1825673 (Average Length: 75.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1816987
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 75
+Problems    : 76     (Average Length: 15.47) 
+
+initial state:
+
+board -2 9 -8 5 3 -6 4 7 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 78.404s (Solving: 78.39s 1st Model: 0.00s Unsat: 78.39s)
+CPU Time    : 287.360s
+Choices     : 2351931
+Conflicts   : 2089727
+Restarts    : 333
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2089600 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2089600 (Average Length: 75.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2081786
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 65
+Problems    : 66     (Average Length: 15.18) 
+
+initial state:
+
+board -1 -4 8 2 5 7 3 -6 -9 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 65.102s (Solving: 65.08s 1st Model: 0.00s Unsat: 65.08s)
+CPU Time    : 238.560s
+Choices     : 1939141
+Conflicts   : 1722396
+Restarts    : 318
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1722280 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1722280 (Average Length: 76.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1714549
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 62
+Problems    : 63     (Average Length: 12.95) 
+
+initial state:
+
+board -1 -5 9 2 4 -7 -3 6 8 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 48.498s (Solving: 48.48s 1st Model: 0.00s Unsat: 48.48s)
+CPU Time    : 177.360s
+Choices     : 1506928
+Conflicts   : 1337045
+Restarts    : 276
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1336951 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1336951 (Average Length: 76.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1326671
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 42
+Problems    : 43     (Average Length: 10.19) 
+
+initial state:
+
+board -1 -8 9 -5 -6 3 -4 -7 2 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 64.789s (Solving: 64.77s 1st Model: 0.00s Unsat: 64.77s)
+CPU Time    : 237.350s
+Choices     : 1917506
+Conflicts   : 1704964
+Restarts    : 308
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1704849 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1704849 (Average Length: 75.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1697165
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 53
+Problems    : 54     (Average Length: 15.06) 
+
+initial state:
+
+board 2 8 4 1 5 -6 -7 9 3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 68.942s (Solving: 68.91s 1st Model: 0.00s Unsat: 68.91s)
+CPU Time    : 252.570s
+Choices     : 2037250
+Conflicts   : 1811116
+Restarts    : 363
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1810982 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1810982 (Average Length: 74.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1802174
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 69
+Problems    : 70     (Average Length: 14.49) 
+
+initial state:
+
+board 2 9 1 6 7 3 -5 4 8 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 67.600s (Solving: 67.59s 1st Model: 0.00s Unsat: 67.59s)
+CPU Time    : 257.030s
+Choices     : 2073608
+Conflicts   : 1840956
+Restarts    : 410
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1840807 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1840807 (Average Length: 73.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1831861
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 79
+Problems    : 80     (Average Length: 14.09) 
+
+initial state:
+
+board 3 2 -8 -5 6 7 -4 -1 -9 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 62.387s (Solving: 62.38s 1st Model: 0.00s Unsat: 62.38s)
+CPU Time    : 239.760s
+Choices     : 1948877
+Conflicts   : 1729192
+Restarts    : 318
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1729061 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1729061 (Average Length: 78.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1719913
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 74
+Problems    : 75     (Average Length: 13.11) 
+
+initial state:
+
+board 3 -4 1 -9 6 7 8 2 -5 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 66.026s (Solving: 66.02s 1st Model: 0.00s Unsat: 66.02s)
+CPU Time    : 253.490s
+Choices     : 2075004
+Conflicts   : 1841007
+Restarts    : 295
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1840862 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1840862 (Average Length: 72.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1832835
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 71
+Problems    : 72     (Average Length: 14.10) 
+
+initial state:
+
+board 3 -6 5 8 -7 2 4 9 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 53.617s (Solving: 53.61s 1st Model: 0.00s Unsat: 53.61s)
+CPU Time    : 206.070s
+Choices     : 1699151
+Conflicts   : 1505645
+Restarts    : 288
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1505505 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1505505 (Average Length: 73.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1497809
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 81
+Problems    : 82     (Average Length: 17.34) 
+
+initial state:
+
+board 3 9 -6 1 4 -5 8 -2 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 77.635s (Solving: 77.61s 1st Model: 0.00s Unsat: 77.61s)
+CPU Time    : 298.380s
+Choices     : 2356126
+Conflicts   : 2099163
+Restarts    : 365
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2099039 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2099039 (Average Length: 76.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2089019
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 13.12) 
+
+initial state:
+
+board 4 -1 -7 -6 -3 8 2 9 5 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 67.113s (Solving: 67.10s 1st Model: 0.00s Unsat: 67.10s)
+CPU Time    : 257.830s
+Choices     : 2050088
+Conflicts   : 1824883
+Restarts    : 366
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1824749 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1824749 (Average Length: 74.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1816269
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 64
+Problems    : 65     (Average Length: 13.63) 
+
+initial state:
+
+board 4 -7 -3 1 8 -5 9 -2 -6 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 58.315s (Solving: 58.29s 1st Model: 0.00s Unsat: 58.29s)
+CPU Time    : 224.040s
+Choices     : 1917365
+Conflicts   : 1703840
+Restarts    : 348
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1703721 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1703721 (Average Length: 75.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1694581
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 73
+Problems    : 74     (Average Length: 13.22) 
+
+initial state:
+
+board 4 9 6 -2 1 3 5 -8 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 74.162s (Solving: 74.15s 1st Model: 0.00s Unsat: 74.15s)
+CPU Time    : 285.080s
+Choices     : 2251300
+Conflicts   : 2002796
+Restarts    : 281
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2002694 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2002694 (Average Length: 78.0) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1993838
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 56
+Problems    : 57     (Average Length: 14.02) 
+
+initial state:
+
+board 5 4 -2 7 1 -9 -3 -6 8 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 84.360s (Solving: 84.34s 1st Model: 0.00s Unsat: 84.34s)
+CPU Time    : 323.690s
+Choices     : 2447464
+Conflicts   : 2185383
+Restarts    : 319
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2185268 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2185268 (Average Length: 74.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2175769
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 49
+Problems    : 50     (Average Length: 13.04) 
+
+initial state:
+
+board 5 8 -3 2 -6 7 4 -1 -9 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 87.238s (Solving: 87.22s 1st Model: 0.00s Unsat: 87.22s)
+CPU Time    : 318.020s
+Choices     : 2474611
+Conflicts   : 2210859
+Restarts    : 234
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2210737 (Binary:  0.1% Ternary:  0.2% Other: 99.8%)
+  Conflict  : 2210737 (Average Length: 71.8) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2202401
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 53
+Problems    : 54     (Average Length: 14.07) 
+
+initial state:
+
+board 6 -3 2 5 8 -1 4 9 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 75.423s (Solving: 75.40s 1st Model: 0.00s Unsat: 75.40s)
+CPU Time    : 274.600s
+Choices     : 2247803
+Conflicts   : 1997623
+Restarts    : 348
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1997473 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1997473 (Average Length: 76.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1989891
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 75
+Problems    : 76     (Average Length: 12.50) 
+
+initial state:
+
+board 6 -3 9 -1 -8 -5 -4 -2 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 69.955s (Solving: 69.94s 1st Model: 0.00s Unsat: 69.94s)
+CPU Time    : 255.230s
+Choices     : 2059707
+Conflicts   : 1836204
+Restarts    : 289
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1836096 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1836096 (Average Length: 74.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1827704
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 62
+Problems    : 63     (Average Length: 12.24) 
+
+initial state:
+
+board 6 5 2 -4 -9 3 1 8 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 62.768s (Solving: 62.75s 1st Model: 0.00s Unsat: 62.75s)
+CPU Time    : 228.590s
+Choices     : 1872484
+Conflicts   : 1661177
+Restarts    : 310
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1661057 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1661057 (Average Length: 74.3) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1653484
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 60
+Problems    : 61     (Average Length: 13.21) 
+
+initial state:
+
+board 6 -9 -7 8 -4 -1 -3 -5 2 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 64.374s (Solving: 64.35s 1st Model: 0.00s Unsat: 64.35s)
+CPU Time    : 233.590s
+Choices     : 1931340
+Conflicts   : 1713875
+Restarts    : 283
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1713750 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1713750 (Average Length: 74.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1706313
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 73
+Problems    : 74     (Average Length: 13.54) 
+
+initial state:
+
+board 7 1 -3 -8 -5 -2 9 4 -6 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 60.157s (Solving: 60.15s 1st Model: 0.00s Unsat: 60.15s)
+CPU Time    : 219.240s
+Choices     : 1866833
+Conflicts   : 1660330
+Restarts    : 337
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1660211 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1660211 (Average Length: 74.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1652627
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 11.59) 
+
+initial state:
+
+board 7 3 -9 2 -5 1 4 -8 6 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 70.767s (Solving: 70.75s 1st Model: 0.00s Unsat: 70.75s)
+CPU Time    : 257.670s
+Choices     : 2070555
+Conflicts   : 1841281
+Restarts    : 305
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1841176 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1841176 (Average Length: 75.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1833936
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 61
+Problems    : 62     (Average Length: 13.27) 
+
+initial state:
+
+board 7 4 9 1 -3 8 6 2 -5 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 79.318s (Solving: 79.30s 1st Model: 0.00s Unsat: 79.30s)
+CPU Time    : 289.140s
+Choices     : 2187099
+Conflicts   : 1952454
+Restarts    : 382
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1952319 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1952319 (Average Length: 75.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1944788
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 67
+Problems    : 68     (Average Length: 12.37) 
+
+initial state:
+
+board 7 -8 2 6 9 -4 5 1 3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 62.757s (Solving: 62.74s 1st Model: 0.00s Unsat: 62.74s)
+CPU Time    : 234.030s
+Choices     : 1830975
+Conflicts   : 1620395
+Restarts    : 457
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1620258 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1620258 (Average Length: 77.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1611199
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 71
+Problems    : 72     (Average Length: 13.78) 
+
+initial state:
+
+board 7 9 1 -5 2 6 4 -8 3 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 56.681s (Solving: 56.67s 1st Model: 0.00s Unsat: 56.67s)
+CPU Time    : 218.010s
+Choices     : 1813552
+Conflicts   : 1609379
+Restarts    : 329
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1609249 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1609249 (Average Length: 75.4) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1601361
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 57
+Problems    : 58     (Average Length: 13.00) 
+
+initial state:
+
+board 8 -3 -6 -9 2 -5 -4 7 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 58.631s (Solving: 58.61s 1st Model: 0.00s Unsat: 58.61s)
+CPU Time    : 225.420s
+Choices     : 1894747
+Conflicts   : 1683067
+Restarts    : 306
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1682957 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1682957 (Average Length: 75.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1674976
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 51
+Problems    : 52     (Average Length: 12.69) 
+
+initial state:
+
+board 8 -5 2 7 4 -3 6 -9 -1 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 58.015s (Solving: 58.00s 1st Model: 0.00s Unsat: 58.00s)
+CPU Time    : 223.230s
+Choices     : 1864349
+Conflicts   : 1651240
+Restarts    : 270
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1651125 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1651125 (Average Length: 71.2) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1643043
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 52
+Problems    : 53     (Average Length: 13.06) 
+
+initial state:
+
+board 8 -5 9 -2 6 3 1 -4 7 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 43.715s (Solving: 43.71s 1st Model: 0.00s Unsat: 43.71s)
+CPU Time    : 167.960s
+Choices     : 1520222
+Conflicts   : 1335428
+Restarts    : 283
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1335318 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1335318 (Average Length: 72.1) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1328332
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 58
+Problems    : 59     (Average Length: 13.98) 
+
+initial state:
+
+board 9 1 -7 -8 -4 -2 6 -3 -5 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 66.794s (Solving: 66.78s 1st Model: 0.00s Unsat: 66.78s)
+CPU Time    : 256.950s
+Choices     : 2138422
+Conflicts   : 1904792
+Restarts    : 422
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1904648 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1904648 (Average Length: 75.9) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1897277
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 91
+Problems    : 92     (Average Length: 13.26) 
+
+initial state:
+
+board 9 2 1 -7 -6 3 -8 -5 4 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 64.551s (Solving: 64.53s 1st Model: 0.00s Unsat: 64.53s)
+CPU Time    : 248.330s
+Choices     : 2066619
+Conflicts   : 1840824
+Restarts    : 303
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1840695 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1840695 (Average Length: 71.7) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1832725
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 98
+Problems    : 99     (Average Length: 13.96) 
+
+initial state:
+
+board 9 -6 -7 -8 -1 3 -4 2 -5 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 75.203s (Solving: 75.19s 1st Model: 0.00s Unsat: 75.19s)
+CPU Time    : 289.500s
+Choices     : 2301160
+Conflicts   : 2054874
+Restarts    : 333
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 2054769 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 2054769 (Average Length: 74.6) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 2046291
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 74
+Problems    : 75     (Average Length: 13.39) 
+
+initial state:
+
+board 9 8 -2 -7 4 1 -3 -5 6 8
+
+Option : --threads 4 --stat --time-limit=10000 --heu=VSIDS
+clasp version 2.0.3
+Reading from stdin
+Solving...
+UNSATISFIABLE
+
+Models      : 0     
+Time        : 58.753s (Solving: 58.73s 1st Model: 0.00s Unsat: 58.73s)
+CPU Time    : 225.940s
+Choices     : 1838104
+Conflicts   : 1632583
+Restarts    : 241
+
+Atoms       : 1732  
+Rules       : 4316   (1: 3932 2: 368 3: 16)
+Bodies      : 3689  
+Equivalences: 2932   (Atom=Atom: 270 Body=Body: 194 Other: 2468)
+Tight       : Yes
+
+Variables   : 3822   (Eliminated:    0 Frozen:  894)
+Constraints : 11156  (Binary: 68.8% Ternary: 12.6% Other: 18.5%)
+Lemmas      : 1632479 (Binary:  0.1% Ternary:  0.2% Other: 99.7%)
+  Conflict  : 1632479 (Average Length: 74.5) 
+  Loop      : 0      (Average Length: 0.0) 
+  Other     : 0      (Average Length: 0.0 Unit: 0 Average Jumps: 0.00)
+  Deleted   : 1625281
+
+============ PARALLEL STATISTICS ============
+
+Distributed : 0
+Splits      : 56
+Problems    : 57     (Average Length: 14.28) 
+
+initial state:
