@@ -8,7 +8,7 @@ FormatOutput=tmp/foutput.tmp
 PrettyOutput=tmp/prettyOutput.csv
 Error=tmp/error.tmp
 #Option=$Option' --stat --time-limit='$2' -n 0 '
-Option=$Option' --stat --time-limit='$2' '
+Option=$Option' --threads=4 --stat --time-limit='$2' '
 
 Strategy=$1
 case $Strategy in
