@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+mkdir -p tmp
 tmp=tmp/numbers.tmp
 
 # compute number of problems
