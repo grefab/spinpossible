@@ -1,17 +1,23 @@
 
-NAME=asp-spin
+NAME=paper
 OUTPUT=$(NAME).pdf
 
-all: show 
+all: compile
 
 compile:
+	pdflatex $(NAME).tex 
+	bibtex $(NAME).aux 
+	pdflatex $(NAME).tex 
 	pdflatex $(NAME).tex 
 
 show: compile
 	apvlv $(OUTPUT)
 
 clean: 
-	rm $(NAME).log
-	rm $(NAME).aux
-	rm $(NAME).pdf
+	rm -f $(NAME).log
+	rm -f $(NAME).aux
+	rm -f $(NAME).bbl
+	rm -f $(NAME).blg
+	rm -f $(NAME).dvi
+	rm -f $(NAME).log
 
